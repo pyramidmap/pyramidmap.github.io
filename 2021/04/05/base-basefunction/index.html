@@ -4,21 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>地图实现 | The pyramidMap studio，structure the map pyramid.....</title>
+  <title>Web API functions | The pyramidMap studio，structure the map pyramid.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="欢迎光临金字塔地图工作室，PyramidMap提供完整的地图应用体系，帮助用户建立定制化地图产品，包括Gis Server服务端引擎以及与之相配套的Client客户端组件，支持多终端应用，跨平台部署。服务端引擎通过plugin插件管理模式实现弹性功能部署，满足二维及三维地图应用，通过WMS&#x2F;WFS&#x2F;WCS&#x2F;KML等多种接口模式实现与异构GIS平台的数据整合，支持ArcGis、Geoserver、O">
+  <meta name="description" content="Vector and grid Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap &#x2F; Baidu map support topographic map and satellite map, and coordinate system conversion can be">
 <meta property="og:type" content="article">
-<meta property="og:title" content="地图实现">
+<meta property="og:title" content="Web API functions">
 <meta property="og:url" content="https://pyramidmap.github.io/2021/04/05/base-basefunction/index.html">
 <meta property="og:site_name" content="The pyramidMap studio，structure the map pyramid.....">
-<meta property="og:description" content="欢迎光临金字塔地图工作室，PyramidMap提供完整的地图应用体系，帮助用户建立定制化地图产品，包括Gis Server服务端引擎以及与之相配套的Client客户端组件，支持多终端应用，跨平台部署。服务端引擎通过plugin插件管理模式实现弹性功能部署，满足二维及三维地图应用，通过WMS&#x2F;WFS&#x2F;WCS&#x2F;KML等多种接口模式实现与异构GIS平台的数据整合，支持ArcGis、Geoserver、O">
+<meta property="og:description" content="Vector and grid Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap &#x2F; Baidu map support topographic map and satellite map, and coordinate system conversion can be">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://pyramidmap.github.io/2021/04/05/base-basefunction/basefunction1.png">
 <meta property="article:published_time" content="2021-04-05T03:16:08.000Z">
-<meta property="article:modified_time" content="2021-04-11T15:03:04.000Z">
+<meta property="article:modified_time" content="2021-04-13T06:38:05.465Z">
 <meta property="article:author" content="Deepalways">
+<meta property="article:tag" content="JS API">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pyramidmap.github.io/2021/04/05/base-basefunction/basefunction1.png">
   
     <link rel="alternate" href="/atom.xml" title="The pyramidMap studio，structure the map pyramid....." type="application/atom+xml">
   
@@ -38,7 +37,7 @@
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
   
-<meta name="generator" content="Hexo 5.4.0"><script src="/assets/js/DPlayer.min.js"></script></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -88,7 +87,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8/">基本应用</a>►<a class="article-category-link" href="/categories/%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8/%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">基本功能</a>
+    <a class="article-category-link" href="/categories/PyramidMap-JS-API/">PyramidMap JS API</a>►<a class="article-category-link" href="/categories/PyramidMap-JS-API/Base-Functions/">Base Functions</a>
   </div>
 
   </div>
@@ -99,7 +98,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      地图实现
+      Web API functions
     </h1>
   
 
@@ -107,16 +106,28 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>欢迎光临金字塔地图工作室，PyramidMap提供完整的地图应用体系，帮助用户建立定制化地图产品，包括Gis Server服务端引擎以及与之相配套的Client客户端组件，支持多终端应用，跨平台部署。服务端引擎通过plugin插件管理模式实现弹性功能部署，满足二维及三维地图应用，通过WMS/WFS/WCS/KML等多种接口模式实现与异构GIS平台的数据整合，支持ArcGis、Geoserver、OpenLayer、Cesium多类型Web及移动、桌面版地图开发。<br><img src="/2021/04/05/base-basefunction/basefunction1.png" alt="img caption"></p>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"video":{"url":"/2021/04/05/base-basefunction/csgh.mp4"},"danmaku":{"id":"someid","api":"https://api.prprpr.me/dplayer/","addition":["/some.json"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);player.on("loadstart",function(){console.log("loadstart")})})()</script> 
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2>
+        <p><strong>Vector and grid</strong></p>
+<p>Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap / Baidu map support topographic map and satellite map, and coordinate system conversion can be carried out according to actual needs. Pyramidmap supports terrain rendering based on terrain data in the 3D environment .</p>
+<p><strong>Offline support</strong></p>
+<p>Support offline deployment, calling online map resources or hosting in GIS Server. All kinds of offline map services on server. Users can deploy business layers on ArcGIS Server and GeoServer, call and load various map functions through API interface provided by pyramidmap, such as attribute query, spatial query, layer management, data import and export, statistical report, etc.</p>
+<p><strong>Symbol map symbolization management</strong></p>
+<p>Dynamic real-time change map appearance, personalized icon and color settings, dynamic switching thematic symbols, support preset and interface settings.</p>
+<p><strong>3D map</strong></p>
+<p>Support ArcGIS, cesium, mapbox, Gaode and other 3D maps, fully compatible with BIM / CIM and other building layers, realize the organic integration of true 3D and true scene</p>
+<p><strong>Global data</strong></p>
+<p>It covers all kinds of global map data and coordinate systems, including vector, raster, satellite, remote sensing image, etc., and supports WGS84 and web<br>All standard space and projection coordinate systems such as Mercator, CGCS2000, Xian80 and Beijing 54 can be transformed and adjusted according to the production environment.</p>
+<p><strong>Support for third party applications</strong></p>
+<p>Support three party system docking, such as SCADA data acquisition software, automatic chart generation software, BI data analysis software. Pyramidm<br>ap provides standard API interface, integrates map and production data, and forms rich thematic maps through data analysis and summary.</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/05/base-basefunction/" data-id="cknfkwqt2000384n0bkalf5s8" data-title="地图实现" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/05/base-basefunction/" data-id="cknfnmo5k000dk8n0b3oa99xi" data-title="Web API functions" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-API/" rel="tag">JS API</a></li></ul>
+
     </footer>
   </div>
   
@@ -147,7 +158,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Desktop/">PyramidMap Desktop</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Desktop/Function-list/">Function list</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Web-JS/">PyramidMap Web JS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Web-JS/Introduction/">Introduction</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Web-JS/Introduction/%E5%89%8D%E7%AB%AF/">前端</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8/">基本应用</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8/%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">基本功能</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Desktop/">PyramidMap Desktop</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Desktop/Function-list/">Function list</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-JS-API/">PyramidMap JS API</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-JS-API/Base-Functions/">Base Functions</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Web-JS/">PyramidMap Web JS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Web-JS/Introduction/">Introduction</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -157,7 +168,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Map-view/" rel="tag">Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spacial-data-convert/" rel="tag">Spacial data convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-GL/" rel="tag">Web GL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-API/" rel="tag">JS API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Map-view/" rel="tag">Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spacial-data-convert/" rel="tag">Spacial data convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-GL/" rel="tag">Web GL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
     </div>
   </div>
 
@@ -167,7 +178,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Spacial-data-convert/" style="font-size: 10px;">Spacial data convert</a> <a href="/tags/Web-GL/" style="font-size: 10px;">Web GL</a> <a href="/tags/Workflow/" style="font-size: 10px;">Workflow</a>
+      <a href="/tags/JS-API/" style="font-size: 10px;">JS API</a> <a href="/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Spacial-data-convert/" style="font-size: 10px;">Spacial data convert</a> <a href="/tags/Web-GL/" style="font-size: 10px;">Web GL</a> <a href="/tags/Workflow/" style="font-size: 10px;">Workflow</a>
     </div>
   </div>
 
@@ -197,7 +208,7 @@
           </li>
         
           <li>
-            <a href="/2021/04/05/base-basefunction/">地图实现</a>
+            <a href="/2021/04/05/base-basefunction/">Web API functions</a>
           </li>
         
       </ul>
