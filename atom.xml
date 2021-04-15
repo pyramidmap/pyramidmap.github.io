@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The pyramidMap studio，structure the map pyramid.....</title>
+  
+  
+  <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://pyramidmap.github.io/"/>
+  <updated>2021-04-15T05:06:08.000Z</updated>
+  <id>https://pyramidmap.github.io/</id>
+  
+  <author>
+    <name>Deepalways</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform feature class processing</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:06:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Feature-Class-process"><a href="#Feature-Class-process" class="headerlink" title="Feature Class process"></a>Feature Class process</h2><p><img src="/2021/04/12/Python-featureClass-process/12dc982c35ebc8e4d3401f6390fb8976.png"></p><h3 id="1-Data-covert-to-map-features"><a href="#1-Data-covert-to-map-features" class="headerlink" title="1: Data covert to map features:"></a>1: Data covert to map features:</h3><p><img src="/2021/04/12/Python-featureClass-process/acc2a8a93eff45b0645012fd729fbf01.png"></p><p>The above functional areas support the conversion of SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other formats to map feature data. Click to enter the function interface, as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/020f9a36314024edd1f4cd08515820a4.png"></p><p>In the program, several input areas can be added to the queue area to form a queue list by “MoveTo” clicked. In the target selection area, the target path<br>supports physical path, GDB, MDB and SDE enterprise geo database, covering all types of GIS applications. Thus, a data processing workflow is formed. Click “doTransform” to start batch data processing, and the processing process automatically saves the log.</p><h3 id="2-Map-features-to-other-types"><a href="#2-Map-features-to-other-types" class="headerlink" title="2: Map features to other types:"></a>2: Map features to other types:</h3><p><img src="/2021/04/12/Python-featureClass-process/29702165b3011351629fb75a2d6884a0.png"></p><p>The above functional areas support featureclass to SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other types of data. Click to enter the function interface as follows:<img src="/2021/04/12/Python-featureClass-process/806427d312e124ca92854262e4e85e1b.png"></p><p>In the program, several input areas can be added to the selection area to form a queue list by “MoveTo” clicked. Input data support SHP, GDB file type geo database, MDB personal geo database, SDE enterprise type geo database, covering all types of GIS applications. Output types support SHP,JSON, KML, KMZ, TXT, CSV, DBF, Excel: a data processing workflow is formed.Click “ doTransform “ to start batch data processing. The process automatically<br>saves the log.</p><h3 id="3-Append-and-merge-features"><a href="#3-Append-and-merge-features" class="headerlink" title="3:Append and merge features:"></a>3:Append and merge features:</h3><p><img src="/2021/04/12/Python-featureClass-process/8700787b34f412b97cbcaedc3d5ac25e.png"></p><p>Map feature classes, including SHP layer, GDB feature class, MDB feature class and SDE enterprise geo database feature class which are data tables to store spatial geographic information actually. In the production process, the application of appending or merging multiple layer data to one layer will be<br>very many. In the face of this demand, we provide the following concise functions, and refine the corresponding rules that should be followed. The<br>functions are as follows:</p><h4 id="3-1-Features-append"><a href="#3-1-Features-append" class="headerlink" title="3.1:Features append:"></a>3.1:Features append:</h4><p><img src="/2021/04/12/Python-featureClass-process/9b5aaeb1b34587aec9393768fa6848f3.png"></p><p>Feature class append supports multiple to one addition of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, and SDE. It controls whether the source data and target data are allowed to have field structure differences or filter through test or no test parameters. Test mode is forced to limit, and the source data and target data format must be consistent, otherwise it cannot be run; no test mode will filter field mapping, and only the source data conforming to the mapping rules will be appended. Select no test mode, and the interface will provide the following field mapping selection methods:</p><p><img src="/2021/04/12/Python-featureClass-process/01645348716277604f7c1f7e817dbfac.png"></p><p>Please use the default mapping method Unless you specifically determined. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h4 id="3-2-Features-merge"><a href="#3-2-Features-merge" class="headerlink" title="3.2:Features merge:"></a>3.2:Features merge:</h4><p><img src="/2021/04/12/Python-featureClass-process/24ea00f7a467b1242662454d1485810a.png"></p><p>You can click “create new dataset” or “create new feature class” to assign the target data to a new location.</p><p><img src="/2021/04/12/Python-featureClass-process/1599c221af35fcd0a9d465de562ac600.png"></p><p>create new dataset</p><p><img src="/2021/04/12/Python-featureClass-process/903e9c3d34c8a9547c3a278c092bca5e.png"></p><p>create new feature class</p><p>The select datasets come from the Geodatabase which you select.Feature class merging supports many to one merging of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, SDE. The field mapping method is the same as appending. It controls the field merging strategy. Unless specifically determined, the default mapping method is used. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h3 id="4-Feature-classes-migration"><a href="#4-Feature-classes-migration" class="headerlink" title="4: Feature classes migration:"></a>4: Feature classes migration:</h3><p>Feature migration is to migrate the feature classes in SHP, GDB, MDB and SDE to the specified target path, and automatically complete the data format<br>conversion. The following is the conversion model:</p><h4 id="４-１-feature-class-migration-model"><a href="#４-１-feature-class-migration-model" class="headerlink" title="４.１: feature class migration model:"></a>４.１: feature class migration model:</h4><p><img src="/2021/04/12/Python-featureClass-process/2fb9add26af34d850b50aa0c901b4e53.png"></p><p><img src="/2021/04/12/Python-featureClass-process/a3820e24a271f90f50a6ebbd261a3c5d.png"></p><p><img src="/2021/04/12/Python-featureClass-process/378c768b47196802ea52d89f0d6919b6.png"></p><p><img src="/2021/04/12/Python-featureClass-process/1f85dc8670ef985c0ff8b11d4f9c3866.png"></p><h4 id="４-２-Feature-class-migration"><a href="#４-２-Feature-class-migration" class="headerlink" title="４.２: Feature class migration:"></a>４.２: Feature class migration:</h4><p><img src="/2021/04/12/Python-featureClass-process/b769919b1ba54d69983bc0004dbc71d4.png"></p><h4 id="４-３-the-execution-process-is-as-follows"><a href="#４-３-the-execution-process-is-as-follows" class="headerlink" title="４.３: the execution process is as follows:"></a>４.３: the execution process is as follows:</h4><p><img src="/2021/04/12/Python-featureClass-process/d4a748dbdaaadd798c3b23f0059ab052.png"></p><h3 id="5-Standard-coordinate-system-conversion"><a href="#5-Standard-coordinate-system-conversion" class="headerlink" title="5: Standard coordinate system conversion:"></a>5: Standard coordinate system conversion:</h3><p>Supports the mutual conversion between all geographic and projection coordinate systems with EPSG standard definition. The source data in the conversion queue can have different coordinate systems, and can be converted to the specified GCS or PCS. The transformation model of coordinate system is as follows (only some representative GCS and PCS are selected as examples), and other coordinate systems are treated in the same way.</p><p><img src="/2021/04/12/Python-featureClass-process/869f042deeaa229d707139565fb872dd.png"></p><p>Interface description of standard coordinate system transformation:</p><p><img src="/2021/04/12/Python-featureClass-process/2310fe5875c60e3cf4b3a0b955e30d20.png"></p><p>In the coordinate system selection drop-down box of the target area, select the target coordinate system for final conversion.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="5：Feature class processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/5%EF%BC%9AFeature-class-processing/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform function list</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-function-overview/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-function-overview/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:08:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Function-list"><a href="#Function-list" class="headerlink" title="Function list:"></a>Function list:</h2><table><thead><tr><th>Func</th><th>Modular</th><th>Sub items(all in workflow, batch mode.)</th><th></th></tr></thead><tbody><tr><td>Map Query &amp; View</td><td>Shp/Layer/ Feature Class</td><td>Layer table information, field structure, feature type, geometry type, coordinate system, spatial index overview.</td><td></td></tr><tr><td></td><td>Layer Data</td><td>Layer data query and map view.</td><td></td></tr><tr><td></td><td>Latitude longitude</td><td>The longitude and latitude data statistics report of each element in the layer table.</td><td></td></tr><tr><td></td><td>Statistics</td><td>Count statistics of feature class in layer table and calculation of center point coordinate of whole range.</td><td></td></tr><tr><td></td><td>Map view</td><td>Vector and image map display.</td><td></td></tr><tr><td></td><td></td><td>Symbol setting for point, line, polygon and other elements to display.</td><td></td></tr><tr><td>Vector data processing</td><td>Data Import &amp; Export</td><td>Shp to featureClass</td><td>FeatureClass to Shp</td></tr><tr><td></td><td></td><td>Json to featureClass</td><td>FeatureClass to Json</td></tr><tr><td></td><td></td><td>Kml/Kmz to featureClass</td><td>FeatureClass to Kml/Kmz</td></tr><tr><td></td><td></td><td>Txt to featureClass</td><td>FeatureClass to Txt</td></tr><tr><td></td><td></td><td>Csv to featureClass</td><td>FeatureClass to Csv</td></tr><tr><td></td><td></td><td>Dbf to featureClass</td><td>FeatureClass to Dbf</td></tr><tr><td></td><td></td><td>Excel to featureClass</td><td>FeatureClass to Excel</td></tr><tr><td></td><td>Append Merge</td><td>Feature class append according the parameters.</td><td></td></tr><tr><td></td><td></td><td>Feature class merge according the parameters.</td><td></td></tr><tr><td></td><td>Map data  migration</td><td>Shp migrates to the designated location.</td><td></td></tr><tr><td></td><td></td><td>Shp to Gdb.</td><td></td></tr><tr><td></td><td></td><td>Shp to Mdb.</td><td></td></tr><tr><td></td><td></td><td>Shp to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td><td></td></tr><tr><td></td><td></td><td>Gdb to Shp.</td><td></td></tr><tr><td></td><td></td><td>Gdb to Mdb.</td><td></td></tr><tr><td></td><td></td><td>Gdb to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td><td></td></tr><tr><td></td><td></td><td>Mdb to Shp</td><td></td></tr><tr><td></td><td></td><td>Mdb to Gdb。</td><td></td></tr><tr><td></td><td></td><td>Mdb to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL to Shp。</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL to Gdb。</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL to Mdb。</td><td></td></tr><tr><td>Raster process</td><td>Slice Merge Compress</td><td>Raster is sliced according to the parameters.</td><td></td></tr><tr><td></td><td></td><td>Raster is merged according to the parameters.</td><td></td></tr><tr><td></td><td></td><td>Raster is compressed according to the parameters.</td><td></td></tr><tr><td></td><td>raster data convert</td><td>The raster being convert according to the parameters. Including data format, pixel depth, color mapping, band and so on.</td><td></td></tr><tr><td></td><td>Data optimize</td><td>Build pyramid to improve loading and preview speed.</td><td></td></tr><tr><td></td><td></td><td>Nodata value processing, remove the black background caused by invalid pixels.</td><td></td></tr><tr><td>Coordinate Sys tran sform&amp; reprojection</td><td>Vector layer converted to specified CS by parameters.</td><td></td><td></td></tr><tr><td></td><td>Raster layer converted to specified CS by parameters.</td><td></td><td></td></tr><tr><td>Create Mxd</td><td>Vector</td><td>Create vector mxd according to the specified parameters.</td><td></td></tr><tr><td></td><td>Raster</td><td>Create raster mxd according to the specified parameters.</td><td></td></tr><tr><td>Publish Map ser ver</td><td>MapServer</td><td>Publish MapServer according to specified parameters.</td><td></td></tr><tr><td></td><td>FtrServer</td><td>Publish FeatureServer according to specified parameters.</td><td></td></tr><tr><td></td><td>ImgServer</td><td>Publish ImgServer according to specified parameters.</td><td></td></tr><tr><td>GeoDB Manage</td><td>ArcGIS</td><td>Oracle</td><td>Create geo database,host map data,provide feature server, and realize map online ed itting and storage and include OGC map se rvice such as wms/wfs/wcs/kml.</td></tr><tr><td></td><td></td><td>SQL Server</td><td></td></tr><tr><td></td><td></td><td>PostgreSQL</td><td></td></tr><tr><td></td><td>GeoServer</td><td>PostgreSQL</td><td></td></tr><tr><td></td><td></td><td>MySQL</td><td></td></tr><tr><td></td><td></td><td>Oracle&amp;Others</td><td></td></tr><tr><td>Data process for GeoServ er</td><td>DB Connect ion</td><td>PostGIS</td><td>Initialize save the PostGIS connection.</td></tr><tr><td></td><td></td><td>MySQL</td><td>Initialize save the MySQL connection.</td></tr><tr><td></td><td>Data import</td><td>PostGIS</td><td>Shp imp to PostGIS for published in GeoServer.</td></tr><tr><td></td><td></td><td>MySQL</td><td>Shp imp to MySQL for published in GeoServer.</td></tr><tr><td></td><td>Data export</td><td>PostGIS</td><td>PostGIS data exp to shp.</td></tr><tr><td></td><td></td><td>MySQL</td><td>MySQL data exp to shp.</td></tr><tr><td></td><td>Map query &amp; preview</td><td>query</td><td>Query attribute and spatial data.</td></tr><tr><td></td><td></td><td>preview</td><td>Map server layer preview。</td></tr><tr><td>Log record &amp; query</td><td>GIS data conversion workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>GIS data imp &amp; exp workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>GIS data append &amp; merge workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>Raster compressed、sliced、merged workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>Raster pyramided workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>Raster noData value processed workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>Coordinate system conversion workflow log and query by condition.</td><td></td><td></td></tr><tr><td></td><td>Map server published workflow log and query by condition.</td><td></td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="1：Function list" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/1%EF%BC%9AFunction-list/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform Map query and preview</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-map-query/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-map-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:09:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Shp-amp-Feature-class-query-and-preview"><a href="#Shp-amp-Feature-class-query-and-preview" class="headerlink" title="Shp&amp;Feature class query and preview"></a>Shp&amp;Feature class query and preview</h2><p><img src="/2021/04/12/Python-map-query/7f2ad0244fdc5aab0f02add9cd8b90f1.png"></p><p>In the map display area, you can query and display vector and image maps of different data sources, and display layer data in the form of a list, including<br>layer name, feature type, geometric type, coordinate system type, name and code, whether there is a spatial index, and the number of features in each layer. Each record in the list can be operated by right-click menu, such as skipping to map data and preview interface.</p><p><img src="/2021/04/12/Python-map-query/148a6affac35b42332ceeeb61e4a5542.png"></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><img src="/2021/04/12/Python-map-query/6267ddda7c1d2f4160c9c7e74137f1e3.png"></p><p>Map preview：</p><p><img src="/2021/04/12/Python-map-query/00e0172d10c5d37985f056f01f43cc90.png"></p><p>This’s the map view of all features in the shp or gdb/mdb/sde feathure class.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="4：Map query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/4%EF%BC%9AMap-query-and-preview/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform raster processing</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-raster-process/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-raster-process/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:13:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Raster-processing"><a href="#Raster-processing" class="headerlink" title="Raster processing"></a>Raster processing</h2><p><img src="/2021/04/12/Python-raster-process/3f68b74cb88b6a2e0563c83ac1862f04.png"></p><p>It includes raster compression, raster slice, raster merge, raster conversion, noDataValue set and raster pyramid construction. The explanation is as follows:</p><h3 id="1-Raster-compress："><a href="#1-Raster-compress：" class="headerlink" title="1:Raster compress："></a>1:Raster compress：</h3><p><img src="/2021/04/12/Python-raster-process/1fbcdfce45307624446eff9c5718a1e6.png"></p><p>The setting of compression parameters can be guided and selected according to the program interface, and the pyramid can be constructed to index the images hierarchically, which is very effective for improving the loading and display speed of big data images. The invalid value in the image will cause black background. Selecting the invalid value processing option will automatically filter the invalid pixels in the compression process, so as to improve the image quality and simplify the processing flow. The log will be saved during processing, and a message will be prompted after processing.</p><h3 id="2-Raster-slice"><a href="#2-Raster-slice" class="headerlink" title="2:Raster slice:"></a>2:Raster slice:</h3><p><img src="/2021/04/12/Python-raster-process/fee15c7e9206df2e77143fed41977199.png"></p><p>The slice number is set by the segmentation base of the target area. The rule is that the length and width are divided according to the selected number, and the final number of slices is n * n. In the process, you can choose whether to process the invalid value of the segmented image, so as to avoid the appearance of black invalid pixels. If the segmented source image itself has filtered the invalid value, it can keep the status quo and do not deal with it, which depends on clarifying the invalid value state of the source data in advance.</p><p><img src="/2021/04/12/Python-raster-process/e0da9439cf7eb4085239e539f586602d.jpeg"></p><p>The above image is the contrast between the sliced image and the original image.</p><h3 id="3-Raster-merge"><a href="#3-Raster-merge" class="headerlink" title="3:Raster merge"></a>3:Raster merge</h3><p>Merging and slice is a reverse process. The program can synthesize a complete image in the same coordinate system.</p><p><img src="/2021/04/12/Python-raster-process/04ec32ee4b1078b7a9f89a65c0234c35.png"></p><p>The merging rules are controlled by the parameters of the target area, and the suitable merging mode can be selected by the matching of speed and precision. It can deal with the invalid value of the merged image, so as to avoid the appearance of black invalid pixels. If all the merged source images have been filtered with invalid values, they can remain as they are and not be processed, depending on the metadata state. The construction of the pyramid helps to improve the loading speed of the image, which can be executed selectively.</p><p><img src="/2021/04/12/Python-raster-process/d4a4b2196064eeed0b8e481ca91f6bdc.png"></p><h3 id="4-Raster-conversion"><a href="#4-Raster-conversion" class="headerlink" title="4: Raster conversion:"></a>4: Raster conversion:</h3><p>The raster is transformed among different data types, pixel depth, color map table, band and multi-dimensional data processing.</p><p><img src="/2021/04/12/Python-raster-process/ec09519bda516c1044272f63ea0d9009.png"></p><p>You can set the pixel depth type and format of the target or remain unchanged.Normally, 1-bit raster data set contains 8-bit pyramid layer in the file system, but only contain 1-bit pyramid layer in the geographic database, which makes the display look unattractive. Then You can Choose whether to convert the 1-bit raster dataset input to an 8-bit raster dataset when being imported to a geo database. If the raster input has a color map table, you can convert the target to a three bands raster. This is useful for mosaics rasters which contain different color mapping tables.And you can set the pixel bit depth of a raster or a mosaic dataset, this default value is obtained from the first raster dataset if not defined. If your target raster’s pixel type is different from the input (for example,from 16 to 8 bits), you can choose to scale the value to the new range; otherwise, the value will be discarded which does not conform to the new pixel range. If you want to suppress the noise in the rasters which are captured from screen or scanned map or scanned document, you can select converting 8-bit 3-band (RGB) raster into a single band raster data set with color mapping table.However, it is not recommended to use it for satellite, aerial image or thematic raster data.</p><h3 id="5-Raster-coordinate-system-transformation"><a href="#5-Raster-coordinate-system-transformation" class="headerlink" title="5: Raster coordinate system transformation:"></a>5: Raster coordinate system transformation:</h3><p><img src="/2021/04/12/Python-raster-process/65baf77b8a5586b7036e5e651614df04.png"></p><p>The image class with standard coordinate system definition is the same as the transformation of vector layer coordinate system. It can be converted between different coordinate systems. The program provides the conversion process processing to realize batch chemical list. The following are the operating procedures:</p><p><img src="/2021/04/12/Python-raster-process/8b8be3638a3a4ea04bd83c8146bb7469.png"></p><h3 id="6-Raster-pyramid-building"><a href="#6-Raster-pyramid-building" class="headerlink" title="6: Raster pyramid building:"></a>6: Raster pyramid building:</h3><p>The pyramid can speed up the image loading. Program supports the parametric batch generation of image pyramid.</p><p><img src="/2021/04/12/Python-raster-process/7750de2b0210404be57a9cbdf082fc1f.png"></p><p>In general, building a pyramid on raster can improve the display performance.Just building once, and the pyramid is accessed each time the raster displayed. The raster with less than 1024 pixels in rows or columns, no pyramid will be built even if you choose to do.Wavelet compressed raster (such as ECW and MrSID) do not need to build pyramids also because having an internal pyramid created when encoding. In the pyramid building, you can design the pyramid_level(optional),the skip_first(optional),the resample_technique(optional),the compression_type(optional),the compression_quality(optional), the skip_existing(optional), all of these are indentified in the parameters list above.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="6：Raster processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/6%EF%BC%9ARaster-processing/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform system set</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-sys-set/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-sys-set/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:49:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="System-settings"><a href="#System-settings" class="headerlink" title="System settings"></a>System settings</h2><h3 id="1-GIS-Server-connection"><a href="#1-GIS-Server-connection" class="headerlink" title="1: GIS Server connection"></a>1: GIS Server connection</h3><p><strong><img src="/2021/04/12/Python-sys-set/6462e2612f7574a82370e4d2e079d352.png"></strong></p><p>Server host = ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account of ArcGIS Server. Please confirm with ArcGIS Server administrator.</p><h3 id="2-Geo-database-creation"><a href="#2-Geo-database-creation" class="headerlink" title="2: Geo database creation"></a>2: Geo database creation</h3><p>ArcGIS supports Oracle, SQL server, PostgreSQL, DB2, infomix and other relational databases as geo databases. This software support Oracle, SQL server, PostgreSQL. Before performing this operation, please make sure there is a client program connected with the above database on the computer. The database client can be downloaded from the database website. Pay attention to the version number. ArcGIS desktop is a 32-bit, so it only supports 32-bit client connection. ArcGIS Server is a 64 bit, so only supports 64 bit client connection. The connection between ArcGIS desktop, pro, enterprise server and database does not belong to the scope of this section. If necessary, we will introduce it in a special chapter. Here is how to create a geographic database in Oracle.</p><p><img src="/2021/04/12/Python-sys-set/533b86e7990820f76bb575c06a7ecfb1.png"></p><p>Here, the service instance of Oracle is the database name. It’s the object of geo database build in and must be exist in advance. The following is how to create a geo database in SQL server.</p><p><img src="/2021/04/12/Python-sys-set/d81916a3b78d0ae912cc4089b6bc08f7.png"></p><p>Here the service instance of SQL server is the data service name of SQL server.The default is MSSqlServer,please confirm with database administrator. The “DBA Account”is the account to sign in with db administrator mode which default is “sa”. The “New Geodb”is the name of the geodatabase to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. The following is how to create a geographic database in PostgreSQL.</p><p><img src="/2021/04/12/Python-sys-set/6db7505bf96c35dfad7592e0fcffa7dc.png"></p><p>The “New Geodb” is the name of the geo database to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. All operations need the valid ArcGIS authorization ecp file. If the geodatabase already exists, you only need to create a connection. The following is the process of creating a geo database connection.</p><h3 id="3-Geo-database-connection"><a href="#3-Geo-database-connection" class="headerlink" title="3: Geo database connection"></a>3: Geo database connection</h3><p>1: create an Oracle Geodatabase connection</p><p><img src="/2021/04/12/Python-sys-set/fa5187ebdc64e80ca1ced163c5ecabf0.png"></p><p>Here, the instance is the Oracle database name.</p><p>2: create a SQL Server Geodatabase connection</p><p><img src="/2021/04/12/Python-sys-set/8144d08df561d07aa547fb164bcd246b.png"></p><p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p><p>3: create a PostgreSQL Geodatabase connection:</p><p><img src="/2021/04/12/Python-sys-set/00876a447bcbcf767035d74736532580.png"></p><p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="3：System set" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/3%EF%BC%9ASystem-set/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform UI overview</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-ui-overview/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-ui-overview/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-15T05:27:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="UI-overview"><a href="#UI-overview" class="headerlink" title="UI overview:"></a>UI overview:</h2><p><strong><img src="/2021/04/12/Python-ui-overview/0d6bd19b098e8e8a67f6132a4149d0c9.png"></strong></p><table><thead><tr><th>Work area</th><th>Sub applications in tab panel</th><th>Functions</th></tr></thead><tbody><tr><td>System settings</td><td>GIS Server</td><td>Create and save the GIS Server connection.</td></tr><tr><td></td><td>Enterprise Geo DB</td><td>Create Geodb and save the connection.</td></tr><tr><td></td><td></td><td>Create and save the Geodb connection.</td></tr><tr><td>Help</td><td>about</td><td>License and regist</td></tr><tr><td></td><td>help</td><td>How to use</td></tr><tr><td>Function  area</td><td>Map query &amp; view</td><td>Vector and raster query and preview.</td></tr><tr><td></td><td>Vector process</td><td>Vector data process and convert in workflow.</td></tr><tr><td></td><td>Raster process</td><td>Raster data process and convert in workflow.</td></tr><tr><td></td><td>Coordinate Sys</td><td>Coordinate sys transform or reproject in workflow.</td></tr><tr><td></td><td>ArcGIS Server</td><td>Map service query and export and map preview.</td></tr><tr><td></td><td>Geo database</td><td>Enterprise GeoDB query and export and map preview.</td></tr><tr><td></td><td>Log query</td><td>Log of process classify, query and trace by time.</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="2：UI overview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/2%EF%BC%9AUI-overview/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+    <category term="Shp and GeoDatabase" scheme="https://pyramidmap.github.io/tags/Shp-and-GeoDatabase/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap API For JS introduction</title>
+    <link href="https://pyramidmap.github.io/2021/04/11/pyramid-introduce/"/>
+    <id>https://pyramidmap.github.io/2021/04/11/pyramid-introduce/</id>
+    <published>2021-04-11T01:57:13.000Z</published>
+    <updated>2021-04-15T05:32:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Pyramid map is a map product of pyramid map studio for intelligent application and development. Adhering to the three principles of professional techn<br>ology, intelligent deployment and practical function, we provide a complete map application system for users. Based on the pyramidMap platform, users can quickly build their own map application. The whole application covers the GIS server engine and its corresponding client components, and supports multi terminal and cross platform deployment. Pyramidmap engine implements elastic function through plugin mode, supports 2D and 3D map applica<br>tion based on Web GL. PyramidMap supports WMS / WFS / WCS / KML and other standard interfaces, and realizes data communication and integration between heterogeneous GIS platforms throught following OGC specification. The pyramidmap engine outputs map services and development interfaces in widget component mode. It has built-in support for ArcGIS, GeoServer, Openlayer, Leafet, Cesium JS, Google map, Mapbox, and Amap / Baidu maps. It also provides Python based interfaces to meet the all-round data processing needs of map users. The following is the logical framework of a map implem<br>ented by pyramidmap:</p><p><img src="/2021/04/11/pyramid-introduce/mapview.png"></p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-map"><a href="#Create-a-new-map" class="headerlink" title="Create a new map"></a>Create a new map</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import MapView</span><br></pre></td></tr></table></figure><p>More info: <a href="https://pyramidmap.github.io/docs/web-js-api.html">Writing</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    
+    <category term="Introduction" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/Introduction/"/>
+    
+    
+    <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
+    
+    <category term="JS Widget" scheme="https://pyramidmap.github.io/tags/JS-Widget/"/>
+    
+    <category term="Web Map view" scheme="https://pyramidmap.github.io/tags/Web-Map-view/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap API For JS base functions</title>
+    <link href="https://pyramidmap.github.io/2021/04/05/JS-basefunction/"/>
+    <id>https://pyramidmap.github.io/2021/04/05/JS-basefunction/</id>
+    <published>2021-04-05T03:16:08.000Z</published>
+    <updated>2021-04-14T01:50:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>Vector and grid</strong></p><p>Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap / Baidu map support topographic map and satellite map, and coordinate system conversion can be carried out according to actual needs. Pyramidmap supports terrain rendering based on terrain data in the 3D environment .</p><p><strong>Offline support</strong></p><p>Support offline deployment, calling online map resources or hosting in GIS Server. All kinds of offline map services on server. Users can deploy business layers on ArcGIS Server and GeoServer, call and load various map functions through API interface provided by pyramidmap, such as attribute query, spatial query, layer management, data import and export, statistical report, etc.</p><p><strong>Symbol map symbolization management</strong></p><p>Dynamic real-time change map appearance, personalized icon and color settings, dynamic switching thematic symbols, support preset and interface settings.</p><p><strong>3D map</strong></p><p>Support ArcGIS, cesium, mapbox, Gaode and other 3D maps, fully compatible with BIM / CIM and other building layers, realize the organic integration of true 3D and true scene</p><p><strong>Global data</strong></p><p>It covers all kinds of global map data and coordinate systems, including vector, raster, satellite, remote sensing image, etc., and supports WGS84 and web<br>All standard space and projection coordinate systems such as Mercator, CGCS2000, Xian80 and Beijing 54 can be transformed and adjusted according to the production environment.</p><p><strong>Support for third party applications</strong></p><p>Support three party system docking, such as SCADA data acquisition software, automatic chart generation software, BI data analysis software. Pyramidm<br>ap provides standard API interface, integrates map and production data, and forms rich thematic maps through data analysis and summary.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    
+    <category term="Base Functions" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/Base-Functions/"/>
+    
+    
+    <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
+    
+    <category term="JS Widget" scheme="https://pyramidmap.github.io/tags/JS-Widget/"/>
+    
+    <category term="Web Map view" scheme="https://pyramidmap.github.io/tags/Web-Map-view/"/>
+    
+  </entry>
+  
+</feed>
