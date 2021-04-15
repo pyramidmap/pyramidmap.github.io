@@ -39,7 +39,7 @@
 <meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/4ec86b8d834e3b76ba507cd6e04bb0dd.png">
 <meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/a5c8ed9471702fd791701efe14e66197.png">
 <meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
-<meta property="article:modified_time" content="2021-04-14T15:32:50.000Z">
+<meta property="article:modified_time" content="2021-04-15T05:35:46.000Z">
 <meta property="article:author" content="Deepalways">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="数据处理工作流">
@@ -150,7 +150,7 @@
 <h3 id="3：地图要素追加合并："><a href="#3：地图要素追加合并：" class="headerlink" title="3：地图要素追加合并："></a>3：地图要素追加合并：</h3><p><img src="/cn/2021/04/12/Python-featureClass-process/d85696a2f58f9102fbf9ebe4c8139324.png" alt="要素类追加合并"></p>
 <p>地图要素类，包括shp图层、gdb要素类、mdb要素类、sde企业地理数据库要素类，本质上就是存储空间地理信息的数据表。在生产过程中，将多个图层数据追加或合并到一个图层上的应用会非常多。面对这种需求，我们提供如下简洁功能，并细化应当遵循的相应的规则，功能如下：</p>
 <h4 id="3-1：要素类追加："><a href="#3-1：要素类追加：" class="headerlink" title="3.1：要素类追加："></a>3.1：要素类追加：</h4><p><img src="/cn/2021/04/12/Python-featureClass-process/155989a1a7501d14227c4a0bf61a6e8b.png"></p>
-<p>要素类追加，支持从shp、gdb、mdb、sde到shp、gdb、mdb、sde的任意数据源的多对一追加，通过TEST或NO<br>TEST参数控制是否允许源数据与目标数据存在字段结构差异或进行过滤。TEST模式进行强制限定，源数据与目标数据格式必须一致，否则无法运行；NO<br>TEST 模式会进行字段映射过滤，只有符合映射规则的源数据才会进行追加。选择NO<br>TEST模式，界面会提供如下字段映射选择方式：</p>
+<p>要素类追加，支持从shp、gdb、mdb、sde到shp、gdb、mdb、sde的任意数据源的多对一追加，通过TEST或NO TEST参数控制是否允许源数据与目标数据存在字段结构差异或进行过滤。TEST模式进行强制限定，源数据与目标数据格式必须一致，否则无法运行；NO TEST 模式会进行字段映射过滤，只有符合映射规则的源数据才会进行追加。选择NO TEST模式，界面会提供如下字段映射选择方式：</p>
 <p><img src="/cn/2021/04/12/Python-featureClass-process/e382d26a0f91fca57a40ab9184777d2d.png"></p>
 <p>除非特别确定，否则按照默认映射方式执行。工作流模型如下：</p>
 <p><img src="/cn/2021/04/12/Python-featureClass-process/1fd8f5f5d58a4ea8affd0f3dd3ef5ec5.png" alt="要素类追加处理流程"></p>
@@ -181,7 +181,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/" data-id="ckniaw0l50002dsn05v0t8anf" data-title="PyramidMap 地理数据处理工作流平台要素类处理" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/" data-id="cknigt97g0005egn0aiz5f067" data-title="PyramidMap 地理数据处理工作流平台要素类处理" class="article-share-link">分享</a>
       
       
       
@@ -193,19 +193,19 @@
     
 <nav id="article-nav">
   
-    <a href="/cn/2021/04/13/JS-basefunction/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/cn/2021/04/12/Python-function-overview/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          PyramidMap API For JS 基本功能
+          PyramidMap 地理数据处理工作流平台功能清单
         
       </div>
     </a>
   
   
-    <a href="/cn/2021/04/12/Python-function-overview/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/cn/2021/04/12/Python-map-query/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">PyramidMap 地理数据处理工作流平台功能清单</div>
+      <div class="article-nav-title">PyramidMap 地理数据处理工作流平台地图查询预览</div>
     </a>
   
 </nav>
@@ -272,11 +272,11 @@
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
+            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
+            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
           </li>
         
           <li>

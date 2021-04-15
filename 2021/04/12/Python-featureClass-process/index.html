@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/869f042deeaa229d707139565fb872dd.png">
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/2310fe5875c60e3cf4b3a0b955e30d20.png">
 <meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
-<meta property="article:modified_time" content="2021-04-14T15:32:04.000Z">
+<meta property="article:modified_time" content="2021-04-15T05:06:08.000Z">
 <meta property="article:author" content="Deepalways">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Workflow">
@@ -133,44 +133,44 @@
       
         <h2 id="Feature-Class-process"><a href="#Feature-Class-process" class="headerlink" title="Feature Class process"></a>Feature Class process</h2><p><img src="/2021/04/12/Python-featureClass-process/12dc982c35ebc8e4d3401f6390fb8976.png"></p>
 <h3 id="1-Data-covert-to-map-features"><a href="#1-Data-covert-to-map-features" class="headerlink" title="1: Data covert to map features:"></a>1: Data covert to map features:</h3><p><img src="/2021/04/12/Python-featureClass-process/acc2a8a93eff45b0645012fd729fbf01.png"></p>
-<p>The above functional areas support the conversion of SHP, JSON, KML, KMZ, TXT,<br>CSV, DBF, Excel and other formats to map feature data. Click to enter the<br>function interface, as follows:</p>
+<p>The above functional areas support the conversion of SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other formats to map feature data. Click to enter the function interface, as follows:</p>
 <p><img src="/2021/04/12/Python-featureClass-process/020f9a36314024edd1f4cd08515820a4.png"></p>
-<p>In the program, several input areas can be added to the queue area to form a<br>queue list by “MoveTo” clicked. In the target selection area, the target path<br>supports physical path, GDB, MDB and SDE enterprise geo database, covering all<br>types of GIS applications. Thus, a data processing workflow is formed. Click<br>“doTransform” to start batch data processing, and the processing process<br>automatically saves the log.</p>
+<p>In the program, several input areas can be added to the queue area to form a queue list by “MoveTo” clicked. In the target selection area, the target path<br>supports physical path, GDB, MDB and SDE enterprise geo database, covering all types of GIS applications. Thus, a data processing workflow is formed. Click “doTransform” to start batch data processing, and the processing process automatically saves the log.</p>
 <h3 id="2-Map-features-to-other-types"><a href="#2-Map-features-to-other-types" class="headerlink" title="2: Map features to other types:"></a>2: Map features to other types:</h3><p><img src="/2021/04/12/Python-featureClass-process/29702165b3011351629fb75a2d6884a0.png"></p>
-<p>The above functional areas support featureclass to SHP, JSON, KML, KMZ, TXT,<br>CSV, DBF, Excel and other types of data. Click to enter the function interface,<br>as follows:<img src="/2021/04/12/Python-featureClass-process/806427d312e124ca92854262e4e85e1b.png"></p>
-<p>In the program, several input areas can be added to the selection area to form a<br>queue list by “MoveTo” clicked. Input data support SHP, GDB file type geographic<br>database, MDB personal geographic database, SDE enterprise type geographic<br>database, covering all types of GIS applications. Output types support SHP,<br>JSON, KML, KMZ, TXT, CSV, DBF, Excel: a data processing workflow is formed.<br>Click “ doTransform “ to start batch data processing. The process automatically<br>saves the log.</p>
+<p>The above functional areas support featureclass to SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other types of data. Click to enter the function interface as follows:<img src="/2021/04/12/Python-featureClass-process/806427d312e124ca92854262e4e85e1b.png"></p>
+<p>In the program, several input areas can be added to the selection area to form a queue list by “MoveTo” clicked. Input data support SHP, GDB file type geo database, MDB personal geo database, SDE enterprise type geo database, covering all types of GIS applications. Output types support SHP,JSON, KML, KMZ, TXT, CSV, DBF, Excel: a data processing workflow is formed.Click “ doTransform “ to start batch data processing. The process automatically<br>saves the log.</p>
 <h3 id="3-Append-and-merge-features"><a href="#3-Append-and-merge-features" class="headerlink" title="3:Append and merge features:"></a>3:Append and merge features:</h3><p><img src="/2021/04/12/Python-featureClass-process/8700787b34f412b97cbcaedc3d5ac25e.png"></p>
-<p>Map feature classes, including SHP layer, GDB feature class, MDB feature class<br>and SDE enterprise geo database feature class which are data tables to store<br>spatial geographic information actually. In the production process, the<br>application of appending or merging multiple layer data to one layer will be<br>very many. In the face of this demand, we provide the following concise<br>functions, and refine the corresponding rules that should be followed. The<br>functions are as follows:</p>
+<p>Map feature classes, including SHP layer, GDB feature class, MDB feature class and SDE enterprise geo database feature class which are data tables to store spatial geographic information actually. In the production process, the application of appending or merging multiple layer data to one layer will be<br>very many. In the face of this demand, we provide the following concise functions, and refine the corresponding rules that should be followed. The<br>functions are as follows:</p>
 <h4 id="3-1-Features-append"><a href="#3-1-Features-append" class="headerlink" title="3.1:Features append:"></a>3.1:Features append:</h4><p><img src="/2021/04/12/Python-featureClass-process/9b5aaeb1b34587aec9393768fa6848f3.png"></p>
-<p>Feature class append supports multiple to one addition of any data source from<br>SHP, GDB, MDB, SDE to SHP, GDB, MDB, and SDE. It controls whether the source<br>data and target data are allowed to have field structure differences or filter<br>through test or no test parameters. Test mode is forced to limit, and the source<br>data and target data format must be consistent, otherwise it cannot be run; no<br>test mode will filter field mapping, and only the source data conforming to the<br>mapping rules will be appended. Select no test mode, and the interface will<br>provide the following field mapping selection methods:</p>
+<p>Feature class append supports multiple to one addition of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, and SDE. It controls whether the source data and target data are allowed to have field structure differences or filter through test or no test parameters. Test mode is forced to limit, and the source data and target data format must be consistent, otherwise it cannot be run; no test mode will filter field mapping, and only the source data conforming to the mapping rules will be appended. Select no test mode, and the interface will provide the following field mapping selection methods:</p>
 <p><img src="/2021/04/12/Python-featureClass-process/01645348716277604f7c1f7e817dbfac.png"></p>
-<p>Please use the default mapping method Unless you specifically determined. The<br>workflow model is as follows:</p>
+<p>Please use the default mapping method Unless you specifically determined. The workflow model is as follows:</p>
 <p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p>
 <h4 id="3-2-Features-merge"><a href="#3-2-Features-merge" class="headerlink" title="3.2:Features merge:"></a>3.2:Features merge:</h4><p><img src="/2021/04/12/Python-featureClass-process/24ea00f7a467b1242662454d1485810a.png"></p>
-<p>You can click “create new dataset” or “create new feature class” to assign the<br>target data to a new location.</p>
+<p>You can click “create new dataset” or “create new feature class” to assign the target data to a new location.</p>
 <p><img src="/2021/04/12/Python-featureClass-process/1599c221af35fcd0a9d465de562ac600.png"></p>
 <p>create new dataset</p>
 <p><img src="/2021/04/12/Python-featureClass-process/903e9c3d34c8a9547c3a278c092bca5e.png"></p>
 <p>create new feature class</p>
-<p>The select datasets come from the Geodatabase which you select.Feature class<br>merging supports many to one merging of any data source from SHP, GDB, MDB, SDE<br>to SHP, GDB, MDB, SDE. The field mapping method is the same as appending. It<br>controls the field merging strategy. Unless specifically determined, the default<br>mapping method is used. The workflow model is as follows:</p>
+<p>The select datasets come from the Geodatabase which you select.Feature class merging supports many to one merging of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, SDE. The field mapping method is the same as appending. It controls the field merging strategy. Unless specifically determined, the default mapping method is used. The workflow model is as follows:</p>
 <p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p>
-<h3 id="4-Feature-classes-migration"><a href="#4-Feature-classes-migration" class="headerlink" title="4: Feature classes migration:"></a>4: Feature classes migration:</h3><p>Feature migration is to migrate the feature classes in SHP, GDB, MDB and SDE to<br>the specified target path, and automatically complete the data format<br>conversion. The following is the conversion model:</p>
+<h3 id="4-Feature-classes-migration"><a href="#4-Feature-classes-migration" class="headerlink" title="4: Feature classes migration:"></a>4: Feature classes migration:</h3><p>Feature migration is to migrate the feature classes in SHP, GDB, MDB and SDE to the specified target path, and automatically complete the data format<br>conversion. The following is the conversion model:</p>
 <h4 id="４-１-feature-class-migration-model"><a href="#４-１-feature-class-migration-model" class="headerlink" title="４.１: feature class migration model:"></a>４.１: feature class migration model:</h4><p><img src="/2021/04/12/Python-featureClass-process/2fb9add26af34d850b50aa0c901b4e53.png"></p>
 <p><img src="/2021/04/12/Python-featureClass-process/a3820e24a271f90f50a6ebbd261a3c5d.png"></p>
 <p><img src="/2021/04/12/Python-featureClass-process/378c768b47196802ea52d89f0d6919b6.png"></p>
 <p><img src="/2021/04/12/Python-featureClass-process/1f85dc8670ef985c0ff8b11d4f9c3866.png"></p>
 <h4 id="４-２-Feature-class-migration"><a href="#４-２-Feature-class-migration" class="headerlink" title="４.２: Feature class migration:"></a>４.２: Feature class migration:</h4><p><img src="/2021/04/12/Python-featureClass-process/b769919b1ba54d69983bc0004dbc71d4.png"></p>
 <h4 id="４-３-the-execution-process-is-as-follows"><a href="#４-３-the-execution-process-is-as-follows" class="headerlink" title="４.３: the execution process is as follows:"></a>４.３: the execution process is as follows:</h4><p><img src="/2021/04/12/Python-featureClass-process/d4a748dbdaaadd798c3b23f0059ab052.png"></p>
-<h3 id="5-Standard-coordinate-system-conversion"><a href="#5-Standard-coordinate-system-conversion" class="headerlink" title="5: Standard coordinate system conversion:"></a>5: Standard coordinate system conversion:</h3><p>Supports the mutual conversion between all geographic and projection coordinate<br>systems with EPSG standard definition. The source data in the conversion queue<br>can have different coordinate systems, and can be converted to the specified<br>geographic or projected coordinate system. The transformation model of<br>coordinate system is as follows (only some representative geographical and<br>projection coordinate systems are selected as examples), and other coordinate<br>systems are treated in the same way.</p>
+<h3 id="5-Standard-coordinate-system-conversion"><a href="#5-Standard-coordinate-system-conversion" class="headerlink" title="5: Standard coordinate system conversion:"></a>5: Standard coordinate system conversion:</h3><p>Supports the mutual conversion between all geographic and projection coordinate systems with EPSG standard definition. The source data in the conversion queue can have different coordinate systems, and can be converted to the specified GCS or PCS. The transformation model of coordinate system is as follows (only some representative GCS and PCS are selected as examples), and other coordinate systems are treated in the same way.</p>
 <p><img src="/2021/04/12/Python-featureClass-process/869f042deeaa229d707139565fb872dd.png"></p>
 <p>Interface description of standard coordinate system transformation:</p>
 <p><img src="/2021/04/12/Python-featureClass-process/2310fe5875c60e3cf4b3a0b955e30d20.png"></p>
-<p>In the coordinate system selection drop-down box of the target area, select the<br>target coordinate system for final conversion.</p>
+<p>In the coordinate system selection drop-down box of the target area, select the target coordinate system for final conversion.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/" data-id="ckniavd4u0003von01e557wey" data-title="PyramidMap GeoProcess workflow platform feature class processing" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/" data-id="cknigscxn0003ccn0blbqcqfu" data-title="PyramidMap GeoProcess workflow platform feature class processing" class="article-share-link">Share</a>
       
       
       
@@ -252,11 +252,11 @@
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-raster-process/">PyramidMap GeoProcess workflow platform raster processing</a>
+            <a href="/2021/04/12/Python-map-query/">PyramidMap GeoProcess workflow platform Map query and preview</a>
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-map-query/">PyramidMap GeoProcess workflow platform Map query and preview</a>
+            <a href="/2021/04/12/Python-raster-process/">PyramidMap GeoProcess workflow platform raster processing</a>
           </li>
         
           <li>

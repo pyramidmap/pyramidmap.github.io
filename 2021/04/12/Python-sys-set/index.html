@@ -6,12 +6,12 @@
   
   <title>PyramidMap GeoProcess workflow platform system set | The pyramidMap studio，structure the map pyramid.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="System settings1: GIS Server connection Server host &#x3D; ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account ofArc">
+  <meta name="description" content="System settings1: GIS Server connection Server host &#x3D; ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account of Ar">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyramidMap GeoProcess workflow platform system set">
 <meta property="og:url" content="https://pyramidmap.github.io/2021/04/12/Python-sys-set/index.html">
 <meta property="og:site_name" content="The pyramidMap studio，structure the map pyramid.....">
-<meta property="og:description" content="System settings1: GIS Server connection Server host &#x3D; ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account ofArc">
+<meta property="og:description" content="System settings1: GIS Server connection Server host &#x3D; ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account of Ar">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-sys-set/6462e2612f7574a82370e4d2e079d352.png">
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-sys-set/533b86e7990820f76bb575c06a7ecfb1.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-sys-set/8144d08df561d07aa547fb164bcd246b.png">
 <meta property="og:image" content="https://pyramidmap.github.io/2021/04/12/Python-sys-set/00876a447bcbcf767035d74736532580.png">
 <meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
-<meta property="article:modified_time" content="2021-04-14T09:18:18.000Z">
+<meta property="article:modified_time" content="2021-04-15T05:49:50.000Z">
 <meta property="article:author" content="Deepalways">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Workflow">
@@ -118,28 +118,28 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="System-settings"><a href="#System-settings" class="headerlink" title="System settings"></a>System settings</h2><h3 id="1-GIS-Server-connection"><a href="#1-GIS-Server-connection" class="headerlink" title="1: GIS Server connection"></a>1: GIS Server connection</h3><p><strong><img src="/2021/04/12/Python-sys-set/6462e2612f7574a82370e4d2e079d352.png"></strong></p>
-<p>Server host = ArcGIS Server host name or IP address, the default port is 6080,<br>according to the actual situation. The account is site administrator account of<br>ArcGIS Server. Please confirm with ArcGIS Server administrator.</p>
-<h3 id="2-Geo-database-creation"><a href="#2-Geo-database-creation" class="headerlink" title="2: Geo database creation"></a>2: Geo database creation</h3><p>ArcGIS supports Oracle, SQL server, PostgreSQL, DB2, infomix and other<br>relational databases as geo databases. This software support Oracle, SQL server,<br>PostgreSQL. Before performing this operation, please make sure there is a client<br>program connected with the above database on the computer. The database client<br>can be downloaded from the database website. Pay attention to the version<br>number. ArcGIS desktop is a 32-bit, so it only supports 32-bit client<br>connection. ArcGIS Server is a 64 bit, so only supports 64 bit client<br>connection. Here is how to create a geographic database in Oracle.</p>
+<p>Server host = ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account of ArcGIS Server. Please confirm with ArcGIS Server administrator.</p>
+<h3 id="2-Geo-database-creation"><a href="#2-Geo-database-creation" class="headerlink" title="2: Geo database creation"></a>2: Geo database creation</h3><p>ArcGIS supports Oracle, SQL server, PostgreSQL, DB2, infomix and other relational databases as geo databases. This software support Oracle, SQL server, PostgreSQL. Before performing this operation, please make sure there is a client program connected with the above database on the computer. The database client can be downloaded from the database website. Pay attention to the version number. ArcGIS desktop is a 32-bit, so it only supports 32-bit client connection. ArcGIS Server is a 64 bit, so only supports 64 bit client connection. The connection between ArcGIS desktop, pro, enterprise server and database does not belong to the scope of this section. If necessary, we will introduce it in a special chapter. Here is how to create a geographic database in Oracle.</p>
 <p><img src="/2021/04/12/Python-sys-set/533b86e7990820f76bb575c06a7ecfb1.png"></p>
-<p>Here, the service instance of Oracle is the database name. It’s the object of<br>geo database build in and must be exist in advance. The following is how to<br>create a geo database in SQL server.</p>
+<p>Here, the service instance of Oracle is the database name. It’s the object of geo database build in and must be exist in advance. The following is how to create a geo database in SQL server.</p>
 <p><img src="/2021/04/12/Python-sys-set/d81916a3b78d0ae912cc4089b6bc08f7.png"></p>
-<p>Here the service instance of SQL server is the data service name of SQL server.<br>The default is MSSqlServer,please confirm with database administrator. The “DBA<br>Account”is the account to sign in with db administrator mode which default is<br>“sa”. The “New Geodb”is the name of the geodatabase to be created. Different<br>from Oracle, the “New Geodb” which input will be created in this process and the<br>new Geodb’s account is “sde” default that cannot be modified. The following is<br>how to create a geographic database in PostgreSQL.</p>
+<p>Here the service instance of SQL server is the data service name of SQL server.The default is MSSqlServer,please confirm with database administrator. The “DBA Account”is the account to sign in with db administrator mode which default is “sa”. The “New Geodb”is the name of the geodatabase to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. The following is how to create a geographic database in PostgreSQL.</p>
 <p><img src="/2021/04/12/Python-sys-set/6db7505bf96c35dfad7592e0fcffa7dc.png"></p>
-<p>The “New Geodb”is the name of the geodatabase to be created. Different from<br>Oracle, the “New Geodb” which input will be created in this process and the new<br>Geodb’s account is “sde” default that cannot be modified. All operations need<br>the valid ArcGIS authorization ecp file. If the geodatabase already exists, you<br>only need to create a connection. The following is the process of creating a<br>geographic database connection.</p>
+<p>The “New Geodb” is the name of the geo database to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. All operations need the valid ArcGIS authorization ecp file. If the geodatabase already exists, you only need to create a connection. The following is the process of creating a geo database connection.</p>
 <h3 id="3-Geo-database-connection"><a href="#3-Geo-database-connection" class="headerlink" title="3: Geo database connection"></a>3: Geo database connection</h3><p>1: create an Oracle Geodatabase connection</p>
 <p><img src="/2021/04/12/Python-sys-set/fa5187ebdc64e80ca1ced163c5ecabf0.png"></p>
 <p>Here, the instance is the Oracle database name.</p>
 <p>2: create a SQL Server Geodatabase connection</p>
 <p><img src="/2021/04/12/Python-sys-set/8144d08df561d07aa547fb164bcd246b.png"></p>
-<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL<br>Server which you want to connect.</p>
+<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p>
 <p>3: create a PostgreSQL Geodatabase connection:</p>
 <p><img src="/2021/04/12/Python-sys-set/00876a447bcbcf767035d74736532580.png"></p>
-<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL<br>Server which you want to connect.</p>
+<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-sys-set/" data-id="ckniavd5e001mvon002e1duf7" data-title="PyramidMap GeoProcess workflow platform system set" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-sys-set/" data-id="cknigscy20014ccn09qo69fkc" data-title="PyramidMap GeoProcess workflow platform system set" class="article-share-link">Share</a>
       
       
       
@@ -151,11 +151,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/04/12/Python-map-query/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/04/12/Python-raster-process/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          PyramidMap GeoProcess workflow platform Map query and preview
+          PyramidMap GeoProcess workflow platform raster processing
         
       </div>
     </a>
@@ -230,11 +230,11 @@
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-raster-process/">PyramidMap GeoProcess workflow platform raster processing</a>
+            <a href="/2021/04/12/Python-map-query/">PyramidMap GeoProcess workflow platform Map query and preview</a>
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-map-query/">PyramidMap GeoProcess workflow platform Map query and preview</a>
+            <a href="/2021/04/12/Python-raster-process/">PyramidMap GeoProcess workflow platform raster processing</a>
           </li>
         
           <li>
