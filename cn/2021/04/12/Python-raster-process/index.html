@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>PyramidMap 地理数据处理工作流平台栅格处理 | 金字塔地图工作室，构建地图金字塔.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="影像数据处理： 包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下： 5.1：影像压缩： 压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。  处理过程会保存日志，处理完毕进行消息提">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyramidMap 地理数据处理工作流平台栅格处理">
+<meta property="og:url" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/index.html">
+<meta property="og:site_name" content="金字塔地图工作室，构建地图金字塔.....">
+<meta property="og:description" content="影像数据处理： 包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下： 5.1：影像压缩： 压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。  处理过程会保存日志，处理完毕进行消息提">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/a58076d79f91b8b775ef783b7d18319a.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/9c8b36090d5c59d6de3b0a7f471cb264.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/1274dca8656689ab48ef3569d4db62c8.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/b666cbcf4ec7e4948def96bfc6d9e0a8.jpeg">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/1f097149a5f8a22bafeb87a22a5c1fbe.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/2e7665a90431af80b54e866e2debd9bd.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/c2b476049a8e7a3a8794ee4ce7fb0a76.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/24e34bbf94b0fc2ca8e5c6e2230a5e16.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/70881813c63b7738fbf156d4f90ffe78.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg">
+<meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
+<meta property="article:modified_time" content="2021-04-15T03:01:34.000Z">
+<meta property="article:author" content="Deepalways">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="数据处理工作流">
+<meta property="article:tag" content="GCS 与 PCS">
+<meta property="article:tag" content="矢量 与 栅格">
+<meta property="article:tag" content="地图查询及预览">
+<meta property="article:tag" content="要素 与 地理数据库">
+<meta property="article:tag" content="Arcpy 与 GDAL">
+<meta property="article:tag" content="空间数据转换">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png">
+  
+    <link rel="alternate" href="/cn/atom.xml" title="金字塔地图工作室，构建地图金字塔....." type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/cn/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/cn/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/cn/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/cn/" id="logo">金字塔地图工作室，构建地图金字塔.....</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/cn/">首页</a>
+        
+          <a class="main-nav-link" href="/cn/archives">归档</a>
+        
+          <a class="main-nav-link" href="https://pyramidmap.github.io">English</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/cn/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pyramidmap.github.io/cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Python-raster-process" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/cn/2021/04/12/Python-raster-process/" class="article-date">
+  <time class="dt-published" datetime="2021-04-12T06:46:58.000Z" itemprop="datePublished">2021-04-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap 地理数据处理工作流</a>►<a class="article-category-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/6%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/">6：栅格处理</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      PyramidMap 地理数据处理工作流平台栅格处理
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p>
+<p>包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下：</p>
+<h3 id="5-1：影像压缩："><a href="#5-1：影像压缩：" class="headerlink" title="5.1：影像压缩："></a>5.1：影像压缩：</h3><p><img src="/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png"></p>
+<p>压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/a58076d79f91b8b775ef783b7d18319a.png" alt="影像压缩完成"></p>
+<p>处理过程会保存日志，处理完毕进行消息提示。</p>
+<h3 id="5-2：影像切分："><a href="#5-2：影像切分：" class="headerlink" title="5.2：影像切分："></a>5.2：影像切分：</h3><p><img src="/cn/2021/04/12/Python-raster-process/9c8b36090d5c59d6de3b0a7f471cb264.png"></p>
+<p>切分数量通过目标区的切分基数设定，规则是长宽各按选择的数量切分，最终的切片数为n*n。过程中，可以选择是否对切分后的影像进行无效值处理，从而避免黑色无效像素的出现。如果切分的源影像本身已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确源数据无效值状态。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/1274dca8656689ab48ef3569d4db62c8.png"></p>
+<p><img src="/cn/2021/04/12/Python-raster-process/b666cbcf4ec7e4948def96bfc6d9e0a8.jpeg" alt="影像切分后"></p>
+<p>上图就是经过切分处理的切片与原图像的对比。</p>
+<h3 id="5-3：影像合并："><a href="#5-3：影像合并：" class="headerlink" title="5.3：影像合并："></a>5.3：影像合并：</h3><p>影像合并与切分是逆过程，程序可以将属于同一坐标系的等分切片合成为一张完整的影像。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/1f097149a5f8a22bafeb87a22a5c1fbe.png"></p>
+<p>目标区参数控制合并规则，可以通过速度与精度的适配，选择适合的合并模式。可以对合并后的影像进行无效值处理，从而避免黑色无效像素的出现。如果合并的所有源影像已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确元数据状态。构建金字塔，有助于提高影像的加载速度，可以选择执行。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/2e7665a90431af80b54e866e2debd9bd.png" alt="影像合并示意图"></p>
+<p>上图就是切片影像与合并图像的对比。</p>
+<h3 id="5-4：影像类数据转换："><a href="#5-4：影像类数据转换：" class="headerlink" title="5.4：影像类数据转换："></a>5.4：影像类数据转换：</h3><p>完成影像类地图在不同数据类型、像素位深、色彩映射表及波段、多维数据处理等之间进行相互转换。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/c2b476049a8e7a3a8794ee4ce7fb0a76.png"></p>
+<p>您可以设置目标的像素深度类型和格式，也可以与原文件保持不变。正常情况下，文件类型栅格数据集1位栅格包含8位金字塔层，而在地理数据库中只包含1位金字塔层，这使得显示看起来很不美观。因此，在栅格导入到地理数据库时，您可以选择将输入的1位光栅数据集转换为8位光栅数据集。</p>
+<p>如果栅格输入具有颜色映射表，则可以将目标转换为三波段光栅。这对于包含不同颜色映射表的镶嵌数据集光栅非常有用。还可以设置光栅或镶嵌数据集的像素位深度，如果未定义，则默认从第一个光栅数据集获取。</p>
+<p>如果目标光栅的像素类型与输入不同（例如，从16位到8位），可以选择将值缩放到新范围；否则，将丢弃不符合新像素范围的值。</p>
+<p>如果要抑制从屏幕捕捉或扫描地图或扫描文档的中的噪声，可以选择使用“颜色映射表”将8位3波段（RGB）光栅转换为单波段光栅数据集。但对于卫星、航空影像或专题栅格数据，不建议如此操作。</p>
+<h3 id="5-5：影像类坐标系转换："><a href="#5-5：影像类坐标系转换：" class="headerlink" title="5.5：影像类坐标系转换："></a>5.5：影像类坐标系转换：</h3><p><img src="/cn/2021/04/12/Python-raster-process/24e34bbf94b0fc2ca8e5c6e2230a5e16.png" alt="影像类坐标系转换"></p>
+<p>与矢量图层坐标系转换相同，具有标准坐标系定义的影像类，可以在不同坐标系之间相互转换，程序提供转换流程处理，实现批量化工单。以下是操作流程：</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/70881813c63b7738fbf156d4f90ffe78.png"></p>
+<h3 id="5-6：批量构建影像金字塔："><a href="#5-6：批量构建影像金字塔：" class="headerlink" title="5.6：批量构建影像金字塔："></a>5.6：批量构建影像金字塔：</h3><p>对影像构建金字塔可以加快影像加载速度。程序支持影像金字塔的参数化批量生成。</p>
+<p><img src="/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg"></p>
+<p>金字塔可以加速图像加载。程序支持图像金字塔的参数化批量生成。通常情况下，在光栅上构建金字塔可以改善显示效果表演。只构建一次，则后期每次显示都会访问金字塔。对于行或列中小于1024像素的光栅，即使您选择，也不会构建金字塔。小波变换压缩光栅（如ECW和MrSID）不需要构建金字塔，因为在编码时已经创建了内部金字塔。在构建栅格金字塔过程中，您可以指定金字塔等级（可选）、跳过等级（可选），重采样方式（可选），压缩类型（可选），压缩质量（可选），所有这些参数都在上面列表中提供说明。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/" data-id="ckniaw0la0007dsn0hq3lbfh3" data-title="PyramidMap 地理数据处理工作流平台栅格处理" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" rel="tag">Arcpy 与 GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/GCS-%E4%B8%8E-PCS/" rel="tag">GCS 与 PCS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" rel="tag">地图查询及预览</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">数据处理工作流</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" rel="tag">矢量 与 栅格</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" rel="tag">空间数据转换</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E8%A6%81%E7%B4%A0-%E4%B8%8E-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">要素 与 地理数据库</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/cn/2021/04/12/Python-map-query/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          PyramidMap 地理数据处理工作流平台地图查询预览
+        
+      </div>
+    </a>
+  
+  
+    <a href="/cn/2021/04/12/Python-sys-set/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">PyramidMap 地理数据处理工作流平台系统设置</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-API-For-JS/">PyramidMap API For JS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-API-For-JS/%E7%AE%80%E4%BB%8B/">简介</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-API-For-JS-%E6%8E%A5%E5%8F%A3/">PyramidMap API For JS 接口</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-API-For-JS-%E6%8E%A5%E5%8F%A3/%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">基本功能</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap 地理数据处理工作流</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/1%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/">1：功能清单</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/2%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/">2：界面说明</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/3%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">3：系统设置</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/4%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/">4：地图查询及预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/5%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/">5：要素类处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/6%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/">6：栅格处理</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" rel="tag">Arcpy 与 GDAL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/GCS-%E4%B8%8E-PCS/" rel="tag">GCS 与 PCS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Map-view/" rel="tag">Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-GL/" rel="tag">Web GL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-JS/" rel="tag">Web JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-Map-view/" rel="tag">Web Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" rel="tag">地图查询及预览</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">数据处理工作流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" rel="tag">矢量 与 栅格</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" rel="tag">空间数据转换</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E8%A6%81%E7%B4%A0-%E4%B8%8E-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">要素 与 地理数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" style="font-size: 20px;">Arcpy 与 GDAL</a> <a href="/cn/tags/GCS-%E4%B8%8E-PCS/" style="font-size: 20px;">GCS 与 PCS</a> <a href="/cn/tags/JS-Widget/" style="font-size: 10px;">JS Widget</a> <a href="/cn/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/cn/tags/Python/" style="font-size: 20px;">Python</a> <a href="/cn/tags/Web-GL/" style="font-size: 15px;">Web GL</a> <a href="/cn/tags/Web-JS/" style="font-size: 10px;">Web JS</a> <a href="/cn/tags/Web-Map-view/" style="font-size: 10px;">Web Map view</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" style="font-size: 20px;">地图查询及预览</a> <a href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 20px;">数据处理工作流</a> <a href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" style="font-size: 20px;">矢量 与 栅格</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" style="font-size: 20px;">空间数据转换</a> <a href="/cn/tags/%E8%A6%81%E7%B4%A0-%E4%B8%8E-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 20px;">要素 与 地理数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/04/">四月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/cn/2021/04/13/pyramid-introduce/">PyramidMap API For JS 简介</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/04/13/JS-basefunction/">PyramidMap API For JS 基本功能</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/04/12/Python-map-query/">PyramidMap 地理数据处理工作流平台地图查询预览</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Deepalways<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/cn/" class="mobile-nav-link">首页</a>
+  
+    <a href="/cn/archives" class="mobile-nav-link">归档</a>
+  
+    <a href="https://pyramidmap.github.io" class="mobile-nav-link">English</a>
+  
+</nav>
+    
+
+
+<script src="/cn/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/cn/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/cn/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
