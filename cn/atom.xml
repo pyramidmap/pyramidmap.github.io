@@ -77,6 +77,38 @@
   </entry>
   
   <entry>
+    <title>PyramidMap 地理数据处理工作流平台GIS Server查询及地图预览</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T07:28:14.054Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地图服务信息查询："><a href="#地图服务信息查询：" class="headerlink" title="地图服务信息查询："></a>地图服务信息查询：</h2><h3 id="1：地图服务列表："><a href="#1：地图服务列表：" class="headerlink" title="1：地图服务列表："></a>1：地图服务列表：</h3><p><img src="/cn/2021/04/12/Python-GisServer-query/f96e059f9fb980e09a81e06cd5916966.png"></p><p>列表中的地图服务可以右键导出为shp、excel、json、csv，并可进行地图预览。</p><h3 id="2：地图服务导出及地图预览："><a href="#2：地图服务导出及地图预览：" class="headerlink" title="2：地图服务导出及地图预览："></a>2：地图服务导出及地图预览：</h3><h4 id="2-1：地图服务导出为excel-示例-："><a href="#2-1：地图服务导出为excel-示例-：" class="headerlink" title="2.1：地图服务导出为excel(示例)："></a>2.1：地图服务导出为excel(示例)：</h4><p><strong><img src="/cn/2021/04/12/Python-GisServer-query/d0a08847f5c9cbb788a439fde091a2a4.png" alt="导出为excel1"></strong></p><h4 id="2-2：地图服务预览："><a href="#2-2：地图服务预览：" class="headerlink" title="2.2：地图服务预览："></a>2.2：地图服务预览：</h4><p>1：符号化设置</p><p><strong><img src="/cn/2021/04/12/Python-GisServer-query/34adbbbac3b804fba9d21245738f666b.png" alt="省界符号选择1"><br><img src="/cn/2021/04/12/Python-GisServer-query/1b67175f83bb2de04aa25cf508845030.png" alt="省界符号选择0"></strong></p><p>地图按符号化设置进行显示预览：</p><p><img src="/cn/2021/04/12/Python-GisServer-query/4f58f77940a9f7dabf27ae5eca84d25d.png" alt="省界符号选择"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="9：GIS Server查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/9%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PyramidMap 地理数据处理工作流平台要素类处理</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/</id>
@@ -102,6 +134,8 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
     <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
     
     <category term="矢量 与 栅格" scheme="https://pyramidmap.github.io/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/"/>
@@ -113,8 +147,6 @@
     <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/cn/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="空间数据转换" scheme="https://pyramidmap.github.io/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
     
@@ -146,6 +178,10 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
     <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
     
     <category term="矢量 与 栅格" scheme="https://pyramidmap.github.io/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/"/>
@@ -158,15 +194,11 @@
     
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/cn/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
     
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
     <category term="空间数据转换" scheme="https://pyramidmap.github.io/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
     
     <category term="地图查询及预览" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
     
     <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="wms/wfs/wcs" scheme="https://pyramidmap.github.io/cn/tags/wms-wfs-wcs/"/>
     
@@ -200,9 +232,9 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
-    
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     
     <category term="地图查询及预览" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
     
@@ -241,6 +273,42 @@
   </entry>
   
   <entry>
+    <title>PyramidMap 地理数据处理工作流平台栅格处理</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T04:10:37.974Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p><p>包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下：</p><h3 id="5-1：影像压缩："><a href="#5-1：影像压缩：" class="headerlink" title="5.1：影像压缩："></a>5.1：影像压缩：</h3><p><img src="/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png"></p><p>压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。</p><p><img src="/cn/2021/04/12/Python-raster-process/a58076d79f91b8b775ef783b7d18319a.png" alt="影像压缩完成"></p><p>处理过程会保存日志，处理完毕进行消息提示。</p><h3 id="5-2：影像切分："><a href="#5-2：影像切分：" class="headerlink" title="5.2：影像切分："></a>5.2：影像切分：</h3><p><img src="/cn/2021/04/12/Python-raster-process/9c8b36090d5c59d6de3b0a7f471cb264.png"></p><p>切分数量通过目标区的切分基数设定，规则是长宽各按选择的数量切分，最终的切片数为n*n。过程中，可以选择是否对切分后的影像进行无效值处理，从而避免黑色无效像素的出现。如果切分的源影像本身已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确源数据无效值状态。</p><p><img src="/cn/2021/04/12/Python-raster-process/1274dca8656689ab48ef3569d4db62c8.png"></p><p><img src="/cn/2021/04/12/Python-raster-process/b666cbcf4ec7e4948def96bfc6d9e0a8.jpeg" alt="影像切分后"></p><p>上图就是经过切分处理的切片与原图像的对比。</p><h3 id="5-3：影像合并："><a href="#5-3：影像合并：" class="headerlink" title="5.3：影像合并："></a>5.3：影像合并：</h3><p>影像合并与切分是逆过程，程序可以将属于同一坐标系的等分切片合成为一张完整的影像。</p><p><img src="/cn/2021/04/12/Python-raster-process/1f097149a5f8a22bafeb87a22a5c1fbe.png"></p><p>目标区参数控制合并规则，可以通过速度与精度的适配，选择适合的合并模式。可以对合并后的影像进行无效值处理，从而避免黑色无效像素的出现。如果合并的所有源影像已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确元数据状态。构建金字塔，有助于提高影像的加载速度，可以选择执行。</p><p><img src="/cn/2021/04/12/Python-raster-process/2e7665a90431af80b54e866e2debd9bd.png" alt="影像合并示意图"></p><p>上图就是切片影像与合并图像的对比。</p><h3 id="5-4：影像类数据转换："><a href="#5-4：影像类数据转换：" class="headerlink" title="5.4：影像类数据转换："></a>5.4：影像类数据转换：</h3><p>完成影像类地图在不同数据类型、像素位深、色彩映射表及波段、多维数据处理等之间进行相互转换。</p><p><img src="/cn/2021/04/12/Python-raster-process/c2b476049a8e7a3a8794ee4ce7fb0a76.png"></p><p>您可以设置目标的像素深度类型和格式，也可以与原文件保持不变。正常情况下，文件类型栅格数据集1位栅格包含8位金字塔层，而在地理数据库中只包含1位金字塔层，这使得显示看起来很不美观。因此，在栅格导入到地理数据库时，您可以选择将输入的1位光栅数据集转换为8位光栅数据集。如果栅格输入具有颜色映射表，则可以将目标转换为三波段光栅。这对于包含不同颜色映射表的镶嵌数据集光栅非常有用。还可以设置光栅或镶嵌数据集的像素位深度，如果未定义，则默认从第一个光栅数据集获取。如果目标光栅的像素类型与输入不同（例如，从16位到8位），可以选择将值缩放到新范围；否则，将丢弃不符合新像素范围的值。如果要抑制从屏幕捕捉或扫描地图或扫描文档的中的噪声，可以选择使用“颜色映射表”将8位3波段（RGB）光栅转换为单波段光栅数据集。但对于卫星、航空影像或专题栅格数据，不建议如此操作。</p><h3 id="5-5：影像类坐标系转换："><a href="#5-5：影像类坐标系转换：" class="headerlink" title="5.5：影像类坐标系转换："></a>5.5：影像类坐标系转换：</h3><p><img src="/cn/2021/04/12/Python-raster-process/24e34bbf94b0fc2ca8e5c6e2230a5e16.png" alt="影像类坐标系转换"></p><p>与矢量图层坐标系转换相同，具有标准坐标系定义的影像类，可以在不同坐标系之间相互转换，程序提供转换流程处理，实现批量化工单。以下是操作流程：</p><p><img src="/cn/2021/04/12/Python-raster-process/70881813c63b7738fbf156d4f90ffe78.png"></p><h3 id="5-6：批量构建影像金字塔："><a href="#5-6：批量构建影像金字塔：" class="headerlink" title="5.6：批量构建影像金字塔："></a>5.6：批量构建影像金字塔：</h3><p>对影像构建金字塔可以加快影像加载速度。程序支持影像金字塔的参数化批量生成。</p><p><img src="/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg"></p><p>金字塔可以加速图像加载。程序支持图像金字塔的参数化批量生成。通常情况下，在光栅上构建金字塔可以改善显示效果表演。只构建一次，则后期每次显示都会访问金字塔。对于行或列中小于1024像素的光栅，即使您选择，也不会构建金字塔。小波变换压缩光栅（如ECW和MrSID）不需要构建金字塔，因为在编码时已经创建了内部金字塔。在构建栅格金字塔过程中，您可以指定金字塔等级（可选）、跳过等级（可选），重采样方式（可选），压缩类型（可选），压缩质量（可选），所有这些参数都在上面列表中提供说明。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="6：栅格处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/6%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
+    
+    <category term="矢量 与 栅格" scheme="https://pyramidmap.github.io/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/"/>
+    
+    <category term="空间数据转换" scheme="https://pyramidmap.github.io/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PyramidMap 地理数据处理工作流平台发布地图服务</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-publish-mapServer/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-publish-mapServer/</id>
@@ -266,11 +334,11 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="wms/wfs/wcs" scheme="https://pyramidmap.github.io/cn/tags/wms-wfs-wcs/"/>
     
@@ -302,47 +370,11 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
     <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
     
-  </entry>
-  
-  <entry>
-    <title>PyramidMap 地理数据处理工作流平台栅格处理</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T04:10:37.974Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p><p>包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下：</p><h3 id="5-1：影像压缩："><a href="#5-1：影像压缩：" class="headerlink" title="5.1：影像压缩："></a>5.1：影像压缩：</h3><p><img src="/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png"></p><p>压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。</p><p><img src="/cn/2021/04/12/Python-raster-process/a58076d79f91b8b775ef783b7d18319a.png" alt="影像压缩完成"></p><p>处理过程会保存日志，处理完毕进行消息提示。</p><h3 id="5-2：影像切分："><a href="#5-2：影像切分：" class="headerlink" title="5.2：影像切分："></a>5.2：影像切分：</h3><p><img src="/cn/2021/04/12/Python-raster-process/9c8b36090d5c59d6de3b0a7f471cb264.png"></p><p>切分数量通过目标区的切分基数设定，规则是长宽各按选择的数量切分，最终的切片数为n*n。过程中，可以选择是否对切分后的影像进行无效值处理，从而避免黑色无效像素的出现。如果切分的源影像本身已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确源数据无效值状态。</p><p><img src="/cn/2021/04/12/Python-raster-process/1274dca8656689ab48ef3569d4db62c8.png"></p><p><img src="/cn/2021/04/12/Python-raster-process/b666cbcf4ec7e4948def96bfc6d9e0a8.jpeg" alt="影像切分后"></p><p>上图就是经过切分处理的切片与原图像的对比。</p><h3 id="5-3：影像合并："><a href="#5-3：影像合并：" class="headerlink" title="5.3：影像合并："></a>5.3：影像合并：</h3><p>影像合并与切分是逆过程，程序可以将属于同一坐标系的等分切片合成为一张完整的影像。</p><p><img src="/cn/2021/04/12/Python-raster-process/1f097149a5f8a22bafeb87a22a5c1fbe.png"></p><p>目标区参数控制合并规则，可以通过速度与精度的适配，选择适合的合并模式。可以对合并后的影像进行无效值处理，从而避免黑色无效像素的出现。如果合并的所有源影像已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确元数据状态。构建金字塔，有助于提高影像的加载速度，可以选择执行。</p><p><img src="/cn/2021/04/12/Python-raster-process/2e7665a90431af80b54e866e2debd9bd.png" alt="影像合并示意图"></p><p>上图就是切片影像与合并图像的对比。</p><h3 id="5-4：影像类数据转换："><a href="#5-4：影像类数据转换：" class="headerlink" title="5.4：影像类数据转换："></a>5.4：影像类数据转换：</h3><p>完成影像类地图在不同数据类型、像素位深、色彩映射表及波段、多维数据处理等之间进行相互转换。</p><p><img src="/cn/2021/04/12/Python-raster-process/c2b476049a8e7a3a8794ee4ce7fb0a76.png"></p><p>您可以设置目标的像素深度类型和格式，也可以与原文件保持不变。正常情况下，文件类型栅格数据集1位栅格包含8位金字塔层，而在地理数据库中只包含1位金字塔层，这使得显示看起来很不美观。因此，在栅格导入到地理数据库时，您可以选择将输入的1位光栅数据集转换为8位光栅数据集。如果栅格输入具有颜色映射表，则可以将目标转换为三波段光栅。这对于包含不同颜色映射表的镶嵌数据集光栅非常有用。还可以设置光栅或镶嵌数据集的像素位深度，如果未定义，则默认从第一个光栅数据集获取。如果目标光栅的像素类型与输入不同（例如，从16位到8位），可以选择将值缩放到新范围；否则，将丢弃不符合新像素范围的值。如果要抑制从屏幕捕捉或扫描地图或扫描文档的中的噪声，可以选择使用“颜色映射表”将8位3波段（RGB）光栅转换为单波段光栅数据集。但对于卫星、航空影像或专题栅格数据，不建议如此操作。</p><h3 id="5-5：影像类坐标系转换："><a href="#5-5：影像类坐标系转换：" class="headerlink" title="5.5：影像类坐标系转换："></a>5.5：影像类坐标系转换：</h3><p><img src="/cn/2021/04/12/Python-raster-process/24e34bbf94b0fc2ca8e5c6e2230a5e16.png" alt="影像类坐标系转换"></p><p>与矢量图层坐标系转换相同，具有标准坐标系定义的影像类，可以在不同坐标系之间相互转换，程序提供转换流程处理，实现批量化工单。以下是操作流程：</p><p><img src="/cn/2021/04/12/Python-raster-process/70881813c63b7738fbf156d4f90ffe78.png"></p><h3 id="5-6：批量构建影像金字塔："><a href="#5-6：批量构建影像金字塔：" class="headerlink" title="5.6：批量构建影像金字塔："></a>5.6：批量构建影像金字塔：</h3><p>对影像构建金字塔可以加快影像加载速度。程序支持影像金字塔的参数化批量生成。</p><p><img src="/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg"></p><p>金字塔可以加速图像加载。程序支持图像金字塔的参数化批量生成。通常情况下，在光栅上构建金字塔可以改善显示效果表演。只构建一次，则后期每次显示都会访问金字塔。对于行或列中小于1024像素的光栅，即使您选择，也不会构建金字塔。小波变换压缩光栅（如ECW和MrSID）不需要构建金字塔，因为在编码时已经创建了内部金字塔。在构建栅格金字塔过程中，您可以指定金字塔等级（可选）、跳过等级（可选），重采样方式（可选），压缩类型（可选），压缩质量（可选），所有这些参数都在上面列表中提供说明。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="6：栅格处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/6%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
-    
-    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
-    
-    <category term="矢量 与 栅格" scheme="https://pyramidmap.github.io/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/"/>
-    
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
-    <category term="空间数据转换" scheme="https://pyramidmap.github.io/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
+    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   

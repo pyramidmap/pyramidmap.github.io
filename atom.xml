@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/"/>
-  <updated>2021-04-16T03:45:59.701Z</updated>
+  <updated>2021-04-16T07:22:35.708Z</updated>
   <id>https://pyramidmap.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform Gis Server query and preview</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T07:22:35.708Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Map-service-information"><a href="#Map-service-information" class="headerlink" title="Map service information:"></a>Map service information:</h2><h3 id="1-Map-service-list"><a href="#1-Map-service-list" class="headerlink" title="1: Map service list:"></a>1: Map service list:</h3><p><img src="/2021/04/12/Python-GisServer-query/4e040e508d88eaa009ee9b656b79887f.png"></p><p>Map services in the list can be right-click to export to SHP, Excel, JSON and CSV, and map preview can be carried out. Users can create new ArcGIS Server connections in this case and publish map server to and export mapserver list.</p><h3 id="2-Map-service-export-and-map-preview"><a href="#2-Map-service-export-and-map-preview" class="headerlink" title="2: Map service export and map preview:"></a>2: Map service export and map preview:</h3><h4 id="2-1-export-map-service-to-excel-example"><a href="#2-1-export-map-service-to-excel-example" class="headerlink" title="2.1: export map service to excel (example)"></a>2.1: export map service to excel (example)</h4><p>Select GIS Server in the Server list and click the “Export MapServer List” button to export the services list hosted in the server. Such as the following excel.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/d0a08847f5c9cbb788a439fde091a2a4.png" alt="导出为excel1"></strong></p><h4 id="2-2-Data-and-map-preview"><a href="#2-2-Data-and-map-preview" class="headerlink" title="2.2: Data and map preview:"></a>2.2: Data and map preview:</h4><p>1: Data query</p><p><img src="/2021/04/12/Python-GisServer-query/b7e73ab7ec696bf00c8dceb53af93851.png"></p><p>2: Map symbolic settings</p><p><strong><img src="/2021/04/12/Python-GisServer-query/11340cae3c1e4627478ff69bc75eca4c.png"></strong></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/1b67175f83bb2de04aa25cf508845030.png" alt="省界符号选择0"></strong></p><p>The map is displayed and previewed according to the symbolic settings</p><p><img src="/2021/04/12/Python-GisServer-query/463931cd898595f144b757a804fafd0e.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="9：Gis Server query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/9%EF%BC%9AGis-Server-query-and-preview/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+  </entry>
   
   <entry>
     <title>PyramidMap GeoProcess workflow platform feature class processing</title>
@@ -42,17 +76,17 @@
     
     <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
     
-    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
-    
     <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
     
     <category term="Map imp to GeoDatabase" scheme="https://pyramidmap.github.io/tags/Map-imp-to-GeoDatabase/"/>
     
     <category term="GeoDatabase exp to Map" scheme="https://pyramidmap.github.io/tags/GeoDatabase-exp-to-Map/"/>
     
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
     
   </entry>
   
@@ -82,9 +116,13 @@
     
     <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
     
-    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
-    
     <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
     
     <category term="Map imp to GeoDatabase" scheme="https://pyramidmap.github.io/tags/Map-imp-to-GeoDatabase/"/>
     
@@ -92,21 +130,53 @@
     
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
     
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
     <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
     
     <category term="GeoDatabase" scheme="https://pyramidmap.github.io/tags/GeoDatabase/"/>
     
     <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
     
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
-    
     <category term="wms/wfs/wcs" scheme="https://pyramidmap.github.io/tags/wms-wfs-wcs/"/>
     
     <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
     
     <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/tags/GeoTools-and-GeoServer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform Map query and preview</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-map-query/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-map-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T03:48:49.447Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Shp-amp-Feature-class-query-and-preview"><a href="#Shp-amp-Feature-class-query-and-preview" class="headerlink" title="Shp&amp;Feature class query and preview"></a>Shp&amp;Feature class query and preview</h2><p><img src="/2021/04/12/Python-map-query/7f2ad0244fdc5aab0f02add9cd8b90f1.png"></p><p>In the map display area, you can query and display vector and image maps of different data sources, and display layer data in the form of a list, including<br>layer name, feature type, geometric type, coordinate system type, name and code, whether there is a spatial index, and the number of features in each layer. Each record in the list can be operated by right-click menu, such as skipping to map data and preview interface.</p><p><img src="/2021/04/12/Python-map-query/148a6affac35b42332ceeeb61e4a5542.png"></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><img src="/2021/04/12/Python-map-query/6267ddda7c1d2f4160c9c7e74137f1e3.png"></p><p>Map preview：</p><p><img src="/2021/04/12/Python-map-query/00e0172d10c5d37985f056f01f43cc90.png"></p><p>This’s the map view of all features in the shp or gdb/mdb/sde feathure class.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="4：Map query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/4%EF%BC%9AMap-query-and-preview/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GeoDatabase exp to Map" scheme="https://pyramidmap.github.io/tags/GeoDatabase-exp-to-Map/"/>
+    
+    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
     
   </entry>
   
@@ -145,42 +215,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap GeoProcess workflow platform Map query and preview</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-map-query/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-map-query/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T03:48:49.447Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Shp-amp-Feature-class-query-and-preview"><a href="#Shp-amp-Feature-class-query-and-preview" class="headerlink" title="Shp&amp;Feature class query and preview"></a>Shp&amp;Feature class query and preview</h2><p><img src="/2021/04/12/Python-map-query/7f2ad0244fdc5aab0f02add9cd8b90f1.png"></p><p>In the map display area, you can query and display vector and image maps of different data sources, and display layer data in the form of a list, including<br>layer name, feature type, geometric type, coordinate system type, name and code, whether there is a spatial index, and the number of features in each layer. Each record in the list can be operated by right-click menu, such as skipping to map data and preview interface.</p><p><img src="/2021/04/12/Python-map-query/148a6affac35b42332ceeeb61e4a5542.png"></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><img src="/2021/04/12/Python-map-query/6267ddda7c1d2f4160c9c7e74137f1e3.png"></p><p>Map preview：</p><p><img src="/2021/04/12/Python-map-query/00e0172d10c5d37985f056f01f43cc90.png"></p><p>This’s the map view of all features in the shp or gdb/mdb/sde feathure class.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
-    
-    <category term="4：Map query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/4%EF%BC%9AMap-query-and-preview/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="GeoDatabase exp to Map" scheme="https://pyramidmap.github.io/tags/GeoDatabase-exp-to-Map/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap GeoProcess workflow platform create mxd</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/</id>
@@ -208,11 +242,11 @@
     
     <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
     
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
+    
     <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
     
     <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
     
   </entry>
   
@@ -242,11 +276,11 @@
     
     <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
     
-    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
-    
     <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
     
     <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
     
     <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
     
