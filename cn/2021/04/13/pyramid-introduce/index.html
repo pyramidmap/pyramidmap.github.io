@@ -6,17 +6,17 @@
   
   <title>PyramidMap API For JS 简介 | 金字塔地图工作室，构建地图金字塔.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="PyramidMap是金子塔底图工作室面向敏捷性应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插">
+  <meta name="description" content="PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyramidMap API For JS 简介">
 <meta property="og:url" content="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/index.html">
 <meta property="og:site_name" content="金字塔地图工作室，构建地图金字塔.....">
-<meta property="og:description" content="PyramidMap是金子塔底图工作室面向敏捷性应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插">
+<meta property="og:description" content="PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/mapview.png">
 <meta property="article:published_time" content="2021-04-13T05:53:18.000Z">
-<meta property="article:modified_time" content="2021-04-15T05:30:50.000Z">
-<meta property="article:author" content="Deepalways">
+<meta property="article:modified_time" content="2021-04-16T00:34:52.000Z">
+<meta property="article:author" content="PyramidMap">
 <meta property="article:tag" content="Web GL">
 <meta property="article:tag" content="Web JS">
 <meta property="article:tag" content="Map view">
@@ -60,6 +60,10 @@
         <a id="main-nav-toggle" class="nav-icon"></a>
         
           <a class="main-nav-link" href="/cn/">首页</a>
+        
+          <a class="main-nav-link" href="/cn/tags">标签</a>
+        
+          <a class="main-nav-link" href="/cn/catagories">分类</a>
         
           <a class="main-nav-link" href="/cn/archives">归档</a>
         
@@ -106,16 +110,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>PyramidMap是金子塔底图工作室面向敏捷性应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎以widget组件模式输出地图服务及开发接口，内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。下面是PyramidMap实现一幅地图的逻辑框架图：</p>
+      
+      	
+      		<p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎以widget组件模式输出地图服务及开发接口，内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。下面是PyramidMap实现一幅地图的逻辑框架图：</p>
 <p><img src="/cn/2021/04/13/pyramid-introduce/mapview.png"></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-map"><a href="#Create-a-new-map" class="headerlink" title="Create a new map"></a>Create a new map</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import MapView</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://pyramidmap.github.io/docs/web-js-api.html">Writing</a></p>
 
+      	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/" data-id="cknimcjjg000mbsn0hvv80uue" data-title="PyramidMap API For JS 简介" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/" data-id="cknjoqp5z002alwn0hahwa6q0" data-title="PyramidMap API For JS 简介" class="article-share-link">分享</a>
       
       
       
@@ -197,11 +204,11 @@
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
+            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
+            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
           </li>
         
           <li>
@@ -221,7 +228,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2021 Deepalways<br>
+      &copy; 2021 PyramidMap<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -231,6 +238,10 @@
     <nav id="mobile-nav">
   
     <a href="/cn/" class="mobile-nav-link">首页</a>
+  
+    <a href="/cn/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/cn/catagories" class="mobile-nav-link">分类</a>
   
     <a href="/cn/archives" class="mobile-nav-link">归档</a>
   

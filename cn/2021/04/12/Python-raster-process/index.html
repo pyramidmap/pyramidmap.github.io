@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg">
 <meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
 <meta property="article:modified_time" content="2021-04-15T05:41:18.000Z">
-<meta property="article:author" content="Deepalways">
+<meta property="article:author" content="PyramidMap">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="数据处理工作流">
 <meta property="article:tag" content="GCS 与 PCS">
@@ -77,6 +77,10 @@
         
           <a class="main-nav-link" href="/cn/">首页</a>
         
+          <a class="main-nav-link" href="/cn/tags">标签</a>
+        
+          <a class="main-nav-link" href="/cn/catagories">分类</a>
+        
           <a class="main-nav-link" href="/cn/archives">归档</a>
         
           <a class="main-nav-link" href="https://pyramidmap.github.io">English</a>
@@ -122,7 +126,9 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p>
+      
+      	
+      		<h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p>
 <p>包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下：</p>
 <h3 id="5-1：影像压缩："><a href="#5-1：影像压缩：" class="headerlink" title="5.1：影像压缩："></a>5.1：影像压缩：</h3><p><img src="/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png"></p>
 <p>压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。</p>
@@ -148,10 +154,11 @@
 <p><img src="/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg"></p>
 <p>金字塔可以加速图像加载。程序支持图像金字塔的参数化批量生成。通常情况下，在光栅上构建金字塔可以改善显示效果表演。只构建一次，则后期每次显示都会访问金字塔。对于行或列中小于1024像素的光栅，即使您选择，也不会构建金字塔。小波变换压缩光栅（如ECW和MrSID）不需要构建金字塔，因为在编码时已经创建了内部金字塔。在构建栅格金字塔过程中，您可以指定金字塔等级（可选）、跳过等级（可选），重采样方式（可选），压缩类型（可选），压缩质量（可选），所有这些参数都在上面列表中提供说明。</p>
 
+      	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/" data-id="cknimcjja000hbsn0do76e6xb" data-title="PyramidMap 地理数据处理工作流平台栅格处理" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/" data-id="cknjoqp5u0024lwn0f9p3go83" data-title="PyramidMap 地理数据处理工作流平台栅格处理" class="article-share-link">分享</a>
       
       
       
@@ -242,11 +249,11 @@
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
+            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
           </li>
         
           <li>
-            <a href="/cn/2021/04/12/Python-function-overview/">PyramidMap 地理数据处理工作流平台功能清单</a>
+            <a href="/cn/2021/04/12/Python-featureClass-process/">PyramidMap 地理数据处理工作流平台要素类处理</a>
           </li>
         
           <li>
@@ -266,7 +273,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2021 Deepalways<br>
+      &copy; 2021 PyramidMap<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -276,6 +283,10 @@
     <nav id="mobile-nav">
   
     <a href="/cn/" class="mobile-nav-link">首页</a>
+  
+    <a href="/cn/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/cn/catagories" class="mobile-nav-link">分类</a>
   
     <a href="/cn/archives" class="mobile-nav-link">归档</a>
   
