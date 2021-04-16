@@ -111,6 +111,40 @@
   </entry>
   
   <entry>
+    <title>PyramidMap GeoProcess workflow platform create mxd</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-mxd/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-mxd/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T06:42:01.996Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Create-mxd-workflow："><a href="#Create-mxd-workflow：" class="headerlink" title="Create mxd workflow："></a>Create mxd workflow：</h2><h3 id="1-Vector-layers-mxd："><a href="#1-Vector-layers-mxd：" class="headerlink" title="1: Vector layers mxd："></a>1: Vector layers mxd：</h3><p>The program supports batch combination of SHP layer, GDB, MDB and SDE to form MXD map document.</p><h4 id="1-1：Work-model："><a href="#1-1：Work-model：" class="headerlink" title="1.1：Work model："></a>1.1：Work model：</h4><p><strong><img src="/2021/04/12/Python-mxd/156df707f32e3cfb72a224941ef0b7df.png"></strong></p><p>Specification: layers in the same document must have the same coordinate system.</p><h4 id="1-2：Operation-interface："><a href="#1-2：Operation-interface：" class="headerlink" title="1.2：Operation interface："></a>1.2：Operation interface：</h4><p><img src="/2021/04/12/Python-mxd/ef7fd9b75ea9c8ffe6280f72ebd85599.png"></p><p>MXD map documents can be used to publish map services of MapServer and featureserver types. The default service name is MXD name. When you want to publish, you can rename MXD in the publishing process. However, for convenience and error avoidance, it is recommended to name MXD in English.</p><h3 id="2：Raster-layer-mxd："><a href="#2：Raster-layer-mxd：" class="headerlink" title="2：Raster layer mxd："></a>2：Raster layer mxd：</h3><p>The program supports batch combination of img, TIF, GIF and other image layers to form MXD map documents.</p><p><img src="/2021/04/12/Python-mxd/522784a271c5e9ed472e646f9e589d47.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="7：Create mxd" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/7%EF%BC%9ACreate-mxd/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PyramidMap GeoProcess workflow platform Map query and preview</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-map-query/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-map-query/</id>
@@ -143,6 +177,42 @@
     <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
     
     <category term="Query and preview" scheme="https://pyramidmap.github.io/tags/Query-and-preview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform create mxd</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T06:46:32.690Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Publish-map-servers："><a href="#Publish-map-servers：" class="headerlink" title="Publish map servers："></a>Publish map servers：</h2><h3 id="1：publish-map-server："><a href="#1：publish-map-server：" class="headerlink" title="1：publish map server："></a>1：publish map server：</h3><h4 id="1-1：workflow-model："><a href="#1-1：workflow-model：" class="headerlink" title="1.1：workflow model："></a>1.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/852cf063936757845b18ad766ba794d5.png"></p><h4 id="1-2-operation-interface："><a href="#1-2-operation-interface：" class="headerlink" title="1.2: operation interface："></a>1.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/f2be6b88b08c8df6e47c036fdcbb0939.png"></p><h3 id="2：publish-feature-server："><a href="#2：publish-feature-server：" class="headerlink" title="2：publish feature server："></a>2：publish feature server：</h3><h4 id="2-1：workflow-model："><a href="#2-1：workflow-model：" class="headerlink" title="2.1：workflow model："></a>2.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/357c60dde4400cfd5923ab01429a833b.png"></p><h4 id="2-2-operation-interface："><a href="#2-2-operation-interface：" class="headerlink" title="2.2: operation interface："></a>2.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/ea9ee5b56ef5c5c1836d649d1ff794a9.png"></p><p>Explain:</p><p>①:The max returns per request: it’s the maxium return features number per user request, this depends on your needs and the capacity of the server, not the larger the better.</p><p>②:The following service wms/wfs/wcs are standardized map service that follows OGC specification and can be shared among different map platforms.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="7：Create mxd" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/7%EF%BC%9ACreate-mxd/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
     
   </entry>
   
@@ -211,42 +281,6 @@
     <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
     
     <category term="GeoDatabase" scheme="https://pyramidmap.github.io/tags/GeoDatabase/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyramidMap GeoProcess workflow platform create mxd</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-mxd/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-mxd/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T03:39:51.466Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Create-mxd-workflow："><a href="#Create-mxd-workflow：" class="headerlink" title="Create mxd workflow："></a>Create mxd workflow：</h2><h3 id="1-Vector-layers-mxd："><a href="#1-Vector-layers-mxd：" class="headerlink" title="1: Vector layers mxd："></a>1: Vector layers mxd：</h3><p>The program supports batch combination of SHP layer, GDB, MDB and SDE to form MXD map document.</p><h4 id="1-1：Work-model："><a href="#1-1：Work-model：" class="headerlink" title="1.1：Work model："></a>1.1：Work model：</h4><p><strong><img src="/2021/04/12/Python-mxd/156df707f32e3cfb72a224941ef0b7df.png"></strong></p><p>Specification: layers in the same document must have the same coordinate system.</p><h4 id="1-2：Operation-interface："><a href="#1-2：Operation-interface：" class="headerlink" title="1.2：Operation interface："></a>1.2：Operation interface：</h4><p><img src="/2021/04/12/Python-mxd/ef7fd9b75ea9c8ffe6280f72ebd85599.png"></p><p>MXD map documents can be used to publish map services of MapServer and featureserver types. The default service name is MXD name. When you want to publish, you can rename MXD in the publishing process. However, for convenience and error avoidance, it is recommended to name MXD in English.</p><h3 id="2：Raster-layer-mxd："><a href="#2：Raster-layer-mxd：" class="headerlink" title="2：Raster layer mxd："></a>2：Raster layer mxd：</h3><p>The program supports batch combination of img, TIF, GIF and other image layers to form MXD map documents.</p><p><img src="/2021/04/12/Python-mxd/522784a271c5e9ed472e646f9e589d47.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
-    
-    <category term="7：Create mxd" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/7%EF%BC%9ACreate-mxd/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
     
   </entry>
   
