@@ -77,40 +77,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台地理数据库查询及地图预览</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T08:01:49.391Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地理数据库查询："><a href="#地理数据库查询：" class="headerlink" title="地理数据库查询："></a>地理数据库查询：</h2><h3 id="1：数据表查询："><a href="#1：数据表查询：" class="headerlink" title="1：数据表查询："></a>1：数据表查询：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/490367e3c598316f8d89ccc6bdd5ed39.png"></p><h3 id="2：数据导出："><a href="#2：数据导出：" class="headerlink" title="2：数据导出："></a>2：数据导出：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/14a31895292a8fc3a8ea0fcf86b090ad.png" alt="sde导出为json"></p><p><img src="/cn/2021/04/12/Python-GeoDB-query/6a4094af52b57c10de908ebb02e02fe4.png" alt="转出json成功"></p><p>选择数据列表，右键选择导出类型及路径，可以建数据表导出至指定路径下，导出数据支持shp、excel、json、csv格式。</p><h3 id="3：地图预览："><a href="#3：地图预览：" class="headerlink" title="3：地图预览："></a>3：地图预览：</h3><p>选择数据列表，右键选择“地图及数据预览”，可以对所选数据表进行地图预览。</p><p><img src="/cn/2021/04/12/Python-GeoDB-query/e03e2e35b0b1586c0bba263dec2e97b9.png" alt="sde地图预览"></p><p>地图预览</p><p><img src="/cn/2021/04/12/Python-GeoDB-query/5170204556d879a506ea429d8f8fc96b.png" alt="管线地图预览"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="10：地理数据库查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
-    
-    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap 地理数据处理工作流平台GIS Server查询及地图预览</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/</id>
@@ -136,9 +102,43 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+  </entry>
+  
+  <entry>
+    <title>PyramidMap 地理数据处理工作流平台地理数据库查询及地图预览</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T08:01:49.391Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地理数据库查询："><a href="#地理数据库查询：" class="headerlink" title="地理数据库查询："></a>地理数据库查询：</h2><h3 id="1：数据表查询："><a href="#1：数据表查询：" class="headerlink" title="1：数据表查询："></a>1：数据表查询：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/490367e3c598316f8d89ccc6bdd5ed39.png"></p><h3 id="2：数据导出："><a href="#2：数据导出：" class="headerlink" title="2：数据导出："></a>2：数据导出：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/14a31895292a8fc3a8ea0fcf86b090ad.png" alt="sde导出为json"></p><p><img src="/cn/2021/04/12/Python-GeoDB-query/6a4094af52b57c10de908ebb02e02fe4.png" alt="转出json成功"></p><p>选择数据列表，右键选择导出类型及路径，可以建数据表导出至指定路径下，导出数据支持shp、excel、json、csv格式。</p><h3 id="3：地图预览："><a href="#3：地图预览：" class="headerlink" title="3：地图预览："></a>3：地图预览：</h3><p>选择数据列表，右键选择“地图及数据预览”，可以对所选数据表进行地图预览。</p><p><img src="/cn/2021/04/12/Python-GeoDB-query/e03e2e35b0b1586c0bba263dec2e97b9.png" alt="sde地图预览"></p><p>地图预览</p><p><img src="/cn/2021/04/12/Python-GeoDB-query/5170204556d879a506ea429d8f8fc96b.png" alt="管线地图预览"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="10：地理数据库查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     
   </entry>
   
@@ -168,11 +168,11 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
     <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
     
@@ -183,6 +183,34 @@
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/cn/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
     
     <category term="空间数据转换" scheme="https://pyramidmap.github.io/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap 地理数据处理工作流平台日志记录及查询</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-log/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-log/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T08:55:30.220Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="日志查询："><a href="#日志查询：" class="headerlink" title="日志查询："></a>日志查询：</h2><h3 id="1：日志分类目录："><a href="#1：日志分类目录：" class="headerlink" title="1：日志分类目录："></a>1：日志分类目录：</h3><p><img src="/cn/2021/04/12/Python-log/fea628195d807e47091a232d51801316.png" alt="日志目录"></p><p>日志目录与功能相对应，并以节点树形结构呈现。</p><h3 id="2：日志查询："><a href="#2：日志查询：" class="headerlink" title="2：日志查询："></a>2：日志查询：</h3><p><img src="/cn/2021/04/12/Python-log/6730c9713478a46978d758675d1cc636.png"></p><p>选择日志目录后，日志记录将以list列表模式呈现，并可按日期进行查询。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="11：日志记录及查询" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
   </entry>
   
@@ -212,13 +240,13 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     
     <category term="GCS 与 PCS" scheme="https://pyramidmap.github.io/cn/tags/GCS-%E4%B8%8E-PCS/"/>
     
@@ -266,9 +294,9 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
-    
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="地图数据导出" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     
     <category term="地图查询及预览" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
     
@@ -332,9 +360,9 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
     <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
     
@@ -404,11 +432,11 @@
     
     <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    <category term="地理数据库" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
