@@ -109,15 +109,13 @@
       	
       		<p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎以widget组件模式输出地图服务及开发接口，内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。下面是PyramidMap实现一幅地图的逻辑框架图：</p>
 <p><img src="/cn/cn/2021/04/13/JS-introduce/mapview.png"></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-map"><a href="#Create-a-new-map" class="headerlink" title="Create a new map"></a>Create a new map</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import MapView</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://pyramidmap.github.io/docs/web-js-api.html">Writing</a></p>
+<p>利用PyramidMap提供的API接口，用户可以自定义地图应用的每个方面，从地图符号化管理到图层切换，从数据统计到专题地图，从属性查询到空间拓扑分析，pyramidMap都可以帮您实现要在地图上呈现的信息。PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，帮助用户构造自己的地图数据和展示系统。</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-introduce/" data-id="cknlpskjd0003ucutdmdb742a" data-title="PyramidMap API For JS 简介" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-introduce/" data-id="cknls0wsy00035kut6uuybx4s" data-title="PyramidMap API For JS 简介" class="article-share-link">分享</a>
       
       
       
@@ -169,7 +167,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/" data-id="cknlpskm00053ucut4fhlcurz" data-title="PyramidMap 简介" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/pyramid-introduce/" data-id="cknls0wvx00535kut3wdq0k3k" data-title="PyramidMap 简介" class="article-share-link">分享</a>
       
       
       
@@ -228,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-basefunction/" data-id="cknlpskj80001ucutfei1h3lt" data-title="PyramidMap API For JS 基本功能" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-basefunction/" data-id="cknls0wsp00015kut6lvg3305" data-title="PyramidMap API For JS 基本功能" class="article-share-link">分享</a>
       
       
       
@@ -283,7 +281,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/" data-id="cknlpskji0007ucut32bi4bm6" data-title="PyramidMap 地理数据处理工作流平台地理数据库查询及地图预览" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/" data-id="cknls0wt900075kutdi3g4xcm" data-title="PyramidMap 地理数据处理工作流平台地理数据库查询及地图预览" class="article-share-link">分享</a>
       
       
       
@@ -337,7 +335,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/" data-id="cknlpskjl0008ucut9wrw2ldf" data-title="PyramidMap 地理数据处理工作流平台GIS Server查询及地图预览" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/" data-id="cknls0wtc00085kutajvih876" data-title="PyramidMap 地理数据处理工作流平台GIS Server查询及地图预览" class="article-share-link">分享</a>
       
       
       
@@ -426,7 +424,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/" data-id="cknlpskjm0009ucutd13waec8" data-title="PyramidMap 地理数据处理工作流平台要素类处理" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/" data-id="cknls0wtd00095kut7ngf2vu1" data-title="PyramidMap 地理数据处理工作流平台要素类处理" class="article-share-link">分享</a>
       
       
       
@@ -879,7 +877,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-function-overview/" data-id="cknlpskjq000cucutfwukbjvf" data-title="PyramidMap 地理数据处理工作流平台功能清单" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-function-overview/" data-id="cknls0wti000c5kut0u779epn" data-title="PyramidMap 地理数据处理工作流平台功能清单" class="article-share-link">分享</a>
       
       
       
@@ -930,7 +928,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-log/" data-id="cknlpskjs000ducutfr0bdon1" data-title="PyramidMap 地理数据处理工作流平台日志记录及查询" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-log/" data-id="cknls0wtk000d5kut1t0k7a95" data-title="PyramidMap 地理数据处理工作流平台日志记录及查询" class="article-share-link">分享</a>
       
       
       
@@ -986,7 +984,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-map-query/" data-id="cknlpskjv000gucuthkog0hoq" data-title="PyramidMap 地理数据处理工作流平台地图查询预览" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-map-query/" data-id="cknls0wtn000g5kut94a6bcm5" data-title="PyramidMap 地理数据处理工作流平台地图查询预览" class="article-share-link">分享</a>
       
       
       
@@ -1042,7 +1040,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-mxd/" data-id="cknlpskjw000hucut9wxs7res" data-title="PyramidMap 地理数据处理工作流平台Mxd地图文档" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-mxd/" data-id="cknls0wtq000h5kut5e1d1cp2" data-title="PyramidMap 地理数据处理工作流平台Mxd地图文档" class="article-share-link">分享</a>
       
       
       
