@@ -58,6 +58,8 @@
         
           <a class="main-nav-link" href="/archives">Archives</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
           <a class="main-nav-link" href="https://pyramidmap.github.io/cn">中文</a>
         
       </nav>
@@ -77,14 +79,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Python-sys-set" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Python-ui-overview" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/04/12/Python-sys-set/" class="article-date">
+    <a href="/2021/04/12/Python-ui-overview/" class="article-date">
   <time class="dt-published" datetime="2021-04-12T06:46:58.000Z" itemprop="datePublished">2021-04-12</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/PyramidMap-GeoProcess-workflow/">PyramidMap GeoProcess workflow</a>►<a class="article-category-link" href="/categories/PyramidMap-GeoProcess-workflow/3%EF%BC%9ASystem-set/">3：System set</a>
+    <a class="article-category-link" href="/categories/PyramidMap-GeoProcess-workflow/">PyramidMap GeoProcess workflow</a>►<a class="article-category-link" href="/categories/PyramidMap-GeoProcess-workflow/2%EF%BC%9AUI-overview/">2：UI overview</a>
   </div>
 
   </div>
@@ -95,7 +97,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/12/Python-sys-set/">PyramidMap GeoProcess workflow platform system set</a>
+      <a class="p-name article-title" href="/2021/04/12/Python-ui-overview/">PyramidMap GeoProcess workflow platform UI overview</a>
     </h1>
   
 
@@ -105,34 +107,86 @@
       
       
       	
-      		<h2 id="System-settings"><a href="#System-settings" class="headerlink" title="System settings"></a>System settings</h2><h3 id="1-GIS-Server-connection"><a href="#1-GIS-Server-connection" class="headerlink" title="1: GIS Server connection"></a>1: GIS Server connection</h3><p><strong><img src="/2021/04/12/Python-sys-set/6462e2612f7574a82370e4d2e079d352.png"></strong></p>
-<p>Server host = ArcGIS Server host name or IP address, the default port is 6080,according to the actual situation. The account is site administrator account of ArcGIS Server. Please confirm with ArcGIS Server administrator.</p>
-<h3 id="2-Geo-database-creation"><a href="#2-Geo-database-creation" class="headerlink" title="2: Geo database creation"></a>2: Geo database creation</h3><p>ArcGIS supports Oracle, SQL server, PostgreSQL, DB2, infomix and other relational databases as geo databases. This software support Oracle, SQL server, PostgreSQL. Before performing this operation, please make sure there is a client program connected with the above database on the computer. The database client can be downloaded from the database website. Pay attention to the version number. ArcGIS desktop is a 32-bit, so it only supports 32-bit client connection. ArcGIS Server is a 64 bit, so only supports 64 bit client connection. The connection between ArcGIS desktop, pro, enterprise server and database does not belong to the scope of this section. If necessary, we will introduce it in a special chapter. Here is how to create a geographic database in Oracle.</p>
-<p><img src="/2021/04/12/Python-sys-set/533b86e7990820f76bb575c06a7ecfb1.png"></p>
-<p>Here, the service instance of Oracle is the database name. It’s the object of geo database build in and must be exist in advance. The following is how to create a geo database in SQL server.</p>
-<p><img src="/2021/04/12/Python-sys-set/d81916a3b78d0ae912cc4089b6bc08f7.png"></p>
-<p>Here the service instance of SQL server is the data service name of SQL server.The default is MSSqlServer,please confirm with database administrator. The “DBA Account”is the account to sign in with db administrator mode which default is “sa”. The “New Geodb”is the name of the geodatabase to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. The following is how to create a geographic database in PostgreSQL.</p>
-<p><img src="/2021/04/12/Python-sys-set/6db7505bf96c35dfad7592e0fcffa7dc.png"></p>
-<p>The “New Geodb” is the name of the geo database to be created. Different from Oracle, the “New Geodb” which input will be created in this process and the new Geodb’s account is “sde” default that cannot be modified. All operations need the valid ArcGIS authorization ecp file. If the geodatabase already exists, you only need to create a connection. The following is the process of creating a geo database connection.</p>
-<h3 id="3-Geo-database-connection"><a href="#3-Geo-database-connection" class="headerlink" title="3: Geo database connection"></a>3: Geo database connection</h3><p>1: create an Oracle Geodatabase connection</p>
-<p><img src="/2021/04/12/Python-sys-set/fa5187ebdc64e80ca1ced163c5ecabf0.png"></p>
-<p>Here, the instance is the Oracle database name.</p>
-<p>2: create a SQL Server Geodatabase connection</p>
-<p><img src="/2021/04/12/Python-sys-set/8144d08df561d07aa547fb164bcd246b.png"></p>
-<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p>
-<p>3: create a PostgreSQL Geodatabase connection:</p>
-<p><img src="/2021/04/12/Python-sys-set/00876a447bcbcf767035d74736532580.png"></p>
-<p>The GeoDatabase input is name of the Geodatabase that has been created in SQL Server which you want to connect.</p>
+      		<h2 id="UI-overview"><a href="#UI-overview" class="headerlink" title="UI overview:"></a>UI overview:</h2><p><strong><img src="/2021/04/12/Python-ui-overview/0d6bd19b098e8e8a67f6132a4149d0c9.png"></strong></p>
+<table>
+<thead>
+<tr>
+<th>Work area</th>
+<th>Sub applications in tab panel</th>
+<th>Functions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>System settings</td>
+<td>GIS Server</td>
+<td>Create and save the GIS Server connection.</td>
+</tr>
+<tr>
+<td></td>
+<td>Enterprise Geo DB</td>
+<td>Create Geodb and save the connection.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Create and save the Geodb connection.</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>about</td>
+<td>License and regist</td>
+</tr>
+<tr>
+<td></td>
+<td>help</td>
+<td>How to use</td>
+</tr>
+<tr>
+<td>Function  area</td>
+<td>Map query &amp; view</td>
+<td>Vector and raster query and preview.</td>
+</tr>
+<tr>
+<td></td>
+<td>Vector process</td>
+<td>Vector data process and convert in workflow.</td>
+</tr>
+<tr>
+<td></td>
+<td>Raster process</td>
+<td>Raster data process and convert in workflow.</td>
+</tr>
+<tr>
+<td></td>
+<td>Coordinate Sys</td>
+<td>Coordinate sys transform or reproject in workflow.</td>
+</tr>
+<tr>
+<td></td>
+<td>ArcGIS Server</td>
+<td>Map service query and export and map preview.</td>
+</tr>
+<tr>
+<td></td>
+<td>Geo database</td>
+<td>Enterprise GeoDB query and export and map preview.</td>
+</tr>
+<tr>
+<td></td>
+<td>Log query</td>
+<td>Log of process classify, query and trace by time.</td>
+</tr>
+</tbody></table>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-sys-set/" data-id="cknk2vlfm004txgn00iz18tgy" data-title="PyramidMap GeoProcess workflow platform system set" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-ui-overview/" data-id="cknlg76fk005jbkutgs82be9p" data-title="PyramidMap GeoProcess workflow platform UI overview" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arcpy-and-GDAL/" rel="tag">Arcpy and GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GeoDatabase/" rel="tag">GeoDatabase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GeoTools-and-GeoServer/" rel="tag">GeoTools and GeoServer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
 
     </footer>
   </div>
@@ -180,7 +234,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/pyramid-introduce/" data-id="cknk2vlfn004wxgn0fuu00enk" data-title="PyramidMap API For JS introduction" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/pyramid-introduce/" data-id="cknlg76fl005kbkutfhxffs8c" data-title="PyramidMap API For JS introduction" class="article-share-link">Share</a>
       
       
       
@@ -239,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/05/JS-basefunction/" data-id="cknk2vleb0001xgn008uwgjx8" data-title="PyramidMap API For JS base functions" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/05/JS-basefunction/" data-id="cknlg76cm0001bkutduu4edq2" data-title="PyramidMap API For JS base functions" class="article-share-link">Share</a>
       
       
       
@@ -310,11 +364,11 @@
       <ul>
         
           <li>
-            <a href="/2021/04/12/Python-GisServer-query/">PyramidMap GeoProcess workflow platform Gis Server query and preview</a>
+            <a href="/2021/04/12/Python-GeoDB-query/">PyramidMap GeoProcess workflow platform GeoDatabase query and preview</a>
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-GeoDB-query/">PyramidMap GeoProcess workflow platform GeoDatabase query and preview</a>
+            <a href="/2021/04/12/Python-GisServer-query/">PyramidMap GeoProcess workflow platform Gis Server query and preview</a>
           </li>
         
           <li>
@@ -326,7 +380,7 @@
           </li>
         
           <li>
-            <a href="/2021/04/12/Python-map-query/">PyramidMap GeoProcess workflow platform Map query and preview</a>
+            <a href="/2021/04/12/Python-log/">PyramidMap GeoProcess workflow platform Log recorder and query</a>
           </li>
         
       </ul>
@@ -358,6 +412,8 @@
     <a href="/categories" class="mobile-nav-link">Categories</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
     <a href="https://pyramidmap.github.io/cn" class="mobile-nav-link">中文</a>
   
