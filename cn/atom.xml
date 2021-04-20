@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/cn/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/cn/"/>
-  <updated>2021-04-20T13:52:44.000Z</updated>
+  <updated>2021-04-20T14:17:38.000Z</updated>
   <id>https://pyramidmap.github.io/cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://pyramidmap.github.io/cn/2021/04/13/JS-LayerCase/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/13/JS-LayerCase/</id>
     <published>2021-04-13T05:53:18.000Z</published>
-    <updated>2021-04-20T13:52:44.000Z</updated>
+    <updated>2021-04-20T14:17:38.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从本质上说，图层是遵循地图厂商自有规范或OGC标准规范的，内置属性数据、空间数据、坐标系定义、符号图形渲染的数据结构。因此，GIS就是针对空间数据分布和图形渲染的处理系统，将地图数据含义正确表达和传递出来，完成其赋予的特定地图功能。PyramidMap面向地图应用层，在web GIS和python数据处理上提供解决方案。以下是PyramidMap兼容不同厂商的地图标准并进行整合，最后实现web端展示的逻辑流程图：</p><p><img src="/cn/2021/04/13/JS-LayerCase/mapview.png"></p><p>PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，通过内置的JS组件，帮助用户构造自己的地图数据和展示系统。</p><p>PyramidMap 内置的图形渲染功能，提供高对比度颜色系统。图层控制系统可以根据要素类型、业务类型构建层次结构和分类，在每个级别上完美呈现地图特征。</p><p>PyramidMap提供矢量图层、地形图、卫星图等多样式地图图层 ，并可以为这些图层，位置点和线路做复杂渲染。并可通过属性及空间查询进行过滤，仅显示符合用户筛选条件及缩放范围内最重要的点信息。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从本质上说，图层是遵循地图厂商自有规范或OGC标准规范的，内置属性数据、空间数据、坐标系定义、符号图形渲染的数据结构。因此，GIS就是针对空间数据分布和图形渲染的处理系统，将地图数据含义正确表达和传递出来，完成其赋予的特定地图功能。PyramidMap面向地图应用层，在web GIS和python数据处理上提供解决方案。以下是PyramidMap兼容不同厂商的地图标准并进行整合，最后实现web端展示的逻辑流程图：</p><p><img src="/cn/2021/04/13/JS-LayerCase/mapview.png"></p><p>PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，通过内置的JS组件，帮助用户构造自己的地图数据和展示系统。</p><p>PyramidMap 内置的图形渲染功能，提供高对比度颜色系统。图层控制系统可以根据要素类型、业务类型构建层次结构和分类，在每个级别上完美呈现地图特征。</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/cn/2021/04/13/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>PyramidMap提供矢量图层、地形图、卫星图等多样式地图图层 ，并可以为这些图层，位置点和线路做复杂渲染。并可通过属性及空间查询进行过滤，仅显示符合用户筛选条件及缩放范围内最重要的点信息。</p>]]></content>
     
     
       
@@ -465,40 +465,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台界面说明</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T04:12:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="软件功能总览："><a href="#软件功能总览：" class="headerlink" title="软件功能总览："></a>软件功能总览：</h2><p><strong><img src="/cn/2021/04/12/Python-ui-overview/ac0d7cedf208493335b1e6135fbacf56.png"></strong></p><table><thead><tr><th>功能区</th><th>子项</th><th>功能</th></tr></thead><tbody><tr><td>系统设置</td><td>GIS服务器连接</td><td>创建并保存GIS服务器连接，以备发布服务。</td></tr><tr><td></td><td>GIS数据库创建</td><td>创建GIS数据库，建立并保存sde连接。</td></tr><tr><td></td><td>GIS数据库连接</td><td>连接GIS数据库，建立并保存sde连接。</td></tr><tr><td>功能区</td><td>地图查询显示</td><td>矢量及影像类地图查询展示。</td></tr><tr><td></td><td>要素类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>影像类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>标准坐标系转换</td><td>支持所有标准化坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>特殊坐标系转换</td><td>支持高德/百度坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>GIS服务器管理</td><td>ArcGIS Server地图服务查询导出及地图预览。</td></tr><tr><td></td><td>地理数据库管理</td><td>企业地理数据库数据查询导出及地图预览。</td></tr><tr><td></td><td>地图服务发布</td><td>支持批量化地图服务及数据发布，工作流模式进行。</td></tr><tr><td></td><td>日志查询</td><td>流程环节的日志记录及分类、分时段查询追溯。</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="2：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/2%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
-    
-    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
-    <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/cn/tags/GeoTools-and-GeoServer/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap 地理数据处理工作流平台系统设置</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/</id>
@@ -529,6 +495,40 @@
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap 地理数据处理工作流平台界面说明</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T04:12:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="软件功能总览："><a href="#软件功能总览：" class="headerlink" title="软件功能总览："></a>软件功能总览：</h2><p><strong><img src="/cn/2021/04/12/Python-ui-overview/ac0d7cedf208493335b1e6135fbacf56.png"></strong></p><table><thead><tr><th>功能区</th><th>子项</th><th>功能</th></tr></thead><tbody><tr><td>系统设置</td><td>GIS服务器连接</td><td>创建并保存GIS服务器连接，以备发布服务。</td></tr><tr><td></td><td>GIS数据库创建</td><td>创建GIS数据库，建立并保存sde连接。</td></tr><tr><td></td><td>GIS数据库连接</td><td>连接GIS数据库，建立并保存sde连接。</td></tr><tr><td>功能区</td><td>地图查询显示</td><td>矢量及影像类地图查询展示。</td></tr><tr><td></td><td>要素类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>影像类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>标准坐标系转换</td><td>支持所有标准化坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>特殊坐标系转换</td><td>支持高德/百度坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>GIS服务器管理</td><td>ArcGIS Server地图服务查询导出及地图预览。</td></tr><tr><td></td><td>地理数据库管理</td><td>企业地理数据库数据查询导出及地图预览。</td></tr><tr><td></td><td>地图服务发布</td><td>支持批量化地图服务及数据发布，工作流模式进行。</td></tr><tr><td></td><td>日志查询</td><td>流程环节的日志记录及分类、分时段查询追溯。</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="2：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/2%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
+    
+    <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/cn/tags/GeoTools-and-GeoServer/"/>
     
   </entry>
   

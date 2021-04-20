@@ -191,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/" data-id="cknq39i2a005c70utag82evrp" data-title="PyramidMap 地理数据处理工作流平台界面说明" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/" data-id="cknq44tgg004zokut5v6xcs6j" data-title="PyramidMap 地理数据处理工作流平台界面说明" class="article-share-link">分享</a>
       
       
       
@@ -203,20 +203,15 @@
     
 <nav id="article-nav">
   
-    <a href="/cn/2021/04/12/Python-raster-process/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/cn/2021/04/12/Python-sys-set/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          PyramidMap 地理数据处理工作流平台栅格处理
+          PyramidMap 地理数据处理工作流平台系统设置
         
       </div>
     </a>
   
-  
-    <a href="/cn/2021/04/12/Python-sys-set/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">PyramidMap 地理数据处理工作流平台系统设置</div>
-    </a>
   
 </nav>
 
