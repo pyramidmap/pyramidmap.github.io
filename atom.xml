@@ -55,40 +55,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap GeoProcess workflow platform Gis Server query and preview</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T07:22:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Map-service-information"><a href="#Map-service-information" class="headerlink" title="Map service information:"></a>Map service information:</h2><h3 id="1-Map-service-list"><a href="#1-Map-service-list" class="headerlink" title="1: Map service list:"></a>1: Map service list:</h3><p><img src="/2021/04/12/Python-GisServer-query/4e040e508d88eaa009ee9b656b79887f.png"></p><p>Map services in the list can be right-click to export to SHP, Excel, JSON and CSV, and map preview can be carried out. Users can create new ArcGIS Server connections in this case and publish map server to and export mapserver list.</p><h3 id="2-Map-service-export-and-map-preview"><a href="#2-Map-service-export-and-map-preview" class="headerlink" title="2: Map service export and map preview:"></a>2: Map service export and map preview:</h3><h4 id="2-1-export-map-service-to-excel-example"><a href="#2-1-export-map-service-to-excel-example" class="headerlink" title="2.1: export map service to excel (example)"></a>2.1: export map service to excel (example)</h4><p>Select GIS Server in the Server list and click the “Export MapServer List” button to export the services list hosted in the server. Such as the following excel.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/d0a08847f5c9cbb788a439fde091a2a4.png" alt="导出为excel1"></strong></p><h4 id="2-2-Data-and-map-preview"><a href="#2-2-Data-and-map-preview" class="headerlink" title="2.2: Data and map preview:"></a>2.2: Data and map preview:</h4><p>1: Data query</p><p><img src="/2021/04/12/Python-GisServer-query/b7e73ab7ec696bf00c8dceb53af93851.png"></p><p>2: Map symbolic settings</p><p><strong><img src="/2021/04/12/Python-GisServer-query/11340cae3c1e4627478ff69bc75eca4c.png"></strong></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/1b67175f83bb2de04aa25cf508845030.png" alt="省界符号选择0"></strong></p><p>The map is displayed and previewed according to the symbolic settings</p><p><img src="/2021/04/12/Python-GisServer-query/463931cd898595f144b757a804fafd0e.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
-    
-    <category term="9：Gis Server query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/9%EF%BC%9AGis-Server-query-and-preview/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap GeoProcess workflow platform feature class processing</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/</id>
@@ -129,6 +95,40 @@
   </entry>
   
   <entry>
+    <title>PyramidMap GeoProcess workflow platform Gis Server query and preview</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T07:22:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Map-service-information"><a href="#Map-service-information" class="headerlink" title="Map service information:"></a>Map service information:</h2><h3 id="1-Map-service-list"><a href="#1-Map-service-list" class="headerlink" title="1: Map service list:"></a>1: Map service list:</h3><p><img src="/2021/04/12/Python-GisServer-query/4e040e508d88eaa009ee9b656b79887f.png"></p><p>Map services in the list can be right-click to export to SHP, Excel, JSON and CSV, and map preview can be carried out. Users can create new ArcGIS Server connections in this case and publish map server to and export mapserver list.</p><h3 id="2-Map-service-export-and-map-preview"><a href="#2-Map-service-export-and-map-preview" class="headerlink" title="2: Map service export and map preview:"></a>2: Map service export and map preview:</h3><h4 id="2-1-export-map-service-to-excel-example"><a href="#2-1-export-map-service-to-excel-example" class="headerlink" title="2.1: export map service to excel (example)"></a>2.1: export map service to excel (example)</h4><p>Select GIS Server in the Server list and click the “Export MapServer List” button to export the services list hosted in the server. Such as the following excel.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/d0a08847f5c9cbb788a439fde091a2a4.png" alt="导出为excel1"></strong></p><h4 id="2-2-Data-and-map-preview"><a href="#2-2-Data-and-map-preview" class="headerlink" title="2.2: Data and map preview:"></a>2.2: Data and map preview:</h4><p>1: Data query</p><p><img src="/2021/04/12/Python-GisServer-query/b7e73ab7ec696bf00c8dceb53af93851.png"></p><p>2: Map symbolic settings</p><p><strong><img src="/2021/04/12/Python-GisServer-query/11340cae3c1e4627478ff69bc75eca4c.png"></strong></p><p>Set map element symbol,here is is an example in the Chinese environment,software can automatically detect the language environment.</p><p><strong><img src="/2021/04/12/Python-GisServer-query/1b67175f83bb2de04aa25cf508845030.png" alt="省界符号选择0"></strong></p><p>The map is displayed and previewed according to the symbolic settings</p><p><img src="/2021/04/12/Python-GisServer-query/463931cd898595f144b757a804fafd0e.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="9：Gis Server query and preview" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/9%EF%BC%9AGis-Server-query-and-preview/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PyramidMap GeoProcess workflow platform function list</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-function-overview/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-function-overview/</id>
@@ -164,13 +164,13 @@
     
     <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
     
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
-    
     <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
     
     <category term="Map imp to GeoDatabase" scheme="https://pyramidmap.github.io/tags/Map-imp-to-GeoDatabase/"/>
     
     <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
     
@@ -419,7 +419,7 @@
     <link href="https://pyramidmap.github.io/2021/04/11/JS-LayerCase/"/>
     <id>https://pyramidmap.github.io/2021/04/11/JS-LayerCase/</id>
     <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-20T13:43:12.000Z</updated>
+    <updated>2021-04-20T13:53:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>In essence, layers follow the map manufacturer’s own specifications or OGC standard specifications, with built-in data structure of attribute data, spatial data, coordinate system definition and symbol graphics rendering. Therefore, GIS is a processing system for spatial data distribution and graphics rendering, which can correctly express and transfer the meaning of map data, and complete the specific map functions. Pyramidmap is oriented to map application layer, and provides solutions in Web GIS and python data processing.</p><p><img src="/2021/04/11/JS-LayerCase/mapview.png"></p><p>Pyramidmap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system through the built-in JS component.</p><p>The built-in graphics rendering function of pyramidmap provides a high contrast color system. Layer control system can construct hierarchical structure and classification according to element type and business type, and perfectly present map features at each level.</p><p>Pyramidmap provides vector layer,raster layer suchas terrain map and satellite map and other multi style map layers, and can do complex rendering for them. Only the most important point information that meets the user’s filtering criteria and zooming range can be displayed.</p>]]></content>
     
@@ -433,7 +433,7 @@
     
     <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
     
-    <category term="2：Layers" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/2%EF%BC%9ALayers/"/>
+    <category term="3：Layers" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/3%EF%BC%9ALayers/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
