@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/"/>
-  <updated>2021-04-16T08:03:00.000Z</updated>
+  <updated>2021-04-21T15:14:54.000Z</updated>
   <id>https://pyramidmap.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PyramidMap API For JS query and identify on map</title>
+    <link href="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/"/>
+    <id>https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/</id>
+    <published>2021-04-13T05:53:18.000Z</published>
+    <updated>2021-04-21T15:14:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>The map query function of pyramidmap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map, OSM, Mapbox, Tiantu, Gaode / Baidu map and other online resources. At the same time, it supports attribute data query and spatial geographic location query, and supports large amount of concurrent requests. Whether it is online map or offline map, it can accurately locate and integrate with the user’s own business data. According to the user server performance and network load, the return value of the request response can be adjusted to ensure the smoothness and stability of the map display and the accuracy of the data.：</p><h3 id="Coordinate-system-compatibility-and-accurate-positioning"><a href="#Coordinate-system-compatibility-and-accurate-positioning" class="headerlink" title="Coordinate system compatibility and accurate positioning"></a>Coordinate system compatibility and accurate positioning</h3><p>Pyramidmap integrates the transformation and position calibration of different coordinate systems, including GCS spatial coordinate system and PCs projection coordinate system. It also carries out compatible processing for special coordinate definitions such as Gaode / Baidu to achieve accurate positioning.</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/confirmLocation.b912eb77.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Attribute-data-query"><a href="#Attribute-data-query" class="headerlink" title="Attribute data query"></a>Attribute data query</h3><p>The pyramidmap map query interface supports attribute query of multi data source layers, parsing layer data structure, joint query of multi fields, accurate positioning, and synchronous display of detailed information of positioning objects.</p><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/mapSearch.5b2e5a25.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Spatial-data-query"><a href="#Spatial-data-query" class="headerlink" title="Spatial data query"></a>Spatial data query</h3><p>Pyramidmap supports the query of layer graphic spatial data. For example, on the urban pipe network map, you can filter and query according to the pressure value and flow direction, and you can also query according to the scope of urban area or community.</p><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/userDefined.dd74c0e0.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    
+    <category term="4：Query and Identify" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/4%EF%BC%9AQuery-and-Identify/"/>
+    
+    
+    <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
+    
+    <category term="Web JS" scheme="https://pyramidmap.github.io/tags/Web-JS/"/>
+    
+    <category term="Attribute Query" scheme="https://pyramidmap.github.io/tags/Attribute-Query/"/>
+    
+    <category term="Spacial Identify" scheme="https://pyramidmap.github.io/tags/Spacial-Identify/"/>
+    
+  </entry>
   
   <entry>
     <title>PyramidMap GeoProcess workflow platform GeoDatabase query and preview</title>
@@ -89,46 +121,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap GeoProcess workflow platform feature class processing</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T03:46:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Feature-Class-process"><a href="#Feature-Class-process" class="headerlink" title="Feature Class process"></a>Feature Class process</h2><p><img src="/2021/04/12/Python-featureClass-process/12dc982c35ebc8e4d3401f6390fb8976.png"></p><h3 id="1-Data-covert-to-map-features"><a href="#1-Data-covert-to-map-features" class="headerlink" title="1: Data covert to map features:"></a>1: Data covert to map features:</h3><p><img src="/2021/04/12/Python-featureClass-process/acc2a8a93eff45b0645012fd729fbf01.png"></p><p>The above functional areas support the conversion of SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other formats to map feature data. Click to enter the function interface, as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/020f9a36314024edd1f4cd08515820a4.png"></p><p>In the program, several input areas can be added to the queue area to form a queue list by “MoveTo” clicked. In the target selection area, the target path<br>supports physical path, GDB, MDB and SDE enterprise geo database, covering all types of GIS applications. Thus, a data processing workflow is formed. Click “doTransform” to start batch data processing, and the processing process automatically saves the log.</p><h3 id="2-Map-features-to-other-types"><a href="#2-Map-features-to-other-types" class="headerlink" title="2: Map features to other types:"></a>2: Map features to other types:</h3><p><img src="/2021/04/12/Python-featureClass-process/29702165b3011351629fb75a2d6884a0.png"></p><p>The above functional areas support featureclass to SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other types of data. Click to enter the function interface as follows:<img src="/2021/04/12/Python-featureClass-process/806427d312e124ca92854262e4e85e1b.png"></p><p>In the program, several input areas can be added to the selection area to form a queue list by “MoveTo” clicked. Input data support SHP, GDB file type geo database, MDB personal geo database, SDE enterprise type geo database, covering all types of GIS applications. Output types support SHP,JSON, KML, KMZ, TXT, CSV, DBF, Excel: a data processing workflow is formed.Click “ doTransform “ to start batch data processing. The process automatically<br>saves the log.</p><h3 id="3-Append-and-merge-features"><a href="#3-Append-and-merge-features" class="headerlink" title="3:Append and merge features:"></a>3:Append and merge features:</h3><p><img src="/2021/04/12/Python-featureClass-process/8700787b34f412b97cbcaedc3d5ac25e.png"></p><p>Map feature classes, including SHP layer, GDB feature class, MDB feature class and SDE enterprise geo database feature class which are data tables to store spatial geographic information actually. In the production process, the application of appending or merging multiple layer data to one layer will be<br>very many. In the face of this demand, we provide the following concise functions, and refine the corresponding rules that should be followed. The<br>functions are as follows:</p><h4 id="3-1-Features-append"><a href="#3-1-Features-append" class="headerlink" title="3.1:Features append:"></a>3.1:Features append:</h4><p><img src="/2021/04/12/Python-featureClass-process/9b5aaeb1b34587aec9393768fa6848f3.png"></p><p>Feature class append supports multiple to one addition of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, and SDE. It controls whether the source data and target data are allowed to have field structure differences or filter through test or no test parameters. Test mode is forced to limit, and the source data and target data format must be consistent, otherwise it cannot be run; no test mode will filter field mapping, and only the source data conforming to the mapping rules will be appended. Select no test mode, and the interface will provide the following field mapping selection methods:</p><p><img src="/2021/04/12/Python-featureClass-process/01645348716277604f7c1f7e817dbfac.png"></p><p>Please use the default mapping method Unless you specifically determined. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h4 id="3-2-Features-merge"><a href="#3-2-Features-merge" class="headerlink" title="3.2:Features merge:"></a>3.2:Features merge:</h4><p><img src="/2021/04/12/Python-featureClass-process/24ea00f7a467b1242662454d1485810a.png"></p><p>You can click “create new dataset” or “create new feature class” to assign the target data to a new location.</p><p><img src="/2021/04/12/Python-featureClass-process/1599c221af35fcd0a9d465de562ac600.png"></p><p>create new dataset</p><p><img src="/2021/04/12/Python-featureClass-process/903e9c3d34c8a9547c3a278c092bca5e.png"></p><p>create new feature class</p><p>The select datasets come from the Geodatabase which you select.Feature class merging supports many to one merging of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, SDE. The field mapping method is the same as appending. It controls the field merging strategy. Unless specifically determined, the default mapping method is used. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h3 id="4-Feature-classes-migration"><a href="#4-Feature-classes-migration" class="headerlink" title="4: Feature classes migration:"></a>4: Feature classes migration:</h3><p>Feature migration is to migrate the feature classes in SHP, GDB, MDB and SDE to the specified target path, and automatically complete the data format<br>conversion. The following is the conversion model:</p><h4 id="４-１-feature-class-migration-model"><a href="#４-１-feature-class-migration-model" class="headerlink" title="４.１: feature class migration model:"></a>４.１: feature class migration model:</h4><p><img src="/2021/04/12/Python-featureClass-process/2fb9add26af34d850b50aa0c901b4e53.png"></p><p><img src="/2021/04/12/Python-featureClass-process/a3820e24a271f90f50a6ebbd261a3c5d.png"></p><p><img src="/2021/04/12/Python-featureClass-process/378c768b47196802ea52d89f0d6919b6.png"></p><p><img src="/2021/04/12/Python-featureClass-process/1f85dc8670ef985c0ff8b11d4f9c3866.png"></p><h4 id="４-２-Feature-class-migration"><a href="#４-２-Feature-class-migration" class="headerlink" title="４.２: Feature class migration:"></a>４.２: Feature class migration:</h4><p><img src="/2021/04/12/Python-featureClass-process/b769919b1ba54d69983bc0004dbc71d4.png"></p><h4 id="４-３-the-execution-process-is-as-follows"><a href="#４-３-the-execution-process-is-as-follows" class="headerlink" title="４.３: the execution process is as follows:"></a>４.３: the execution process is as follows:</h4><p><img src="/2021/04/12/Python-featureClass-process/d4a748dbdaaadd798c3b23f0059ab052.png"></p><h3 id="5-Standard-coordinate-system-conversion"><a href="#5-Standard-coordinate-system-conversion" class="headerlink" title="5: Standard coordinate system conversion:"></a>5: Standard coordinate system conversion:</h3><p>Supports the mutual conversion between all geographic and projection coordinate systems with EPSG standard definition. The source data in the conversion queue can have different coordinate systems, and can be converted to the specified GCS or PCS. The transformation model of coordinate system is as follows (only some representative GCS and PCS are selected as examples), and other coordinate systems are treated in the same way.</p><p><img src="/2021/04/12/Python-featureClass-process/869f042deeaa229d707139565fb872dd.png"></p><p>Interface description of standard coordinate system transformation:</p><p><img src="/2021/04/12/Python-featureClass-process/2310fe5875c60e3cf4b3a0b955e30d20.png"></p><p>In the coordinate system selection drop-down box of the target area, select the target coordinate system for final conversion.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
-    
-    <category term="5：Feature class processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/5%EF%BC%9AFeature-class-processing/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="GeoDatabase exp to Map" scheme="https://pyramidmap.github.io/tags/GeoDatabase-exp-to-Map/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
-    
-    <category term="Map imp to GeoDatabase" scheme="https://pyramidmap.github.io/tags/Map-imp-to-GeoDatabase/"/>
-    
-    <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap GeoProcess workflow platform function list</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-function-overview/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-function-overview/</id>
@@ -179,6 +171,46 @@
     <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
     
     <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/tags/GeoTools-and-GeoServer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap GeoProcess workflow platform feature class processing</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-16T03:46:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Feature-Class-process"><a href="#Feature-Class-process" class="headerlink" title="Feature Class process"></a>Feature Class process</h2><p><img src="/2021/04/12/Python-featureClass-process/12dc982c35ebc8e4d3401f6390fb8976.png"></p><h3 id="1-Data-covert-to-map-features"><a href="#1-Data-covert-to-map-features" class="headerlink" title="1: Data covert to map features:"></a>1: Data covert to map features:</h3><p><img src="/2021/04/12/Python-featureClass-process/acc2a8a93eff45b0645012fd729fbf01.png"></p><p>The above functional areas support the conversion of SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other formats to map feature data. Click to enter the function interface, as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/020f9a36314024edd1f4cd08515820a4.png"></p><p>In the program, several input areas can be added to the queue area to form a queue list by “MoveTo” clicked. In the target selection area, the target path<br>supports physical path, GDB, MDB and SDE enterprise geo database, covering all types of GIS applications. Thus, a data processing workflow is formed. Click “doTransform” to start batch data processing, and the processing process automatically saves the log.</p><h3 id="2-Map-features-to-other-types"><a href="#2-Map-features-to-other-types" class="headerlink" title="2: Map features to other types:"></a>2: Map features to other types:</h3><p><img src="/2021/04/12/Python-featureClass-process/29702165b3011351629fb75a2d6884a0.png"></p><p>The above functional areas support featureclass to SHP, JSON, KML, KMZ, TXT,CSV, DBF, Excel and other types of data. Click to enter the function interface as follows:<img src="/2021/04/12/Python-featureClass-process/806427d312e124ca92854262e4e85e1b.png"></p><p>In the program, several input areas can be added to the selection area to form a queue list by “MoveTo” clicked. Input data support SHP, GDB file type geo database, MDB personal geo database, SDE enterprise type geo database, covering all types of GIS applications. Output types support SHP,JSON, KML, KMZ, TXT, CSV, DBF, Excel: a data processing workflow is formed.Click “ doTransform “ to start batch data processing. The process automatically<br>saves the log.</p><h3 id="3-Append-and-merge-features"><a href="#3-Append-and-merge-features" class="headerlink" title="3:Append and merge features:"></a>3:Append and merge features:</h3><p><img src="/2021/04/12/Python-featureClass-process/8700787b34f412b97cbcaedc3d5ac25e.png"></p><p>Map feature classes, including SHP layer, GDB feature class, MDB feature class and SDE enterprise geo database feature class which are data tables to store spatial geographic information actually. In the production process, the application of appending or merging multiple layer data to one layer will be<br>very many. In the face of this demand, we provide the following concise functions, and refine the corresponding rules that should be followed. The<br>functions are as follows:</p><h4 id="3-1-Features-append"><a href="#3-1-Features-append" class="headerlink" title="3.1:Features append:"></a>3.1:Features append:</h4><p><img src="/2021/04/12/Python-featureClass-process/9b5aaeb1b34587aec9393768fa6848f3.png"></p><p>Feature class append supports multiple to one addition of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, and SDE. It controls whether the source data and target data are allowed to have field structure differences or filter through test or no test parameters. Test mode is forced to limit, and the source data and target data format must be consistent, otherwise it cannot be run; no test mode will filter field mapping, and only the source data conforming to the mapping rules will be appended. Select no test mode, and the interface will provide the following field mapping selection methods:</p><p><img src="/2021/04/12/Python-featureClass-process/01645348716277604f7c1f7e817dbfac.png"></p><p>Please use the default mapping method Unless you specifically determined. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h4 id="3-2-Features-merge"><a href="#3-2-Features-merge" class="headerlink" title="3.2:Features merge:"></a>3.2:Features merge:</h4><p><img src="/2021/04/12/Python-featureClass-process/24ea00f7a467b1242662454d1485810a.png"></p><p>You can click “create new dataset” or “create new feature class” to assign the target data to a new location.</p><p><img src="/2021/04/12/Python-featureClass-process/1599c221af35fcd0a9d465de562ac600.png"></p><p>create new dataset</p><p><img src="/2021/04/12/Python-featureClass-process/903e9c3d34c8a9547c3a278c092bca5e.png"></p><p>create new feature class</p><p>The select datasets come from the Geodatabase which you select.Feature class merging supports many to one merging of any data source from SHP, GDB, MDB, SDE to SHP, GDB, MDB, SDE. The field mapping method is the same as appending. It controls the field merging strategy. Unless specifically determined, the default mapping method is used. The workflow model is as follows:</p><p><img src="/2021/04/12/Python-featureClass-process/4ef0f082e8c6d2a810c7551f5c299cb1.png"></p><h3 id="4-Feature-classes-migration"><a href="#4-Feature-classes-migration" class="headerlink" title="4: Feature classes migration:"></a>4: Feature classes migration:</h3><p>Feature migration is to migrate the feature classes in SHP, GDB, MDB and SDE to the specified target path, and automatically complete the data format<br>conversion. The following is the conversion model:</p><h4 id="４-１-feature-class-migration-model"><a href="#４-１-feature-class-migration-model" class="headerlink" title="４.１: feature class migration model:"></a>４.１: feature class migration model:</h4><p><img src="/2021/04/12/Python-featureClass-process/2fb9add26af34d850b50aa0c901b4e53.png"></p><p><img src="/2021/04/12/Python-featureClass-process/a3820e24a271f90f50a6ebbd261a3c5d.png"></p><p><img src="/2021/04/12/Python-featureClass-process/378c768b47196802ea52d89f0d6919b6.png"></p><p><img src="/2021/04/12/Python-featureClass-process/1f85dc8670ef985c0ff8b11d4f9c3866.png"></p><h4 id="４-２-Feature-class-migration"><a href="#４-２-Feature-class-migration" class="headerlink" title="４.２: Feature class migration:"></a>４.２: Feature class migration:</h4><p><img src="/2021/04/12/Python-featureClass-process/b769919b1ba54d69983bc0004dbc71d4.png"></p><h4 id="４-３-the-execution-process-is-as-follows"><a href="#４-３-the-execution-process-is-as-follows" class="headerlink" title="４.３: the execution process is as follows:"></a>４.３: the execution process is as follows:</h4><p><img src="/2021/04/12/Python-featureClass-process/d4a748dbdaaadd798c3b23f0059ab052.png"></p><h3 id="5-Standard-coordinate-system-conversion"><a href="#5-Standard-coordinate-system-conversion" class="headerlink" title="5: Standard coordinate system conversion:"></a>5: Standard coordinate system conversion:</h3><p>Supports the mutual conversion between all geographic and projection coordinate systems with EPSG standard definition. The source data in the conversion queue can have different coordinate systems, and can be converted to the specified GCS or PCS. The transformation model of coordinate system is as follows (only some representative GCS and PCS are selected as examples), and other coordinate systems are treated in the same way.</p><p><img src="/2021/04/12/Python-featureClass-process/869f042deeaa229d707139565fb872dd.png"></p><p>Interface description of standard coordinate system transformation:</p><p><img src="/2021/04/12/Python-featureClass-process/2310fe5875c60e3cf4b3a0b955e30d20.png"></p><p>In the coordinate system selection drop-down box of the target area, select the target coordinate system for final conversion.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap GeoProcess workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/"/>
+    
+    <category term="5：Feature class processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-GeoProcess-workflow/5%EF%BC%9AFeature-class-processing/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="GeoDatabase exp to Map" scheme="https://pyramidmap.github.io/tags/GeoDatabase-exp-to-Map/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Map imp to GeoDatabase" scheme="https://pyramidmap.github.io/tags/Map-imp-to-GeoDatabase/"/>
+    
+    <category term="Shp/Json/kml/Kmz/csv/Excel" scheme="https://pyramidmap.github.io/tags/Shp-Json-kml-Kmz-csv-Excel/"/>
     
   </entry>
   
@@ -415,11 +447,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap API For JS introduction</title>
+    <title>PyramidMap API For JS Layers control</title>
     <link href="https://pyramidmap.github.io/2021/04/11/JS-LayerCase/"/>
     <id>https://pyramidmap.github.io/2021/04/11/JS-LayerCase/</id>
     <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-20T14:17:54.000Z</updated>
+    <updated>2021-04-21T14:17:04.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>In essence, layers follow the map manufacturer’s own specifications or OGC standard specifications, with built-in data structure of attribute data, spatial data, coordinate system definition and symbol graphics rendering. Therefore, GIS is a processing system for spatial data distribution and graphics rendering, which can correctly express and transfer the meaning of map data, and complete the specific map functions. Pyramidmap is oriented to map application layer, and provides solutions in Web GIS and python data processing.</p><p><img src="/2021/04/11/JS-LayerCase/mapview.png"></p><p>Pyramidmap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system through the built-in JS component.</p><p>The built-in graphics rendering function of pyramidmap provides a high contrast color system. Layer control system can construct hierarchical structure and classification according to element type and business type, and perfectly present map features at each level.</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/11/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>Pyramidmap provides vector layer,raster layer suchas terrain map and satellite map and other multi style map layers, and can do complex rendering for them. Only the most important point information that meets the user’s filtering criteria and zooming range can be displayed.</p>]]></content>
     
@@ -433,7 +465,7 @@
     
     <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
     
-    <category term="3：Layers" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/3%EF%BC%9ALayers/"/>
+    <category term="3：Layer control" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/3%EF%BC%9ALayer-control/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
@@ -442,7 +474,7 @@
     
     <category term="Web Map view" scheme="https://pyramidmap.github.io/tags/Web-Map-view/"/>
     
-    <category term="Map layers" scheme="https://pyramidmap.github.io/tags/Map-layers/"/>
+    <category term="Layer control" scheme="https://pyramidmap.github.io/tags/Layer-control/"/>
     
   </entry>
   
