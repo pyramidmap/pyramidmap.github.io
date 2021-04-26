@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>PyramidMap API For JS query and identify on map | The pyramidMap studio，structure the map pyramid.....</title>
+  <title>PyramidMap Javascript API query and identify on map | The pyramidMap studio，structure the map pyramid.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The map query function of pyramidmap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map">
+  <meta name="description" content="The map query function of PyramidMap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PyramidMap API For JS query and identify on map">
+<meta property="og:title" content="PyramidMap Javascript API query and identify on map">
 <meta property="og:url" content="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/index.html">
 <meta property="og:site_name" content="The pyramidMap studio，structure the map pyramid.....">
-<meta property="og:description" content="The map query function of pyramidmap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map">
+<meta property="og:description" content="The map query function of PyramidMap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-13T05:53:18.000Z">
-<meta property="article:modified_time" content="2021-04-24T14:14:50.000Z">
+<meta property="article:modified_time" content="2021-04-26T09:20:44.000Z">
 <meta property="article:author" content="PyramidMap">
 <meta property="article:tag" content="Web GL">
 <meta property="article:tag" content="Web JS">
@@ -92,7 +92,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/PyramidMap-API-For-JS/">PyramidMap API For JS</a>►<a class="article-category-link" href="/categories/PyramidMap-API-For-JS/04%EF%BC%9AQuery-and-Identify/">04：Query and Identify</a>
+    <a class="article-category-link" href="/categories/PyramidMap-Javascript-API/">PyramidMap Javascript API</a>►<a class="article-category-link" href="/categories/PyramidMap-Javascript-API/05%EF%BC%9AQuery-and-Identify/">05：Query and Identify</a>
   </div>
 
   </div>
@@ -103,7 +103,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      PyramidMap API For JS query and identify on map
+      PyramidMap Javascript API query and identify on map
     </h1>
   
 
@@ -113,20 +113,20 @@
       
       
       	
-      		<p>The map query function of pyramidmap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map, OSM, Mapbox, Tiantu, Gaode / Baidu map and other online resources. At the same time, it supports attribute data query and spatial geographic location query, and supports large amount of concurrent requests. Whether it is online map or offline map, it can accurately locate and integrate with the user’s own business data. According to the user server performance and network load, the return value of the request response can be adjusted to ensure the smoothness and stability of the map display and the accuracy of the data.：</p>
-<h3 id="Coordinate-system-compatibility-and-accurate-positioning"><a href="#Coordinate-system-compatibility-and-accurate-positioning" class="headerlink" title="Coordinate system compatibility and accurate positioning"></a>Coordinate system compatibility and accurate positioning</h3><p>Pyramidmap integrates the transformation and position calibration of different coordinate systems, including GCS spatial coordinate system and PCs projection coordinate system. It also carries out compatible processing for special coordinate definitions such as Gaode / Baidu to achieve accurate positioning.</p>
+      		<p>The map query function of PyramidMap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map, OSM, Mapbox, Tiantu, Gaode / Baidu map and other online resources. At the same time, it supports attribute data query and spatial geographic location query, and supports large amount of concurrent requests. Whether it is online map or offline map, it can accurately locate and integrate with the user’s own business data. According to the user server performance and network load, the return value of the request response can be adjusted to ensure the smoothness and stability of the map display and the accuracy of the data.：</p>
+<h3 id="Coordinate-system-compatibility-and-accurate-positioning"><a href="#Coordinate-system-compatibility-and-accurate-positioning" class="headerlink" title="Coordinate system compatibility and accurate positioning"></a>Coordinate system compatibility and accurate positioning</h3><p>PyramidMap integrates the transformation and position calibration of different coordinate systems, including GCS spatial coordinate system and PCs projection coordinate system. It also carries out compatible processing for special coordinate definitions such as Gaode / Baidu to achieve accurate positioning.</p>
 <div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/confirmLocation.b912eb77.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
-<h3 id="Attribute-data-query"><a href="#Attribute-data-query" class="headerlink" title="Attribute data query"></a>Attribute data query</h3><p>The pyramidmap map query interface supports attribute query of multi data source layers, parsing layer data structure, joint query of multi fields, accurate positioning, and synchronous display of detailed information of positioning objects.</p>
+<h3 id="Attribute-data-query"><a href="#Attribute-data-query" class="headerlink" title="Attribute data query"></a>Attribute data query</h3><p>The PyramidMap map query interface supports attribute query of multi data source layers, parsing layer data structure, joint query of multi fields, accurate positioning, and synchronous display of detailed information of positioning objects.</p>
 <div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/mapSearch.5b2e5a25.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
-<h3 id="Spatial-data-query"><a href="#Spatial-data-query" class="headerlink" title="Spatial data query"></a>Spatial data query</h3><p>Pyramidmap supports the query of layer graphic spatial data. For example, on the urban pipe network map, you can filter and query according to the pressure value and flow direction, and you can also query according to the scope of urban area or community.</p>
+<h3 id="Spatial-data-query"><a href="#Spatial-data-query" class="headerlink" title="Spatial data query"></a>Spatial data query</h3><p>PyramidMap supports the query of layer graphic spatial data. For example, on the urban pipe network map, you can filter and query according to the pressure value and flow direction, and you can also query according to the scope of urban area or community.</p>
 <div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/userDefined.dd74c0e0.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/" data-id="cknvu1lvs00038out1jv07e8u" data-title="PyramidMap API For JS query and identify on map" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/" data-id="cknykvyc200096gutdfz59760" data-title="PyramidMap Javascript API query and identify on map" class="article-share-link">Share</a>
       
       
       
@@ -137,6 +137,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2021/04/25/How-to-use/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          How-to-use
+        
+      </div>
+    </a>
   
   
     <a href="/2021/04/12/Python-GeoDB-query/" id="article-nav-older" class="article-nav-link-wrap">
@@ -158,7 +167,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01%EF%BC%9AWhat-s-the-PyramidMap/">01：What's the PyramidMap?</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/02%EF%BC%9AWhat-can-the-PyramidMap-do/">02：What can the PyramidMap do?</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-API-For-JS/">PyramidMap API For JS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-API-For-JS/01%EF%BC%9AIntroduction/">01：Introduction</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-API-For-JS/02%EF%BC%9ABase-Functions/">02：Base Functions</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-API-For-JS/03%EF%BC%9ALayer-control/">03：Layer control</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-API-For-JS/04%EF%BC%9AQuery-and-Identify/">04：Query and Identify</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/">PyramidMap GeoProcess workflow</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/01%EF%BC%9AFunction-list/">01：Function list</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/02%EF%BC%9AUI-overview/">02：UI overview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/03%EF%BC%9ASystem-set/">03：System set</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/04%EF%BC%9AMap-query-and-preview/">04：Map query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/05%EF%BC%9AFeature-class-processing/">05：Feature class processing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/06%EF%BC%9ARaster-processing/">06：Raster processing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/07%EF%BC%9ACreate-mxd/">07：Create mxd</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/09%EF%BC%9AGis-Server-query-and-preview/">09：Gis Server query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/10%EF%BC%9AGeoDatabase-query-and-preview/">10：GeoDatabase query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/11%EF%BC%9ALog-recorder-and-query/">11：Log recorder and query</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01%EF%BC%9AWhat-s-the-PyramidMap/">01：What's the PyramidMap?</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/02%EF%BC%9AWhat-can-the-PyramidMap-do/">02：What can the PyramidMap do?</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/">PyramidMap GeoProcess workflow</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/01%EF%BC%9AFunction-list/">01：Function list</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/02%EF%BC%9AUI-overview/">02：UI overview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/03%EF%BC%9ASystem-set/">03：System set</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/04%EF%BC%9AMap-query-and-preview/">04：Map query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/05%EF%BC%9AFeature-class-processing/">05：Feature class processing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/06%EF%BC%9ARaster-processing/">06：Raster processing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/07%EF%BC%9ACreate-mxd/">07：Create mxd</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/09%EF%BC%9AGis-Server-query-and-preview/">09：Gis Server query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/10%EF%BC%9AGeoDatabase-query-and-preview/">10：GeoDatabase query and preview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-GeoProcess-workflow/11%EF%BC%9ALog-recorder-and-query/">11：Log recorder and query</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/">PyramidMap Javascript API</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/01%EF%BC%9AIntroduction/">01：Introduction</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/02%EF%BC%9AApplication-scenarios/">02：Application scenarios</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/03%EF%BC%9ABase-Functions/">03：Base Functions</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/04%EF%BC%9ALayer-control/">04：Layer control</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PyramidMap-Javascript-API/05%EF%BC%9AQuery-and-Identify/">05：Query and Identify</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -178,7 +187,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Arcpy-and-GDAL/" style="font-size: 18.33px;">Arcpy and GDAL</a> <a href="/tags/Attribute-Query/" style="font-size: 10px;">Attribute Query</a> <a href="/tags/For-ArcGIS/" style="font-size: 10px;">For ArcGIS</a> <a href="/tags/For-Cesium/" style="font-size: 10px;">For Cesium</a> <a href="/tags/For-Google-Map/" style="font-size: 10px;">For Google Map</a> <a href="/tags/For-Mapbox/" style="font-size: 10px;">For Mapbox</a> <a href="/tags/For-OpenLayers/" style="font-size: 10px;">For OpenLayers</a> <a href="/tags/GCS-and-PCS/" style="font-size: 13.33px;">GCS and PCS</a> <a href="/tags/GeoDatabase/" style="font-size: 13.33px;">GeoDatabase</a> <a href="/tags/GeoDatabase-exp-to-Map/" style="font-size: 15px;">GeoDatabase exp to Map</a> <a href="/tags/GeoTools-and-GeoServer/" style="font-size: 11.67px;">GeoTools and GeoServer</a> <a href="/tags/JS-Widget/" style="font-size: 13.33px;">JS Widget</a> <a href="/tags/Javascript-API/" style="font-size: 11.67px;">Javascript API</a> <a href="/tags/Layer-control/" style="font-size: 10px;">Layer control</a> <a href="/tags/Map-imp-to-GeoDatabase/" style="font-size: 11.67px;">Map imp to GeoDatabase</a> <a href="/tags/Map-or-Feature-or-Image-Server/" style="font-size: 13.33px;">Map or Feature or Image Server</a> <a href="/tags/Mxd/" style="font-size: 13.33px;">Mxd</a> <a href="/tags/PyramidMap/" style="font-size: 11.67px;">PyramidMap</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/Python-tools/" style="font-size: 11.67px;">Python tools</a> <a href="/tags/Query-and-preview/" style="font-size: 13.33px;">Query and preview</a> <a href="/tags/Shp-Json-kml-Kmz-csv-Excel/" style="font-size: 11.67px;">Shp/Json/kml/Kmz/csv/Excel</a> <a href="/tags/Spacial-Identify/" style="font-size: 10px;">Spacial Identify</a> <a href="/tags/Spacial-data-convert/" style="font-size: 11.67px;">Spacial data convert</a> <a href="/tags/Vector-and-Raster/" style="font-size: 16.67px;">Vector and Raster</a> <a href="/tags/Web-GL/" style="font-size: 15px;">Web GL</a> <a href="/tags/Web-JS/" style="font-size: 10px;">Web JS</a> <a href="/tags/Web-Map-view/" style="font-size: 13.33px;">Web Map view</a> <a href="/tags/Workflow/" style="font-size: 20px;">Workflow</a> <a href="/tags/wms-wfs-wcs/" style="font-size: 10px;">wms/wfs/wcs</a> <a href="/tags/wms-wfs-wcs-kml-kmz/" style="font-size: 10px;">wms/wfs/wcs/kml/kmz</a>
+      <a href="/tags/Arcpy-and-GDAL/" style="font-size: 18.57px;">Arcpy and GDAL</a> <a href="/tags/Attribute-Query/" style="font-size: 10px;">Attribute Query</a> <a href="/tags/For-ArcGIS/" style="font-size: 10px;">For ArcGIS</a> <a href="/tags/For-Cesium/" style="font-size: 10px;">For Cesium</a> <a href="/tags/For-Google-Map/" style="font-size: 10px;">For Google Map</a> <a href="/tags/For-Mapbox/" style="font-size: 10px;">For Mapbox</a> <a href="/tags/For-OpenLayers/" style="font-size: 10px;">For OpenLayers</a> <a href="/tags/GCS-and-PCS/" style="font-size: 12.86px;">GCS and PCS</a> <a href="/tags/GeoDatabase/" style="font-size: 12.86px;">GeoDatabase</a> <a href="/tags/GeoDatabase-exp-to-Map/" style="font-size: 14.29px;">GeoDatabase exp to Map</a> <a href="/tags/GeoTools-and-GeoServer/" style="font-size: 11.43px;">GeoTools and GeoServer</a> <a href="/tags/JS-Widget/" style="font-size: 14.29px;">JS Widget</a> <a href="/tags/Javascript-API/" style="font-size: 11.43px;">Javascript API</a> <a href="/tags/Layer-control/" style="font-size: 10px;">Layer control</a> <a href="/tags/Map-imp-to-GeoDatabase/" style="font-size: 11.43px;">Map imp to GeoDatabase</a> <a href="/tags/Map-or-Feature-or-Image-Server/" style="font-size: 12.86px;">Map or Feature or Image Server</a> <a href="/tags/Mxd/" style="font-size: 12.86px;">Mxd</a> <a href="/tags/PyramidMap/" style="font-size: 11.43px;">PyramidMap</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/Python-tools/" style="font-size: 11.43px;">Python tools</a> <a href="/tags/Query-and-preview/" style="font-size: 12.86px;">Query and preview</a> <a href="/tags/Shp-Json-kml-Kmz-csv-Excel/" style="font-size: 11.43px;">Shp/Json/kml/Kmz/csv/Excel</a> <a href="/tags/Spacial-Identify/" style="font-size: 10px;">Spacial Identify</a> <a href="/tags/Spacial-data-convert/" style="font-size: 11.43px;">Spacial data convert</a> <a href="/tags/Vector-and-Raster/" style="font-size: 17.14px;">Vector and Raster</a> <a href="/tags/Web-GL/" style="font-size: 15.71px;">Web GL</a> <a href="/tags/Web-JS/" style="font-size: 10px;">Web JS</a> <a href="/tags/Web-Map-view/" style="font-size: 14.29px;">Web Map view</a> <a href="/tags/Workflow/" style="font-size: 20px;">Workflow</a> <a href="/tags/wms-wfs-wcs/" style="font-size: 10px;">wms/wfs/wcs</a> <a href="/tags/wms-wfs-wcs-kml-kmz/" style="font-size: 10px;">wms/wfs/wcs/kml/kmz</a>
     </div>
   </div>
 
@@ -200,7 +209,15 @@
       <ul>
         
           <li>
-            <a href="/2021/04/13/JS-QueryIdentify/">PyramidMap API For JS query and identify on map</a>
+            <a href="/2021/04/25/JS-Application-scenarios/">PyramidMap Javascript API Application scenarios</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/25/How-to-use/">How-to-use</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/13/JS-QueryIdentify/">PyramidMap Javascript API query and identify on map</a>
           </li>
         
           <li>
@@ -209,14 +226,6 @@
         
           <li>
             <a href="/2021/04/12/Python-GisServer-query/">PyramidMap GeoProcess workflow platform Gis Server query and preview</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/12/Python-featureClass-process/">PyramidMap GeoProcess workflow platform feature class processing</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/12/Python-function-overview/">PyramidMap GeoProcess workflow platform function list</a>
           </li>
         
       </ul>

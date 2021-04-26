@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/"/>
-  <updated>2021-04-24T14:14:50.000Z</updated>
+  <updated>2021-04-26T12:28:28.000Z</updated>
   <id>https://pyramidmap.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>PyramidMap API For JS query and identify on map</title>
-    <link href="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/"/>
-    <id>https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/</id>
-    <published>2021-04-13T05:53:18.000Z</published>
-    <updated>2021-04-24T14:14:50.000Z</updated>
+    <title>PyramidMap Javascript API Application scenarios</title>
+    <link href="https://pyramidmap.github.io/2021/04/25/JS-Application-scenarios/"/>
+    <id>https://pyramidmap.github.io/2021/04/25/JS-Application-scenarios/</id>
+    <published>2021-04-25T14:10:31.000Z</published>
+    <updated>2021-04-26T12:28:28.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>The map query function of pyramidmap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map, OSM, Mapbox, Tiantu, Gaode / Baidu map and other online resources. At the same time, it supports attribute data query and spatial geographic location query, and supports large amount of concurrent requests. Whether it is online map or offline map, it can accurately locate and integrate with the user’s own business data. According to the user server performance and network load, the return value of the request response can be adjusted to ensure the smoothness and stability of the map display and the accuracy of the data.：</p><h3 id="Coordinate-system-compatibility-and-accurate-positioning"><a href="#Coordinate-system-compatibility-and-accurate-positioning" class="headerlink" title="Coordinate system compatibility and accurate positioning"></a>Coordinate system compatibility and accurate positioning</h3><p>Pyramidmap integrates the transformation and position calibration of different coordinate systems, including GCS spatial coordinate system and PCs projection coordinate system. It also carries out compatible processing for special coordinate definitions such as Gaode / Baidu to achieve accurate positioning.</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/confirmLocation.b912eb77.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Attribute-data-query"><a href="#Attribute-data-query" class="headerlink" title="Attribute data query"></a>Attribute data query</h3><p>The pyramidmap map query interface supports attribute query of multi data source layers, parsing layer data structure, joint query of multi fields, accurate positioning, and synchronous display of detailed information of positioning objects.</p><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/mapSearch.5b2e5a25.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Spatial-data-query"><a href="#Spatial-data-query" class="headerlink" title="Spatial data query"></a>Spatial data query</h3><p>Pyramidmap supports the query of layer graphic spatial data. For example, on the urban pipe network map, you can filter and query according to the pressure value and flow direction, and you can also query according to the scope of urban area or community.</p><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/userDefined.dd74c0e0.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>The pyramidmap JavaScript API is oriented to web map application. At the level of map application, we must consider three questions: which map platform being selected? which database to choose? Which framework running on? We call it the 3W problem. At the beginning of the design, pyramidmap has brought the compatibility of the above problems into the technical category. The purpose is to realize the agile adaptation among heterogeneous map platforms, databases and frameworks, and the low coupling or even independence with the front end through the core component pattern. The pyramidmap JavaScript suite can minimize the difficulty of integrating different front-end frameworks. Pyramidmap already provides compatible support for the following.</p><h3 id="1-Map-platform"><a href="#1-Map-platform" class="headerlink" title="1: Map platform"></a>1: Map platform</h3><p><img src="/2021/04/25/JS-Application-scenarios/mapplatform.png"></p><h3 id="2-Geo-Database"><a href="#2-Geo-Database" class="headerlink" title="2: Geo Database"></a>2: Geo Database</h3><p><img src="/2021/04/25/JS-Application-scenarios/database.png"></p><h3 id="3-Web-framework"><a href="#3-Web-framework" class="headerlink" title="3: Web framework"></a>3: Web framework</h3><p><img src="/2021/04/25/JS-Application-scenarios/framework.png"></p>]]></content>
     
     
       
@@ -33,9 +33,59 @@
     
     
     
-    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
     
-    <category term="04：Query and Identify" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/04%EF%BC%9AQuery-and-Identify/"/>
+    <category term="02：Application scenarios" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/02%EF%BC%9AApplication-scenarios/"/>
+    
+    
+    <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
+    
+    <category term="JS Widget" scheme="https://pyramidmap.github.io/tags/JS-Widget/"/>
+    
+    <category term="Web Map view" scheme="https://pyramidmap.github.io/tags/Web-Map-view/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How-to-use</title>
+    <link href="https://pyramidmap.github.io/2021/04/25/How-to-use/"/>
+    <id>https://pyramidmap.github.io/2021/04/25/How-to-use/</id>
+    <published>2021-04-25T09:27:16.000Z</published>
+    <updated>2021-04-25T09:27:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap Javascript API query and identify on map</title>
+    <link href="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/"/>
+    <id>https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/</id>
+    <published>2021-04-13T05:53:18.000Z</published>
+    <updated>2021-04-26T09:20:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>The map query function of PyramidMap supports various map platform interfaces and map resources, such as ArcGIS and its online map resources and local hosted map data, GeoServer hosted map, Google map, OSM, Mapbox, Tiantu, Gaode / Baidu map and other online resources. At the same time, it supports attribute data query and spatial geographic location query, and supports large amount of concurrent requests. Whether it is online map or offline map, it can accurately locate and integrate with the user’s own business data. According to the user server performance and network load, the return value of the request response can be adjusted to ensure the smoothness and stability of the map display and the accuracy of the data.：</p><h3 id="Coordinate-system-compatibility-and-accurate-positioning"><a href="#Coordinate-system-compatibility-and-accurate-positioning" class="headerlink" title="Coordinate system compatibility and accurate positioning"></a>Coordinate system compatibility and accurate positioning</h3><p>PyramidMap integrates the transformation and position calibration of different coordinate systems, including GCS spatial coordinate system and PCs projection coordinate system. It also carries out compatible processing for special coordinate definitions such as Gaode / Baidu to achieve accurate positioning.</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/confirmLocation.b912eb77.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Attribute-data-query"><a href="#Attribute-data-query" class="headerlink" title="Attribute data query"></a>Attribute data query</h3><p>The PyramidMap map query interface supports attribute query of multi data source layers, parsing layer data structure, joint query of multi fields, accurate positioning, and synchronous display of detailed information of positioning objects.</p><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/mapSearch.5b2e5a25.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h3 id="Spatial-data-query"><a href="#Spatial-data-query" class="headerlink" title="Spatial data query"></a>Spatial data query</h3><p>PyramidMap supports the query of layer graphic spatial data. For example, on the urban pipe network map, you can filter and query according to the pressure value and flow direction, and you can also query according to the scope of urban area or community.</p><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/13/JS-QueryIdentify/userDefined.dd74c0e0.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
+    
+    <category term="05：Query and Identify" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/05%EF%BC%9AQuery-and-Identify/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
@@ -447,13 +497,13 @@
   </entry>
   
   <entry>
-    <title>PyramidMap API For JS Layers control</title>
+    <title>PyramidMap Javascript API Layers control</title>
     <link href="https://pyramidmap.github.io/2021/04/11/JS-LayerCase/"/>
     <id>https://pyramidmap.github.io/2021/04/11/JS-LayerCase/</id>
     <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-24T14:14:32.000Z</updated>
+    <updated>2021-04-26T09:20:36.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>In essence, layers follow the map manufacturer’s own specifications or OGC standard specifications, with built-in data structure of attribute data, spatial data, coordinate system definition and symbol graphics rendering. Therefore, GIS is a processing system for spatial data distribution and graphics rendering, which can correctly express and transfer the meaning of map data, and complete the specific map functions. Pyramidmap is oriented to map application layer, and provides solutions in Web GIS and python data processing.</p><p><img src="/2021/04/11/JS-LayerCase/mapview.png"></p><p>Pyramidmap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system through the built-in JS component.</p><p>The built-in graphics rendering function of pyramidmap provides a high contrast color system. Layer control system can construct hierarchical structure and classification according to element type and business type, and perfectly present map features at each level.</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/11/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>Pyramidmap provides vector layer,raster layer suchas terrain map and satellite map and other multi style map layers, and can do complex rendering for them. Only the most important point information that meets the user’s filtering criteria and zooming range can be displayed.</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>In essence, layers follow the map manufacturer’s own specifications or OGC standard specifications, with built-in data structure of attribute data, spatial data, coordinate system definition and symbol graphics rendering. Therefore, GIS is a processing system for spatial data distribution and graphics rendering, which can correctly express and transfer the meaning of map data, and complete the specific map functions. PyramidMap is oriented to map application layer, and provides solutions in Web GIS and python data processing.</p><p><img src="/2021/04/11/JS-LayerCase/mapview.png"></p><p>PyramidMap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system through the built-in JS component.</p><p>The built-in graphics rendering function of PyramidMap provides a high contrast color system. Layer control system can construct hierarchical structure and classification according to element type and business type, and perfectly present map features at each level.</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/2021/04/11/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>PyramidMap provides vector layer,raster layer suchas terrain map and satellite map and other multi style map layers, and can do complex rendering for them. Only the most important point information that meets the user’s filtering criteria and zooming range can be displayed.</p>]]></content>
     
     
       
@@ -463,9 +513,9 @@
     
     
     
-    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
     
-    <category term="03：Layer control" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/03%EF%BC%9ALayer-control/"/>
+    <category term="04：Layer control" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/04%EF%BC%9ALayer-control/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
@@ -479,13 +529,13 @@
   </entry>
   
   <entry>
-    <title>PyramidMap API For JS introduction</title>
+    <title>PyramidMap Javascript API introduction</title>
     <link href="https://pyramidmap.github.io/2021/04/11/JS-introduce/"/>
     <id>https://pyramidmap.github.io/2021/04/11/JS-introduce/</id>
     <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-24T14:14:20.000Z</updated>
+    <updated>2021-04-26T09:15:04.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Pyramid map is a map product of pyramid map studio for intelligent application and development. Adhering to the three principles of professional technology, intelligent deployment and practical function, we provide a complete map application system for users. Based on the pyramidMap platform, users can quickly build their own map application. The whole application covers the GIS server engine and its corresponding client components, and supports multi terminal and cross platform deployment. Pyramidmap engine implements elastic function through plugin mode, supports 2D and 3D map application based on Web GL. PyramidMap supports WMS / WFS / WCS / KML and other standard interfaces, and realizes data communication and integration between heterogeneous GIS platforms throught following OGC specification. The pyramidmap engine outputs map services and development interfaces in widget component mode. It has built-in support for ArcGIS, GeoServer, Openlayer, Leafet, Cesium JS, Google map, Mapbox, and Amap/Baidu maps. It also provides Python based interfaces to meet the all-round data processing needs of map users. The following is the logical framework of a map implemented by pyramidmap:</p><p><img src="/2021/04/11/JS-introduce/technicalprocess.png"></p><p>Users can customize every aspect of map application by using pyramidmap API interface such as from map symbolization management to layer switching, from data statistics to thematic map, from features attribute query to spatial topology analysis, and so on. Pyramidmap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system.</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>PyramidMap suite is a map product of PyramidMap studio for intelligent application and development. Adhering to the three principles of professional technology, intelligent deployment and practical function, we provide a complete map application system for users. Based on the pyramidMap platform, users can quickly build their own map application. The whole application covers the GIS server engine and its corresponding client components, and supports multi terminal and cross platform deployment. Pyramidmap engine implements elastic function through plugin mode, supports 2D and 3D map application based on Web GL. PyramidMap supports WMS / WFS / WCS / KML and other standard interfaces, and realizes data communication and integration between heterogeneous GIS platforms throught following OGC specification. The pyramidmap engine outputs map services and development interfaces in widget component mode. It has built-in support for ArcGIS, GeoServer, Openlayer, Leafet, Cesium JS, Google map, Mapbox, and Amap/Baidu maps. It also provides Python based interfaces to meet the all-round data processing needs of map users. The following is the logical framework of a map implemented by PyramidMap:</p><p><img src="/2021/04/11/JS-introduce/technicalprocess.png"></p><p>Users can customize every aspect of map application by using PyramidMap API interface such as from map symbolization management to layer switching, from data statistics to thematic map, from features attribute query to spatial topology analysis, and so on. Pyramidmap supports various types of vector and image layer display, and transforms, adjusts, appends and merges different coordinate systems to help users construct their own map data and display system.</p>]]></content>
     
     
       
@@ -495,9 +545,9 @@
     
     
     
-    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
     
-    <category term="01：Introduction" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/01%EF%BC%9AIntroduction/"/>
+    <category term="01：Introduction" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/01%EF%BC%9AIntroduction/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
@@ -565,11 +615,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap API For JS base functions</title>
+    <title>PyramidMap Javascript API base functions</title>
     <link href="https://pyramidmap.github.io/2021/04/05/JS-basefunction/"/>
     <id>https://pyramidmap.github.io/2021/04/05/JS-basefunction/</id>
     <published>2021-04-05T03:16:08.000Z</published>
-    <updated>2021-04-24T14:14:06.000Z</updated>
+    <updated>2021-04-26T09:13:10.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>Vector and grid</strong></p><p>Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap / Baidu map support topographic map and satellite map, and coordinate system conversion can be carried out according to actual needs. Pyramidmap supports terrain rendering based on terrain data in the 3D environment .</p><p><strong>Offline support</strong></p><p>Support offline deployment, calling online map resources or hosting in GIS Server. All kinds of offline map services on server. Users can deploy business layers on ArcGIS Server and GeoServer, call and load various map functions through API interface provided by pyramidmap, such as attribute query, spatial query, layer management, data import and export, statistical report, etc.</p><p><strong>Symbol map symbolization management</strong></p><p>Dynamic real-time change map appearance, personalized icon and color settings, dynamic switching thematic symbols, support preset and interface settings.</p><p><strong>3D map</strong></p><p>Support ArcGIS, cesium, mapbox, Gaode and other 3D maps, fully compatible with BIM / CIM and other building layers, realize the organic integration of true 3D and true scene</p><p><strong>Global data</strong></p><p>It covers all kinds of global map data and coordinate systems, including vector, raster, satellite, remote sensing image, etc., and supports WGS84 and web<br>All standard space and projection coordinate systems such as Mercator, CGCS2000, Xian80 and Beijing 54 can be transformed and adjusted according to the production environment.</p><p><strong>Support for third party applications</strong></p><p>Support three party system docking, such as SCADA data acquisition software, automatic chart generation software, BI data analysis software. Pyramidm<br>ap provides standard API interface, integrates map and production data, and forms rich thematic maps through data analysis and summary.</p>]]></content>
     
@@ -581,9 +631,9 @@
     
     
     
-    <category term="PyramidMap API For JS" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/"/>
+    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
     
-    <category term="02：Base Functions" scheme="https://pyramidmap.github.io/categories/PyramidMap-API-For-JS/02%EF%BC%9ABase-Functions/"/>
+    <category term="03：Base Functions" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/03%EF%BC%9ABase-Functions/"/>
     
     
     <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
