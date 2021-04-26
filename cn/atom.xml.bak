@@ -217,11 +217,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台地理数据库查询及地图预览</title>
+    <title>PyramidMap python 工作流平台地理数据库查询及地图预览</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T08:01:50.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地理数据库查询："><a href="#地理数据库查询：" class="headerlink" title="地理数据库查询："></a>地理数据库查询：</h2><h3 id="1：数据表查询："><a href="#1：数据表查询：" class="headerlink" title="1：数据表查询："></a>1：数据表查询：</h3><p><img src="/cn/cn/2021/04/12/Python-GeoDB-query/490367e3c598316f8d89ccc6bdd5ed39.png"></p><h3 id="2：数据导出："><a href="#2：数据导出：" class="headerlink" title="2：数据导出："></a>2：数据导出：</h3><p><img src="/cn/cn/2021/04/12/Python-GeoDB-query/14a31895292a8fc3a8ea0fcf86b090ad.png" alt="sde导出为json"></p><p><img src="/cn/cn/2021/04/12/Python-GeoDB-query/6a4094af52b57c10de908ebb02e02fe4.png" alt="转出json成功"></p><p>选择数据列表，右键选择导出类型及路径，可以建数据表导出至指定路径下，导出数据支持shp、excel、json、csv格式。</p><h3 id="3：地图预览："><a href="#3：地图预览：" class="headerlink" title="3：地图预览："></a>3：地图预览：</h3><p>选择数据列表，右键选择“地图及数据预览”，可以对所选数据表进行地图预览。</p><p><img src="/cn/cn/2021/04/12/Python-GeoDB-query/e03e2e35b0b1586c0bba263dec2e97b9.png" alt="sde地图预览"></p><p>地图预览</p><p><img src="/cn/cn/2021/04/12/Python-GeoDB-query/5170204556d879a506ea429d8f8fc96b.png" alt="管线地图预览"></p>]]></content>
     
@@ -233,9 +233,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="10：地理数据库查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
+    <category term="10：地理数据库查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -251,11 +251,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台GIS Server查询及地图预览</title>
+    <title>PyramidMap python 工作流平台GIS Server查询及地图预览</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-GisServer-query/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:19:30.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地图服务信息查询："><a href="#地图服务信息查询：" class="headerlink" title="地图服务信息查询："></a>地图服务信息查询：</h2><h3 id="1：地图服务列表："><a href="#1：地图服务列表：" class="headerlink" title="1：地图服务列表："></a>1：地图服务列表：</h3><p><img src="/cn/cn/2021/04/12/Python-GisServer-query/f96e059f9fb980e09a81e06cd5916966.png"></p><p>列表中的地图服务可以右键导出为shp、excel、json、csv，并可进行地图预览。</p><h3 id="2：地图服务导出及地图预览："><a href="#2：地图服务导出及地图预览：" class="headerlink" title="2：地图服务导出及地图预览："></a>2：地图服务导出及地图预览：</h3><h4 id="2-1：地图服务导出为excel-示例-："><a href="#2-1：地图服务导出为excel-示例-：" class="headerlink" title="2.1：地图服务导出为excel(示例)："></a>2.1：地图服务导出为excel(示例)：</h4><p><strong><img src="/cn/cn/2021/04/12/Python-GisServer-query/d0a08847f5c9cbb788a439fde091a2a4.png" alt="导出为excel1"></strong></p><h4 id="2-2：地图服务预览："><a href="#2-2：地图服务预览：" class="headerlink" title="2.2：地图服务预览："></a>2.2：地图服务预览：</h4><p>1：符号化设置</p><p><strong><img src="/cn/cn/2021/04/12/Python-GisServer-query/34adbbbac3b804fba9d21245738f666b.png" alt="省界符号选择1"><br><img src="/cn/cn/2021/04/12/Python-GisServer-query/1b67175f83bb2de04aa25cf508845030.png" alt="省界符号选择0"></strong></p><p>地图按符号化设置进行显示预览：</p><p><img src="/cn/cn/2021/04/12/Python-GisServer-query/4f58f77940a9f7dabf27ae5eca84d25d.png" alt="省界符号选择"></p>]]></content>
     
@@ -267,9 +267,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="09：GIS Server查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/09%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
+    <category term="09：GIS Server查询及地图预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/09%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -283,11 +283,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台要素类处理</title>
+    <title>PyramidMap python 工作流平台要素类处理</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-featureClass-process/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:19:00.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="要素类处理："><a href="#要素类处理：" class="headerlink" title="要素类处理："></a>要素类处理：</h2><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/6e71f395dbc53d89a938d308c5fcf509.png"></p><h3 id="1：数据转地图要素："><a href="#1：数据转地图要素：" class="headerlink" title="1：数据转地图要素："></a>1：数据转地图要素：</h3><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/1dd53da92cd493fd00369f59db3c34f1.png" alt="数据转要素类"></p><p>以上功能区支持shp、json、kml、kmz、txt、csv、dbf、excel等格式转换为地图要素类数据。点击进入功能界面，如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/a97e7fdfe675bb806cea801faf92d366.png"></p><p>程序中，可以将若干输入区加入到选择区，形成队列列表。目标选择区中，目标路径支持物理路径、gdb文件类型地理数据库、mdb个人地理类型数据库、sde企业类型地理数据库，涵盖GIS应用的全部类型。由此形成数据处理工作流，点击“转移到”，开始批量数据处理，处理过程自动保存日志。执行模式如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/fae621b08a75868fc195f18a7a67f95b.png" alt="shp2json"></p><h3 id="2：地图要素转其他类型："><a href="#2：地图要素转其他类型：" class="headerlink" title="2：地图要素转其他类型："></a>2：地图要素转其他类型：</h3><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/8932ec1f0868fc40da07a4f93ce10ee5.png" alt="要素类转其他数据0"></p><p>以上功能区支持地图要素类转shp、json、kml、kmz、txt、csv、dbf、excel等类型数据。点击进入功能界面，如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/a14e9e785845ee28906507c06ab37acf.png"></p><p>程序中，可以将若干输入区加入到选择区，形成队列列表。输入数据支持shp、gdb文件类型地理数据库、mdb个人地理类型数据库、sde企业类型地理数据库，涵盖GIS应用的全部类型。输出类型支持shp、json、kml、kmz、txt、csv、dbf、excel：由此形成数据处理工作流，点击“转换到”，开始批量数据处理。过程模型如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/605b3c44205f35339f472b9c4c1ff2c5.png" alt="fc2json"></p><p>处理过程自动保存日志。</p><h3 id="3：地图要素追加合并："><a href="#3：地图要素追加合并：" class="headerlink" title="3：地图要素追加合并："></a>3：地图要素追加合并：</h3><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/d85696a2f58f9102fbf9ebe4c8139324.png" alt="要素类追加合并"></p><p>地图要素类，包括shp图层、gdb要素类、mdb要素类、sde企业地理数据库要素类，本质上就是存储空间地理信息的数据表。在生产过程中，将多个图层数据追加或合并到一个图层上的应用会非常多。面对这种需求，我们提供如下简洁功能，并细化应当遵循的相应的规则，功能如下：</p><h4 id="3-1：要素类追加："><a href="#3-1：要素类追加：" class="headerlink" title="3.1：要素类追加："></a>3.1：要素类追加：</h4><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/155989a1a7501d14227c4a0bf61a6e8b.png"></p><p>要素类追加，支持从shp、gdb、mdb、sde到shp、gdb、mdb、sde的任意数据源的多对一追加，通过TEST或NO TEST参数控制是否允许源数据与目标数据存在字段结构差异或进行过滤。TEST模式进行强制限定，源数据与目标数据格式必须一致，否则无法运行；NO TEST 模式会进行字段映射过滤，只有符合映射规则的源数据才会进行追加。选择NO TEST模式，界面会提供如下字段映射选择方式：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/e382d26a0f91fca57a40ab9184777d2d.png"></p><p>除非特别确定，否则按照默认映射方式执行。工作流模型如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/1fd8f5f5d58a4ea8affd0f3dd3ef5ec5.png" alt="要素类追加处理流程"></p><h4 id="3-2：要素类合并："><a href="#3-2：要素类合并：" class="headerlink" title="3.2：要素类合并："></a>3.2：要素类合并：</h4><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/5733b6ac565d0dceb3961ebeff9a833e.png"></p><p>可以点击下方红框中的“创建新数据集”“创建新要素类”，将目标数据指定到新的位置。</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/33e892922befa963dc01329353858090.png" alt="新建要素数据集"></p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/c1add942a415d416ba1bf90016842ddf.png" alt="新建要素类"></p><p>要素类合并，支持从shp、gdb、mdb、sde到shp、gdb、mdb、sde的任意数据源的多对一合并，字段映射方式与追加相同，控制字段合并策略。除非特别确定，否则按照默认映射方式执行。工作流模型如下：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/d8334434f83f31e4f5684def5c722fac.png" alt="要素类合并处理流程"></p><h3 id="4：地图要素迁移："><a href="#4：地图要素迁移：" class="headerlink" title="4：地图要素迁移："></a>4：地图要素迁移：</h3><p>要素迁移就是将shp及gdb、mdb、sde中的要素类迁移到指定的目标路径下，并自动完成数据格式转换，以下是转换模型：</p><h4 id="４-１：要素类迁移模型："><a href="#４-１：要素类迁移模型：" class="headerlink" title="４.１：要素类迁移模型："></a>４.１：要素类迁移模型：</h4><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/ef85676bdd152e1db963ca8a563a75b3.png" alt="shp迁移5"></p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/2f0fb2e1453240a4dee5c2be87c6977e.png" alt="gdb迁移"></p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/37f5d4fb7380e0bdf620c4f55e6eb44d.png" alt="mdb迁移"></p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/fc4ae42b4960af1dfd088d58ad1d5098.png" alt="sde迁移"></p><h4 id="４-２：要素类迁移操作："><a href="#４-２：要素类迁移操作：" class="headerlink" title="４.２：要素类迁移操作："></a>４.２：要素类迁移操作：</h4><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/c6c520cdea17f3111466b513719bd2a4.png"></p><h4 id="４-３：执行流程如下："><a href="#４-３：执行流程如下：" class="headerlink" title="４.３：执行流程如下："></a>４.３：执行流程如下：</h4><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/bffc2934d2b8c780b3a5d699a9c701a6.png" alt="要素迁移工作流程1"></p><h3 id="5：标准坐标系转换："><a href="#5：标准坐标系转换：" class="headerlink" title="5：标准坐标系转换："></a>5：标准坐标系转换：</h3><p>支持所有具有ＥＰＳＧ标准定义的地理坐标系和投影坐标系之间相互转换。转换队列中的源数据可以具有不同的坐标系，最终都可以转换到指定的地理或投影坐标系。坐标系转换模型如下（仅选取部分有代表性的地理和投影坐标系为例），其他坐标系处理方式与之相同。</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/8af22ee310a29b65231ad73da5b6ce60.png"></p><p>标准坐标系转换运行界面说明：</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/a0acb8847e4cd5506ff59759f93c46ac.png"></p><p>在目标区的坐标系选择下拉框中，选择最终转换的目标坐标系统。</p><h3 id="6：特殊坐标系转换："><a href="#6：特殊坐标系转换：" class="headerlink" title="6：特殊坐标系转换："></a>6：特殊坐标系转换：</h3><p>所谓特殊坐标系，就是非公开，未经ＥＰＳＧ认证的的私有化坐标系统，如百度、高德地图坐标系及其他地方性坐标系统。本软件仅提供标准化坐标系到百度、高德地图坐标系的转换。</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/4ec86b8d834e3b76ba507cd6e04bb0dd.png"></p><p>特殊坐标系转换运行界面说明：</p><p>与标准坐标系转换稍有区别，当前数据源只支持shp类型，gdb、mdb及sde要素类可先转换为shp在进行坐标系转换，暂不支持对影像类进行此转换。目标坐标系支持百度、高德两种类型。</p><p><img src="/cn/cn/2021/04/12/Python-featureClass-process/a5c8ed9471702fd791701efe14e66197.png"></p>]]></content>
     
@@ -299,9 +299,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="05：要素类处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/05%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/"/>
+    <category term="05：要素类处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/05%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -327,39 +327,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台日志记录及查询</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-log/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-log/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-16T08:55:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="日志查询："><a href="#日志查询：" class="headerlink" title="日志查询："></a>日志查询：</h2><h3 id="1：日志分类目录："><a href="#1：日志分类目录：" class="headerlink" title="1：日志分类目录："></a>1：日志分类目录：</h3><p><img src="/cn/cn/2021/04/12/Python-log/fea628195d807e47091a232d51801316.png" alt="日志目录"></p><p>日志目录与功能相对应，并以节点树形结构呈现。</p><h3 id="2：日志查询："><a href="#2：日志查询：" class="headerlink" title="2：日志查询："></a>2：日志查询：</h3><p><img src="/cn/cn/2021/04/12/Python-log/6730c9713478a46978d758675d1cc636.png"></p><p>选择日志目录后，日志记录将以list列表模式呈现，并可按日期进行查询。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="11：日志记录及查询" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
-    
-    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyramidMap 地理数据处理工作流平台功能清单</title>
+    <title>PyramidMap python 工作流平台功能清单</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-function-overview/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-function-overview/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:19:10.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="功能清单："><a href="#功能清单：" class="headerlink" title="功能清单："></a>功能清单：</h2><table><thead><tr><th>功能</th><th>模块</th><th>子项，以工作流模式执行。</th><th>说明</th></tr></thead><tbody><tr><td>地图 查询 展示</td><td>表信息</td><td>图层表信息、字段结构、要素类型、几何类型、坐标系、空间索引总览。</td><td></td></tr><tr><td></td><td>表数据</td><td>图层表数据查询显示。</td><td></td></tr><tr><td></td><td>经纬度</td><td>图层表中每个要素的经纬度数据统计报表。</td><td></td></tr><tr><td></td><td>统计</td><td>图层表中要素类count统计及整体范围的中心点坐标计算。</td><td></td></tr><tr><td></td><td>地图 展示</td><td>矢量及影像类地图展示。</td><td></td></tr><tr><td></td><td></td><td>点、线、面等要素的符号化管理及设置。</td><td></td></tr><tr><td>矢 量 数 据 处 理</td><td>数据 转入 转出</td><td>Shp转地图要素类</td><td>地图要素类转Shp</td></tr><tr><td></td><td></td><td>Json转地图要素类</td><td>地图要素类转Json</td></tr><tr><td></td><td></td><td>Kml/Kmz转地图要素类</td><td>地图要素类转Kml/Kmz</td></tr><tr><td></td><td></td><td>Txt转地图要素类</td><td>地图要素类转Txt</td></tr><tr><td></td><td></td><td>Csv转地图要素类</td><td>地图要素类转Csv</td></tr><tr><td></td><td></td><td>Dbf转地图要素类</td><td>地图要素类转Dbf</td></tr><tr><td></td><td></td><td>Excel转地图要素类</td><td>地图要素类转Excel</td></tr><tr><td></td><td>数据 合并</td><td>地图要素类按设置参数追加。</td><td></td></tr><tr><td></td><td></td><td>地图要素类按设置参数合并。</td><td></td></tr><tr><td></td><td>地图 数据 迁移</td><td>Shp迁移至指定位置。</td><td></td></tr><tr><td></td><td></td><td>Shp迁移至文件地理数据库gdb。</td><td></td></tr><tr><td></td><td></td><td>Shp迁移至个人地理数据库mdb。</td><td></td></tr><tr><td></td><td></td><td>Shp迁移至企业地理数据库：支持：Oracle/SQL Server/PostgreSQL。</td><td></td></tr><tr><td></td><td></td><td>Gdb数据转为Shp。</td><td></td></tr><tr><td></td><td></td><td>Gdb数据迁移至Mdb。</td><td></td></tr><tr><td></td><td></td><td>Gdb数据迁移至企业地理数据库：支持：Oracle/SQL Server/PostgreSQL。</td><td></td></tr><tr><td></td><td></td><td>Mdb数据转为Shp。</td><td></td></tr><tr><td></td><td></td><td>Mdb数据迁移至Gdb。</td><td></td></tr><tr><td></td><td></td><td>Mdb数据迁移至企业地理数据库：支持：Oracle/SQL Server/PostgreSQL。</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL地图数据转为Shp。</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL地图数据迁移至Gdb。</td><td></td></tr><tr><td></td><td></td><td>Oracle/SQL Server/PostgreSQL地图数据迁移至Mdb。</td><td></td></tr><tr><td>影 像 数 据 处 理</td><td>切片 压缩</td><td>影像按设置参数切分。</td><td></td></tr><tr><td></td><td></td><td>影像按设置参数合并。</td><td></td></tr><tr><td></td><td></td><td>影像按设置参数压缩。</td><td></td></tr><tr><td></td><td>转换</td><td>影像按设置参数转换。包括数据格式、像素位深、色彩映射、波段等。</td><td></td></tr><tr><td></td><td>数据 优化</td><td>构建影像金字塔，提高加载和预览速度。</td><td></td></tr><tr><td></td><td></td><td>影像无效值处理，去除无效像素造成的黑色背景。</td><td></td></tr><tr><td>坐 标 系 转 换</td><td>标准 坐标</td><td>矢量图层按参数转换为指定坐标系。</td><td></td></tr><tr><td></td><td></td><td>影像图层按参数转换为指定坐标系。</td><td></td></tr><tr><td></td><td>特殊 坐标</td><td>Shp按参数转换为高德地图坐标系，并进行位置校正。</td><td></td></tr><tr><td></td><td></td><td>Shp按参数转换为百度地图坐标系，并进行位置校正。</td><td></td></tr><tr><td></td><td></td><td>Shp按参数转换为其他地图坐标系，并进行位置校正。</td><td></td></tr><tr><td>地图文 档</td><td>矢量</td><td>按指定参数生成矢量类地图文档mxd。</td><td></td></tr><tr><td></td><td>影像</td><td>按指定参数生成影像类地图文档mxd。</td><td></td></tr><tr><td>地图服务发 布</td><td>矢量</td><td>矢量地图服务MapServer的初始化设置及自动化发布。</td><td></td></tr><tr><td></td><td>影像</td><td>影像地图服务ImgServer的初始化设置及自动化发布。</td><td></td></tr><tr><td></td><td>要素</td><td>要素地图服务FeatureServer的初始化设置及自动化发布。</td><td></td></tr><tr><td>地理数据库管理</td><td>ArcGIS</td><td>Oracle</td><td>创建地理数据库，托管地图数据，提供要素地图服务，实现地图在线编辑存储。同时提供符合OGC标准的wms/wfs/wcs/kml等标准化地图服务,实现异构平台服务兼容。</td></tr><tr><td></td><td></td><td>SQL Server</td><td></td></tr><tr><td></td><td></td><td>PostgreSQL</td><td></td></tr><tr><td></td><td>GeoServer</td><td>PostgreSQL</td><td>创建地理数据库，托管地图数据，为开源GIS Server提供数据源，实现wms/wfs/wcs/kml等OGC标准化地图服务, 实现异构平台兼容。</td></tr><tr><td></td><td></td><td>MySQL</td><td></td></tr><tr><td></td><td></td><td>其他可扩展</td><td></td></tr><tr><td>地理数据库数据处理</td><td>数据连接</td><td>PostGIS</td><td>初始化并保存PostGIS数据库连接。</td></tr><tr><td></td><td></td><td>MySQL</td><td>初始化并保存MySQL数据库连接。</td></tr><tr><td></td><td>数据 导入</td><td>PostGIS</td><td>Shp图层导入到PostGIS，使之可以在GeoServer上发布。</td></tr><tr><td></td><td></td><td>MySQL</td><td>Shp图层导入到MySQL，使之可以在GeoServer上发布。</td></tr><tr><td></td><td>数据 导出</td><td>PostGIS</td><td>将PostGIS中的地图数据导出为shp图层。</td></tr><tr><td></td><td></td><td>MySQL</td><td>将MySQL中的地图数据导出为shp图层。</td></tr><tr><td></td><td>地图 预览</td><td>数据查看</td><td>查询shp属性及空间数据，统计要素量、计算中心坐标。</td></tr><tr><td></td><td></td><td>地图预览</td><td>进行地图预览。</td></tr><tr><td>日志记录及查询</td><td>GIS数据转换日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>GIS数据导入、导出日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>GIS数据追加、合并日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>影像压缩、切分、合并日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>影像金字塔构建日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>影像无效值处理日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>坐标系转换日志记录及条件查询。</td><td></td><td></td></tr><tr><td></td><td>地图服务发布日志记录及条件查询。</td><td></td><td></td></tr></tbody></table>]]></content>
     
@@ -371,9 +343,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="01：功能清单" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/01%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/"/>
+    <category term="01：功能清单" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/01%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -409,11 +381,39 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台地图查询预览</title>
+    <title>PyramidMap python 工作流平台日志记录及查询</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-log/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-log/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-26T13:27:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="日志查询："><a href="#日志查询：" class="headerlink" title="日志查询："></a>日志查询：</h2><h3 id="1：日志分类目录："><a href="#1：日志分类目录：" class="headerlink" title="1：日志分类目录："></a>1：日志分类目录：</h3><p><img src="/cn/cn/2021/04/12/Python-log/fea628195d807e47091a232d51801316.png" alt="日志目录"></p><p>日志目录与功能相对应，并以节点树形结构呈现。</p><h3 id="2：日志查询："><a href="#2：日志查询：" class="headerlink" title="2：日志查询："></a>2：日志查询：</h3><p><img src="/cn/cn/2021/04/12/Python-log/6730c9713478a46978d758675d1cc636.png"></p><p>选择日志目录后，日志记录将以list列表模式呈现，并可按日期进行查询。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="11：日志记录及查询" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap python 工作流平台地图查询预览</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-map-query/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-map-query/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:19:46.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地图查询显示"><a href="#地图查询显示" class="headerlink" title="地图查询显示"></a>地图查询显示</h2><p><img src="/cn/cn/2021/04/12/Python-map-query/27a6cbbfadaf8b8541a558b87919000a.png" alt="地图查询显示3"></p><p>在地图显示区，可以查询显示不同数据源的矢量和影像地图，以列表的形式展示图层数据，包括图层名称、要素类型、几何类型、坐标系类型、名称及代码，是否具有空间索引以及每个图层中的要素数量。</p><p><img src="/cn/cn/2021/04/12/Python-map-query/13bfaaf6e0c234c84cdc1567fd78f132.png"></p><p>列表中的每一条记录都可以右键菜单操作，如跳跳转至地图数据及预览界面。</p><p><img src="/cn/cn/2021/04/12/Python-map-query/b492a3a19719df4fa9b57a3def3d2df1.png" alt="java_地图数据查询"></p><p>地图符号设置：</p><p><img src="/cn/cn/2021/04/12/Python-map-query/006d1c4a2f0ee4d3a40fa089dfc86ff2.png" alt="java_样式设置"></p><p>地图预览：</p><p><img src="/cn/cn/2021/04/12/Python-map-query/ab2875315cadd3428230f52f7e216301.png" alt="java_地图显示2"></p>]]></content>
     
@@ -425,9 +425,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="04：地图查询及预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/04%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
+    <category term="04：地图查询及预览" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/04%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -443,11 +443,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台Mxd地图文档</title>
+    <title>PyramidMap python 工作流平台Mxd地图文档</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-mxd/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-mxd/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:20:08.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地图文档处理："><a href="#地图文档处理：" class="headerlink" title="地图文档处理："></a>地图文档处理：</h2><h3 id="1：矢量类地图文档："><a href="#1：矢量类地图文档：" class="headerlink" title="1：矢量类地图文档："></a>1：矢量类地图文档：</h3><p>程序支持将shp图层、gdb、mdb、sde中的要素类批量组合，形成mxd地图文档。</p><h4 id="1-1：流程模型："><a href="#1-1：流程模型：" class="headerlink" title="1.1：流程模型："></a>1.1：流程模型：</h4><p><strong><img src="/cn/cn/2021/04/12/Python-mxd/f803638237b60a648e3038682cac6fce.png" alt="矢量地图文档模型"></strong></p><p>规范：同一文档中的图层必须具有相同坐标系。</p><h4 id="1-2：操作界面："><a href="#1-2：操作界面：" class="headerlink" title="1.2：操作界面："></a>1.2：操作界面：</h4><p><img src="/cn/cn/2021/04/12/Python-mxd/c88eb93713e26b2ddc0d644ea3f5e69f.png"></p><p>Mxd地图文档可用于MapServer、FeatureServer类型的地图服务发布，默认的服务名称即mxd名称，当让可以在发布过程中重命名，但为了方便和避免错误，建议用英文方式命名mxd。</p><h3 id="2：影像类地图文档："><a href="#2：影像类地图文档：" class="headerlink" title="2：影像类地图文档："></a>2：影像类地图文档：</h3><p>程序支持将img、tif、gif等影像类图层批量组合，形成mxd地图文档。</p><h4 id="2-1：流程模型："><a href="#2-1：流程模型：" class="headerlink" title="2.1：流程模型："></a>2.1：流程模型：</h4><p><strong><img src="/cn/cn/2021/04/12/Python-mxd/78627263b9d06c57e83169bdb05af0f6.png" alt="影像类地图文档模型"></strong></p><p>规范：同一文档中的图层必须具有相同坐标系。</p><h4 id="2-2：操作界面："><a href="#2-2：操作界面：" class="headerlink" title="2.2：操作界面："></a>2.2：操作界面：</h4><p><img src="/cn/cn/2021/04/12/Python-mxd/91b565c3f5c6e2e57699f4f5868e17f9.png"></p>]]></content>
     
@@ -459,9 +459,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="07：Mxd地图文档" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/07%EF%BC%9AMxd%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
+    <category term="07：Mxd地图文档" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/07%EF%BC%9AMxd%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -475,11 +475,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台发布地图服务</title>
+    <title>PyramidMap python 工作流平台发布地图服务</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-publish-mapServer/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-publish-mapServer/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:20:20.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="地图服务发布："><a href="#地图服务发布：" class="headerlink" title="地图服务发布："></a>地图服务发布：</h2><h3 id="1：普通地图服务发布："><a href="#1：普通地图服务发布：" class="headerlink" title="1：普通地图服务发布："></a>1：普通地图服务发布：</h3><h4 id="1-1：流程模型："><a href="#1-1：流程模型：" class="headerlink" title="1.1：流程模型："></a>1.1：流程模型：</h4><p><img src="/cn/cn/2021/04/12/Python-publish-mapServer/8e6fb03b1c98b62ad857c8e6c2cd98d8.png"></p><h4 id="1-2：操作界面："><a href="#1-2：操作界面：" class="headerlink" title="1.2：操作界面："></a>1.2：操作界面：</h4><p><img src="/cn/cn/2021/04/12/Python-publish-mapServer/5249717ca28971c518d85c59575af58a.png"></p><h3 id="2：要素地图服务发布："><a href="#2：要素地图服务发布：" class="headerlink" title="2：要素地图服务发布："></a>2：要素地图服务发布：</h3><h4 id="2-1：流程模型："><a href="#2-1：流程模型：" class="headerlink" title="2.1：流程模型："></a>2.1：流程模型：</h4><p><img src="/cn/cn/2021/04/12/Python-publish-mapServer/0579433e6c6a176cba73bcff0c7dbf0f.png"></p><h4 id="2-2：操作界面："><a href="#2-2：操作界面：" class="headerlink" title="2.2：操作界面："></a>2.2：操作界面：</h4><p><img src="/cn/cn/2021/04/12/Python-publish-mapServer/58b90532375c7262d12b118db1780460.png"></p><p>说明：</p><p>①：每:次请求的最大返回数：是地图服务每次响应客户端请求，返回的的最大数据量，这取决于您的需要和服务器的性能，而不是越大越好。</p><p>②：wms/wfs/wcs是遵循OGC规范的标准化地图服务，可以在不同的地图平台之间共享。</p>]]></content>
     
@@ -491,9 +491,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="08：发布地图服务" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/08%EF%BC%9A%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE%E6%9C%8D%E5%8A%A1/"/>
+    <category term="08：发布地图服务" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/08%EF%BC%9A%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE%E6%9C%8D%E5%8A%A1/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -511,11 +511,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台栅格处理</title>
+    <title>PyramidMap python 工作流平台栅格处理</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-raster-process/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:20:30.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="影像数据处理："><a href="#影像数据处理：" class="headerlink" title="影像数据处理："></a>影像数据处理：</h2><p><img src="/cn/cn/2021/04/12/Python-raster-process/64c871a3104d4c334b318695ad4719ae.png" alt="影响类处理"></p><p>包括影像压缩、影像切分、影像合并、影像转换、无效值处理和构建影像金字塔。说明如下：</p><h3 id="5-1：影像压缩："><a href="#5-1：影像压缩：" class="headerlink" title="5.1：影像压缩："></a>5.1：影像压缩：</h3><p><img src="/cn/cn/2021/04/12/Python-raster-process/f23dffa1fca1d12e078d3d7e1bd0478c.png"></p><p>压缩参数的设定可以按照程序界面引导选择，构建金字塔可对影像进行分层索引，这点对于提高大数据影像的加载显示速度非常有效。影像中的无效值会造成黑色背景，选择无效值处理选项，在压缩过程中会自动对无效像素进行过滤，从而提高影像质量，简化处理流程。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/a58076d79f91b8b775ef783b7d18319a.png" alt="影像压缩完成"></p><p>处理过程会保存日志，处理完毕进行消息提示。</p><h3 id="5-2：影像切分："><a href="#5-2：影像切分：" class="headerlink" title="5.2：影像切分："></a>5.2：影像切分：</h3><p><img src="/cn/cn/2021/04/12/Python-raster-process/9c8b36090d5c59d6de3b0a7f471cb264.png"></p><p>切分数量通过目标区的切分基数设定，规则是长宽各按选择的数量切分，最终的切片数为n*n。过程中，可以选择是否对切分后的影像进行无效值处理，从而避免黑色无效像素的出现。如果切分的源影像本身已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确源数据无效值状态。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/1274dca8656689ab48ef3569d4db62c8.png"></p><p><img src="/cn/cn/2021/04/12/Python-raster-process/b666cbcf4ec7e4948def96bfc6d9e0a8.jpeg" alt="影像切分后"></p><p>上图就是经过切分处理的切片与原图像的对比。</p><h3 id="5-3：影像合并："><a href="#5-3：影像合并：" class="headerlink" title="5.3：影像合并："></a>5.3：影像合并：</h3><p>影像合并与切分是逆过程，程序可以将属于同一坐标系的等分切片合成为一张完整的影像。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/1f097149a5f8a22bafeb87a22a5c1fbe.png"></p><p>目标区参数控制合并规则，可以通过速度与精度的适配，选择适合的合并模式。可以对合并后的影像进行无效值处理，从而避免黑色无效像素的出现。如果合并的所有源影像已经过滤了无效值，则可以保持现状，不作处理，这要取决于预先明确元数据状态。构建金字塔，有助于提高影像的加载速度，可以选择执行。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/2e7665a90431af80b54e866e2debd9bd.png" alt="影像合并示意图"></p><p>上图就是切片影像与合并图像的对比。</p><h3 id="5-4：影像类数据转换："><a href="#5-4：影像类数据转换：" class="headerlink" title="5.4：影像类数据转换："></a>5.4：影像类数据转换：</h3><p>完成影像类地图在不同数据类型、像素位深、色彩映射表及波段、多维数据处理等之间进行相互转换。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/c2b476049a8e7a3a8794ee4ce7fb0a76.png"></p><p>您可以设置目标的像素深度类型和格式，也可以与原文件保持不变。正常情况下，文件类型栅格数据集1位栅格包含8位金字塔层，而在地理数据库中只包含1位金字塔层，这使得显示看起来很不美观。因此，在栅格导入到地理数据库时，您可以选择将输入的1位光栅数据集转换为8位光栅数据集。如果栅格输入具有颜色映射表，则可以将目标转换为三波段光栅。这对于包含不同颜色映射表的镶嵌数据集光栅非常有用。还可以设置光栅或镶嵌数据集的像素位深度，如果未定义，则默认从第一个光栅数据集获取。如果目标光栅的像素类型与输入不同（例如，从16位到8位），可以选择将值缩放到新范围；否则，将丢弃不符合新像素范围的值。如果要抑制从屏幕捕捉或扫描地图或扫描文档的中的噪声，可以选择使用“颜色映射表”将8位3波段（RGB）光栅转换为单波段光栅数据集。但对于卫星、航空影像或专题栅格数据，不建议如此操作。</p><h3 id="5-5：影像类坐标系转换："><a href="#5-5：影像类坐标系转换：" class="headerlink" title="5.5：影像类坐标系转换："></a>5.5：影像类坐标系转换：</h3><p><img src="/cn/cn/2021/04/12/Python-raster-process/24e34bbf94b0fc2ca8e5c6e2230a5e16.png" alt="影像类坐标系转换"></p><p>与矢量图层坐标系转换相同，具有标准坐标系定义的影像类，可以在不同坐标系之间相互转换，程序提供转换流程处理，实现批量化工单。以下是操作流程：</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/70881813c63b7738fbf156d4f90ffe78.png"></p><h3 id="5-6：批量构建影像金字塔："><a href="#5-6：批量构建影像金字塔：" class="headerlink" title="5.6：批量构建影像金字塔："></a>5.6：批量构建影像金字塔：</h3><p>对影像构建金字塔可以加快影像加载速度。程序支持影像金字塔的参数化批量生成。</p><p><img src="/cn/cn/2021/04/12/Python-raster-process/8b05e659caf17baf8cc8318187e8ef8b.jpg"></p><p>金字塔可以加速图像加载。程序支持图像金字塔的参数化批量生成。通常情况下，在光栅上构建金字塔可以改善显示效果表演。只构建一次，则后期每次显示都会访问金字塔。对于行或列中小于1024像素的光栅，即使您选择，也不会构建金字塔。小波变换压缩光栅（如ECW和MrSID）不需要构建金字塔，因为在编码时已经创建了内部金字塔。在构建栅格金字塔过程中，您可以指定金字塔等级（可选）、跳过等级（可选），重采样方式（可选），压缩类型（可选），压缩质量（可选），所有这些参数都在上面列表中提供说明。</p>]]></content>
     
@@ -527,9 +527,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="06：栅格处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/06%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/"/>
+    <category term="06：栅格处理" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/06%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -547,11 +547,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台系统设置</title>
+    <title>PyramidMap python 工作流平台系统设置</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:20:40.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="系统设置"><a href="#系统设置" class="headerlink" title="系统设置"></a>系统设置</h2><h3 id="1-GIS-Server连接"><a href="#1-GIS-Server连接" class="headerlink" title="1: GIS Server连接"></a>1: GIS Server连接</h3><p><strong><img src="/cn/cn/2021/04/12/Python-sys-set/83c7e83ecd5eab9760dd57c54d8c5872.png" alt="创建arcgis server连接"></strong></p><p>ArcGIS Server地址 = ArcGIS Server服务器ip地址，端口默认6080，若有改动，按实际为准。管理员账号既是Server的站点管理员账号，请与ArcGIS Server管理员联系确定。</p><h3 id="2-Geo数据库创建"><a href="#2-Geo数据库创建" class="headerlink" title="2: Geo数据库创建"></a>2: Geo数据库创建</h3><p>ArcGIS支持Oracle、SQL Server、PostgreSQL、DB2、Infomix等多型关系型数据库作为地理数据库。本软件提供Oracle、SQL Server、PostgreSQL三种主流数据库的支持。在执行该操作前，请确认计算机上已经具备与上述数据库连接的客户端程序。数据库客户端可以在数据库网站下载，注意版本号对应。ArcGIS DeskTop是32位程序，因此只支持32位客户端连接，ArcGIS Server是64位程序，只支持64位客户端程序。关于ArcGIS DeskTop、Pro、Enterprise Server与数据库的连接，不属于本节范畴，如有需要，我们会在专门章节中介绍。以下是在oracle中创建地理数据库。</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/6539ee531b1c0f72d26e00c383c165fa.png" alt="创建oracle地理数据库"></p><p>在此，Oracle的服务实例就是数据库名称。也就是要建立地理数据库的对象，该数据库必须是事先存在的。</p><p>以下是在SQL Server中创建地理数据库。</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/fbc4f551d45f97fc20873f8c9b3def84.png" alt="创建sqlserver地理数据库"></p><p>在此，SQL Server的服务实例就是SQL Server的数据服务名称，默认为MSSQLSERVER，实际请与数据库管理员联系确认。请在“创建地理数据库”中输入要创建的地理数据库名称，程序将在执行过程中创建。默认新建数据库帐户为“sde”，创建过程中无法修改。</p><p>以下是在PostgreSQL中创建地理数据库。</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/af369a8594de6fde0d64232da2d22d98.png" alt="创建postgre地理数据库"></p><p>请在“创建地理数据库”中输入要创建的地理数据库名称，程序将在执行过程中创建。默认新建数据库帐户为“sde”，创建过程中无法修改。所有创建过程都需要有效的ArcGIS ecp授权文件支持。</p><p>以上操作是创建地理数据库的过程。如果地理数据库已存在，仅需要创建连接即可，以下是创建地理数据库连接过程。</p><h3 id="3-Geo数据库连接"><a href="#3-Geo数据库连接" class="headerlink" title="3: Geo数据库连接"></a>3: Geo数据库连接</h3><p>1：创建Oracle地理数据库连接：</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/8283c0c3ac57ed0f2d6aee46ba504c50.png" alt="创建oracle地理数据库连接"></p><p>服务实例就是oracle中已创建地理数据库功能的数据库名称。</p><p>2：创建SQL Server地理数据库连接：</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/6c935a8d6273762f8e97024468c8d3d8.png" alt="创建sqlserver地理数据库连接"></p><p>地理数据库：就是SQL Server中已经创建的地理数据库名称。</p><p>3：创建postgresql地理数据库连接：</p><p><img src="/cn/cn/2021/04/12/Python-sys-set/36cd0e0e2863e073c4032a9918f1a449.png" alt="创建postgre地理数据库连接"></p><p>地理数据库：就是PostgreSQL中已经创建的地理数据库名称。</p>]]></content>
     
@@ -563,9 +563,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="03：系统设置" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/"/>
+    <category term="03：系统设置" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
@@ -581,11 +581,11 @@
   </entry>
   
   <entry>
-    <title>PyramidMap 地理数据处理工作流平台界面说明</title>
+    <title>PyramidMap python 工作流平台界面说明</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/</id>
     <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-24T14:20:52.000Z</updated>
+    <updated>2021-04-26T13:27:22.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="软件功能总览："><a href="#软件功能总览：" class="headerlink" title="软件功能总览："></a>软件功能总览：</h2><p><strong><img src="/cn/cn/2021/04/12/Python-ui-overview/ac0d7cedf208493335b1e6135fbacf56.png"></strong></p><table><thead><tr><th>功能区</th><th>子项</th><th>功能</th></tr></thead><tbody><tr><td>系统设置</td><td>GIS服务器连接</td><td>创建并保存GIS服务器连接，以备发布服务。</td></tr><tr><td></td><td>GIS数据库创建</td><td>创建GIS数据库，建立并保存sde连接。</td></tr><tr><td></td><td>GIS数据库连接</td><td>连接GIS数据库，建立并保存sde连接。</td></tr><tr><td>功能区</td><td>地图查询显示</td><td>矢量及影像类地图查询展示。</td></tr><tr><td></td><td>要素类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>影像类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>标准坐标系转换</td><td>支持所有标准化坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>特殊坐标系转换</td><td>支持高德/百度坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>GIS服务器管理</td><td>ArcGIS Server地图服务查询导出及地图预览。</td></tr><tr><td></td><td>地理数据库管理</td><td>企业地理数据库数据查询导出及地图预览。</td></tr><tr><td></td><td>地图服务发布</td><td>支持批量化地图服务及数据发布，工作流模式进行。</td></tr><tr><td></td><td>日志查询</td><td>流程环节的日志记录及分类、分时段查询追溯。</td></tr></tbody></table>]]></content>
     
@@ -597,9 +597,9 @@
     
     
     
-    <category term="PyramidMap 地理数据处理工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
-    <category term="02：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
+    <category term="02：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
     
     
     <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
