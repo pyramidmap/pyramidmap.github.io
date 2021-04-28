@@ -47,26 +47,6 @@
   </entry>
   
   <entry>
-    <title>How-to-use</title>
-    <link href="https://pyramidmap.github.io/2021/04/25/How-to-use/"/>
-    <id>https://pyramidmap.github.io/2021/04/25/How-to-use/</id>
-    <published>2021-04-25T09:27:16.000Z</published>
-    <updated>2021-04-25T09:27:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap Javascript API query and identify on map</title>
     <link href="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/"/>
     <id>https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/</id>
@@ -493,6 +473,32 @@
     <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
     
     <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/tags/GeoTools-and-GeoServer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to begin with PyramidMap Javacript API?</title>
+    <link href="https://pyramidmap.github.io/2021/04/11/How-to-begin/"/>
+    <id>https://pyramidmap.github.io/2021/04/11/How-to-begin/</id>
+    <published>2021-04-11T01:57:13.000Z</published>
+    <updated>2021-04-28T14:15:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-Displaying-ArcGIS-map-in-Vue"><a href="#1-Displaying-ArcGIS-map-in-Vue" class="headerlink" title="1:  Displaying ArcGIS map in Vue"></a>1:  Displaying ArcGIS map in Vue</h3><p>The core of Web-oriented map application is to solve three ‘W’ problems which are which’s the map platform and which’s the web framework and which’s the geo database. The pyreamidmap JavaScript API is designed around the three ‘W’ and encapsulated in Dojo component mode orienting to the map application. The following procedure example shows how to use the JavaScript API of the pyremidmap to display a 2D map through ArcGIS on Vue assuming that you have installed Vue environment already. To use ArcGIS in Vue, you need to install the ESRI loader module in the project and add ArcGIS function dependency:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install esri-loader -save</span><br></pre></td></tr></table></figure><p>Then call the PyramidMap Javascript API in the config module.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">loadConfig: &#123;</span><br><span class="line">        url:&#39;http:&#x2F;&#x2F;ip:port&#x2F;pyramidmap_js_api&#x2F;library&#x2F;1.14&#x2F;init.js&#39;, </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>Next, call the map implementation interface</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">require([        </span><br><span class="line">        &quot;pyramidmap&#x2F;initMapViewer&quot;,</span><br><span class="line">        &quot;dojo&#x2F;dom&quot;,</span><br><span class="line">        &quot;dojo&#x2F;parser&quot;,</span><br><span class="line">        &quot;dojo&#x2F;ready&quot;,</span><br><span class="line">        &quot;dojo&#x2F;on&quot;,</span><br><span class="line">        &quot;dojo&#x2F;_base&#x2F;lang&quot;</span><br><span class="line">    ], function (</span><br><span class="line">        initMapViewer,</span><br><span class="line">        dom,</span><br><span class="line">        parser,</span><br><span class="line">        ready,</span><br><span class="line">        on,</span><br><span class="line">        lang</span><br><span class="line">    ) &#123;</span><br><span class="line">        $().ready(function () &#123;</span><br><span class="line">            &#x2F;&#x2F; Call the map initialization module</span><br><span class="line">            pimv  &#x3D; new initMapViewer();</span><br><span class="line">            &#x2F;&#x2F; Realization of 2D ArcGIS map</span><br><span class="line">            layerkind &#x3D; &#39;tiled&#39;;</span><br><span class="line">            mapUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;somethingOfMapsercice&#x2F;MapServe&#39;;</span><br><span class="line">            pimv.create_2D_ArcGIS_mapview(&#39;divID&#39;,mapUrl,layerkind);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><p>The ‘divID’ is the dom id of the div which the map showed in and the layerkind is the layer type in the interface, the mapUrl is the map resource url hosted in local server or the remote server.</p><p>Successful, here is the result:</p><p><img src="/2021/04/11/How-to-begin/realize2dmapinarcgis.png"></p><h3 id="2-Realize-the-business-layer-query"><a href="#2-Realize-the-business-layer-query" class="headerlink" title="2: Realize the business layer query"></a>2: Realize the business layer query</h3><p>Map application is more oriented to the needs of the industry, integrating with business data to solve a special application. We take the gas pipeline network as an example to show how to use the pyramidmap JavaScript component to realize the pipeline map query. The map query interface is implemented in the same way above.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">require([        </span><br><span class="line">        &quot;pyramidmap&#x2F;initMapViewer&quot;,</span><br><span class="line">        &quot;pyramidmap&#x2F;initWorkLayer&quot;,</span><br><span class="line">        &quot;pyramidmap&#x2F;initLayerTable&quot;,</span><br><span class="line">        &quot;dojo&#x2F;dom&quot;,</span><br><span class="line">        &quot;dojo&#x2F;parser&quot;,</span><br><span class="line">        &quot;dojo&#x2F;ready&quot;,</span><br><span class="line">        &quot;dojo&#x2F;on&quot;,</span><br><span class="line">        &quot;dojo&#x2F;_base&#x2F;lang&quot;</span><br><span class="line">    ], function (</span><br><span class="line">        initMapViewer,</span><br><span class="line">        initWorkLayer,</span><br><span class="line">        initLayerTable,</span><br><span class="line">        dom,</span><br><span class="line">        parser,</span><br><span class="line">        ready,</span><br><span class="line">        on,</span><br><span class="line">        lang</span><br><span class="line">    ) &#123;</span><br><span class="line">        $().ready(function () &#123;</span><br><span class="line">            &#x2F;&#x2F; Call the map initialization module</span><br><span class="line">            pimv  &#x3D; new initMapViewer();</span><br><span class="line">            &#x2F;&#x2F; Realization of 2D ArcGIS map</span><br><span class="line">            layerkind &#x3D; &#39;tiled&#39;;</span><br><span class="line">            mapUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;somethingOfMapsercice&#x2F;MapServe&#39;</span><br><span class="line">            pimv.create_2D_ArcGIS_mapview(&#39;divID&#39;,mapUrl,layerkind);</span><br><span class="line">            &#x2F;&#x2F; Calling business layer module</span><br><span class="line">            piwl  &#x3D; new initWorkLayer();</span><br><span class="line">            &#x2F;&#x2F; Load business layer</span><br><span class="line">            workLayerUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;Worksercice&#x2F;FeatureServe&#39;</span><br><span class="line">            workLayer &#x3D; piwl.create_workLayer(workLayerUrl);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><p>the Implementation effect</p><p><img src="/2021/04/11/How-to-begin/createworklayer1.png"></p><p>You can query for details</p><p><img src="/2021/04/11/How-to-begin/createworklayer2.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="03：How to begin with PyramidMap Javacript API?" scheme="https://pyramidmap.github.io/categories/03%EF%BC%9AHow-to-begin-with-PyramidMap-Javacript-API/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/tags/PyramidMap/"/>
+    
+    <category term="Javascript API" scheme="https://pyramidmap.github.io/tags/Javascript-API/"/>
     
   </entry>
   
