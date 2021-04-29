@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="金字塔地图工作室，构建地图金字塔.....">
 <meta property="og:description" content="PyramidMap是一套Javascript和Python的地图开发组件PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。提供web和python两个产品线。向用户提供专业化地图服务，快速构建实用的地图应用体系，涵盖面向web GIS应用的Javascript API 类库和Python地图工具，覆盖Desktop桌面端制图到GIS Server服务端引擎及web断开发组件，支持">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png">
 <meta property="article:published_time" content="2021-04-13T05:53:18.000Z">
 <meta property="article:modified_time" content="2021-04-29T15:02:10.000Z">
 <meta property="article:author" content="PyramidMap">
@@ -21,7 +21,7 @@
 <meta property="article:tag" content="Javascript API">
 <meta property="article:tag" content="Python tools">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pyramidmap.github.io/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png">
+<meta name="twitter:image" content="https://pyramidmap.github.io/cn/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png">
   
     <link rel="alternate" href="/cn/atom.xml" title="金字塔地图工作室，构建地图金字塔....." type="application/atom+xml">
   
@@ -116,7 +116,7 @@
       	
       		<h3 id="PyramidMap是一套Javascript和Python的地图开发组件"><a href="#PyramidMap是一套Javascript和Python的地图开发组件" class="headerlink" title="PyramidMap是一套Javascript和Python的地图开发组件"></a>PyramidMap是一套Javascript和Python的地图开发组件</h3><p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。提供web和python两个产品线。向用户提供专业化地图服务，快速构建实用的地图应用体系，涵盖面向web GIS应用的Javascript API 类库和Python地图工具，覆盖Desktop桌面端制图到GIS Server服务端引擎及web断开发组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。</p>
 <p>下图表明PyramidMap中制图与地图应用的关系。</p>
-<p><img src="/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
+<p><img src="/cn/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
 <p>在PyramidMap中，地图设计是围绕地图应用展开的，二者相辅相成。图层数据结构的设计是为地图应用服务的，目的是最大限度地满足数据输入输出和用户界面交互的实用化、人性化操作。</p>
 
       	
