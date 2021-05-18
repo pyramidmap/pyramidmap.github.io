@@ -343,42 +343,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap python workflow platform raster processing</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-raster-process/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-raster-process/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-26T13:24:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Raster-processing"><a href="#Raster-processing" class="headerlink" title="Raster processing"></a>Raster processing</h2><p><img src="/2021/04/12/Python-raster-process/3f68b74cb88b6a2e0563c83ac1862f04.png"></p><p>It includes raster compression, raster slice, raster merge, raster conversion, noDataValue set and raster pyramid construction. The explanation is as follows:</p><h3 id="1-Raster-compress："><a href="#1-Raster-compress：" class="headerlink" title="1:Raster compress："></a>1:Raster compress：</h3><p><img src="/2021/04/12/Python-raster-process/1fbcdfce45307624446eff9c5718a1e6.png"></p><p>The setting of compression parameters can be guided and selected according to the program interface, and the pyramid can be constructed to index the images hierarchically, which is very effective for improving the loading and display speed of big data images. The invalid value in the image will cause black background. Selecting the invalid value processing option will automatically filter the invalid pixels in the compression process, so as to improve the image quality and simplify the processing flow. The log will be saved during processing, and a message will be prompted after processing.</p><h3 id="2-Raster-slice"><a href="#2-Raster-slice" class="headerlink" title="2:Raster slice:"></a>2:Raster slice:</h3><p><img src="/2021/04/12/Python-raster-process/fee15c7e9206df2e77143fed41977199.png"></p><p>The slice number is set by the segmentation base of the target area. The rule is that the length and width are divided according to the selected number, and the final number of slices is n * n. In the process, you can choose whether to process the invalid value of the segmented image, so as to avoid the appearance of black invalid pixels. If the segmented source image itself has filtered the invalid value, it can keep the status quo and do not deal with it, which depends on clarifying the invalid value state of the source data in advance.</p><p><img src="/2021/04/12/Python-raster-process/e0da9439cf7eb4085239e539f586602d.jpeg"></p><p>The above image is the contrast between the sliced image and the original image.</p><h3 id="3-Raster-merge"><a href="#3-Raster-merge" class="headerlink" title="3:Raster merge"></a>3:Raster merge</h3><p>Merging and slice is a reverse process. The program can synthesize a complete image in the same coordinate system.</p><p><img src="/2021/04/12/Python-raster-process/04ec32ee4b1078b7a9f89a65c0234c35.png"></p><p>The merging rules are controlled by the parameters of the target area, and the suitable merging mode can be selected by the matching of speed and precision. It can deal with the invalid value of the merged image, so as to avoid the appearance of black invalid pixels. If all the merged source images have been filtered with invalid values, they can remain as they are and not be processed, depending on the metadata state. The construction of the pyramid helps to improve the loading speed of the image, which can be executed selectively.</p><p><img src="/2021/04/12/Python-raster-process/d4a4b2196064eeed0b8e481ca91f6bdc.png"></p><h3 id="4-Raster-conversion"><a href="#4-Raster-conversion" class="headerlink" title="4: Raster conversion:"></a>4: Raster conversion:</h3><p>The raster is transformed among different data types, pixel depth, color map table, band and multi-dimensional data processing.</p><p><img src="/2021/04/12/Python-raster-process/ec09519bda516c1044272f63ea0d9009.png"></p><p>You can set the pixel depth type and format of the target or remain unchanged.Normally, 1-bit raster data set contains 8-bit pyramid layer in the file system, but only contain 1-bit pyramid layer in the geographic database, which makes the display look unattractive. Then You can Choose whether to convert the 1-bit raster dataset input to an 8-bit raster dataset when being imported to a geo database. If the raster input has a color map table, you can convert the target to a three bands raster. This is useful for mosaics rasters which contain different color mapping tables.And you can set the pixel bit depth of a raster or a mosaic dataset, this default value is obtained from the first raster dataset if not defined. If your target raster’s pixel type is different from the input (for example,from 16 to 8 bits), you can choose to scale the value to the new range; otherwise, the value will be discarded which does not conform to the new pixel range. If you want to suppress the noise in the rasters which are captured from screen or scanned map or scanned document, you can select converting 8-bit 3-band (RGB) raster into a single band raster data set with color mapping table.However, it is not recommended to use it for satellite, aerial image or thematic raster data.</p><h3 id="5-Raster-coordinate-system-transformation"><a href="#5-Raster-coordinate-system-transformation" class="headerlink" title="5: Raster coordinate system transformation:"></a>5: Raster coordinate system transformation:</h3><p><img src="/2021/04/12/Python-raster-process/65baf77b8a5586b7036e5e651614df04.png"></p><p>The image class with standard coordinate system definition is the same as the transformation of vector layer coordinate system. It can be converted between different coordinate systems. The program provides the conversion process processing to realize batch chemical list. The following are the operating procedures:</p><p><img src="/2021/04/12/Python-raster-process/8b8be3638a3a4ea04bd83c8146bb7469.png"></p><h3 id="6-Raster-pyramid-building"><a href="#6-Raster-pyramid-building" class="headerlink" title="6: Raster pyramid building:"></a>6: Raster pyramid building:</h3><p>The pyramid can speed up the image loading. Program supports the parametric batch generation of image pyramid.</p><p><img src="/2021/04/12/Python-raster-process/7750de2b0210404be57a9cbdf082fc1f.png"></p><p>In general, building a pyramid on raster can improve the display performance.Just building once, and the pyramid is accessed each time the raster displayed. The raster with less than 1024 pixels in rows or columns, no pyramid will be built even if you choose to do.Wavelet compressed raster (such as ECW and MrSID) do not need to build pyramids also because having an internal pyramid created when encoding. In the pyramid building, you can design the pyramid_level(optional),the skip_first(optional),the resample_technique(optional),the compression_type(optional),the compression_quality(optional), the skip_existing(optional), all of these are indentified in the parameters list above.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap python workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/"/>
-    
-    <category term="06：Raster processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/06%EF%BC%9ARaster-processing/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
-    
-    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap python workflow platform create mxd</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/</id>
@@ -411,6 +375,42 @@
     <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
     
     <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap python workflow platform raster processing</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-raster-process/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-raster-process/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-26T13:24:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Raster-processing"><a href="#Raster-processing" class="headerlink" title="Raster processing"></a>Raster processing</h2><p><img src="/2021/04/12/Python-raster-process/3f68b74cb88b6a2e0563c83ac1862f04.png"></p><p>It includes raster compression, raster slice, raster merge, raster conversion, noDataValue set and raster pyramid construction. The explanation is as follows:</p><h3 id="1-Raster-compress："><a href="#1-Raster-compress：" class="headerlink" title="1:Raster compress："></a>1:Raster compress：</h3><p><img src="/2021/04/12/Python-raster-process/1fbcdfce45307624446eff9c5718a1e6.png"></p><p>The setting of compression parameters can be guided and selected according to the program interface, and the pyramid can be constructed to index the images hierarchically, which is very effective for improving the loading and display speed of big data images. The invalid value in the image will cause black background. Selecting the invalid value processing option will automatically filter the invalid pixels in the compression process, so as to improve the image quality and simplify the processing flow. The log will be saved during processing, and a message will be prompted after processing.</p><h3 id="2-Raster-slice"><a href="#2-Raster-slice" class="headerlink" title="2:Raster slice:"></a>2:Raster slice:</h3><p><img src="/2021/04/12/Python-raster-process/fee15c7e9206df2e77143fed41977199.png"></p><p>The slice number is set by the segmentation base of the target area. The rule is that the length and width are divided according to the selected number, and the final number of slices is n * n. In the process, you can choose whether to process the invalid value of the segmented image, so as to avoid the appearance of black invalid pixels. If the segmented source image itself has filtered the invalid value, it can keep the status quo and do not deal with it, which depends on clarifying the invalid value state of the source data in advance.</p><p><img src="/2021/04/12/Python-raster-process/e0da9439cf7eb4085239e539f586602d.jpeg"></p><p>The above image is the contrast between the sliced image and the original image.</p><h3 id="3-Raster-merge"><a href="#3-Raster-merge" class="headerlink" title="3:Raster merge"></a>3:Raster merge</h3><p>Merging and slice is a reverse process. The program can synthesize a complete image in the same coordinate system.</p><p><img src="/2021/04/12/Python-raster-process/04ec32ee4b1078b7a9f89a65c0234c35.png"></p><p>The merging rules are controlled by the parameters of the target area, and the suitable merging mode can be selected by the matching of speed and precision. It can deal with the invalid value of the merged image, so as to avoid the appearance of black invalid pixels. If all the merged source images have been filtered with invalid values, they can remain as they are and not be processed, depending on the metadata state. The construction of the pyramid helps to improve the loading speed of the image, which can be executed selectively.</p><p><img src="/2021/04/12/Python-raster-process/d4a4b2196064eeed0b8e481ca91f6bdc.png"></p><h3 id="4-Raster-conversion"><a href="#4-Raster-conversion" class="headerlink" title="4: Raster conversion:"></a>4: Raster conversion:</h3><p>The raster is transformed among different data types, pixel depth, color map table, band and multi-dimensional data processing.</p><p><img src="/2021/04/12/Python-raster-process/ec09519bda516c1044272f63ea0d9009.png"></p><p>You can set the pixel depth type and format of the target or remain unchanged.Normally, 1-bit raster data set contains 8-bit pyramid layer in the file system, but only contain 1-bit pyramid layer in the geographic database, which makes the display look unattractive. Then You can Choose whether to convert the 1-bit raster dataset input to an 8-bit raster dataset when being imported to a geo database. If the raster input has a color map table, you can convert the target to a three bands raster. This is useful for mosaics rasters which contain different color mapping tables.And you can set the pixel bit depth of a raster or a mosaic dataset, this default value is obtained from the first raster dataset if not defined. If your target raster’s pixel type is different from the input (for example,from 16 to 8 bits), you can choose to scale the value to the new range; otherwise, the value will be discarded which does not conform to the new pixel range. If you want to suppress the noise in the rasters which are captured from screen or scanned map or scanned document, you can select converting 8-bit 3-band (RGB) raster into a single band raster data set with color mapping table.However, it is not recommended to use it for satellite, aerial image or thematic raster data.</p><h3 id="5-Raster-coordinate-system-transformation"><a href="#5-Raster-coordinate-system-transformation" class="headerlink" title="5: Raster coordinate system transformation:"></a>5: Raster coordinate system transformation:</h3><p><img src="/2021/04/12/Python-raster-process/65baf77b8a5586b7036e5e651614df04.png"></p><p>The image class with standard coordinate system definition is the same as the transformation of vector layer coordinate system. It can be converted between different coordinate systems. The program provides the conversion process processing to realize batch chemical list. The following are the operating procedures:</p><p><img src="/2021/04/12/Python-raster-process/8b8be3638a3a4ea04bd83c8146bb7469.png"></p><h3 id="6-Raster-pyramid-building"><a href="#6-Raster-pyramid-building" class="headerlink" title="6: Raster pyramid building:"></a>6: Raster pyramid building:</h3><p>The pyramid can speed up the image loading. Program supports the parametric batch generation of image pyramid.</p><p><img src="/2021/04/12/Python-raster-process/7750de2b0210404be57a9cbdf082fc1f.png"></p><p>In general, building a pyramid on raster can improve the display performance.Just building once, and the pyramid is accessed each time the raster displayed. The raster with less than 1024 pixels in rows or columns, no pyramid will be built even if you choose to do.Wavelet compressed raster (such as ECW and MrSID) do not need to build pyramids also because having an internal pyramid created when encoding. In the pyramid building, you can design the pyramid_level(optional),the skip_first(optional),the resample_technique(optional),the compression_type(optional),the compression_quality(optional), the skip_existing(optional), all of these are indentified in the parameters list above.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap python workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/"/>
+    
+    <category term="06：Raster processing" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/06%EF%BC%9ARaster-processing/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
+    
+    <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
     
   </entry>
   

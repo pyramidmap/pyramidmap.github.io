@@ -79,14 +79,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Python-publish-mapServer" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Python-raster-process" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/04/12/Python-publish-mapServer/" class="article-date">
+    <a href="/2021/04/12/Python-raster-process/" class="article-date">
   <time class="dt-published" datetime="2021-04-12T06:46:58.000Z" itemprop="datePublished">2021-04-12</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/PyramidMap-python-workflow/">PyramidMap python workflow</a>►<a class="article-category-link" href="/categories/PyramidMap-python-workflow/07%EF%BC%9ACreate-mxd/">07：Create mxd</a>
+    <a class="article-category-link" href="/categories/PyramidMap-python-workflow/">PyramidMap python workflow</a>►<a class="article-category-link" href="/categories/PyramidMap-python-workflow/06%EF%BC%9ARaster-processing/">06：Raster processing</a>
   </div>
 
   </div>
@@ -97,7 +97,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/12/Python-publish-mapServer/">PyramidMap python workflow platform create mxd</a>
+      <a class="p-name article-title" href="/2021/04/12/Python-raster-process/">PyramidMap python workflow platform raster processing</a>
     </h1>
   
 
@@ -107,23 +107,42 @@
       
       
       	
-      		<h2 id="Publish-map-servers："><a href="#Publish-map-servers：" class="headerlink" title="Publish map servers："></a>Publish map servers：</h2><h3 id="1：publish-map-server："><a href="#1：publish-map-server：" class="headerlink" title="1：publish map server："></a>1：publish map server：</h3><h4 id="1-1：workflow-model："><a href="#1-1：workflow-model：" class="headerlink" title="1.1：workflow model："></a>1.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/852cf063936757845b18ad766ba794d5.png"></p>
-<h4 id="1-2-operation-interface："><a href="#1-2-operation-interface：" class="headerlink" title="1.2: operation interface："></a>1.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/f2be6b88b08c8df6e47c036fdcbb0939.png"></p>
-<h3 id="2：publish-feature-server："><a href="#2：publish-feature-server：" class="headerlink" title="2：publish feature server："></a>2：publish feature server：</h3><h4 id="2-1：workflow-model："><a href="#2-1：workflow-model：" class="headerlink" title="2.1：workflow model："></a>2.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/357c60dde4400cfd5923ab01429a833b.png"></p>
-<h4 id="2-2-operation-interface："><a href="#2-2-operation-interface：" class="headerlink" title="2.2: operation interface："></a>2.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/ea9ee5b56ef5c5c1836d649d1ff794a9.png"></p>
-<p>Explain:</p>
-<p>①:The max returns per request: it’s the maxium return features number per user request, this depends on your needs and the capacity of the server, not the larger the better.</p>
-<p>②:The following service wms/wfs/wcs are standardized map service that follows OGC specification and can be shared among different map platforms.</p>
+      		<h2 id="Raster-processing"><a href="#Raster-processing" class="headerlink" title="Raster processing"></a>Raster processing</h2><p><img src="/2021/04/12/Python-raster-process/3f68b74cb88b6a2e0563c83ac1862f04.png"></p>
+<p>It includes raster compression, raster slice, raster merge, raster conversion, noDataValue set and raster pyramid construction. The explanation is as follows:</p>
+<h3 id="1-Raster-compress："><a href="#1-Raster-compress：" class="headerlink" title="1:Raster compress："></a>1:Raster compress：</h3><p><img src="/2021/04/12/Python-raster-process/1fbcdfce45307624446eff9c5718a1e6.png"></p>
+<p>The setting of compression parameters can be guided and selected according to the program interface, and the pyramid can be constructed to index the images hierarchically, which is very effective for improving the loading and display speed of big data images. The invalid value in the image will cause black background. Selecting the invalid value processing option will automatically filter the invalid pixels in the compression process, so as to improve the image quality and simplify the processing flow. The log will be saved during processing, and a message will be prompted after processing.</p>
+<h3 id="2-Raster-slice"><a href="#2-Raster-slice" class="headerlink" title="2:Raster slice:"></a>2:Raster slice:</h3><p><img src="/2021/04/12/Python-raster-process/fee15c7e9206df2e77143fed41977199.png"></p>
+<p>The slice number is set by the segmentation base of the target area. The rule is that the length and width are divided according to the selected number, and the final number of slices is n * n. In the process, you can choose whether to process the invalid value of the segmented image, so as to avoid the appearance of black invalid pixels. If the segmented source image itself has filtered the invalid value, it can keep the status quo and do not deal with it, which depends on clarifying the invalid value state of the source data in advance.</p>
+<p><img src="/2021/04/12/Python-raster-process/e0da9439cf7eb4085239e539f586602d.jpeg"></p>
+<p>The above image is the contrast between the sliced image and the original image.</p>
+<h3 id="3-Raster-merge"><a href="#3-Raster-merge" class="headerlink" title="3:Raster merge"></a>3:Raster merge</h3><p>Merging and slice is a reverse process. The program can synthesize a complete image in the same coordinate system.</p>
+<p><img src="/2021/04/12/Python-raster-process/04ec32ee4b1078b7a9f89a65c0234c35.png"></p>
+<p>The merging rules are controlled by the parameters of the target area, and the suitable merging mode can be selected by the matching of speed and precision. It can deal with the invalid value of the merged image, so as to avoid the appearance of black invalid pixels. If all the merged source images have been filtered with invalid values, they can remain as they are and not be processed, depending on the metadata state. The construction of the pyramid helps to improve the loading speed of the image, which can be executed selectively.</p>
+<p><img src="/2021/04/12/Python-raster-process/d4a4b2196064eeed0b8e481ca91f6bdc.png"></p>
+<h3 id="4-Raster-conversion"><a href="#4-Raster-conversion" class="headerlink" title="4: Raster conversion:"></a>4: Raster conversion:</h3><p>The raster is transformed among different data types, pixel depth, color map table, band and multi-dimensional data processing.</p>
+<p><img src="/2021/04/12/Python-raster-process/ec09519bda516c1044272f63ea0d9009.png"></p>
+<p>You can set the pixel depth type and format of the target or remain unchanged.Normally, 1-bit raster data set contains 8-bit pyramid layer in the file system, but only contain 1-bit pyramid layer in the geographic database, which makes the display look unattractive. Then You can Choose whether to convert the 1-bit raster dataset input to an 8-bit raster dataset when being imported to a geo database. If the raster input has a color map table, you can convert the target to a three bands raster. This is useful for mosaics rasters which contain different color mapping tables.And you can set the pixel bit depth of a raster or a mosaic dataset, this default value is obtained from the first raster dataset if not defined. If your target raster’s pixel type is different from the input (for example,from 16 to 8 bits), you can choose to scale the value to the new range; otherwise, the value will be discarded which does not conform to the new pixel range. If you want to suppress the noise in the rasters which are captured from screen or scanned map or scanned document, you can select converting 8-bit 3-band (RGB) raster into a single band raster data set with color mapping table.However, it is not recommended to use it for satellite, aerial image or thematic raster data.</p>
+<h3 id="5-Raster-coordinate-system-transformation"><a href="#5-Raster-coordinate-system-transformation" class="headerlink" title="5: Raster coordinate system transformation:"></a>5: Raster coordinate system transformation:</h3><p><img src="/2021/04/12/Python-raster-process/65baf77b8a5586b7036e5e651614df04.png"></p>
+<p>The image class with standard coordinate system definition is the same as the transformation of vector layer coordinate system. It can be converted between different coordinate systems. The program provides the conversion process processing to realize batch chemical list. The following are the operating procedures:</p>
+<p><img src="/2021/04/12/Python-raster-process/8b8be3638a3a4ea04bd83c8146bb7469.png"></p>
+<h3 id="6-Raster-pyramid-building"><a href="#6-Raster-pyramid-building" class="headerlink" title="6: Raster pyramid building:"></a>6: Raster pyramid building:</h3><p>The pyramid can speed up the image loading. Program supports the parametric batch generation of image pyramid.</p>
+<p><img src="/2021/04/12/Python-raster-process/7750de2b0210404be57a9cbdf082fc1f.png"></p>
+<p>In general, building a pyramid on raster can improve the display performance.Just building once, and the pyramid is accessed each time the raster displayed. The raster with less than 1024 pixels in rows or columns, no pyramid will be built even if you choose to do.Wavelet compressed raster (such as ECW and MrSID) do not need to build pyramids also because having an internal pyramid created when encoding. In the pyramid building, you can design the pyramid_level(optional),the skip_first(optional),the resample_technique(optional),the compression_type(optional),the compression_quality(optional), the skip_existing(optional), all of these are indentified in the parameters list above.</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/" data-id="cko3135ds000yo8utbwwk1z7x" data-title="PyramidMap python workflow platform create mxd" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-raster-process/" data-id="ckotg3l75000yvkn0b8m73ua4" data-title="PyramidMap python workflow platform raster processing" class="article-share-link">Share</a>
       
       
+        <a href="/2021/04/12/Python-raster-process/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/12/Python-raster-process/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arcpy-and-GDAL/" rel="tag">Arcpy and GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Map-or-Feature-or-Image-Server/" rel="tag">Map or Feature or Image Server</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mxd/" rel="tag">Mxd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vector-and-Raster/" rel="tag">Vector and Raster</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arcpy-and-GDAL/" rel="tag">Arcpy and GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GCS-and-PCS/" rel="tag">GCS and PCS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Spacial-data-convert/" rel="tag">Spacial data convert</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vector-and-Raster/" rel="tag">Vector and Raster</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
 
     </footer>
   </div>
@@ -131,6 +150,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-Python-sys-set" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -184,8 +208,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-sys-set/" data-id="cko3135du0011o8ut3893eip7" data-title="PyramidMap python workflow platform system set" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-sys-set/" data-id="ckotg3l760011vkn09tcn9sl1" data-title="PyramidMap python workflow platform system set" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/12/Python-sys-set/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/12/Python-sys-set/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Arcpy-and-GDAL/" rel="tag">Arcpy and GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GeoDatabase/" rel="tag">GeoDatabase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
@@ -196,6 +225,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-Python-ui-overview" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -301,8 +335,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-ui-overview/" data-id="cko3135g00077o8uthz6c4gwf" data-title="PyramidMap python workflow platform UI overview" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-ui-overview/" data-id="ckotg3l8e0077vkn04mhk9y1i" data-title="PyramidMap python workflow platform UI overview" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/12/Python-ui-overview/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/12/Python-ui-overview/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GeoTools-and-GeoServer/" rel="tag">GeoTools and GeoServer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Workflow/" rel="tag">Workflow</a></li></ul>
@@ -313,6 +352,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-How-to-begin" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -367,8 +411,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/How-to-begin/" data-id="cko3135cn0001o8utduco2s57" data-title="How to begin with PyramidMap Javacript API?" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/How-to-begin/" data-id="ckotg3l6j0001vkn0g37wecwu" data-title="How to begin with PyramidMap Javacript API?" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/11/How-to-begin/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/How-to-begin/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript-API/" rel="tag">Javascript API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyramidMap/" rel="tag">PyramidMap</a></li></ul>
@@ -379,6 +428,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-JS-LayerCase" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -421,8 +475,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/JS-LayerCase/" data-id="cko3135cx0007o8ut9fszbajn" data-title="PyramidMap Javascript API Layers control" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/JS-LayerCase/" data-id="ckotg3l6p0007vkn06ujv9t8f" data-title="PyramidMap Javascript API Layers control" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/11/JS-LayerCase/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/JS-LayerCase/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Layer-control/" rel="tag">Layer control</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-GL/" rel="tag">Web GL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Map-view/" rel="tag">Web Map view</a></li></ul>
@@ -433,6 +492,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-JS-introduce" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -471,8 +535,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/JS-introduce/" data-id="cko3135d0000ao8ut5az3772l" data-title="PyramidMap Javascript API introduction" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/JS-introduce/" data-id="ckotg3l6s000dvkn070wxarfz" data-title="PyramidMap Javascript API introduction" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/11/JS-introduce/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/JS-introduce/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-GL/" rel="tag">Web GL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Map-view/" rel="tag">Web Map view</a></li></ul>
@@ -483,6 +552,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-What-can-pyramidmap-do" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -520,8 +594,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/What-can-pyramidmap-do/" data-id="cko3135g10078o8utf6uu71oi" data-title="What can the PyramidMap do?" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/What-can-pyramidmap-do/" data-id="ckotg3l8e0078vkn00tnj6vkj" data-title="What can the PyramidMap do?" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/11/What-can-pyramidmap-do/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/What-can-pyramidmap-do/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript-API/" rel="tag">Javascript API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyramidMap/" rel="tag">PyramidMap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python-tools/" rel="tag">Python tools</a></li></ul>
@@ -532,6 +611,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-What-is-the-pyramidMap" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -571,8 +655,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/11/What-is-the-pyramidMap/" data-id="cko3135g3007ao8ut2rdj9zzo" data-title="What&#39;s the PyramidMap?" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/11/What-is-the-pyramidMap/" data-id="ckotg3l8f007avkn09z2i65tx" data-title="What&#39;s the PyramidMap?" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/11/What-is-the-pyramidMap/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/What-is-the-pyramidMap/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript-API/" rel="tag">Javascript API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyramidMap/" rel="tag">PyramidMap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python-tools/" rel="tag">Python tools</a></li></ul>
@@ -583,6 +672,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
     <article id="post-JS-basefunction" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -630,8 +724,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/05/JS-basefunction/" data-id="cko3135d2000do8utd8sm9o7o" data-title="PyramidMap Javascript API base functions" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/05/JS-basefunction/" data-id="ckotg3l6r000avkn02na33d2e" data-title="PyramidMap Javascript API base functions" class="article-share-link">Share</a>
       
+      
+        <a href="/2021/04/05/JS-basefunction/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/04/05/JS-basefunction/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/For-ArcGIS/" rel="tag">For ArcGIS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/For-Cesium/" rel="tag">For Cesium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/For-Google-Map/" rel="tag">For Google Map</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/For-Mapbox/" rel="tag">For Mapbox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/For-OpenLayers/" rel="tag">For OpenLayers</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-GL/" rel="tag">Web GL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Map-view/" rel="tag">Web Map view</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wms-wfs-wcs-kml-kmz/" rel="tag">wms/wfs/wcs/kml/kmz</a></li></ul>
@@ -642,6 +741,11 @@
 </article>
 
 
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
 
   
 
@@ -773,6 +877,29 @@
 
 
 
+
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "1xdvkmnBsU0XiuTALUOgciw7-gzGzoHsz",
+        appKey: "aTA7Gy2B8PLy0L43kyobKsAm",
+        placeholder: "Just do better",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'en'
+    });
+</script>
 
   </div>
 </body>
