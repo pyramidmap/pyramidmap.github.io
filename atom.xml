@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/"/>
-  <updated>2021-04-26T12:28:28.000Z</updated>
+  <updated>2021-06-03T02:15:08.000Z</updated>
   <id>https://pyramidmap.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to begin with Pyramidmap python workflow</title>
+    <link href="https://pyramidmap.github.io/2021/06/02/How-to-begin-with-python/"/>
+    <id>https://pyramidmap.github.io/2021/06/02/How-to-begin-with-python/</id>
+    <published>2021-06-02T05:54:32.000Z</published>
+    <updated>2021-06-03T02:15:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="The-runtime-environment-and-dependency-for-pyramidmap-python-workflow-tool"><a href="#The-runtime-environment-and-dependency-for-pyramidmap-python-workflow-tool" class="headerlink" title="The runtime environment and dependency for pyramidmap python workflow tool"></a>The runtime environment and dependency for pyramidmap python workflow tool</h3><p><img src="/2021/06/02/How-to-begin-with-python/howtobegininpython1.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="04：How to begin with PyramidMap python workflow?" scheme="https://pyramidmap.github.io/categories/04%EF%BC%9AHow-to-begin-with-PyramidMap-python-workflow/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/tags/PyramidMap/"/>
+    
+    <category term="Python workflow" scheme="https://pyramidmap.github.io/tags/Python-workflow/"/>
+    
+  </entry>
   
   <entry>
     <title>PyramidMap Javascript API Application scenarios</title>
@@ -343,42 +369,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap python workflow platform create mxd</title>
-    <link href="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/"/>
-    <id>https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-26T13:24:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Publish-map-servers："><a href="#Publish-map-servers：" class="headerlink" title="Publish map servers："></a>Publish map servers：</h2><h3 id="1：publish-map-server："><a href="#1：publish-map-server：" class="headerlink" title="1：publish map server："></a>1：publish map server：</h3><h4 id="1-1：workflow-model："><a href="#1-1：workflow-model：" class="headerlink" title="1.1：workflow model："></a>1.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/852cf063936757845b18ad766ba794d5.png"></p><h4 id="1-2-operation-interface："><a href="#1-2-operation-interface：" class="headerlink" title="1.2: operation interface："></a>1.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/f2be6b88b08c8df6e47c036fdcbb0939.png"></p><h3 id="2：publish-feature-server："><a href="#2：publish-feature-server：" class="headerlink" title="2：publish feature server："></a>2：publish feature server：</h3><h4 id="2-1：workflow-model："><a href="#2-1：workflow-model：" class="headerlink" title="2.1：workflow model："></a>2.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/357c60dde4400cfd5923ab01429a833b.png"></p><h4 id="2-2-operation-interface："><a href="#2-2-operation-interface：" class="headerlink" title="2.2: operation interface："></a>2.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/ea9ee5b56ef5c5c1836d649d1ff794a9.png"></p><p>Explain:</p><p>①:The max returns per request: it’s the maxium return features number per user request, this depends on your needs and the capacity of the server, not the larger the better.</p><p>②:The following service wms/wfs/wcs are standardized map service that follows OGC specification and can be shared among different map platforms.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap python workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/"/>
-    
-    <category term="07：Create mxd" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/07%EF%BC%9ACreate-mxd/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
-    
-    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
-    
-    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
-    
-    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
-    
-    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
-    
-    <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap python workflow platform raster processing</title>
     <link href="https://pyramidmap.github.io/2021/04/12/Python-raster-process/"/>
     <id>https://pyramidmap.github.io/2021/04/12/Python-raster-process/</id>
@@ -411,6 +401,42 @@
     <category term="GCS and PCS" scheme="https://pyramidmap.github.io/tags/GCS-and-PCS/"/>
     
     <category term="Spacial data convert" scheme="https://pyramidmap.github.io/tags/Spacial-data-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap python workflow platform create mxd</title>
+    <link href="https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/"/>
+    <id>https://pyramidmap.github.io/2021/04/12/Python-publish-mapServer/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-26T13:24:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Publish-map-servers："><a href="#Publish-map-servers：" class="headerlink" title="Publish map servers："></a>Publish map servers：</h2><h3 id="1：publish-map-server："><a href="#1：publish-map-server：" class="headerlink" title="1：publish map server："></a>1：publish map server：</h3><h4 id="1-1：workflow-model："><a href="#1-1：workflow-model：" class="headerlink" title="1.1：workflow model："></a>1.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/852cf063936757845b18ad766ba794d5.png"></p><h4 id="1-2-operation-interface："><a href="#1-2-operation-interface：" class="headerlink" title="1.2: operation interface："></a>1.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/f2be6b88b08c8df6e47c036fdcbb0939.png"></p><h3 id="2：publish-feature-server："><a href="#2：publish-feature-server：" class="headerlink" title="2：publish feature server："></a>2：publish feature server：</h3><h4 id="2-1：workflow-model："><a href="#2-1：workflow-model：" class="headerlink" title="2.1：workflow model："></a>2.1：workflow model：</h4><p><img src="/2021/04/12/Python-publish-mapServer/357c60dde4400cfd5923ab01429a833b.png"></p><h4 id="2-2-operation-interface："><a href="#2-2-operation-interface：" class="headerlink" title="2.2: operation interface："></a>2.2: operation interface：</h4><p><img src="/2021/04/12/Python-publish-mapServer/ea9ee5b56ef5c5c1836d649d1ff794a9.png"></p><p>Explain:</p><p>①:The max returns per request: it’s the maxium return features number per user request, this depends on your needs and the capacity of the server, not the larger the better.</p><p>②:The following service wms/wfs/wcs are standardized map service that follows OGC specification and can be shared among different map platforms.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="PyramidMap python workflow" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/"/>
+    
+    <category term="07：Create mxd" scheme="https://pyramidmap.github.io/categories/PyramidMap-python-workflow/07%EF%BC%9ACreate-mxd/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/tags/Python/"/>
+    
+    <category term="Workflow" scheme="https://pyramidmap.github.io/tags/Workflow/"/>
+    
+    <category term="Vector and Raster" scheme="https://pyramidmap.github.io/tags/Vector-and-Raster/"/>
+    
+    <category term="Arcpy and GDAL" scheme="https://pyramidmap.github.io/tags/Arcpy-and-GDAL/"/>
+    
+    <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/tags/Map-or-Feature-or-Image-Server/"/>
+    
+    <category term="Mxd" scheme="https://pyramidmap.github.io/tags/Mxd/"/>
     
   </entry>
   

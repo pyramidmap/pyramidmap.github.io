@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/cn/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/cn/"/>
-  <updated>2021-04-26T12:18:16.000Z</updated>
+  <updated>2021-06-03T02:25:22.000Z</updated>
   <id>https://pyramidmap.github.io/cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用 PyramidMap python workflow?</title>
+    <link href="https://pyramidmap.github.io/cn/2021/06/02/How-to-begin-with-python/"/>
+    <id>https://pyramidmap.github.io/cn/2021/06/02/How-to-begin-with-python/</id>
+    <published>2021-06-02T05:54:32.000Z</published>
+    <updated>2021-06-03T02:25:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PyramidMap-python-workflow工具运行环境和依赖及部署方法"><a href="#PyramidMap-python-workflow工具运行环境和依赖及部署方法" class="headerlink" title="PyramidMap python workflow工具运行环境和依赖及部署方法"></a>PyramidMap python workflow工具运行环境和依赖及部署方法</h3><p><img src="/cn/2021/06/02/How-to-begin-with-python/howtobegininpython2.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="04：如何使用 PyramidMap python workflow?" scheme="https://pyramidmap.github.io/cn/categories/04%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-python-workflow/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
+    
+    <category term="Python workflow" scheme="https://pyramidmap.github.io/cn/tags/Python-workflow/"/>
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="地图数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+  </entry>
   
   <entry>
     <title>PyramidMap Javascript API 应用场景</title>
@@ -527,40 +557,6 @@
   </entry>
   
   <entry>
-    <title>PyramidMap python 工作流平台界面说明</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/</id>
-    <published>2021-04-12T06:46:58.000Z</published>
-    <updated>2021-04-26T13:27:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="软件功能总览："><a href="#软件功能总览：" class="headerlink" title="软件功能总览："></a>软件功能总览：</h2><p><strong><img src="/cn/2021/04/12/Python-ui-overview/ac0d7cedf208493335b1e6135fbacf56.png"></strong></p><table><thead><tr><th>功能区</th><th>子项</th><th>功能</th></tr></thead><tbody><tr><td>系统设置</td><td>GIS服务器连接</td><td>创建并保存GIS服务器连接，以备发布服务。</td></tr><tr><td></td><td>GIS数据库创建</td><td>创建GIS数据库，建立并保存sde连接。</td></tr><tr><td></td><td>GIS数据库连接</td><td>连接GIS数据库，建立并保存sde连接。</td></tr><tr><td>功能区</td><td>地图查询显示</td><td>矢量及影像类地图查询展示。</td></tr><tr><td></td><td>要素类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>影像类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>标准坐标系转换</td><td>支持所有标准化坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>特殊坐标系转换</td><td>支持高德/百度坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>GIS服务器管理</td><td>ArcGIS Server地图服务查询导出及地图预览。</td></tr><tr><td></td><td>地理数据库管理</td><td>企业地理数据库数据查询导出及地图预览。</td></tr><tr><td></td><td>地图服务发布</td><td>支持批量化地图服务及数据发布，工作流模式进行。</td></tr><tr><td></td><td>日志查询</td><td>流程环节的日志记录及分类、分时段查询追溯。</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="02：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
-    
-    
-    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
-    
-    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    
-    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
-    
-    <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/cn/tags/GeoTools-and-GeoServer/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PyramidMap python 工作流平台系统设置</title>
     <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/"/>
     <id>https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/</id>
@@ -591,6 +587,40 @@
     <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
     
     <category term="Map or Feature or Image Server" scheme="https://pyramidmap.github.io/cn/tags/Map-or-Feature-or-Image-Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyramidMap python 工作流平台界面说明</title>
+    <link href="https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/"/>
+    <id>https://pyramidmap.github.io/cn/2021/04/12/Python-ui-overview/</id>
+    <published>2021-04-12T06:46:58.000Z</published>
+    <updated>2021-04-26T13:27:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="软件功能总览："><a href="#软件功能总览：" class="headerlink" title="软件功能总览："></a>软件功能总览：</h2><p><strong><img src="/cn/2021/04/12/Python-ui-overview/ac0d7cedf208493335b1e6135fbacf56.png"></strong></p><table><thead><tr><th>功能区</th><th>子项</th><th>功能</th></tr></thead><tbody><tr><td>系统设置</td><td>GIS服务器连接</td><td>创建并保存GIS服务器连接，以备发布服务。</td></tr><tr><td></td><td>GIS数据库创建</td><td>创建GIS数据库，建立并保存sde连接。</td></tr><tr><td></td><td>GIS数据库连接</td><td>连接GIS数据库，建立并保存sde连接。</td></tr><tr><td>功能区</td><td>地图查询显示</td><td>矢量及影像类地图查询展示。</td></tr><tr><td></td><td>要素类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>影像类处理</td><td>涵盖多类型数据处理模式，以工作流模式进行。</td></tr><tr><td></td><td>标准坐标系转换</td><td>支持所有标准化坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>特殊坐标系转换</td><td>支持高德/百度坐标系转换，以工作流模式进行。</td></tr><tr><td></td><td>GIS服务器管理</td><td>ArcGIS Server地图服务查询导出及地图预览。</td></tr><tr><td></td><td>地理数据库管理</td><td>企业地理数据库数据查询导出及地图预览。</td></tr><tr><td></td><td>地图服务发布</td><td>支持批量化地图服务及数据发布，工作流模式进行。</td></tr><tr><td></td><td>日志查询</td><td>流程环节的日志记录及分类、分时段查询追溯。</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="PyramidMap python 工作流" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="02：界面说明" scheme="https://pyramidmap.github.io/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/"/>
+    
+    
+    <category term="Python" scheme="https://pyramidmap.github.io/cn/tags/Python/"/>
+    
+    <category term="数据处理工作流" scheme="https://pyramidmap.github.io/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="Arcpy 与 GDAL" scheme="https://pyramidmap.github.io/cn/tags/Arcpy-%E4%B8%8E-GDAL/"/>
+    
+    <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
+    
+    <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/cn/tags/GeoTools-and-GeoServer/"/>
     
   </entry>
   
