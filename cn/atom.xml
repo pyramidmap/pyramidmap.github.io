@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/cn/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/cn/"/>
-  <updated>2021-06-03T02:25:22.000Z</updated>
+  <updated>2021-06-11T02:17:50.000Z</updated>
   <id>https://pyramidmap.github.io/cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>坐标系转换及位置校正</title>
+    <link href="https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/"/>
+    <id>https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/</id>
+    <published>2021-06-09T01:09:54.000Z</published>
+    <updated>2021-06-11T02:17:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>坐标系是GIS中最基本概念，其应用体现在人类活动的各个领域。从火箭发射、星际宇航，到工农业生产，再到城市导航、线路规划、个人定位，所有的活动都离不开坐标系统的支持，即使是您根本觉察不到他的存在。</p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p><h3 id="1、坐标系是地图系统的基础"><a href="#1、坐标系是地图系统的基础" class="headerlink" title="1、坐标系是地图系统的基础"></a>1、坐标系是地图系统的基础</h3><p>坐标系提供了对空间数据的位置描述。一幅地图，无论简单还是复杂、无论数据量有多少，要显示，必须具备正确的坐标系统。</p><h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p><h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p><p>简单地说，投影坐标系统是地理坐标系通过正射投影而获得平面坐标系统，主要用于web端地图显示定义。</p><h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p><h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p><h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p><h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="05：如何进行坐标系转换及位置校正?" scheme="https://pyramidmap.github.io/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
+    
+    <category term="Javascript API" scheme="https://pyramidmap.github.io/cn/tags/Javascript-API/"/>
+    
+    <category term="Python tools" scheme="https://pyramidmap.github.io/cn/tags/Python-tools/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用 PyramidMap python workflow?</title>
@@ -647,34 +675,6 @@
     <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
     
     <category term="Javascript API" scheme="https://pyramidmap.github.io/cn/tags/Javascript-API/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyramidMap 能干啥?</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/11/What-can-pyramidmap-do/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/11/What-can-pyramidmap-do/</id>
-    <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-24T14:21:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PyramidMap-Javascrpt-API-组件功能列表"><a href="#PyramidMap-Javascrpt-API-组件功能列表" class="headerlink" title="PyramidMap Javascrpt API 组件功能列表"></a>PyramidMap Javascrpt API 组件功能列表</h3><p><img src="/cn/2021/04/11/What-can-pyramidmap-do/jsfunction.png"></p><h3 id="PyramidMap-Python-工具集-功能列表"><a href="#PyramidMap-Python-工具集-功能列表" class="headerlink" title="PyramidMap Python 工具集 功能列表"></a>PyramidMap Python 工具集 功能列表</h3><p><img src="/cn/2021/04/11/What-can-pyramidmap-do/pythonfunction.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="02：PyramidMap 能干啥？" scheme="https://pyramidmap.github.io/cn/categories/02%EF%BC%9APyramidMap-%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F/"/>
-    
-    
-    <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
-    
-    <category term="Javascript API" scheme="https://pyramidmap.github.io/cn/tags/Javascript-API/"/>
-    
-    <category term="Python tools" scheme="https://pyramidmap.github.io/cn/tags/Python-tools/"/>
     
   </entry>
   

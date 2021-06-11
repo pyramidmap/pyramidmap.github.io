@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/"/>
-  <updated>2021-06-03T02:15:08.000Z</updated>
+  <updated>2021-06-11T02:17:46.000Z</updated>
   <id>https://pyramidmap.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS-transformation-and-XY-adjustment</title>
+    <link href="https://pyramidmap.github.io/2021/06/09/CS-transformation-and-XY-adjustment/"/>
+    <id>https://pyramidmap.github.io/2021/06/09/CS-transformation-and-XY-adjustment/</id>
+    <published>2021-06-09T01:09:54.000Z</published>
+    <updated>2021-06-11T02:17:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Coordinate system is the most basic concept in GIS, and its application is reflected in various fields of human activities. From rocket launching, interstellar space flight, to industrial and agricultural production, to urban navigation, route planning, personal positioning, all activities are inseparable from the support of coordinate system, even if you are not aware of its existence.</p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p><h3 id="1、Coordinate-system-is-the-basis-of-map-system"><a href="#1、Coordinate-system-is-the-basis-of-map-system" class="headerlink" title="1、Coordinate system is the basis of map system"></a>1、Coordinate system is the basis of map system</h3><p>Coordinate system provides location description of spatial data. A map, whether simple or complex, no matter how much data, must have the correct coordinate system to display.</p><h3 id="2、Concept-classification-and-definition-examples-of-coordinate-system"><a href="#2、Concept-classification-and-definition-examples-of-coordinate-system" class="headerlink" title="2、Concept, classification and definition examples of coordinate system"></a>2、Concept, classification and definition examples of coordinate system</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p><h3 id="3、The-relationship-between-projection-coordinate-system-and-geographical-coordinate-system"><a href="#3、The-relationship-between-projection-coordinate-system-and-geographical-coordinate-system" class="headerlink" title="3、The relationship between projection coordinate system and geographical coordinate system"></a>3、The relationship between projection coordinate system and geographical coordinate system</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p><p>In short, the projection coordinate system is a plane coordinate system obtained from geographic coordinate system through orthographic projection, which is mainly used for web map display definition.</p><h3 id="4、Some-key-concepts-of-coordinate-system"><a href="#4、Some-key-concepts-of-coordinate-system" class="headerlink" title="4、Some key concepts of coordinate system"></a>4、Some key concepts of coordinate system</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p><h3 id="5、The-selection-principle-of-coordinate-system"><a href="#5、The-selection-principle-of-coordinate-system" class="headerlink" title="5、The selection principle of coordinate system"></a>5、The selection principle of coordinate system</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p><h3 id="6、The-selection-principle-of-projection-type"><a href="#6、The-selection-principle-of-projection-type" class="headerlink" title="6、The selection principle of projection type"></a>6、The selection principle of projection type</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p><h3 id="7、Determination-of-projection-mode"><a href="#7、Determination-of-projection-mode" class="headerlink" title="7、Determination of projection mode"></a>7、Determination of projection mode</h3><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p><p><img src="/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="05：How to CS transformation and XY adjustment?" scheme="https://pyramidmap.github.io/categories/05%EF%BC%9AHow-to-CS-transformation-and-XY-adjustment/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/tags/PyramidMap/"/>
+    
+    <category term="Javascript API" scheme="https://pyramidmap.github.io/tags/Javascript-API/"/>
+    
+    <category term="Python tools" scheme="https://pyramidmap.github.io/tags/Python-tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>adjustment</title>
+    <link href="https://pyramidmap.github.io/2021/06/09/adjustment/"/>
+    <id>https://pyramidmap.github.io/2021/06/09/adjustment/</id>
+    <published>2021-06-09T01:07:28.000Z</published>
+    <updated>2021-06-09T01:07:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>How to begin with Pyramidmap python workflow</title>
@@ -615,76 +663,6 @@
     <category term="Javascript API" scheme="https://pyramidmap.github.io/tags/Javascript-API/"/>
     
     <category term="Python tools" scheme="https://pyramidmap.github.io/tags/Python-tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>What&#39;s the PyramidMap?</title>
-    <link href="https://pyramidmap.github.io/2021/04/11/What-is-the-pyramidMap/"/>
-    <id>https://pyramidmap.github.io/2021/04/11/What-is-the-pyramidMap/</id>
-    <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-29T15:01:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PyramidMap-is-a-suite-components-for-map-developping-in-JavaScript-and-python"><a href="#PyramidMap-is-a-suite-components-for-map-developping-in-JavaScript-and-python" class="headerlink" title="PyramidMap is a suite components for map developping in JavaScript and python"></a>PyramidMap is a suite components for map developping in JavaScript and python</h3><p>PyramidMap is an Intelligent map component developed by pyramidMap studio which provide two product lines in web and python providing professional map services for users, in order to build a practical map application system quickly. PyramiadMap covers JavaScript API library for Web GIS applications and python map tools , from desktop mapping to GIS Server engine and web development components, supporting multi terminal and cross platform deployment. Pyramidmap engine implements elastic function deployment through plug-in mode, fully supports 2D and 3D map application based on webgl,  supports WMS / WFS / WCS / KML and other standard interfaces following OGC specification therefore realizes data communication and integration between heterogeneous GIS platforms. Pyramidmap engine has built-in support for ArcGIS, GeoServer, openlayer, leaflet, cesium, Google map, Mapbox, and Tianditu/Amap / Baidu map, and provides Python based interface to meet the all-round data processing needs of map users.</p><p>The figure below shows the relationship between cartography and map application in pyramidmap.</p><p><img src="/2021/04/11/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web-en.png"></p><p>In the pyreamidmap, map design is around map application, and the two are complementary. The design of layer data structure is In the service of the map application, and the purpose is to meet the practical and humanized operation of data input and output and UI interaction to the greatest extent.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="01：What&#39;s the PyramidMap?" scheme="https://pyramidmap.github.io/categories/01%EF%BC%9AWhat-s-the-PyramidMap/"/>
-    
-    
-    <category term="PyramidMap" scheme="https://pyramidmap.github.io/tags/PyramidMap/"/>
-    
-    <category term="Javascript API" scheme="https://pyramidmap.github.io/tags/Javascript-API/"/>
-    
-    <category term="Python tools" scheme="https://pyramidmap.github.io/tags/Python-tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyramidMap Javascript API base functions</title>
-    <link href="https://pyramidmap.github.io/2021/04/05/JS-basefunction/"/>
-    <id>https://pyramidmap.github.io/2021/04/05/JS-basefunction/</id>
-    <published>2021-04-05T03:16:08.000Z</published>
-    <updated>2021-04-26T09:13:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>Vector and grid</strong></p><p>Support various vector and raster maps, including ArcGIS Online, Tiantu, Mapbox and AMap / Baidu map support topographic map and satellite map, and coordinate system conversion can be carried out according to actual needs. Pyramidmap supports terrain rendering based on terrain data in the 3D environment .</p><p><strong>Offline support</strong></p><p>Support offline deployment, calling online map resources or hosting in GIS Server. All kinds of offline map services on server. Users can deploy business layers on ArcGIS Server and GeoServer, call and load various map functions through API interface provided by pyramidmap, such as attribute query, spatial query, layer management, data import and export, statistical report, etc.</p><p><strong>Symbol map symbolization management</strong></p><p>Dynamic real-time change map appearance, personalized icon and color settings, dynamic switching thematic symbols, support preset and interface settings.</p><p><strong>3D map</strong></p><p>Support ArcGIS, cesium, mapbox, Gaode and other 3D maps, fully compatible with BIM / CIM and other building layers, realize the organic integration of true 3D and true scene</p><p><strong>Global data</strong></p><p>It covers all kinds of global map data and coordinate systems, including vector, raster, satellite, remote sensing image, etc., and supports WGS84 and web<br>All standard space and projection coordinate systems such as Mercator, CGCS2000, Xian80 and Beijing 54 can be transformed and adjusted according to the production environment.</p><p><strong>Support for third party applications</strong></p><p>Support three party system docking, such as SCADA data acquisition software, automatic chart generation software, BI data analysis software. Pyramidm<br>ap provides standard API interface, integrates map and production data, and forms rich thematic maps through data analysis and summary.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="PyramidMap Javascript API" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/"/>
-    
-    <category term="03：Base Functions" scheme="https://pyramidmap.github.io/categories/PyramidMap-Javascript-API/03%EF%BC%9ABase-Functions/"/>
-    
-    
-    <category term="Web GL" scheme="https://pyramidmap.github.io/tags/Web-GL/"/>
-    
-    <category term="JS Widget" scheme="https://pyramidmap.github.io/tags/JS-Widget/"/>
-    
-    <category term="Web Map view" scheme="https://pyramidmap.github.io/tags/Web-Map-view/"/>
-    
-    <category term="For ArcGIS" scheme="https://pyramidmap.github.io/tags/For-ArcGIS/"/>
-    
-    <category term="For OpenLayers" scheme="https://pyramidmap.github.io/tags/For-OpenLayers/"/>
-    
-    <category term="For Cesium" scheme="https://pyramidmap.github.io/tags/For-Cesium/"/>
-    
-    <category term="For Mapbox" scheme="https://pyramidmap.github.io/tags/For-Mapbox/"/>
-    
-    <category term="For Google Map" scheme="https://pyramidmap.github.io/tags/For-Google-Map/"/>
-    
-    <category term="wms/wfs/wcs/kml/kmz" scheme="https://pyramidmap.github.io/tags/wms-wfs-wcs-kml-kmz/"/>
     
   </entry>
   
