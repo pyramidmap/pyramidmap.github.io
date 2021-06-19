@@ -6,7 +6,7 @@
   <link href="https://pyramidmap.github.io/cn/atom.xml" rel="self"/>
   
   <link href="https://pyramidmap.github.io/cn/"/>
-  <updated>2021-06-11T02:17:50.000Z</updated>
+  <updated>2021-06-16T03:45:14.000Z</updated>
   <id>https://pyramidmap.github.io/cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>坐标系转换及位置校正</title>
+    <title>如何选择坐标系?</title>
     <link href="https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/"/>
     <id>https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/</id>
     <published>2021-06-09T01:09:54.000Z</published>
-    <updated>2021-06-11T02:17:50.000Z</updated>
+    <updated>2021-06-16T03:45:14.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>坐标系是GIS中最基本概念，其应用体现在人类活动的各个领域。从火箭发射、星际宇航，到工农业生产，再到城市导航、线路规划、个人定位，所有的活动都离不开坐标系统的支持，即使是您根本觉察不到他的存在。</p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p><h3 id="1、坐标系是地图系统的基础"><a href="#1、坐标系是地图系统的基础" class="headerlink" title="1、坐标系是地图系统的基础"></a>1、坐标系是地图系统的基础</h3><p>坐标系提供了对空间数据的位置描述。一幅地图，无论简单还是复杂、无论数据量有多少，要显示，必须具备正确的坐标系统。</p><h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p><h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p><p>简单地说，投影坐标系统是地理坐标系通过正射投影而获得平面坐标系统，主要用于web端地图显示定义。</p><h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p><h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p><h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p><h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>]]></content>
     
@@ -33,7 +33,35 @@
     
     
     
-    <category term="05：如何进行坐标系转换及位置校正?" scheme="https://pyramidmap.github.io/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/"/>
+    <category term="05：如何选择坐标系?" scheme="https://pyramidmap.github.io/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9D%90%E6%A0%87%E7%B3%BB/"/>
+    
+    
+    <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
+    
+    <category term="Javascript API" scheme="https://pyramidmap.github.io/cn/tags/Javascript-API/"/>
+    
+    <category term="Python tools" scheme="https://pyramidmap.github.io/cn/tags/Python-tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何进行坐标系转换及位置校正?</title>
+    <link href="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/"/>
+    <id>https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/</id>
+    <published>2021-06-09T01:09:54.000Z</published>
+    <updated>2021-06-19T06:45:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg"></p><p>而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg"></p><p>三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。如下图所示：</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png"></p><p>二维平面地图使用平面坐标系定位，称为投影坐标系，也称为平面直角坐标系。三维坐标系统到二维直角坐标系的转换被称为投影。如下图所示：</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png"></p><p>在这个过程中会产生形变和误差，形变和误差值由赤道到两极逐步放大。因此，在地理坐标系的相互转换中，我们需要对转换后的数值进行校正。假设您有一个栅格图层，坐标系为WGS_1984_Web_Mercato，epsg=3857，并且已经发布并在web端显示。如下图所示。</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg"></p><p>假设，您同时还拥有一个设备图层，原始坐标系是GCS_WGS_1984，epsg=4326，已发布成图层服务，如下图所示。</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png"></p><p>现在，您想把两个图层叠加在一起，显示设备点的准确位置。这时你会发现，无论怎么努力，设备点图层是无法显示的。因为，两个图层的坐标系不同，无法在同一视窗中显示。</p><p>下面我们对设备图层进行投影转换，转为WGS_1984_Web_Mercato投影坐标系。您会发现，两个图层可以叠加显示了，如下图所示（图中的网格线表示投影转换的辅助作用，真实场景下不显示)。</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg"></p><p>叠加后，您会发现，设备与实际的位置存在偏差。这个偏差是由GCS到PCS转换过程中，投影形变产生的。接下来，我们消除位置偏差。</p><p>通过pyramidmap位置校正工具，可以实现图层的整体位置纠偏，最终实现准确的位置显示，最终位置如下图所示。</p><p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg"></p><p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#x70;&#x79;&#x72;&#97;&#x6d;&#x69;&#x64;&#x6d;&#x61;&#x70;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#99;&#111;&#109;">&#x70;&#x79;&#x72;&#97;&#x6d;&#x69;&#x64;&#x6d;&#x61;&#x70;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#99;&#111;&#109;</a>，我们提供完整的技术支持。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
+      
+    
+    
+    
+    <category term="06：如何进行坐标系转换及位置校正?" scheme="https://pyramidmap.github.io/cn/categories/06%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/"/>
     
     
     <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
@@ -649,32 +677,6 @@
     <category term="Mxd 地图文档" scheme="https://pyramidmap.github.io/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/"/>
     
     <category term="GeoTools and GeoServer" scheme="https://pyramidmap.github.io/cn/tags/GeoTools-and-GeoServer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用 PyramidMap Javacript API?</title>
-    <link href="https://pyramidmap.github.io/cn/2021/04/11/How-to-begin/"/>
-    <id>https://pyramidmap.github.io/cn/2021/04/11/How-to-begin/</id>
-    <published>2021-04-11T01:57:13.000Z</published>
-    <updated>2021-04-28T14:16:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\cn\assets\css\APlayer.min.css"><script src="\cn\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1：在Vue中实现ArcGIS地图展示"><a href="#1：在Vue中实现ArcGIS地图展示" class="headerlink" title="1：在Vue中实现ArcGIS地图展示"></a>1：在Vue中实现ArcGIS地图展示</h3><p>面向web 的地图应用，核心即是解决3个W问题，即：Which’s the map Platform, Which’s the web framework, Which’s the Geo database。 PyramidMap Javascript API面向地图应用层，就是围绕着3W为核心进行设计，并以dojo组件模式进行封装。以下过程示例如何使用PyramidMap的Javascript API，在vue上，通过ArcGIS展示一幅二维地图。以下过程假设您已经具备了vue环境，要在VUE中使用ArcGIS，需要在项目中安装esri-loader模块，添加ArcGIS 功能依赖：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install esri-loader -save</span><br></pre></td></tr></table></figure><p>然后在config中配置PyramidMap Javascript API模块</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">loadConfig: &#123;</span><br><span class="line">        url:&#39;http:&#x2F;&#x2F;ip:port&#x2F;pyramidmap_js_api&#x2F;library&#x2F;1.14&#x2F;init.js&#39;, </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>接下来调用地图实现接口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">require([        </span><br><span class="line">        &quot;pyramidmap&#x2F;initMapViewer&quot;,</span><br><span class="line">        &quot;dojo&#x2F;dom&quot;,</span><br><span class="line">        &quot;dojo&#x2F;parser&quot;,</span><br><span class="line">        &quot;dojo&#x2F;ready&quot;,</span><br><span class="line">        &quot;dojo&#x2F;on&quot;,</span><br><span class="line">        &quot;dojo&#x2F;_base&#x2F;lang&quot;</span><br><span class="line">    ], function (</span><br><span class="line">        initMapViewer,</span><br><span class="line">        dom,</span><br><span class="line">        parser,</span><br><span class="line">        ready,</span><br><span class="line">        on,</span><br><span class="line">        lang</span><br><span class="line">    ) &#123;</span><br><span class="line">        $().ready(function () &#123;</span><br><span class="line">            &#x2F;&#x2F; 调用地图初始化模块</span><br><span class="line">            pimv  &#x3D; new initMapViewer();</span><br><span class="line">            &#x2F;&#x2F; 实现二维ArcGIS地图</span><br><span class="line">            layerkind &#x3D; &#39;tiled&#39;;</span><br><span class="line">            mapUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;somethingOfMapsercice&#x2F;MapServe&#39;</span><br><span class="line">            pimv.create_2D_ArcGIS_mapview(&#39;divID&#39;,mapUrl,layerkind);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><p>代码中的’divID’是html页面地图显示容器的标签id，layerkind对应接口中的图层类型，mapUrl是本地或远程服务器中的地图资源请求地址。 </p><p>地图实现效果</p><p><img src="/cn/2021/04/11/How-to-begin/realize2dmapinarcgis.png"></p><h3 id="2：实现业务图层查询"><a href="#2：实现业务图层查询" class="headerlink" title="2：实现业务图层查询"></a>2：实现业务图层查询</h3><p>地图应用，更多是面向行业需求，与业务数据整合，解决某一专题应用。我们以燃气管网为例，示例如何使用PyramidMap Javascript 组件，实现管线地图查询。以同样的方式实现地图查询接口：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">require([        </span><br><span class="line">        &quot;pyramidmap&#x2F;initMapViewer&quot;,</span><br><span class="line">        &quot;pyramidmap&#x2F;initWorkLayer&quot;,</span><br><span class="line">        &quot;pyramidmap&#x2F;initLayerTable&quot;,</span><br><span class="line">        &quot;dojo&#x2F;dom&quot;,</span><br><span class="line">        &quot;dojo&#x2F;parser&quot;,</span><br><span class="line">        &quot;dojo&#x2F;ready&quot;,</span><br><span class="line">        &quot;dojo&#x2F;on&quot;,</span><br><span class="line">        &quot;dojo&#x2F;_base&#x2F;lang&quot;</span><br><span class="line">    ], function (</span><br><span class="line">        initMapViewer,</span><br><span class="line">        initWorkLayer,</span><br><span class="line">        initLayerTable,</span><br><span class="line">        dom,</span><br><span class="line">        parser,</span><br><span class="line">        ready,</span><br><span class="line">        on,</span><br><span class="line">        lang</span><br><span class="line">    ) &#123;</span><br><span class="line">        $().ready(function () &#123;</span><br><span class="line">            &#x2F;&#x2F; 调用地图初始化模块</span><br><span class="line">            pimv  &#x3D; new initMapViewer();</span><br><span class="line">            &#x2F;&#x2F; 实现二维ArcGIS地图</span><br><span class="line">            layerkind &#x3D; &#39;tiled&#39;;</span><br><span class="line">            mapUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;somethingOfMapsercice&#x2F;MapServe&#39;</span><br><span class="line">            pimv.create_2D_ArcGIS_mapview(&#39;divID&#39;,mapUrl,layerkind);</span><br><span class="line">            &#x2F;&#x2F; 调用业务图层模块</span><br><span class="line">            piwl  &#x3D; new initWorkLayer();</span><br><span class="line">            &#x2F;&#x2F; 加载业务图层</span><br><span class="line">            workLayerUrl &#x3D; &#39;https:&#x2F;&#x2F;mapserverIP:port&#x2F;arcgis&#x2F;rest&#x2F;services&#x2F;Worksercice&#x2F;FeatureServe&#39;</span><br><span class="line">            workLayer &#x3D; piwl.create_workLayer(workLayerUrl);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><p>实现效果</p><p><img src="/cn/2021/04/11/How-to-begin/createworklayer1.png"></p><p>可以查询详细信息</p><p><img src="/cn/2021/04/11/How-to-begin/createworklayer2.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\cn\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\cn\assets\js\APlayer.min.j</summary>
-      
-    
-    
-    
-    <category term="03：如何使用 PyramidMap Javacript API?" scheme="https://pyramidmap.github.io/cn/categories/03%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-Javacript-API/"/>
-    
-    
-    <category term="PyramidMap" scheme="https://pyramidmap.github.io/cn/tags/PyramidMap/"/>
-    
-    <category term="Javascript API" scheme="https://pyramidmap.github.io/cn/tags/Javascript-API/"/>
     
   </entry>
   
