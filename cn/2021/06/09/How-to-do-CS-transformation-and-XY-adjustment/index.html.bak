@@ -139,13 +139,13 @@
 <p>叠加后，您会发现，设备与实际的位置存在偏差。这个偏差是由GCS到PCS转换过程中，投影形变产生的。接下来，我们消除位置偏差。</p>
 <p>通过pyramidmap位置校正工具，可以实现图层的整体位置纠偏，最终实现准确的位置显示，最终位置如下图所示。</p>
 <p><img src="/cn/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg"></p>
-<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#x70;&#x79;&#x72;&#97;&#x6d;&#x69;&#x64;&#x6d;&#x61;&#x70;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#99;&#111;&#109;">&#x70;&#x79;&#x72;&#97;&#x6d;&#x69;&#x64;&#x6d;&#x61;&#x70;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#99;&#111;&#109;</a>，我们提供完整的技术支持。</p>
+<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#x70;&#x79;&#x72;&#97;&#109;&#x69;&#x64;&#109;&#97;&#112;&#64;&#111;&#117;&#116;&#108;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;">&#x70;&#x79;&#x72;&#97;&#109;&#x69;&#x64;&#109;&#97;&#112;&#64;&#111;&#117;&#116;&#108;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;</a>，我们提供完整的技术支持。</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3eonu30002ssutf0du64gc" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3fxj2x00088gutg2cb1jwq" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
