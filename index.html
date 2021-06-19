@@ -81,8 +81,8 @@
   
     <article id="post-How-to-do-CS-transformation-and-XY-adjustment" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/" class="article-date">
-  <time class="dt-published" datetime="2021-06-16T03:53:54.000Z" itemprop="datePublished">2021-06-16</time>
+    <a href="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" class="article-date">
+  <time class="dt-published" datetime="2021-06-19T09:18:50.000Z" itemprop="datePublished">2021-06-19</time>
 </a>
     
   <div class="article-category">
@@ -97,7 +97,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/">How-to-do-CS-transformation-and-XY-adjustment?</a>
+      <a class="p-name article-title" href="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/">How-to-do-CS-transformation-and-XY-adjustment</a>
     </h1>
   
 
@@ -108,34 +108,34 @@
       
       	
       		<p>In the geographic system, there are two kinds of coordinate systems, three-dimensional geographic coordinate system and two-dimensional plane coordinate system. The former’s perspective is like overlooking the whole earth on the space orbital station, and its vision is located in three-dimensional space. As shown in the figure below:</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_from_GCS.jpg"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg"></p>
 <p>The latter is a plane map, like positioning the field of vision to a local plane. As shown in the figure below:</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_from_PCS.jpg"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg"></p>
 <p>The three-dimensional coordinate system is also known as the spatial geographic coordinate system, such as WGS84, EPSG Code: 4326. It is located by longitude and latitude, and expressed by the measuring angle from the point on the earth’s surface to the earth’s center. The datum planes for longitude and latitude calculation are the primary meridian and equator of Greenwich Observatory, UK. As shown in the figure below:</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_degree.png"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png"></p>
 <p>Two dimensional plane map uses plane coordinate system to locate, which is called projection coordinate system, also called plane rectangular coordinate system. The transformation from 3D coordinate system to 2D rectangular coordinate system is called projection. As shown in the figure below:</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_gcs_2_pcs.png"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png"></p>
 <p>In this process, there will be deformation and error, and the value of deformation and error will gradually enlarge from the equator to the poles. Therefore, in the transformation of geographical coordinate system, we need to correct the converted values. Suppose you have a grid layer in WGS_ 1984_ Web_ Mercato, EPSG = 3857, and has been published and displayed on the web. As shown in the figure below.</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09.jpg"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg"></p>
 <p>Suppose you also have a device layer, the original coordinate system is GCS_ WGS_ 1984, epsg=4326, map service has been published,the layer as shown in the following figure.</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_worklayer.png"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png"></p>
 <p>Now, you want to overlay the two layers together to show the exact location of the device point. At this time, you will find that no matter how hard you try, the device point layer cannot be displayed. Because the coordinate systems of the two layers are different, they cannot be displayed in the same map viewer.</p>
 <p>Next, we will transform the device layer into WGS_ 1984_ Web_ Mercato projection coordinate system. You will find that the two layers can be superimposed and displayed, as shown in the figure below (the grid line in the figure represents the auxiliary effect of projection conversion, which is not displayed in the real scene).</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_from.jpg"></p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg"></p>
 <p>After stacking, you will find that there is a deviation between the device and the actual position. This deviation is caused by the projection deformation during the transformation from GCS to PCs. Next, we eliminate the position deviation.</p>
 <p>Through the position correction tool of pyramidmap, the overall position correction of the layer can be realized, and the accurate position display can be realized finally. The final position is shown in the figure below.</p>
-<p><img src="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/Myblog\hexocn\source_posts\How-to-do-CS-transformation-and-XY-adjustment\cs_adjustment_09_to.jpg"></p>
-<p>You can get  the complete technical support for coordinate transformation and position correction contacting with <a href="mailto:&#x70;&#x79;&#x72;&#x61;&#109;&#x69;&#100;&#x6d;&#x61;&#x70;&#64;&#111;&#117;&#x74;&#x6c;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#x70;&#x79;&#x72;&#x61;&#109;&#x69;&#100;&#x6d;&#x61;&#x70;&#64;&#111;&#117;&#x74;&#x6c;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a>, thanks.</p>
+<p><img src="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg"></p>
+<p>You can get  the complete technical support for coordinate transformation and position correction contacting with <a href="mailto:&#112;&#121;&#114;&#x61;&#x6d;&#x69;&#x64;&#x6d;&#97;&#112;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#112;&#121;&#114;&#x61;&#x6d;&#x69;&#x64;&#x6d;&#97;&#112;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a>, thanks.</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3fw12r0009swut8eis2dve" data-title="How-to-do-CS-transformation-and-XY-adjustment?" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3kj3is0009l0ut98vnhtrz" data-title="How-to-do-CS-transformation-and-XY-adjustment" class="article-share-link">Share</a>
       
       
-        <a href="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/" itemprop="commentCount"></span>
+        <a href="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" itemprop="commentCount"></span>
           Comments
         </a>
       
@@ -203,7 +203,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/06/09/CS-transformation-and-XY-adjustment/" data-id="ckq3fw12e0001swuta8b81ey2" data-title="How to choose coordinate system?" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/06/09/CS-transformation-and-XY-adjustment/" data-id="ckq3kj3if0001l0utaf481q4b" data-title="How to choose coordinate system?" class="article-share-link">Share</a>
       
       
         <a href="/2021/06/09/CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
@@ -261,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/06/02/How-to-begin-with-python/" data-id="ckq3fw12p0007swutebdk55kf" data-title="How to begin with Pyramidmap python workflow" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/06/02/How-to-begin-with-python/" data-id="ckq3kj3ik0003l0ut11v53mzh" data-title="How to begin with Pyramidmap python workflow" class="article-share-link">Share</a>
       
       
         <a href="/2021/06/02/How-to-begin-with-python/#comments" class="article-comment-link">
@@ -322,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/25/JS-Application-scenarios/" data-id="ckq3fw12s000aswut0d7x4hyb" data-title="PyramidMap Javascript API Application scenarios" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/25/JS-Application-scenarios/" data-id="ckq3kj3iu000al0ut3b99crou" data-title="PyramidMap Javascript API Application scenarios" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/25/JS-Application-scenarios/#comments" class="article-comment-link">
@@ -387,7 +387,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/" data-id="ckq3fw12w000eswut5rv927fa" data-title="PyramidMap Javascript API query and identify on map" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/13/JS-QueryIdentify/" data-id="ckq3kj3iz000el0ut93pt1f03" data-title="PyramidMap Javascript API query and identify on map" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/13/JS-QueryIdentify/#comments" class="article-comment-link">
@@ -455,7 +455,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-GeoDB-query/" data-id="ckq3fw135000nswut4vnab04s" data-title="PyramidMap python workflow platform GeoDatabase query and preview" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-GeoDB-query/" data-id="ckq3kj3j7000nl0uthy1s72er" data-title="PyramidMap python workflow platform GeoDatabase query and preview" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/12/Python-GeoDB-query/#comments" class="article-comment-link">
@@ -524,7 +524,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/" data-id="ckq3fw138000pswut7aft1lb2" data-title="PyramidMap python workflow platform Gis Server query and preview" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-GisServer-query/" data-id="ckq3kj3ja000pl0ut92c4bokz" data-title="PyramidMap python workflow platform Gis Server query and preview" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/12/Python-GisServer-query/#comments" class="article-comment-link">
@@ -616,7 +616,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/" data-id="ckq3fw13a000uswut2jk19kk2" data-title="PyramidMap python workflow platform feature class processing" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-featureClass-process/" data-id="ckq3kj3jg000ul0ut64bjgbjq" data-title="PyramidMap python workflow platform feature class processing" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/12/Python-featureClass-process/#comments" class="article-comment-link">
@@ -1061,7 +1061,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-function-overview/" data-id="ckq3fw13f000wswuthmxweukr" data-title="PyramidMap python workflow platform function list" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-function-overview/" data-id="ckq3kj3ji000wl0uthp27cb45" data-title="PyramidMap python workflow platform function list" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/12/Python-function-overview/#comments" class="article-comment-link">
@@ -1122,7 +1122,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-log/" data-id="ckq3fw13h000zswuta0h8be3l" data-title="PyramidMap python workflow platform Log recorder and query" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2021/04/12/Python-log/" data-id="ckq3kj3jj000zl0ut6d362zx8" data-title="PyramidMap python workflow platform Log recorder and query" class="article-share-link">Share</a>
       
       
         <a href="/2021/04/12/Python-log/#comments" class="article-comment-link">
@@ -1203,7 +1203,7 @@
       <ul>
         
           <li>
-            <a href="/2021/06/16/How-to-do-CS-transformation-and-XY-adjustment/">How-to-do-CS-transformation-and-XY-adjustment?</a>
+            <a href="/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/">How-to-do-CS-transformation-and-XY-adjustment</a>
           </li>
         
           <li>

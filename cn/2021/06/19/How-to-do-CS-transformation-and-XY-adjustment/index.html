@@ -9,26 +9,26 @@
   <meta name="description" content="地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：  而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：  三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何进行坐标系转换及位置校正?">
-<meta property="og:url" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/index.html">
+<meta property="og:url" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/index.html">
 <meta property="og:site_name" content="金字塔地图工作室，构建地图金字塔.....">
 <meta property="og:description" content="地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：  而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：  三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg">
-<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg">
-<meta property="article:published_time" content="2021-06-09T01:09:54.000Z">
-<meta property="article:modified_time" content="2021-06-19T06:45:42.000Z">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg">
+<meta property="article:published_time" content="2021-06-19T09:19:14.000Z">
+<meta property="article:modified_time" content="2021-06-19T09:26:22.000Z">
 <meta property="article:author" content="PyramidMap">
 <meta property="article:tag" content="PyramidMap">
 <meta property="article:tag" content="Javascript API">
 <meta property="article:tag" content="Python tools">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg">
+<meta name="twitter:image" content="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg">
   
     <link rel="alternate" href="/cn/atom.xml" title="金字塔地图工作室，构建地图金字塔....." type="application/atom+xml">
   
@@ -95,8 +95,8 @@
       <div class="outer">
         <section id="main"><article id="post-How-to-do-CS-transformation-and-XY-adjustment" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/" class="article-date">
-  <time class="dt-published" datetime="2021-06-09T01:09:54.000Z" itemprop="datePublished">2021-06-09</time>
+    <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" class="article-date">
+  <time class="dt-published" datetime="2021-06-19T09:19:14.000Z" itemprop="datePublished">2021-06-19</time>
 </a>
     
   <div class="article-category">
@@ -122,34 +122,34 @@
       
       	
       		<p>地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_GCS.jpg"></p>
 <p>而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from_PCS.jpg"></p>
 <p>三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。如下图所示：</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_degree.png"></p>
 <p>二维平面地图使用平面坐标系定位，称为投影坐标系，也称为平面直角坐标系。三维坐标系统到二维直角坐标系的转换被称为投影。如下图所示：</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_gcs_2_pcs.png"></p>
 <p>在这个过程中会产生形变和误差，形变和误差值由赤道到两极逐步放大。因此，在地理坐标系的相互转换中，我们需要对转换后的数值进行校正。假设您有一个栅格图层，坐标系为WGS_1984_Web_Mercato，epsg=3857，并且已经发布并在web端显示。如下图所示。</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09.jpg"></p>
 <p>假设，您同时还拥有一个设备图层，原始坐标系是GCS_WGS_1984，epsg=4326，已发布成图层服务，如下图所示。</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_worklayer.png"></p>
 <p>现在，您想把两个图层叠加在一起，显示设备点的准确位置。这时你会发现，无论怎么努力，设备点图层是无法显示的。因为，两个图层的坐标系不同，无法在同一视窗中显示。</p>
 <p>下面我们对设备图层进行投影转换，转为WGS_1984_Web_Mercato投影坐标系。您会发现，两个图层可以叠加显示了，如下图所示（图中的网格线表示投影转换的辅助作用，真实场景下不显示)。</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_from.jpg"></p>
 <p>叠加后，您会发现，设备与实际的位置存在偏差。这个偏差是由GCS到PCS转换过程中，投影形变产生的。接下来，我们消除位置偏差。</p>
 <p>通过pyramidmap位置校正工具，可以实现图层的整体位置纠偏，最终实现准确的位置显示，最终位置如下图所示。</p>
-<p><img src="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg"></p>
-<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#x70;&#x79;&#x72;&#97;&#109;&#x69;&#x64;&#109;&#97;&#112;&#64;&#111;&#117;&#116;&#108;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;">&#x70;&#x79;&#x72;&#97;&#109;&#x69;&#x64;&#109;&#97;&#112;&#64;&#111;&#117;&#116;&#108;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;</a>，我们提供完整的技术支持。</p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/cs_adjustment_09_to.jpg"></p>
+<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#112;&#x79;&#x72;&#97;&#x6d;&#105;&#100;&#109;&#97;&#112;&#64;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#111;&#x6d;">&#112;&#x79;&#x72;&#97;&#x6d;&#105;&#100;&#109;&#97;&#112;&#64;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#111;&#x6d;</a>，我们提供完整的技术支持。</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3fxj2x00088gutg2cb1jwq" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3kk9kr000870ut39uj94lb" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
       
       
-        <a href="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/" itemprop="commentCount"></span>
+        <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" itemprop="commentCount"></span>
           留言
         </a>
       
@@ -162,19 +162,10 @@
     
 <nav id="article-nav">
   
-    <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          如何选择坐标系?
-        
-      </div>
-    </a>
   
-  
-    <a href="/cn/2021/06/02/How-to-begin-with-python/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">如何使用 PyramidMap python workflow?</div>
+      <div class="article-nav-title">如何选择坐标系?</div>
     </a>
   
 </nav>
@@ -241,11 +232,11 @@
       <ul>
         
           <li>
-            <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/">如何选择坐标系?</a>
+            <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/">如何进行坐标系转换及位置校正?</a>
           </li>
         
           <li>
-            <a href="/cn/2021/06/09/How-to-do-CS-transformation-and-XY-adjustment/">如何进行坐标系转换及位置校正?</a>
+            <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/">如何选择坐标系?</a>
           </li>
         
           <li>
