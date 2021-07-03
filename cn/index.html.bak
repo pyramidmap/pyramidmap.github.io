@@ -79,6 +79,68 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pyramidmap-application-scheme" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/cn/2021/07/03/pyramidmap-application-scheme/" class="article-date">
+  <time class="dt-published" datetime="2021-07-03T08:25:57.000Z" itemprop="datePublished">2021-07-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/cn/categories/07%EF%BC%9Apyramidmap%E5%BA%94%E7%94%A8%E6%96%B9%E6%A1%88/">07：pyramidmap应用方案</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/cn/2021/07/03/pyramidmap-application-scheme/">pyramidmap-application-scheme</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+      	
+      		<p>1、产品技术路线</p>
+<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme1.jpg"></p>
+<p>2、产品技术架构</p>
+<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme2.jpg"></p>
+<p>3、产品体系及应对痛点问题</p>
+<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme3.jpg"></p>
+
+      	
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/cn/2021/07/03/pyramidmap-application-scheme/" data-id="ckqnj38ta007i9wut2l964y3e" data-title="pyramidmap-application-scheme" class="article-share-link">分享</a>
+      
+      
+        <a href="/cn/2021/07/03/pyramidmap-application-scheme/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/cn/2021/07/03/pyramidmap-application-scheme/" itemprop="commentCount"></span>
+          留言
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Javascript-API/" rel="tag">Javascript API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/PyramidMap/" rel="tag">PyramidMap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Python-tools/" rel="tag">Python tools</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
+  
     <article id="post-How-to-do-CS-transformation-and-XY-adjustment" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" class="article-date">
@@ -108,30 +170,30 @@
       
       	
       		<p>地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_GCS.jpg"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_GCS.jpg"></p>
 <p>而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_PCS.jpg"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_PCS.jpg"></p>
 <p>三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。如下图所示：</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_degree.png"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_degree.png"></p>
 <p>二维平面地图使用平面坐标系定位，称为投影坐标系，也称为平面直角坐标系。三维坐标系统到二维直角坐标系的转换被称为投影。如下图所示：</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_gcs_2_pcs.png"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_gcs_2_pcs.png"></p>
 <p>在这个过程中会产生形变和误差，形变和误差值由赤道到两极逐步放大。因此，在地理坐标系的相互转换中，我们需要对转换后的数值进行校正。假设您有一个栅格图层，坐标系为WGS_1984_Web_Mercato，epsg=3857，并且已经发布并在web端显示。如下图所示。</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09.jpg"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09.jpg"></p>
 <p>假设，您同时还拥有一个设备图层，原始坐标系是GCS_WGS_1984，epsg=4326，已发布成图层服务，如下图所示。</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_worklayer.png"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_worklayer.png"></p>
 <p>现在，您想把两个图层叠加在一起，显示设备点的准确位置。这时你会发现，无论怎么努力，设备点图层是无法显示的。因为，两个图层的坐标系不同，无法在同一视窗中显示。</p>
 <p>下面我们对设备图层进行投影转换，转为WGS_1984_Web_Mercato投影坐标系。您会发现，两个图层可以叠加显示了，如下图所示（图中的网格线表示投影转换的辅助作用，真实场景下不显示)。</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from.jpg"></p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from.jpg"></p>
 <p>叠加后，您会发现，设备与实际的位置存在偏差。这个偏差是由GCS到PCS转换过程中，投影形变产生的。接下来，我们消除位置偏差。</p>
 <p>通过pyramidmap位置校正工具，可以实现图层的整体位置纠偏，最终实现准确的位置显示，最终位置如下图所示。</p>
-<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_to.jpg"></p>
-<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#112;&#x79;&#x72;&#97;&#x6d;&#105;&#100;&#109;&#97;&#112;&#64;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#111;&#x6d;">&#112;&#x79;&#x72;&#97;&#x6d;&#105;&#100;&#109;&#97;&#112;&#64;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#111;&#x6d;</a>，我们提供完整的技术支持。</p>
+<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_to.jpg"></p>
+<p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#112;&#x79;&#114;&#x61;&#x6d;&#x69;&#100;&#x6d;&#97;&#x70;&#64;&#111;&#117;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#111;&#109;">&#112;&#x79;&#114;&#x61;&#x6d;&#x69;&#100;&#x6d;&#97;&#x70;&#64;&#111;&#117;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#111;&#109;</a>，我们提供完整的技术支持。</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckq3kk9kr000870ut39uj94lb" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/" data-id="ckqnj38pw00089wut4pf963kx" data-title="如何进行坐标系转换及位置校正?" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
@@ -183,26 +245,26 @@
       
       	
       		<p>坐标系是GIS中最基本概念，其应用体现在人类活动的各个领域。从火箭发射、星际宇航，到工农业生产，再到城市导航、线路规划、个人定位，所有的活动都离不开坐标系统的支持，即使是您根本觉察不到他的存在。</p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p>
 <h3 id="1、坐标系是地图系统的基础"><a href="#1、坐标系是地图系统的基础" class="headerlink" title="1、坐标系是地图系统的基础"></a>1、坐标系是地图系统的基础</h3><p>坐标系提供了对空间数据的位置描述。一幅地图，无论简单还是复杂、无论数据量有多少，要显示，必须具备正确的坐标系统。</p>
-<h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p>
-<h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p>
+<h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p>
+<h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p>
 <p>简单地说，投影坐标系统是地理坐标系通过正射投影而获得平面坐标系统，主要用于web端地图显示定义。</p>
-<h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p>
-<h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p>
-<h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p>
-<h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p>
-<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>
+<h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p>
+<h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p>
+<h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p>
+<h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p>
+<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/" data-id="ckq3kk9kg000170uthtse0t19" data-title="如何选择坐标系?" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/06/09/CS-transformation-and-XY-adjustment/" data-id="ckqnj38pl00019wut6qk9gx9j" data-title="如何选择坐标系?" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/#comments" class="article-comment-link">
@@ -253,13 +315,13 @@
       
       
       	
-      		<h3 id="PyramidMap-python-workflow工具运行环境和依赖及部署方法"><a href="#PyramidMap-python-workflow工具运行环境和依赖及部署方法" class="headerlink" title="PyramidMap python workflow工具运行环境和依赖及部署方法"></a>PyramidMap python workflow工具运行环境和依赖及部署方法</h3><p><img src="/cn/2021/06/02/How-to-begin-with-python/howtobegininpython2.png"></p>
+      		<h3 id="PyramidMap-python-workflow工具运行环境和依赖及部署方法"><a href="#PyramidMap-python-workflow工具运行环境和依赖及部署方法" class="headerlink" title="PyramidMap python workflow工具运行环境和依赖及部署方法"></a>PyramidMap python workflow工具运行环境和依赖及部署方法</h3><p><img src="/cn/cn/2021/06/02/How-to-begin-with-python/howtobegininpython2.png"></p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/06/02/How-to-begin-with-python/" data-id="ckq3kk9kk000370ut78wsd5fd" data-title="如何使用 PyramidMap python workflow?" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/06/02/How-to-begin-with-python/" data-id="ckqnj38pp00039wutd656akhc" data-title="如何使用 PyramidMap python workflow?" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/06/02/How-to-begin-with-python/#comments" class="article-comment-link">
@@ -311,15 +373,15 @@
       
       	
       		<p>PyramidMap Javascript API 面向web地图应用。面向应用层，必须考虑三个问题：Which map platform to development? which database to store?  Which framework running on?  我们称其为3W问题。PyramidMap在设计之初已经把上述问题的兼容纳入到技术范畴，目的就是通过核心组件模式实现异构地图平台、数据库和框架之间的敏捷适配以及与前端的低耦合甚至无关性。PyramidMap Javascript 套件可以最大程度降低对前端不同框架的整合难度。pyramidmap已提供对以下的兼容支持。</p>
-<h3 id="1：Map平台"><a href="#1：Map平台" class="headerlink" title="1：Map平台"></a>1：Map平台</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/mapplatform.png"></p>
-<h3 id="2：地理数据库"><a href="#2：地理数据库" class="headerlink" title="2：地理数据库"></a>2：地理数据库</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/database.png"></p>
-<h3 id="3：前端框架"><a href="#3：前端框架" class="headerlink" title="3：前端框架"></a>3：前端框架</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/framework.png"></p>
+<h3 id="1：Map平台"><a href="#1：Map平台" class="headerlink" title="1：Map平台"></a>1：Map平台</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/mapplatform.png"></p>
+<h3 id="2：地理数据库"><a href="#2：地理数据库" class="headerlink" title="2：地理数据库"></a>2：地理数据库</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/database.png"></p>
+<h3 id="3：前端框架"><a href="#3：前端框架" class="headerlink" title="3：前端框架"></a>3：前端框架</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/framework.png"></p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-Application-scenarios/" data-id="ckq3kk9kt000970ut0f636s3l" data-title="PyramidMap Javascript API 应用场景" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-Application-scenarios/" data-id="ckqnj38py00099wut0xq33k5p" data-title="PyramidMap Javascript API 应用场景" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/JS-Application-scenarios/#comments" class="article-comment-link">
@@ -371,7 +433,7 @@
       
       	
       		<p>从本质上说，图层是遵循地图厂商自有规范或OGC标准规范的，内置属性数据、空间数据、坐标系定义、符号图形渲染的数据结构。因此，GIS就是针对空间数据分布和图形渲染的处理系统，将地图数据含义正确表达和传递出来，完成其赋予的特定地图功能。PyramidMap面向地图应用层，在web GIS和python数据处理上提供解决方案。以下是PyramidMap兼容不同厂商的地图标准并进行整合，最后实现web端展示的逻辑流程图：</p>
-<p><img src="/cn/2021/04/13/JS-LayerCase/mapview.png"></p>
+<p><img src="/cn/cn/2021/04/13/JS-LayerCase/mapview.png"></p>
 <p>PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，通过内置的JS组件，帮助用户构造自己的地图数据和展示系统。</p>
 <p>PyramidMap 内置的图形渲染功能，提供高对比度颜色系统。图层控制系统可以根据要素类型、业务类型构建层次结构和分类，在每个级别上完美呈现地图特征。</p>
 <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/cn/2021/04/13/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
@@ -382,7 +444,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-LayerCase/" data-id="ckq3kk9kv000c70ute4v5eid2" data-title="PyramidMap Javascript API 图层控制" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-LayerCase/" data-id="ckqnj38q0000c9wutbcou2t5z" data-title="PyramidMap Javascript API 图层控制" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/JS-LayerCase/#comments" class="article-comment-link">
@@ -447,7 +509,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-QueryIdentify/" data-id="ckq3kk9kw000d70utfzn44ptn" data-title="PyramidMap Javascript API 地图查询" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-QueryIdentify/" data-id="ckqnj38q2000d9wut7grsfwf2" data-title="PyramidMap Javascript API 地图查询" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/JS-QueryIdentify/#comments" class="article-comment-link">
@@ -499,7 +561,7 @@
       
       	
       		<p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎以widget组件模式输出地图服务及开发接口，内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。下面是PyramidMap实现一幅web地图的逻辑框架图：</p>
-<p><img src="/cn/2021/04/13/JS-introduce/technicalprocess.png"></p>
+<p><img src="/cn/cn/2021/04/13/JS-introduce/technicalprocess.png"></p>
 <p>利用PyramidMap提供的API接口，用户可以自定义地图应用的每个方面，从地图符号化管理到图层切换，从数据统计到专题地图，从属性查询到空间拓扑分析，pyramidMap都可以帮您实现要在地图上呈现的信息。PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，帮助用户构造自己的地图数据和展示系统。</p>
 <p>①ArcGIS API For Javascript已集成dojo框架，可以进行复用开发。</p>
 <p>②Dojo提供的widget组件，可以提升web的复用性、交互性及后台访问能力。</p>
@@ -511,7 +573,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-introduce/" data-id="ckq3kk9kz000i70ut3ruc66zj" data-title="PyramidMap Javascript API 简介" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-introduce/" data-id="ckqnj38q6000i9wut2o7w6qjh" data-title="PyramidMap Javascript API 简介" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/JS-introduce/#comments" class="article-comment-link">
@@ -564,14 +626,14 @@
       	
       		<h3 id="PyramidMap是一套Javascript和Python的地图开发组件"><a href="#PyramidMap是一套Javascript和Python的地图开发组件" class="headerlink" title="PyramidMap是一套Javascript和Python的地图开发组件"></a>PyramidMap是一套Javascript和Python的地图开发组件</h3><p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。提供web和python两个产品线。向用户提供专业化地图服务，快速构建实用的地图应用体系，涵盖面向web GIS应用的Javascript API 类库和Python地图工具，覆盖Desktop桌面端制图到GIS Server服务端引擎及web断开发组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。</p>
 <p>下图表明PyramidMap中制图与地图应用的关系。</p>
-<p><img src="/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
+<p><img src="/cn/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
 <p>在PyramidMap中，地图设计是围绕地图应用展开的，二者相辅相成。图层数据结构的设计是为地图应用服务的，目的是最大限度地满足数据输入输出和用户界面交互的实用化、人性化操作。</p>
 
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/What-is-the-pyramidMap/" data-id="ckq3kk9qw007470ut49h303a2" data-title="PyramidMap 是什么？" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/What-is-the-pyramidMap/" data-id="ckqnj38t6007d9wut3wnigncx" data-title="PyramidMap 是什么？" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/What-is-the-pyramidMap/#comments" class="article-comment-link">
@@ -639,7 +701,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-basefunction/" data-id="ckq3kk9ky000h70ut4hpheh8r" data-title="PyramidMap Javascript API 基本功能" class="article-share-link">分享</a>
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/13/JS-basefunction/" data-id="ckqnj38q4000h9wutfk8w79jk" data-title="PyramidMap Javascript API 基本功能" class="article-share-link">分享</a>
       
       
         <a href="/cn/2021/04/13/JS-basefunction/#comments" class="article-comment-link">
@@ -649,70 +711,6 @@
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Web-GL/" rel="tag">Web GL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Web-Map-view/" rel="tag">Web Map view</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
-
-<!-- utteranc���ۡ� -->
-  
-    <article id="post-Python-GeoDB-query" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/cn/2021/04/12/Python-GeoDB-query/" class="article-date">
-  <time class="dt-published" datetime="2021-04-12T06:46:58.000Z" itemprop="datePublished">2021-04-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap python 工作流</a>►<a class="article-category-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">10：地理数据库查询及地图预览</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/cn/2021/04/12/Python-GeoDB-query/">PyramidMap python 工作流平台地理数据库查询及地图预览</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-      	
-      		<h2 id="地理数据库查询："><a href="#地理数据库查询：" class="headerlink" title="地理数据库查询："></a>地理数据库查询：</h2><h3 id="1：数据表查询："><a href="#1：数据表查询：" class="headerlink" title="1：数据表查询："></a>1：数据表查询：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/490367e3c598316f8d89ccc6bdd5ed39.png"></p>
-<h3 id="2：数据导出："><a href="#2：数据导出：" class="headerlink" title="2：数据导出："></a>2：数据导出：</h3><p><img src="/cn/2021/04/12/Python-GeoDB-query/14a31895292a8fc3a8ea0fcf86b090ad.png" alt="sde导出为json"></p>
-<p><img src="/cn/2021/04/12/Python-GeoDB-query/6a4094af52b57c10de908ebb02e02fe4.png" alt="转出json成功"></p>
-<p>选择数据列表，右键选择导出类型及路径，可以建数据表导出至指定路径下，导出数据支持shp、excel、json、csv格式。</p>
-<h3 id="3：地图预览："><a href="#3：地图预览：" class="headerlink" title="3：地图预览："></a>3：地图预览：</h3><p>选择数据列表，右键选择“地图及数据预览”，可以对所选数据表进行地图预览。</p>
-<p><img src="/cn/2021/04/12/Python-GeoDB-query/e03e2e35b0b1586c0bba263dec2e97b9.png" alt="sde地图预览"></p>
-<p>地图预览</p>
-<p><img src="/cn/2021/04/12/Python-GeoDB-query/5170204556d879a506ea429d8f8fc96b.png" alt="管线地图预览"></p>
-
-      	
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-GeoDB-query/" data-id="ckq3kk9l5000m70ut0a0hdpz5" data-title="PyramidMap python 工作流平台地理数据库查询及地图预览" class="article-share-link">分享</a>
-      
-      
-        <a href="/cn/2021/04/12/Python-GeoDB-query/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/cn/2021/04/12/Python-GeoDB-query/" itemprop="commentCount"></span>
-          留言
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" rel="tag">Arcpy 与 GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/" rel="tag">地图数据导出</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">地理数据库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">数据处理工作流</a></li></ul>
 
     </footer>
   </div>
@@ -741,7 +739,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/01%EF%BC%9APyramidMap-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">01：PyramidMap 是什么？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/02%EF%BC%9APyramidMap-%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F/">02：PyramidMap 能干啥？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/03%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-Javacript-API/">03：如何使用 PyramidMap Javacript API?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/04%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-python-workflow/">04：如何使用 PyramidMap python workflow?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9D%90%E6%A0%87%E7%B3%BB/">05：如何选择坐标系?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/06%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/">06：如何进行坐标系转换及位置校正?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/">PyramidMap Javascript API</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/01%EF%BC%9A%E7%AE%80%E4%BB%8B/">01：简介</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/02%EF%BC%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/">02：应用场景</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/03%EF%BC%9A%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">03：基本功能</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/04%EF%BC%9A%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/">04：图层控制</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/05%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2/">05：地图查询</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap python 工作流</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/01%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/">01：功能清单</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/">02：界面说明</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">03：系统设置</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/04%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/">04：地图查询及预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/05%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/">05：要素类处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/06%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/">06：栅格处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/07%EF%BC%9AMxd%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/">07：Mxd地图文档</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/08%EF%BC%9A%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE%E6%9C%8D%E5%8A%A1/">08：发布地图服务</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/09%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">09：GIS Server查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">10：地理数据库查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/">11：日志记录及查询</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/01%EF%BC%9APyramidMap-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">01：PyramidMap 是什么？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/02%EF%BC%9APyramidMap-%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F/">02：PyramidMap 能干啥？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/03%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-Javacript-API/">03：如何使用 PyramidMap Javacript API?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/04%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-python-workflow/">04：如何使用 PyramidMap python workflow?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9D%90%E6%A0%87%E7%B3%BB/">05：如何选择坐标系?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/06%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/">06：如何进行坐标系转换及位置校正?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/07%EF%BC%9Apyramidmap%E5%BA%94%E7%94%A8%E6%96%B9%E6%A1%88/">07：pyramidmap应用方案</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/">PyramidMap Javascript API</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/01%EF%BC%9A%E7%AE%80%E4%BB%8B/">01：简介</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/02%EF%BC%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/">02：应用场景</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/03%EF%BC%9A%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">03：基本功能</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/04%EF%BC%9A%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/">04：图层控制</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/05%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2/">05：地图查询</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap python 工作流</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/01%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/">01：功能清单</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/">02：界面说明</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">03：系统设置</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/04%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/">04：地图查询及预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/05%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/">05：要素类处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/06%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/">06：栅格处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/07%EF%BC%9AMxd%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/">07：Mxd地图文档</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/08%EF%BC%9A%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE%E6%9C%8D%E5%8A%A1/">08：发布地图服务</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/09%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">09：GIS Server查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">10：地理数据库查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/">11：日志记录及查询</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -761,7 +759,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" style="font-size: 17.5px;">Arcpy 与 GDAL</a> <a href="/cn/tags/GCS-%E4%B8%8E-PCS/" style="font-size: 12.5px;">GCS 与 PCS</a> <a href="/cn/tags/GeoTools-and-GeoServer/" style="font-size: 11.25px;">GeoTools and GeoServer</a> <a href="/cn/tags/JS-Widget/" style="font-size: 10px;">JS Widget</a> <a href="/cn/tags/Javascript-API/" style="font-size: 15px;">Javascript API</a> <a href="/cn/tags/Javascript-API%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" style="font-size: 10px;">Javascript API应用场景</a> <a href="/cn/tags/Map-or-Feature-or-Image-Server/" style="font-size: 13.75px;">Map or Feature or Image Server</a> <a href="/cn/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/" style="font-size: 13.75px;">Mxd 地图文档</a> <a href="/cn/tags/PyramidMap/" style="font-size: 16.25px;">PyramidMap</a> <a href="/cn/tags/Python/" style="font-size: 20px;">Python</a> <a href="/cn/tags/Python-tools/" style="font-size: 13.75px;">Python tools</a> <a href="/cn/tags/Python-workflow/" style="font-size: 10px;">Python workflow</a> <a href="/cn/tags/Shp-Json-kml-Kmz-csv-Excel/" style="font-size: 11.25px;">Shp/Json/kml/Kmz/csv/Excel</a> <a href="/cn/tags/Web-GL/" style="font-size: 15px;">Web GL</a> <a href="/cn/tags/Web-JS/" style="font-size: 13.75px;">Web JS</a> <a href="/cn/tags/Web-Map-view/" style="font-size: 10px;">Web Map view</a> <a href="/cn/tags/wms-wfs-wcs/" style="font-size: 11.25px;">wms/wfs/wcs</a> <a href="/cn/tags/%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/" style="font-size: 10px;">图层控制</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 10px;">地图数据处理工作流</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" style="font-size: 11.25px;">地图数据导入</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/" style="font-size: 13.75px;">地图数据导出</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" style="font-size: 11.25px;">地图查询及预览</a> <a href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13.75px;">地理数据库</a> <a href="/cn/tags/%E5%B1%9E%E6%80%A7%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">属性查询</a> <a href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 18.75px;">数据处理工作流</a> <a href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" style="font-size: 12.5px;">矢量 与 栅格</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" style="font-size: 12.5px;">空间数据转换</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">空间查询</a>
+      <a href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" style="font-size: 17.78px;">Arcpy 与 GDAL</a> <a href="/cn/tags/GCS-%E4%B8%8E-PCS/" style="font-size: 12.22px;">GCS 与 PCS</a> <a href="/cn/tags/GeoTools-and-GeoServer/" style="font-size: 11.11px;">GeoTools and GeoServer</a> <a href="/cn/tags/JS-Widget/" style="font-size: 10px;">JS Widget</a> <a href="/cn/tags/Javascript-API/" style="font-size: 15.56px;">Javascript API</a> <a href="/cn/tags/Javascript-API%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" style="font-size: 10px;">Javascript API应用场景</a> <a href="/cn/tags/Map-or-Feature-or-Image-Server/" style="font-size: 13.33px;">Map or Feature or Image Server</a> <a href="/cn/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/" style="font-size: 13.33px;">Mxd 地图文档</a> <a href="/cn/tags/PyramidMap/" style="font-size: 16.67px;">PyramidMap</a> <a href="/cn/tags/Python/" style="font-size: 20px;">Python</a> <a href="/cn/tags/Python-tools/" style="font-size: 14.44px;">Python tools</a> <a href="/cn/tags/Python-workflow/" style="font-size: 10px;">Python workflow</a> <a href="/cn/tags/Shp-Json-kml-Kmz-csv-Excel/" style="font-size: 11.11px;">Shp/Json/kml/Kmz/csv/Excel</a> <a href="/cn/tags/Web-GL/" style="font-size: 14.44px;">Web GL</a> <a href="/cn/tags/Web-JS/" style="font-size: 13.33px;">Web JS</a> <a href="/cn/tags/Web-Map-view/" style="font-size: 10px;">Web Map view</a> <a href="/cn/tags/wms-wfs-wcs/" style="font-size: 11.11px;">wms/wfs/wcs</a> <a href="/cn/tags/%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/" style="font-size: 10px;">图层控制</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 10px;">地图数据处理工作流</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" style="font-size: 11.11px;">地图数据导入</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/" style="font-size: 13.33px;">地图数据导出</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" style="font-size: 11.11px;">地图查询及预览</a> <a href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13.33px;">地理数据库</a> <a href="/cn/tags/%E5%B1%9E%E6%80%A7%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">属性查询</a> <a href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 18.89px;">数据处理工作流</a> <a href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" style="font-size: 12.22px;">矢量 与 栅格</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" style="font-size: 12.22px;">空间数据转换</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">空间查询</a>
     </div>
   </div>
 
@@ -770,7 +768,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/04/">四月 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/04/">四月 2021</a></li></ul>
     </div>
   </div>
 
@@ -781,6 +779,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/cn/2021/07/03/pyramidmap-application-scheme/">pyramidmap-application-scheme</a>
+          </li>
         
           <li>
             <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/">如何进行坐标系转换及位置校正?</a>
@@ -796,10 +798,6 @@
         
           <li>
             <a href="/cn/2021/04/13/JS-Application-scenarios/">PyramidMap Javascript API 应用场景</a>
-          </li>
-        
-          <li>
-            <a href="/cn/2021/04/13/JS-LayerCase/">PyramidMap Javascript API 图层控制</a>
           </li>
         
       </ul>

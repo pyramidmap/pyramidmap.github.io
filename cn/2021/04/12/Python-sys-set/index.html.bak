@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>PyramidMap python 工作流平台系统设置 | 金字塔地图工作室，构建地图金字塔.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="系统设置1: GIS Server连接 ArcGIS Server地址 &#x3D; ArcGIS Server服务器ip地址，端口默认6080，若有改动，按实际为准。管理员账号既是Server的站点管理员账号，请与ArcGIS Server管理员联系确定。 2: Geo数据库创建ArcGIS支持Oracle、SQL Server、PostgreSQL、DB2、Infomix等多型关系型数据库作为地理数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyramidMap python 工作流平台系统设置">
+<meta property="og:url" content="https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/index.html">
+<meta property="og:site_name" content="金字塔地图工作室，构建地图金字塔.....">
+<meta property="og:description" content="系统设置1: GIS Server连接 ArcGIS Server地址 &#x3D; ArcGIS Server服务器ip地址，端口默认6080，若有改动，按实际为准。管理员账号既是Server的站点管理员账号，请与ArcGIS Server管理员联系确定。 2: Geo数据库创建ArcGIS支持Oracle、SQL Server、PostgreSQL、DB2、Infomix等多型关系型数据库作为地理数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/83c7e83ecd5eab9760dd57c54d8c5872.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/6539ee531b1c0f72d26e00c383c165fa.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/fbc4f551d45f97fc20873f8c9b3def84.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/af369a8594de6fde0d64232da2d22d98.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/8283c0c3ac57ed0f2d6aee46ba504c50.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/6c935a8d6273762f8e97024468c8d3d8.png">
+<meta property="og:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/36cd0e0e2863e073c4032a9918f1a449.png">
+<meta property="article:published_time" content="2021-04-12T06:46:58.000Z">
+<meta property="article:modified_time" content="2021-04-26T13:27:22.000Z">
+<meta property="article:author" content="PyramidMap">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="数据处理工作流">
+<meta property="article:tag" content="地理数据库">
+<meta property="article:tag" content="Arcpy 与 GDAL">
+<meta property="article:tag" content="Map or Feature or Image Server">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pyramidmap.github.io/cn/cn/2021/04/12/Python-sys-set/83c7e83ecd5eab9760dd57c54d8c5872.png">
+  
+    <link rel="alternate" href="/cn/atom.xml" title="金字塔地图工作室，构建地图金字塔....." type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/cn/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/cn/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/cn/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/cn/" id="logo">金字塔地图工作室，构建地图金字塔.....</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/cn/">首页</a>
+        
+          <a class="main-nav-link" href="/cn/tags">标签</a>
+        
+          <a class="main-nav-link" href="/cn/categories">分类</a>
+        
+          <a class="main-nav-link" href="/cn/archives">归档</a>
+        
+          <a class="main-nav-link" href="/cn/about">联系</a>
+        
+          <a class="main-nav-link" href="https://pyramidmap.github.io">English</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/cn/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pyramidmap.github.io/cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Python-sys-set" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/cn/2021/04/12/Python-sys-set/" class="article-date">
+  <time class="dt-published" datetime="2021-04-12T06:46:58.000Z" itemprop="datePublished">2021-04-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap python 工作流</a>►<a class="article-category-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">03：系统设置</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      PyramidMap python 工作流平台系统设置
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+      	
+      		<h2 id="系统设置"><a href="#系统设置" class="headerlink" title="系统设置"></a>系统设置</h2><h3 id="1-GIS-Server连接"><a href="#1-GIS-Server连接" class="headerlink" title="1: GIS Server连接"></a>1: GIS Server连接</h3><p><strong><img src="/cn/cn/2021/04/12/Python-sys-set/83c7e83ecd5eab9760dd57c54d8c5872.png" alt="创建arcgis server连接"></strong></p>
+<p>ArcGIS Server地址 = ArcGIS Server服务器ip地址，端口默认6080，若有改动，按实际为准。管理员账号既是Server的站点管理员账号，请与ArcGIS Server管理员联系确定。</p>
+<h3 id="2-Geo数据库创建"><a href="#2-Geo数据库创建" class="headerlink" title="2: Geo数据库创建"></a>2: Geo数据库创建</h3><p>ArcGIS支持Oracle、SQL Server、PostgreSQL、DB2、Infomix等多型关系型数据库作为地理数据库。本软件提供Oracle、SQL Server、PostgreSQL三种主流数据库的支持。在执行该操作前，请确认计算机上已经具备与上述数据库连接的客户端程序。数据库客户端可以在数据库网站下载，注意版本号对应。ArcGIS DeskTop是32位程序，因此只支持32位客户端连接，ArcGIS Server是64位程序，只支持64位客户端程序。关于ArcGIS DeskTop、Pro、Enterprise Server与数据库的连接，不属于本节范畴，如有需要，我们会在专门章节中介绍。以下是在oracle中创建地理数据库。</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/6539ee531b1c0f72d26e00c383c165fa.png" alt="创建oracle地理数据库"></p>
+<p>在此，Oracle的服务实例就是数据库名称。也就是要建立地理数据库的对象，该数据库必须是事先存在的。</p>
+<p>以下是在SQL Server中创建地理数据库。</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/fbc4f551d45f97fc20873f8c9b3def84.png" alt="创建sqlserver地理数据库"></p>
+<p>在此，SQL Server的服务实例就是SQL Server的数据服务名称，默认为MSSQLSERVER，实际请与数据库管理员联系确认。请在“创建地理数据库”中输入要创建的地理数据库名称，程序将在执行过程中创建。默认新建数据库帐户为“sde”，创建过程中无法修改。</p>
+<p>以下是在PostgreSQL中创建地理数据库。</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/af369a8594de6fde0d64232da2d22d98.png" alt="创建postgre地理数据库"></p>
+<p>请在“创建地理数据库”中输入要创建的地理数据库名称，程序将在执行过程中创建。默认新建数据库帐户为“sde”，创建过程中无法修改。所有创建过程都需要有效的ArcGIS ecp授权文件支持。</p>
+<p>以上操作是创建地理数据库的过程。如果地理数据库已存在，仅需要创建连接即可，以下是创建地理数据库连接过程。</p>
+<h3 id="3-Geo数据库连接"><a href="#3-Geo数据库连接" class="headerlink" title="3: Geo数据库连接"></a>3: Geo数据库连接</h3><p>1：创建Oracle地理数据库连接：</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/8283c0c3ac57ed0f2d6aee46ba504c50.png" alt="创建oracle地理数据库连接"></p>
+<p>服务实例就是oracle中已创建地理数据库功能的数据库名称。</p>
+<p>2：创建SQL Server地理数据库连接：</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/6c935a8d6273762f8e97024468c8d3d8.png" alt="创建sqlserver地理数据库连接"></p>
+<p>地理数据库：就是SQL Server中已经创建的地理数据库名称。</p>
+<p>3：创建postgresql地理数据库连接：</p>
+<p><img src="/cn/cn/2021/04/12/Python-sys-set/36cd0e0e2863e073c4032a9918f1a449.png" alt="创建postgre地理数据库连接"></p>
+<p>地理数据库：就是PostgreSQL中已经创建的地理数据库名称。</p>
+
+      	
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/cn/2021/04/12/Python-sys-set/" data-id="ckqnj38qy00189wut13bkgubl" data-title="PyramidMap python 工作流平台系统设置" class="article-share-link">分享</a>
+      
+      
+        <a href="/cn/2021/04/12/Python-sys-set/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/cn/2021/04/12/Python-sys-set/" itemprop="commentCount"></span>
+          留言
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" rel="tag">Arcpy 与 GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Map-or-Feature-or-Image-Server/" rel="tag">Map or Feature or Image Server</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">地理数据库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">数据处理工作流</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/cn/2021/04/12/Python-raster-process/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          PyramidMap python 工作流平台栅格处理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/cn/2021/04/12/Python-ui-overview/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">PyramidMap python 工作流平台界面说明</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� --></section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/01%EF%BC%9APyramidMap-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">01：PyramidMap 是什么？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/02%EF%BC%9APyramidMap-%E8%83%BD%E5%B9%B2%E5%95%A5%EF%BC%9F/">02：PyramidMap 能干啥？</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/03%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-Javacript-API/">03：如何使用 PyramidMap Javacript API?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/04%EF%BC%9A%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-PyramidMap-python-workflow/">04：如何使用 PyramidMap python workflow?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/05%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9D%90%E6%A0%87%E7%B3%BB/">05：如何选择坐标系?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/06%EF%BC%9A%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%9D%90%E6%A0%87%E7%B3%BB%E8%BD%AC%E6%8D%A2%E5%8F%8A%E4%BD%8D%E7%BD%AE%E6%A0%A1%E6%AD%A3/">06：如何进行坐标系转换及位置校正?</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/07%EF%BC%9Apyramidmap%E5%BA%94%E7%94%A8%E6%96%B9%E6%A1%88/">07：pyramidmap应用方案</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/">PyramidMap Javascript API</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/01%EF%BC%9A%E7%AE%80%E4%BB%8B/">01：简介</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/02%EF%BC%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/">02：应用场景</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/03%EF%BC%9A%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/">03：基本功能</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/04%EF%BC%9A%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/">04：图层控制</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-Javascript-API/05%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2/">05：地图查询</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/">PyramidMap python 工作流</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/01%EF%BC%9A%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/">01：功能清单</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/02%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AF%B4%E6%98%8E/">02：界面说明</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/03%EF%BC%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">03：系统设置</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/04%EF%BC%9A%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/">04：地图查询及预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/05%EF%BC%9A%E8%A6%81%E7%B4%A0%E7%B1%BB%E5%A4%84%E7%90%86/">05：要素类处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/06%EF%BC%9A%E6%A0%85%E6%A0%BC%E5%A4%84%E7%90%86/">06：栅格处理</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/07%EF%BC%9AMxd%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/">07：Mxd地图文档</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/08%EF%BC%9A%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE%E6%9C%8D%E5%8A%A1/">08：发布地图服务</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/09%EF%BC%9AGIS-Server%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">09：GIS Server查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/10%EF%BC%9A%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%8F%8A%E5%9C%B0%E5%9B%BE%E9%A2%84%E8%A7%88/">10：地理数据库查询及地图预览</a></li><li class="category-list-item"><a class="category-list-link" href="/cn/categories/PyramidMap-python-%E5%B7%A5%E4%BD%9C%E6%B5%81/11%EF%BC%9A%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%9F%A5%E8%AF%A2/">11：日志记录及查询</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" rel="tag">Arcpy 与 GDAL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/GCS-%E4%B8%8E-PCS/" rel="tag">GCS 与 PCS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/GeoTools-and-GeoServer/" rel="tag">GeoTools and GeoServer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/JS-Widget/" rel="tag">JS Widget</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Javascript-API/" rel="tag">Javascript API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Javascript-API%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" rel="tag">Javascript API应用场景</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Map-or-Feature-or-Image-Server/" rel="tag">Map or Feature or Image Server</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Map-view/" rel="tag">Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/" rel="tag">Mxd 地图文档</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/PyramidMap/" rel="tag">PyramidMap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Python-tools/" rel="tag">Python tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Python-workflow/" rel="tag">Python workflow</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Shp-Json-kml-Kmz-csv-Excel/" rel="tag">Shp/Json/kml/Kmz/csv/Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-GL/" rel="tag">Web GL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-JS/" rel="tag">Web JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Web-Map-view/" rel="tag">Web Map view</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/wms-wfs-wcs/" rel="tag">wms/wfs/wcs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/" rel="tag">图层控制</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">地图数据处理工作流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" rel="tag">地图数据导入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/" rel="tag">地图数据导出</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" rel="tag">地图查询及预览</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">地理数据库</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E5%B1%9E%E6%80%A7%E6%9F%A5%E8%AF%A2/" rel="tag">属性查询</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag">数据处理工作流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" rel="tag">矢量 与 栅格</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" rel="tag">空间数据转换</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%9F%A5%E8%AF%A2/" rel="tag">空间查询</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/cn/tags/Arcpy-%E4%B8%8E-GDAL/" style="font-size: 17.78px;">Arcpy 与 GDAL</a> <a href="/cn/tags/GCS-%E4%B8%8E-PCS/" style="font-size: 12.22px;">GCS 与 PCS</a> <a href="/cn/tags/GeoTools-and-GeoServer/" style="font-size: 11.11px;">GeoTools and GeoServer</a> <a href="/cn/tags/JS-Widget/" style="font-size: 10px;">JS Widget</a> <a href="/cn/tags/Javascript-API/" style="font-size: 15.56px;">Javascript API</a> <a href="/cn/tags/Javascript-API%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" style="font-size: 10px;">Javascript API应用场景</a> <a href="/cn/tags/Map-or-Feature-or-Image-Server/" style="font-size: 13.33px;">Map or Feature or Image Server</a> <a href="/cn/tags/Map-view/" style="font-size: 10px;">Map view</a> <a href="/cn/tags/Mxd-%E5%9C%B0%E5%9B%BE%E6%96%87%E6%A1%A3/" style="font-size: 13.33px;">Mxd 地图文档</a> <a href="/cn/tags/PyramidMap/" style="font-size: 16.67px;">PyramidMap</a> <a href="/cn/tags/Python/" style="font-size: 20px;">Python</a> <a href="/cn/tags/Python-tools/" style="font-size: 14.44px;">Python tools</a> <a href="/cn/tags/Python-workflow/" style="font-size: 10px;">Python workflow</a> <a href="/cn/tags/Shp-Json-kml-Kmz-csv-Excel/" style="font-size: 11.11px;">Shp/Json/kml/Kmz/csv/Excel</a> <a href="/cn/tags/Web-GL/" style="font-size: 14.44px;">Web GL</a> <a href="/cn/tags/Web-JS/" style="font-size: 13.33px;">Web JS</a> <a href="/cn/tags/Web-Map-view/" style="font-size: 10px;">Web Map view</a> <a href="/cn/tags/wms-wfs-wcs/" style="font-size: 11.11px;">wms/wfs/wcs</a> <a href="/cn/tags/%E5%9B%BE%E5%B1%82%E6%8E%A7%E5%88%B6/" style="font-size: 10px;">图层控制</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 10px;">地图数据处理工作流</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" style="font-size: 11.11px;">地图数据导入</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/" style="font-size: 13.33px;">地图数据导出</a> <a href="/cn/tags/%E5%9C%B0%E5%9B%BE%E6%9F%A5%E8%AF%A2%E5%8F%8A%E9%A2%84%E8%A7%88/" style="font-size: 11.11px;">地图查询及预览</a> <a href="/cn/tags/%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 13.33px;">地理数据库</a> <a href="/cn/tags/%E5%B1%9E%E6%80%A7%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">属性查询</a> <a href="/cn/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E4%BD%9C%E6%B5%81/" style="font-size: 18.89px;">数据处理工作流</a> <a href="/cn/tags/%E7%9F%A2%E9%87%8F-%E4%B8%8E-%E6%A0%85%E6%A0%BC/" style="font-size: 12.22px;">矢量 与 栅格</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/" style="font-size: 12.22px;">空间数据转换</a> <a href="/cn/tags/%E7%A9%BA%E9%97%B4%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">空间查询</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2021/04/">四月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/cn/2021/07/03/pyramidmap-application-scheme/">pyramidmap-application-scheme</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/">如何进行坐标系转换及位置校正?</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/06/09/CS-transformation-and-XY-adjustment/">如何选择坐标系?</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/06/02/How-to-begin-with-python/">如何使用 PyramidMap python workflow?</a>
+          </li>
+        
+          <li>
+            <a href="/cn/2021/04/13/JS-Application-scenarios/">PyramidMap Javascript API 应用场景</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 PyramidMap<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/cn/" class="mobile-nav-link">首页</a>
+  
+    <a href="/cn/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/cn/categories" class="mobile-nav-link">分类</a>
+  
+    <a href="/cn/archives" class="mobile-nav-link">归档</a>
+  
+    <a href="/cn/about" class="mobile-nav-link">联系</a>
+  
+    <a href="https://pyramidmap.github.io" class="mobile-nav-link">English</a>
+  
+</nav>
+    
+
+
+<script src="/cn/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/cn/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/cn/js/script.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "1xdvkmnBsU0XiuTALUOgciw7-gzGzoHsz",
+        appKey: "aTA7Gy2B8PLy0L43kyobKsAm",
+        placeholder: "Just do better",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>
