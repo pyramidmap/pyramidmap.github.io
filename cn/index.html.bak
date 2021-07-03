@@ -108,11 +108,11 @@
       
       	
       		<p>1、产品技术路线</p>
-<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme1.jpg"></p>
+<p><img src="/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme1.jpg"></p>
 <p>2、产品技术架构</p>
-<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme2.jpg"></p>
+<p><img src="/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme2.jpg"></p>
 <p>3、产品体系及应对痛点问题</p>
-<p><img src="/cn/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme3.jpg"></p>
+<p><img src="/cn/2021/07/03/pyramidmap-application-scheme/pyramidmap-application-scheme%5Cmap-application-scheme3.jpg"></p>
 
       	
       
@@ -170,23 +170,23 @@
       
       	
       		<p>地理系统中，分为两种坐标系，三维地理坐标系和二维平面坐标系。前者的视角如同在空间轨道站上俯视整个地球，视野定位于三维立体空间。如下图所示：</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_GCS.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_GCS.jpg"></p>
 <p>而后者则是平面地图，如同将视野定位到某一局部平面。如下图所示：</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_PCS.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from_PCS.jpg"></p>
 <p>三维坐标系统也称为空间地理坐标系，如WGS84，EPSG代码：4326，通过经纬度进行定位，以地球表面点位到地心的测量角进行表示，经纬度计算的基准面分别是英国格林尼治天文台的本初子午线和赤道。如下图所示：</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_degree.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_degree.png"></p>
 <p>二维平面地图使用平面坐标系定位，称为投影坐标系，也称为平面直角坐标系。三维坐标系统到二维直角坐标系的转换被称为投影。如下图所示：</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_gcs_2_pcs.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_gcs_2_pcs.png"></p>
 <p>在这个过程中会产生形变和误差，形变和误差值由赤道到两极逐步放大。因此，在地理坐标系的相互转换中，我们需要对转换后的数值进行校正。假设您有一个栅格图层，坐标系为WGS_1984_Web_Mercato，epsg=3857，并且已经发布并在web端显示。如下图所示。</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09.jpg"></p>
 <p>假设，您同时还拥有一个设备图层，原始坐标系是GCS_WGS_1984，epsg=4326，已发布成图层服务，如下图所示。</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_worklayer.png"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_worklayer.png"></p>
 <p>现在，您想把两个图层叠加在一起，显示设备点的准确位置。这时你会发现，无论怎么努力，设备点图层是无法显示的。因为，两个图层的坐标系不同，无法在同一视窗中显示。</p>
 <p>下面我们对设备图层进行投影转换，转为WGS_1984_Web_Mercato投影坐标系。您会发现，两个图层可以叠加显示了，如下图所示（图中的网格线表示投影转换的辅助作用，真实场景下不显示)。</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_from.jpg"></p>
 <p>叠加后，您会发现，设备与实际的位置存在偏差。这个偏差是由GCS到PCS转换过程中，投影形变产生的。接下来，我们消除位置偏差。</p>
 <p>通过pyramidmap位置校正工具，可以实现图层的整体位置纠偏，最终实现准确的位置显示，最终位置如下图所示。</p>
-<p><img src="/cn/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_to.jpg"></p>
+<p><img src="/cn/2021/06/19/How-to-do-CS-transformation-and-XY-adjustment/How-to-do-CS-transformation-and-XY-adjustment%5Ccs_adjustment_09_to.jpg"></p>
 <p>需要坐标转换和位置纠偏，可以联系<a href="mailto:&#112;&#x79;&#114;&#x61;&#x6d;&#x69;&#100;&#x6d;&#97;&#x70;&#64;&#111;&#117;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#111;&#109;">&#112;&#x79;&#114;&#x61;&#x6d;&#x69;&#100;&#x6d;&#97;&#x70;&#64;&#111;&#117;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#111;&#109;</a>，我们提供完整的技术支持。</p>
 
       	
@@ -245,20 +245,20 @@
       
       	
       		<p>坐标系是GIS中最基本概念，其应用体现在人类活动的各个领域。从火箭发射、星际宇航，到工农业生产，再到城市导航、线路规划、个人定位，所有的活动都离不开坐标系统的支持，即使是您根本觉察不到他的存在。</p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o1.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o2.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o5.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o3.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs_adjustment_o7.jpg"></p>
 <h3 id="1、坐标系是地图系统的基础"><a href="#1、坐标系是地图系统的基础" class="headerlink" title="1、坐标系是地图系统的基础"></a>1、坐标系是地图系统的基础</h3><p>坐标系提供了对空间数据的位置描述。一幅地图，无论简单还是复杂、无论数据量有多少，要显示，必须具备正确的坐标系统。</p>
-<h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p>
-<h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p>
+<h3 id="2、坐标系概念、分类及定义示例"><a href="#2、坐标系概念、分类及定义示例" class="headerlink" title="2、坐标系概念、分类及定义示例"></a>2、坐标系概念、分类及定义示例</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust1.jpg"></p>
+<h3 id="3、投影坐标系与地理坐标系的关系"><a href="#3、投影坐标系与地理坐标系的关系" class="headerlink" title="3、投影坐标系与地理坐标系的关系"></a>3、投影坐标系与地理坐标系的关系</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust2.jpg"></p>
 <p>简单地说，投影坐标系统是地理坐标系通过正射投影而获得平面坐标系统，主要用于web端地图显示定义。</p>
-<h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p>
-<h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p>
-<h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p>
-<h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p>
-<p><img src="/cn/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>
+<h3 id="4、坐标系统的几个关键概念"><a href="#4、坐标系统的几个关键概念" class="headerlink" title="4、坐标系统的几个关键概念"></a>4、坐标系统的几个关键概念</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust3.jpg"></p>
+<h3 id="5、坐标系的选择原则"><a href="#5、坐标系的选择原则" class="headerlink" title="5、坐标系的选择原则"></a>5、坐标系的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust4.jpg"></p>
+<h3 id="6、投影类型的选择原则"><a href="#6、投影类型的选择原则" class="headerlink" title="6、投影类型的选择原则"></a>6、投影类型的选择原则</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust5.jpg"></p>
+<h3 id="7、投影方式的确定方法"><a href="#7、投影方式的确定方法" class="headerlink" title="7、投影方式的确定方法"></a>7、投影方式的确定方法</h3><p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust6.jpg"></p>
+<p><img src="/cn/2021/06/09/CS-transformation-and-XY-adjustment/cs-adjust7.jpg"></p>
 
       	
       
@@ -315,7 +315,7 @@
       
       
       	
-      		<h3 id="PyramidMap-python-workflow工具运行环境和依赖及部署方法"><a href="#PyramidMap-python-workflow工具运行环境和依赖及部署方法" class="headerlink" title="PyramidMap python workflow工具运行环境和依赖及部署方法"></a>PyramidMap python workflow工具运行环境和依赖及部署方法</h3><p><img src="/cn/cn/2021/06/02/How-to-begin-with-python/howtobegininpython2.png"></p>
+      		<h3 id="PyramidMap-python-workflow工具运行环境和依赖及部署方法"><a href="#PyramidMap-python-workflow工具运行环境和依赖及部署方法" class="headerlink" title="PyramidMap python workflow工具运行环境和依赖及部署方法"></a>PyramidMap python workflow工具运行环境和依赖及部署方法</h3><p><img src="/cn/2021/06/02/How-to-begin-with-python/howtobegininpython2.png"></p>
 
       	
       
@@ -373,9 +373,9 @@
       
       	
       		<p>PyramidMap Javascript API 面向web地图应用。面向应用层，必须考虑三个问题：Which map platform to development? which database to store?  Which framework running on?  我们称其为3W问题。PyramidMap在设计之初已经把上述问题的兼容纳入到技术范畴，目的就是通过核心组件模式实现异构地图平台、数据库和框架之间的敏捷适配以及与前端的低耦合甚至无关性。PyramidMap Javascript 套件可以最大程度降低对前端不同框架的整合难度。pyramidmap已提供对以下的兼容支持。</p>
-<h3 id="1：Map平台"><a href="#1：Map平台" class="headerlink" title="1：Map平台"></a>1：Map平台</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/mapplatform.png"></p>
-<h3 id="2：地理数据库"><a href="#2：地理数据库" class="headerlink" title="2：地理数据库"></a>2：地理数据库</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/database.png"></p>
-<h3 id="3：前端框架"><a href="#3：前端框架" class="headerlink" title="3：前端框架"></a>3：前端框架</h3><p><img src="/cn/cn/2021/04/13/JS-Application-scenarios/framework.png"></p>
+<h3 id="1：Map平台"><a href="#1：Map平台" class="headerlink" title="1：Map平台"></a>1：Map平台</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/mapplatform.png"></p>
+<h3 id="2：地理数据库"><a href="#2：地理数据库" class="headerlink" title="2：地理数据库"></a>2：地理数据库</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/database.png"></p>
+<h3 id="3：前端框架"><a href="#3：前端框架" class="headerlink" title="3：前端框架"></a>3：前端框架</h3><p><img src="/cn/2021/04/13/JS-Application-scenarios/framework.png"></p>
 
       	
       
@@ -433,7 +433,7 @@
       
       	
       		<p>从本质上说，图层是遵循地图厂商自有规范或OGC标准规范的，内置属性数据、空间数据、坐标系定义、符号图形渲染的数据结构。因此，GIS就是针对空间数据分布和图形渲染的处理系统，将地图数据含义正确表达和传递出来，完成其赋予的特定地图功能。PyramidMap面向地图应用层，在web GIS和python数据处理上提供解决方案。以下是PyramidMap兼容不同厂商的地图标准并进行整合，最后实现web端展示的逻辑流程图：</p>
-<p><img src="/cn/cn/2021/04/13/JS-LayerCase/mapview.png"></p>
+<p><img src="/cn/2021/04/13/JS-LayerCase/mapview.png"></p>
 <p>PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，通过内置的JS组件，帮助用户构造自己的地图数据和展示系统。</p>
 <p>PyramidMap 内置的图形渲染功能，提供高对比度颜色系统。图层控制系统可以根据要素类型、业务类型构建层次结构和分类，在每个级别上完美呈现地图特征。</p>
 <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"loop":true,"video":{"url":"/cn/2021/04/13/JS-LayerCase/design.4cbce3ed.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
@@ -561,7 +561,7 @@
       
       	
       		<p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。秉承专业化技术、敏捷化部署、实用化功能三原则，向用户提供完整的地图应用体系。基于pyramidMap地图平台，用户可以快速构建自己的地图产品，从简单的桌面端工具到web端JS API，整个应用体系覆盖Gis Server服务端引擎及其对应的Client客户端组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎以widget组件模式输出地图服务及开发接口，内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。下面是PyramidMap实现一幅web地图的逻辑框架图：</p>
-<p><img src="/cn/cn/2021/04/13/JS-introduce/technicalprocess.png"></p>
+<p><img src="/cn/2021/04/13/JS-introduce/technicalprocess.png"></p>
 <p>利用PyramidMap提供的API接口，用户可以自定义地图应用的每个方面，从地图符号化管理到图层切换，从数据统计到专题地图，从属性查询到空间拓扑分析，pyramidMap都可以帮您实现要在地图上呈现的信息。PyramidMap支持各类型矢量及影像图层显示，并对不同坐标系统进行转换、调整、追加及合并，帮助用户构造自己的地图数据和展示系统。</p>
 <p>①ArcGIS API For Javascript已集成dojo框架，可以进行复用开发。</p>
 <p>②Dojo提供的widget组件，可以提升web的复用性、交互性及后台访问能力。</p>
@@ -626,7 +626,7 @@
       	
       		<h3 id="PyramidMap是一套Javascript和Python的地图开发组件"><a href="#PyramidMap是一套Javascript和Python的地图开发组件" class="headerlink" title="PyramidMap是一套Javascript和Python的地图开发组件"></a>PyramidMap是一套Javascript和Python的地图开发组件</h3><p>PyramidMap是金字塔地图工作室敏捷型应用与开发的地图产品。提供web和python两个产品线。向用户提供专业化地图服务，快速构建实用的地图应用体系，涵盖面向web GIS应用的Javascript API 类库和Python地图工具，覆盖Desktop桌面端制图到GIS Server服务端引擎及web断开发组件，支持多终端、跨平台部署。PyramidMap引擎通过plugin插件模式实现弹性功能部署，全面支持基于WebGL的2D及3D地图应用，遵循OGC规范，支持WMS/WFS/WCS/KML等标准接口，实现异构GIS平台间的数据通讯及整合。PyramidMap地图引擎内置对ArcGIS、Geoserver、OpenLayer、Leaflet、Cesium、Google Map、Mapbox、高德/百度地图的支持，并提供基于python的接口，满足地图用户全方位的数据处理需求。</p>
 <p>下图表明PyramidMap中制图与地图应用的关系。</p>
-<p><img src="/cn/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
+<p><img src="/cn/2021/04/13/What-is-the-pyramidMap/GUID-63A10FAA-76FE-42EA-BF7E-D6D7C2E73A5E-web.png"></p>
 <p>在PyramidMap中，地图设计是围绕地图应用展开的，二者相辅相成。图层数据结构的设计是为地图应用服务的，目的是最大限度地满足数据输入输出和用户界面交互的实用化、人性化操作。</p>
 
       	
