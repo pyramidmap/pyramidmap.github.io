@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>download | The pyramidMap studio，structure the map pyramid.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1:  PyramidMap PythonWorkflow Desktop 1.1：IntroductionThe software adopts client &#x2F; server mode, integrates GDAL, arcpy and OSR instruction sets internally, and provides a complete process of vector an">
+<meta property="og:type" content="website">
+<meta property="og:title" content="download">
+<meta property="og:url" content="https://pyramidmap.github.io/download/index.html">
+<meta property="og:site_name" content="The pyramidMap studio，structure the map pyramid.....">
+<meta property="og:description" content="1:  PyramidMap PythonWorkflow Desktop 1.1：IntroductionThe software adopts client &#x2F; server mode, integrates GDAL, arcpy and OSR instruction sets internally, and provides a complete process of vector an">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pyramidmap.github.io/download/pythontoolsground_en.jpg">
+<meta property="og:image" content="https://pyramidmap.github.io/download/geotoolsground_en.jpg">
+<meta property="article:published_time" content="2021-12-12T00:48:00.000Z">
+<meta property="article:modified_time" content="2023-02-19T06:14:16.000Z">
+<meta property="article:author" content="PyramidMap">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pyramidmap.github.io/download/pythontoolsground_en.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="The pyramidMap studio，structure the map pyramid....." type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">The pyramidMap studio，structure the map pyramid.....</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/download">Download</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+          <a class="main-nav-link" href="https://pyramidmap.github.io/cn">中文</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pyramidmap.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    
+        <!-- ������ͳ�� -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="article-date">
+              <i class="icon-smile icon"></i>Reading count:<span id="busuanzi_value_page_pv"></span>
+        </span>
+
+<a href="/download/index.html" class="article-date">
+  <time class="dt-published" datetime="2021-12-12T00:48:00.000Z" itemprop="datePublished">2021-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      download
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+      	
+      		<h1 id="1-PyramidMap-PythonWorkflow-Desktop"><a href="#1-PyramidMap-PythonWorkflow-Desktop" class="headerlink" title="1:  PyramidMap PythonWorkflow Desktop"></a>1:  PyramidMap PythonWorkflow Desktop</h1><p><img src="/download/pythontoolsground_en.jpg"></p>
+<h2 id="1-1：Introduction"><a href="#1-1：Introduction" class="headerlink" title="1.1：Introduction"></a>1.1：Introduction</h2><p>The software adopts client / server mode, integrates GDAL, arcpy and OSR instruction sets internally, and provides a complete process of vector and image data processing, as well as a visual interface guidance system designed for this purpose. The platform supports compatibility and conversion of multi format heterogeneous map data sources such as GDB / MDB / SHP local file type, DBMS geographic database type and remote map server type, including full process processing such as feature type conversion, coordinate system conversion, map database import and export, map server publishing, map layer segmentation, merging, compression, pixel depth conversion and pyramid construction.</p>
+<h2 id="1-2：Functions-list"><a href="#1-2：Functions-list" class="headerlink" title="1.2：Functions list"></a>1.2：Functions list</h2><table>
+<thead>
+<tr>
+<th>Functions</th>
+<th>Modular</th>
+<th>Sub items(all in workflow, batch mode.)</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Map Query &amp; View</td>
+<td>Shp/Layer/ Feature Class</td>
+<td>Layer table information, field structure, feature type, geometry type, coordinate system, spatial index overview.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Layer Data</td>
+<td>Layer data query and map view.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Latitude longitude</td>
+<td>The longitude and latitude data statistics report of each element in the layer table.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Statistics</td>
+<td>Count statistics of feature class in layer table and calculation of center point coordinate of whole range.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Map view</td>
+<td>Vector and image map display.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Symbol setting for point, line, polygon and other elements to display.</td>
+<td></td>
+</tr>
+<tr>
+<td>Vector data processing</td>
+<td>Data Import &amp; Export</td>
+<td>Shp to featureClass</td>
+<td>FeatureClass to Shp</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Json to featureClass</td>
+<td>FeatureClass to Json</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Kml/Kmz to featureClass</td>
+<td>FeatureClass to Kml/Kmz</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Txt to featureClass</td>
+<td>FeatureClass to Txt</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Csv to featureClass</td>
+<td>FeatureClass to Csv</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Dbf to featureClass</td>
+<td>FeatureClass to Dbf</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Excel to featureClass</td>
+<td>FeatureClass to Excel</td>
+</tr>
+<tr>
+<td></td>
+<td>Append Merge</td>
+<td>Feature class append according the parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Feature class merge according the parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Map data  migration</td>
+<td>Shp migrates to the designated location.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Shp to Gdb.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Shp to Mdb.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Shp to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Gdb to Shp.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Gdb to Mdb.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Gdb to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Mdb to Shp</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Mdb to Gdb。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Mdb to enterprise geodatabase:support:Oracle/SQL Server/ PostgreSQL.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Oracle/SQL Server/PostgreSQL to Shp。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Oracle/SQL Server/PostgreSQL to Gdb。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Oracle/SQL Server/PostgreSQL to Mdb。</td>
+<td></td>
+</tr>
+<tr>
+<td>Raster process</td>
+<td>Slice Merge Compress</td>
+<td>Raster is sliced according to the parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Raster is merged according to the parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Raster is compressed according to the parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>raster data convert</td>
+<td>The raster being convert according to the parameters. Including data format, pixel depth, color mapping, band and so on.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Data optimize</td>
+<td>Build pyramid to improve loading and preview speed.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Nodata value processing, remove the black background caused by invalid pixels.</td>
+<td></td>
+</tr>
+<tr>
+<td>Coordinate Sys tran sform&amp; reprojection</td>
+<td>Vector layer converted to specified CS by parameters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Raster layer converted to specified CS by parameters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Create Mxd</td>
+<td>Vector</td>
+<td>Create vector mxd according to the specified parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Raster</td>
+<td>Create raster mxd according to the specified parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td>Publish Map ser ver</td>
+<td>MapServer</td>
+<td>Publish MapServer according to specified parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>FtrServer</td>
+<td>Publish FeatureServer according to specified parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>ImgServer</td>
+<td>Publish ImgServer according to specified parameters.</td>
+<td></td>
+</tr>
+<tr>
+<td>GeoDB Manage</td>
+<td>ArcGIS</td>
+<td>Oracle</td>
+<td>Create geo database,host map data,provide feature server, and realize map online ed itting and storage and include OGC map se rvice such as wms/wfs/wcs/kml.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>SQL Server</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>PostgreSQL</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>GeoServer</td>
+<td>PostgreSQL</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MySQL</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Oracle&amp;Others</td>
+<td></td>
+</tr>
+<tr>
+<td>Data process for GeoServ er</td>
+<td>DB Connect ion</td>
+<td>PostGIS</td>
+<td>Initialize save the PostGIS connection.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MySQL</td>
+<td>Initialize save the MySQL connection.</td>
+</tr>
+<tr>
+<td></td>
+<td>Data import</td>
+<td>PostGIS</td>
+<td>Shp imp to PostGIS for published in GeoServer.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MySQL</td>
+<td>Shp imp to MySQL for published in GeoServer.</td>
+</tr>
+<tr>
+<td></td>
+<td>Data export</td>
+<td>PostGIS</td>
+<td>PostGIS data exp to shp.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MySQL</td>
+<td>MySQL data exp to shp.</td>
+</tr>
+<tr>
+<td></td>
+<td>Map query &amp; preview</td>
+<td>query</td>
+<td>Query attribute and spatial data.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>preview</td>
+<td>Map server layer preview。</td>
+</tr>
+<tr>
+<td>Log record &amp; query</td>
+<td>GIS data conversion workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>GIS data imp &amp; exp workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>GIS data append &amp; merge workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Raster compressed、sliced、merged workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Raster pyramided workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Raster noData value processed workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Coordinate system conversion workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Map server published workflow log and query by condition.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="1-3：Download-list"><a href="#1-3：Download-list" class="headerlink" title="1.3：Download list"></a>1.3：Download list</h2><p>The download list:</p>
+<p>Document download：</p>
+<p><a href="/download/PyramidMap_PythonWorkflow_Desktop_Instructions.pdf">PyramidMap_PythonWorkflow_Desktop_Instructions.pdf</a></p>
+<h1 id="2-PyramidMap-GeoTools-Desktop"><a href="#2-PyramidMap-GeoTools-Desktop" class="headerlink" title="2:  PyramidMap GeoTools Desktop"></a>2:  PyramidMap GeoTools Desktop</h1><p><img src="/download/geotoolsground_en.jpg"></p>
+<h2 id="2-1：Introduction"><a href="#2-1：Introduction" class="headerlink" title="2.1：Introduction"></a>2.1：Introduction</h2><p>The software is developed based on geotools technology and adopts client / server mode. It can complete independent mapping functions. At the same time, it can be used as the client of GeoServer and various geographic databases such as Oracle, postgre and mysql. It can complete database management, map server space and data source management, layer import and export, multi-type map service publishing and layer service management The whole process management of publishing and web applications.</p>
+<h2 id="2-2：Functions-list"><a href="#2-2：Functions-list" class="headerlink" title="2.2：Functions list"></a>2.2：Functions list</h2><table>
+<thead>
+<tr>
+<th align="center">Classify</th>
+<th align="center">Item</th>
+<th align="left">Function description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Map view</td>
+<td align="center">Map main view</td>
+<td align="left">Map preview and editing operations, support Shp file type, Geodatabase geographic database type, WMS, WFS, WCS, WMTS and other standardized map services from GeoServer, as well as various online map resources that follow standardized specifications, complete the complete process of map preview, editing, submission, and storage, and realize the symbolic management and rendering of maps.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Layers displaying node control</td>
+<td align="left">The layers in the main view of the map will be classified and managed as nodes. It supports the display and right-click menu control on layer nodes through Checkbox, and the corresponding operations are implemented according to the layer type.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoDatabase layers node control</td>
+<td align="left">Database connection pool node. Double click the database node to dynamically load its internal layer. The layer node can be dragged to the main view or displayed by double clicking the mouse. Different levels of nodes have corresponding shortcut menus. The database node menu completes database connection testing, editing, layer list management, and deletion; The layer node menu supports layer export, conversion and deletion.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer layers node control</td>
+<td align="left">GeoServer connection pool node. Double click the server node to dynamically load the server’s internal workspace and layer nodes; Layer nodes can be dragged to the main view or displayed by double clicking. The nodes at different levels have corresponding shortcut menus. The GeoServer level node menu completes the map server connection test, editing the connection, obtaining the server synchronization data (the GeoServer server workspace, data storage and its database connection configuration), workspace management (the workspace parameters are localized and modified and synchronized to the server), refreshing nodes, and deleting; The workspace node menu completes the data storage management and layer import. In particular, in the data storage list, you can edit and modify the database connection and maintain the layer list for each item in the list, including the details of the layer and the maintenance of addition and deletion.</td>
+</tr>
+<tr>
+<td align="center">Map query</td>
+<td align="center"></td>
+<td align="left">It supports SQL queries on layer data tables in the main map view and each independent map view, and the query results are highlighted on the map. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Features Selection</td>
+<td align="center"></td>
+<td align="left">In the main map view and each independent map view, you can select map features, highlight and open the data table, edit, modify, save and submit attribute data. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Map editing</td>
+<td align="center">Cartography</td>
+<td align="left">In the main map view and each independent map view, according to the geometric type of the current layer, the mouse can be used to dot, draw lines, and save images. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Features assignment</td>
+<td align="left">In the main map view and each independent map view, you can modify and edit attribute data in the map feature form, and submit it for saving. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Create Shp</td>
+<td align="center">Create original Shp</td>
+<td align="left">Realize the full process processing of the design, editing, drawing, data saving, importing into the database, and publishing to GeoServer of the original Shp format vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Transfer external data to Shp</td>
+<td align="left">Realize the conversion of structured data such as Csv, Kml and GeoJson to Shp vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase export Shp</td>
+<td align="left">Support, but not limited to, the export of geographic database features such as Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, and SQLServer to Shp.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer export Shp</td>
+<td align="left">Support the export of vector layers in GeoServer as Shp.</td>
+</tr>
+<tr>
+<td align="center">Layer resource management</td>
+<td align="center">Vector layers resource management</td>
+<td align="left">The client vector layer is brought into the program resource management system by selecting files to achieve a unified resource management pool for the client vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Raster layers resource management</td>
+<td align="left">The client grid image layer is included in the program resource management system by selecting files, so as to achieve a unified resource management pool for client grid images.</td>
+</tr>
+<tr>
+<td align="center">Import layers into Geodatabase</td>
+<td align="center"></td>
+<td align="left">Import the Shp layer in the client’s vector layer resource management pool to Oracle, PostGIS, MySQL, SQLServer and other geographic databases.</td>
+</tr>
+<tr>
+<td align="center">Layers published to GeoServer</td>
+<td align="center">Publish Shp vector file</td>
+<td align="left">Publish the Shp layer in the client’s vector layer resource management pool to GeoServer, store it in the data cache directory specified by GeoServer in the form of a file, and output such standardized map services as wms/wfs/kml , and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Publish raster file</td>
+<td align="left">Publish the image layers in the grid layer resource management pool of the client to GeoServer, store them in the data cache directory specified by GeoServer as files, output the standardized map services such as wms/wcs/wmts, and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Publish Geodatabase vector layer</td>
+<td align="left">Import the shp files in the shp resource pool into the geodatabase, each shp will be converted into a feature data table, and then all the feature tables will be data source for the GeoServer which integrates the built-in JDBC engine driver, such then realize the access and processing of the map data in geodatabase, and output the standardized map services such as wms/wfs/kml, and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center">Symbol system management</td>
+<td align="center">Create sld symbol file</td>
+<td align="left">Create sld layer style definition files of different feature types of point、multiPoint、lineString、multiLineString、polygon、multiPolygom to define the rendering mode of the layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage sld symbol files</td>
+<td align="left">The client sld symbols are incorporated into the program resource management system by selecting files to achieve a unified resource management pool for the client sld symbols.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Get server sld symbols</td>
+<td align="left">Obtain the sld symbol files on the GeoServer, synchronize them to the local client, and incorporate them into the program resource management system to achieve a unified resource management pool for the client sld symbols.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Edit sld symbol file</td>
+<td align="left">Edit the sld symbol file.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Synchronize the sld files to the server</td>
+<td align="left">Submit the sld files in the client sld resource pool to GeoServer.</td>
+</tr>
+<tr>
+<td align="center">Geodatabase connection pool</td>
+<td align="center">New Geodatabase connection</td>
+<td align="left">PyramidMap supports direct connection access to DBMS databases with spatial spatial data storage capabilities to realize the storage and conversion of map data. It supports (but is not limited to) Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, SQLServer and other databases. After the connection parameters are configured and tested, the above database resource connection pool is created and maintained.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Maintain Geodatabase connection pool</td>
+<td align="left">PyramidMap manages the resource allocation of the geodatabase in the way of connection pool, which is selected when the Shp layer is imported into the database and published. In the resource list, you can select operations such as modification, connection test, and layer import/export.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase layers management</td>
+<td align="left">Import the Shp files that have been included in the PyramidMap resource pool into the geodatabase; Export the feature layers in the geodatabase to Shp or Kml, GeoJson and other format files in the specified path.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase layers preview</td>
+<td align="left">Select the feature layer under the geodatabase in the database connection pool,for data query and layer preview.</td>
+</tr>
+<tr>
+<td align="center">GeoServer connection pool</td>
+<td align="center">New GeoServer connection</td>
+<td align="left">PyramidMap supports direct connection access with GeoServer map server, realizes multi type layer publishing function, and provides layer service interface for WebGIS. After the connection parameters are configured and tested successfully, create and maintain the GeoServer resource connection pool.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage GeoServer connections</td>
+<td align="left">PyramidMap manages the resource configuration of the GeoServer in the way of connection pool. You can select modification, connection test, layer import and export and other related operations in the resource list.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage workspace and data storage</td>
+<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in managing the workspace and data storage in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage Server Layers</td>
+<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in uploading and publishing client layers, exporting and converting server layers in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer layers preview</td>
+<td align="left">PyramidMap can be used as the visualization client of GeoServer. It can display the layers in GeoServer in the map view of the main interface, and export and convert the layers accordingly, thus simplifying the difficulty of secondary development and application.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Management GeoServer sld symbols</td>
+<td align="left">Sld (Styled layer description), the layer rendering style description file, and the map is drawn according to the description of sld, to realize the symbolization, color matching, transparency, text annotation and other rendering display of different types of elements of points, lines, and surfaces. PyramidMap can be used as the visualization client of GeoServer. It can help users to realize the localization creation and maintenance of sld files, keep synchronization with the server, and preset the server layer and the client layer during the release process. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+</tbody></table>
+<h2 id="2-3：Download-list"><a href="#2-3：Download-list" class="headerlink" title="2.3：Download list"></a>2.3：Download list</h2><p>Program download list:</p>
+<p>Document download:</p>
+<p><a href="/download/PyramidMap_Visual_Desktop_Instructions.pdf">PyramidMap_Visual_Desktop_Instructions.pdf</a></p>
+
+      	
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/download/index.html" data-id="clirkcz240004uout2pvdfyfn" data-title="download" class="article-share-link">Share</a>
+      
+      
+        <a href="/download/index.html#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/download/index.html" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/07%EF%BC%9ADownload-PyramidMap-products-and-documents/">07：Download PyramidMap products and documents</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Download-PyramidMap-GeoTools-Visualized-Toolset/" rel="tag">Download PyramidMap GeoTools Visualized Toolset</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Download-PyramidMap-Python-Visualized-Toolset/" rel="tag">Download PyramidMap Python Visualized Toolset</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Download-PyramidMap-documentation/" rel="tag">Download PyramidMap documentation</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Download-PyramidMap-GeoTools-Visualized-Toolset/" style="font-size: 10px;">Download PyramidMap GeoTools Visualized Toolset</a> <a href="/tags/Download-PyramidMap-Python-Visualized-Toolset/" style="font-size: 20px;">Download PyramidMap Python Visualized Toolset</a> <a href="/tags/Download-PyramidMap-documentation/" style="font-size: 10px;">Download PyramidMap documentation</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/06/04/PyramidMap-Extended-Toolset/">PyramidMap-Extended-Toolset</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/11/Download-the-PyramidMap-Applications/">Download-the-PyramidMap-Applications</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 PyramidMap<br>
+      Powered by <a href="https://pyramidmap.com/" target="_blank">Pyramidmap studio</a>
+    </div>
+  </div>
+  <br/>
+  <div class="outer">
+    <div id="footer-info1" class="inner">
+      
+            <!-- ������ͳ�� -->
+            <span id="busuanzi_container_site_pv">
+                    Total visits: <span id="busuanzi_value_site_pv"></span>
+            </span>
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_container_site_uv" style='display:none'>
+                    Number of visitors: <span id="busuanzi_value_site_uv"></span>
+            </span>
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/download" class="mobile-nav-link">Download</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://pyramidmap.github.io/cn" class="mobile-nav-link">中文</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "1xdvkmnBsU0XiuTALUOgciw7-gzGzoHsz",
+        appKey: "aTA7Gy2B8PLy0L43kyobKsAm",
+        placeholder: "Just do better",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'en'
+    });
+</script>
+
+  </div>
+</body>
+</html>
