@@ -81,6 +81,519 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-PyramidMap-GeoTools-Toolset" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    
+<a href="/2023/09/17/PyramidMap-GeoTools-Toolset/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T02:35:10.000Z" itemprop="datePublished">2023-09-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/07%EF%BC%9ADownload-PyramidMap-products-and-documents/">07：Download PyramidMap products and documents</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/17/PyramidMap-GeoTools-Toolset/">PyramidMap GeoTools Visualized Toolset</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+      	
+      		<h1 id="1-PyramidMap-GeoTools-Visualized-Toolset"><a href="#1-PyramidMap-GeoTools-Visualized-Toolset" class="headerlink" title="1: PyramidMap GeoTools Visualized Toolset"></a>1: PyramidMap GeoTools Visualized Toolset</h1><p><img src="/2023/09/17/PyramidMap-GeoTools-Toolset/geotoolsground_en.jpg"></p>
+<h2 id="1-1-Function-overview"><a href="#1-1-Function-overview" class="headerlink" title="1.1: Function overview"></a>1.1: Function overview</h2><p>The PyramidMap GeoTools Visualized Toolset is developed based on geotools technology and adopts client / server mode. It can complete independent mapping functions. At the same time, it can be used as the client of GeoServer and various geographic databases such as Oracle, postgre and mysql. It can complete database management, map server space and data source management, layer import and export, multi-type map service publishing and layer service management The whole process management of publishing and web applications. The PyramidMap GeoTools visualization toolset is only supported running in a Windows environment currently , with a minimum resolution requirement of 1920 * 1200.</p>
+<h2 id="1-2-Function-list"><a href="#1-2-Function-list" class="headerlink" title="1.2: Function list"></a>1.2: Function list</h2><p>The functions list shown as in the table 1-1</p>
+<table>
+<thead>
+<tr>
+<th align="center">Functions<div style="width:90px"></div></th>
+<th align="center">Sub Items<div style="width:150px"></div></th>
+<th align="left">Introduction<div style="width:630px"></div></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Map view</td>
+<td align="center">Map main view</td>
+<td align="left">Map preview and editing operations, support Shp file type, Geodatabase geographic database type, WMS, WFS, WCS, WMTS and other standardized map services from GeoServer, as well as various online map resources that follow standardized specifications, complete the complete process of map preview, editing, submission, and storage, and realize the symbolic management and rendering of maps.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Layers displaying node control</td>
+<td align="left">The layers in the main view of the map will be classified and managed as nodes. It supports the display and right-click menu control on layer nodes through Checkbox, and the corresponding operations are implemented according to the layer type.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoDatabase layers node control</td>
+<td align="left">Database connection pool node. Double click the database node to dynamically load its internal layer. The layer node can be dragged to the main view or displayed by double clicking the mouse. Different levels of nodes have corresponding shortcut menus. The database node menu completes database connection testing, editing, layer list management, and deletion; The layer node menu supports layer export, conversion and deletion.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer layers node control</td>
+<td align="left">GeoServer connection pool node. Double click the server node to dynamically load the server’s internal workspace and layer nodes; Layer nodes can be dragged to the main view or displayed by double clicking. The nodes at different levels have corresponding shortcut menus. The GeoServer level node menu completes the map server connection test, editing the connection, obtaining the server synchronization data (the GeoServer server workspace, data storage and its database connection configuration), workspace management (the workspace parameters are localized and modified and synchronized to the server), refreshing nodes, and deleting; The workspace node menu completes the data storage management and layer import. In particular, in the data storage list, you can edit and modify the database connection and maintain the layer list for each item in the list, including the details of the layer and the maintenance of addition and deletion.</td>
+</tr>
+<tr>
+<td align="center">Map query</td>
+<td align="center"></td>
+<td align="left">It supports SQL queries on layer data tables in the main map view and each independent map view, and the query results are highlighted on the map. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Features Selection</td>
+<td align="center"></td>
+<td align="left">In the main map view and each independent map view, you can select map features, highlight and open the data table, edit, modify, save and submit attribute data. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Map editing</td>
+<td align="center">Cartography</td>
+<td align="left">In the main map view and each independent map view, according to the geometric type of the current layer, the mouse can be used to dot, draw lines, and save images. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Features assignment</td>
+<td align="left">In the main map view and each independent map view, you can modify and edit attribute data in the map feature form, and submit it for saving. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
+</tr>
+<tr>
+<td align="center">Create Shp</td>
+<td align="center">Create original Shp</td>
+<td align="left">Realize the full process processing of the design, editing, drawing, data saving, importing into the database, and publishing to GeoServer of the original Shp format vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Transfer external data to Shp</td>
+<td align="left">Realize the conversion of structured data such as Csv, Kml and GeoJson to Shp vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase export Shp</td>
+<td align="left">Support, but not limited to, the export of geographic database features such as Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, and SQLServer to Shp.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer export Shp</td>
+<td align="left">Support the export of vector layers in GeoServer as Shp.</td>
+</tr>
+<tr>
+<td align="center">Layer resource management</td>
+<td align="center">Vector layers resource management</td>
+<td align="left">The client vector layer is brought into the program resource management system by selecting files to achieve a unified resource management pool for the client vector layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Vector Data Processing</td>
+<td align="left">Support data conversion between Shp and Csv, Kml,  Geojson and coordinate system conversion.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Create vector tiles</td>
+<td align="left">Support multiple standard tile methods for vector maps, such as TMS tile, Google XYZ tile, MVT (Mapbox Vector Tile), MBTiles (Mapbox tiles), etc.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Raster layers resource management</td>
+<td align="left">The client grid image layer is included in the program resource management system by selecting files, so as to achieve a unified resource management pool for client grid images.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Raster Data Processing</td>
+<td align="left">Support compression, slicing, merging, NoData  processing, and coordinate system conversion for raster layers.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Create raster tiles</td>
+<td align="left">Support multiple standard tile methods for raster maps, such as TMS tile, Google XYZ tile, MBTiles (Mapbox tiles), etc.</td>
+</tr>
+<tr>
+<td align="center">Import layers into Geodatabase</td>
+<td align="center"></td>
+<td align="left">Import the Shp layer in the client’s vector layer resource management pool to Oracle, PostGIS, MySQL, SQLServer and other geographic databases.</td>
+</tr>
+<tr>
+<td align="center">Layers published to GeoServer</td>
+<td align="center">Publish Shp vector file</td>
+<td align="left">Publish the Shp layer in the client’s vector layer resource management pool to GeoServer, store it in the data cache directory specified by GeoServer in the form of a file, and output such standardized map services as wms/wfs/kml , and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Publish raster file</td>
+<td align="left">Publish the image layers in the grid layer resource management pool of the client to GeoServer, store them in the data cache directory specified by GeoServer as files, output the standardized map services such as wms/wcs/wmts, and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Publish Geodatabase vector layer</td>
+<td align="left">Import the shp files in the shp resource pool into the geodatabase, each shp will be converted into a feature data table, and then all the feature tables will be data source for the GeoServer which integrates the built-in JDBC engine driver, such then realize the access and processing of the map data in geodatabase, and output the standardized map services such as wms/wfs/kml, and provide visual map services for WebGIS.</td>
+</tr>
+<tr>
+<td align="center">Symbol system management</td>
+<td align="center">Create sld symbol file</td>
+<td align="left">Create sld layer style definition files of different feature types of point、multiPoint、lineString、multiLineString、polygon、multiPolygom to define the rendering mode of the layer.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage sld symbol files</td>
+<td align="left">The client sld symbols are incorporated into the program resource management system by selecting files to achieve a unified resource management pool for the client sld symbols.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Get server sld symbols</td>
+<td align="left">Obtain the sld symbol files on the GeoServer, synchronize them to the local client, and incorporate them into the program resource management system to achieve a unified resource management pool for the client sld symbols.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Edit sld symbol file</td>
+<td align="left">Edit the sld symbol file.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Synchronize the sld files to the server</td>
+<td align="left">Submit the sld files in the client sld resource pool to GeoServer.</td>
+</tr>
+<tr>
+<td align="center">Geodatabase connection pool</td>
+<td align="center">New Geodatabase connection</td>
+<td align="left">PyramidMap supports direct connection access to DBMS databases with spatial spatial data storage capabilities to realize the storage and conversion of map data. It supports (but is not limited to) Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, SQLServer and other databases. After the connection parameters are configured and tested, the above database resource connection pool is created and maintained.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Maintain Geodatabase connection pool</td>
+<td align="left">PyramidMap manages the resource allocation of the geodatabase in the way of connection pool, which is selected when the Shp layer is imported into the database and published. In the resource list, you can select operations such as modification, connection test, and layer import/export.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase layers management</td>
+<td align="left">Import the Shp files that have been included in the PyramidMap resource pool into the geodatabase; Export the feature layers in the geodatabase to Shp or Kml, GeoJson and other format files in the specified path.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Geodatabase layers preview</td>
+<td align="left">Select the feature layer under the geodatabase in the database connection pool,for data query and layer preview.</td>
+</tr>
+<tr>
+<td align="center">GeoServer connection pool</td>
+<td align="center">New GeoServer connection</td>
+<td align="left">PyramidMap supports direct connection access with GeoServer map server, realizes multi type layer publishing function, and provides layer service interface for WebGIS. After the connection parameters are configured and tested successfully, create and maintain the GeoServer resource connection pool.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage GeoServer connections</td>
+<td align="left">PyramidMap manages the resource configuration of the GeoServer in the way of connection pool. You can select modification, connection test, layer import and export and other related operations in the resource list.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage workspace and data storage</td>
+<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in managing the workspace and data storage in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manage Server Layers</td>
+<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in uploading and publishing client layers, exporting and converting server layers in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GeoServer layers preview</td>
+<td align="left">PyramidMap can be used as the visualization client of GeoServer. It can display the layers in GeoServer in the map view of the main interface, and export and convert the layers accordingly, thus simplifying the difficulty of secondary development and application.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Management GeoServer sld symbols</td>
+<td align="left">Sld (Styled layer description), the layer rendering style description file, and the map is drawn according to the description of sld, to realize the symbolization, color matching, transparency, text annotation and other rendering display of different types of elements of points, lines, and surfaces. PyramidMap can be used as the visualization client of GeoServer. It can help users to realize the localization creation and maintenance of sld files, keep synchronization with the server, and preset the server layer and the client layer during the release process. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
+</tr>
+</tbody></table>
+<center>Table 1-1: The functions list of the visualized toolset</center>
+
+<h2 id="1-3-Download-list"><a href="#1-3-Download-list" class="headerlink" title="1.3: Download list"></a>1.3: Download list</h2><h3 id="1-3-1-The-beta-program"><a href="#1-3-1-The-beta-program" class="headerlink" title="1.3.1 The beta program"></a>1.3.1 The beta program</h3><p><a target="_blank" rel="noopener" href="https://ln5.sync.com/dl/175cb4740/957t6yww-j3vq89dg-s3yyt2e5-6t9ebkgs">PyramidMap GeoTools Visualized Toolset</a></p>
+<h3 id="1-3-2-Experimental-data-and-examples"><a href="#1-3-2-Experimental-data-and-examples" class="headerlink" title="1.3.2 Experimental data and examples"></a>1.3.2 Experimental data and examples</h3><p>The download list of examples and experiment data in the PyramidMap GeoTools visualized ToolSet is shown in Table 1-2:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Chapter<div style="width:300px"></div></th>
+<th align="left">Experiment data<div style="width:320px"></div></th>
+<th align="left">Web example<div style="width:250px"></div></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">3.2 Load business layer</td>
+<td align="left">[shp files](/download/3.2.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3.3.2 Symbol rendering</td>
+<td align="left">[sld files](/download/3.3.2 sld files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.1.1 Vector Layer preview</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.1.2 Vector Data processing</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.1 Csv to Shp</td>
+<td align="left">[csv data](/download/6.7.1 Csv to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.2 Excel to Shp</td>
+<td align="left">[excel data](/download/6.7.2 Excel to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.3 GeoJSON to Shp</td>
+<td align="left">[geojson data](/download/6.7.3 GeoJson to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.4 Shp to Csv and GeoJSON</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.5 Shp to Kml</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.8.4 Build Vector TMS tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.4 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.4 vector-tms-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.5 Build Vector XYZ tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.5 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.5 vector-xyz-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.6 Build Vector MVT tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.6 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.6 vector-mvt-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.7 Build Vector MBTile tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.7 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.7 vector-mbtiles-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.8 Build Raster TMS tile</td>
+<td align="left">[Raster tiling source data](/download/6.8.8 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.8 raster-tms-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.9 Build Raster XYZ tile</td>
+<td align="left">[Raster tiling source data](/download/6.8.9 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.9 raster-xyz-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.10 Build Raster MBTiles</td>
+<td align="left">[Raster tiling source data](/download/6.8.10 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.10 raster-mbtiles-tile.zip)</td>
+</tr>
+</tbody></table>
+<center>Table 1-2: Experimental Data Download List in PyramidMap GeoTools visualized ToolSet</center>
+
+<h3 id="1-3-3-The-technical-white-paper-document"><a href="#1-3-3-The-technical-white-paper-document" class="headerlink" title="1.3.3 The technical white paper document"></a>1.3.3 The technical white paper document</h3><p><a href="/download/PyramidMap_GeoTools_Visualized_Toolset_Technical_White_Paper.pdf">PyramidMap_GeoTools_Visualized_Toolset_White Paper</a></p>
+<h2 id="1-4-Contact-us"><a href="#1-4-Contact-us" class="headerlink" title="1.4: Contact us"></a>1.4: Contact us</h2><p>PyramidMap focuses on GIS application services and is committed to building a complete ecosystem of efficient GIS data processing, enterprise level geographic data storage, distributed map services, web and mobile map applications. It can help you achieve map data processing more easily and quickly, until the terminal displays the entire process of the application as a streamlined service. Welcome visiting to: <a target="_blank" rel="noopener" href="http://www.pyramidmap.com/">http://www.pyramidmap.com</a> obtaining beta software and technical information. For more technical support, please contact PyramidMap studio.</p>
+<p>Email：<a href="mailto:&#115;&#x65;&#x72;&#118;&#105;&#x63;&#101;&#64;&#112;&#x79;&#x72;&#x61;&#x6d;&#105;&#x64;&#109;&#97;&#112;&#46;&#99;&#111;&#109;">&#115;&#x65;&#x72;&#118;&#105;&#x63;&#101;&#64;&#112;&#x79;&#x72;&#x61;&#x6d;&#105;&#x64;&#109;&#97;&#112;&#46;&#99;&#111;&#109;</a></p>
+<p>Teleph：(086)0531-82957588</p>
+<p>Mobile：(086)18660789051</p>
+<p>WeChat：A18660789051</p>
+<p>QQ：29862351</p>
+
+      	
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/2023/09/17/PyramidMap-GeoTools-Toolset/" data-id="clmn63c950005mwut97gbdh2x" data-title="PyramidMap GeoTools Visualized Toolset" class="article-share-link">Share</a>
+      
+      
+        <a href="/2023/09/17/PyramidMap-GeoTools-Toolset/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2023/09/17/PyramidMap-GeoTools-Toolset/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-GeoTools-Visualized-Toolset/" rel="tag">Download PyramidMap GeoTools Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Python-Visualized-Toolset/" rel="tag">Download PyramidMap Python Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Technical-White-Paper/" rel="tag">Download PyramidMap Technical White Paper</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
+
+  
+    <article id="post-experimentData" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    
+<a href="/2023/09/16/experimentData/" class="article-date">
+  <time class="dt-published" datetime="2023-09-16T14:10:22.000Z" itemprop="datePublished">2023-09-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/07%EF%BC%9ADownload-PyramidMap-products-and-documents/">07：Download PyramidMap products and documents</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/16/experimentData/">PyramidMap GeoTools 示例及实验数据</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+      	
+      		<h1 id="PyramidMap-GeoTools-Visualized-Toolset-examples-and-experiment-data"><a href="#PyramidMap-GeoTools-Visualized-Toolset-examples-and-experiment-data" class="headerlink" title="PyramidMap GeoTools Visualized Toolset examples and experiment data"></a>PyramidMap GeoTools Visualized Toolset examples and experiment data</h1><h2 id="1-1：Download-list"><a href="#1-1：Download-list" class="headerlink" title="1.1：Download list"></a>1.1：Download list</h2><p>The download list of examples and experiment data in the PyramidMap GeoTools visualized ToolSet is shown in Table 1-1:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Chapter<div style="width:300px"></div></th>
+<th align="left">Experiment data<div style="width:320px"></div></th>
+<th align="left">Web example<div style="width:250px"></div></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">3.2 Load business layer</td>
+<td align="left">[shp files](/download/3.2.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3.3.2 Symbol rendering</td>
+<td align="left">[sld files](/download/3.3.2 sld files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.1.1 Vector Layer preview</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.1.2 Vector Data processing</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.1 Csv to Shp</td>
+<td align="left">[csv data](/download/6.7.1 Csv to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.2 Excel to Shp</td>
+<td align="left">[excel data](/download/6.7.2 Excel to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.3 GeoJSON to Shp</td>
+<td align="left">[geojson data](/download/6.7.3 GeoJson to Shp.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.4 Shp to Csv and GeoJSON</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.7.5 Shp to Kml</td>
+<td align="left">[shp files](/download/6.1 shp files.zip)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6.8.4 Build Vector TMS tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.4 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.4 vector-tms-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.5 Build Vector XYZ tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.5 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.5 vector-xyz-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.6 Build Vector MVT tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.6 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.6 vector-mvt-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.7 Build Vector MBTile tile</td>
+<td align="left">[Vector tiling source data](/download/6.8.7 shp files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.7 vector-mbtiles-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.8 Build Raster TMS tile</td>
+<td align="left">[Raster tiling source data](/download/6.8.8 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.8 raster-tms-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.9 Build Raster XYZ tile</td>
+<td align="left">[Raster tiling source data](/download/6.8.9 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.9 raster-xyz-tile.zip)</td>
+</tr>
+<tr>
+<td align="left">6.8.10 Build Raster MBTiles</td>
+<td align="left">[Raster tiling source data](/download/6.8.10 tiff files.zip)</td>
+<td align="left">[web example](/cn/download/6.8.10 raster-mbtiles-tile.zip)</td>
+</tr>
+</tbody></table>
+<center>Table 1-1: PyramidMap GeoTools Chapter Experimental Data Download List</center>
+
+<h2 id="1-2-Contact-us"><a href="#1-2-Contact-us" class="headerlink" title="1.2: Contact us"></a>1.2: Contact us</h2><p>PyramidMap focuses on GIS application services and is committed to building a complete ecosystem of efficient GIS data processing, enterprise level geographic data storage, distributed map services, web and mobile map applications. It can help you achieve map data processing more easily and quickly, until the terminal displays the entire process of the application as a streamlined service. Welcome visiting to: <a target="_blank" rel="noopener" href="http://www.pyramidmap.com/">http://www.pyramidmap.com</a> obtaining beta software and technical information. For more technical support, please contact PyramidMap studio.</p>
+<p>Email：<a href="mailto:&#x73;&#101;&#x72;&#x76;&#105;&#x63;&#101;&#64;&#112;&#121;&#114;&#x61;&#109;&#x69;&#x64;&#109;&#97;&#x70;&#x2e;&#x63;&#111;&#x6d;">&#x73;&#101;&#x72;&#x76;&#105;&#x63;&#101;&#64;&#112;&#121;&#114;&#x61;&#109;&#x69;&#x64;&#109;&#97;&#x70;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>Teleph：(086)0531-82957588</p>
+<p>Mobile：(086)18660789051</p>
+<p>WeChat：A18660789051</p>
+<p>QQ：29862351</p>
+
+      	
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pyramidmap.github.io/2023/09/16/experimentData/" data-id="clmn63c9a0006mwut3y8k17oi" data-title="PyramidMap GeoTools 示例及实验数据" class="article-share-link">Share</a>
+      
+      
+        <a href="/2023/09/16/experimentData/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2023/09/16/experimentData/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-GeoTools-Visualized-Toolset/" rel="tag">Download PyramidMap GeoTools Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Python-Visualized-Toolset/" rel="tag">Download PyramidMap Python Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Technical-White-Paper/" rel="tag">Download PyramidMap Technical White Paper</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
+
+<!-- utteranc���ۡ� -->
+
+  
     <article id="post-PyramidMap-Python-Toolset" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     
@@ -1173,8 +1686,8 @@ The PyramidMap Python Visualized Toolset  can help you quickly achieve map data 
 <p>Technical White paper document download：</p>
 <p><a href="/download/PyramidMap_Python_Visualized_Toolset_Technical_White_Paper.pdf">PyramidMap Python Visualized Toolset Technical White Paper</a></p>
 <h2 id="1-4-Contact-us"><a href="#1-4-Contact-us" class="headerlink" title="1.4: Contact us"></a>1.4: Contact us</h2><p>PyramidMap focuses on GIS application services and is committed to building a complete ecosystem of efficient GIS data processing, enterprise level geographic data storage, distributed map services, web and mobile map applications. It can help you achieve map data processing more easily and quickly, until the terminal displays the entire process of the application as a streamlined service. Welcome visiting to: <a target="_blank" rel="noopener" href="http://www.pyramidmap.com/">http://www.pyramidmap.com</a> obtaining beta software and technical information. For more technical support, please contact PyramidMap studio.</p>
-<p>Email：<a href="mailto:&#x73;&#x65;&#114;&#x76;&#105;&#x63;&#x65;&#x40;&#x70;&#121;&#x72;&#x61;&#109;&#x69;&#x64;&#109;&#97;&#112;&#x2e;&#99;&#x6f;&#109;">&#x73;&#x65;&#114;&#x76;&#105;&#x63;&#x65;&#x40;&#x70;&#121;&#x72;&#x61;&#109;&#x69;&#x64;&#109;&#97;&#112;&#x2e;&#99;&#x6f;&#109;</a></p>
-<p>Teleph：(086)0535-82957588</p>
+<p>Email：<a href="mailto:&#115;&#x65;&#x72;&#x76;&#x69;&#x63;&#x65;&#x40;&#x70;&#x79;&#x72;&#x61;&#x6d;&#x69;&#100;&#109;&#97;&#112;&#46;&#x63;&#111;&#x6d;">&#115;&#x65;&#x72;&#x76;&#x69;&#x63;&#x65;&#x40;&#x70;&#x79;&#x72;&#x61;&#x6d;&#x69;&#100;&#109;&#97;&#112;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>Teleph：(086)0531-82957588</p>
 <p>Mobile：(086)18660789051</p>
 <p>WeChat：A18660789051</p>
 <p>QQ：29862351</p>
@@ -1183,278 +1696,11 @@ The PyramidMap Python Visualized Toolset  can help you quickly achieve map data 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2023/06/04/PyramidMap-Python-Toolset/" data-id="clmkeqqvc0005novv6sfaaxyu" data-title="PyramidMap Python Visualized Map Toolset" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2023/06/04/PyramidMap-Python-Toolset/" data-id="clmn63c9l0009mwutc5dm3lna" data-title="PyramidMap Python Visualized Map Toolset" class="article-share-link">Share</a>
       
       
         <a href="/2023/06/04/PyramidMap-Python-Toolset/#comments" class="article-comment-link">
           <span class="post-comments-count valine-comment-count" data-xid="/2023/06/04/PyramidMap-Python-Toolset/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-GeoTools-Visualized-Toolset/" rel="tag">Download PyramidMap GeoTools Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Python-Visualized-Toolset/" rel="tag">Download PyramidMap Python Visualized Toolset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Download-PyramidMap-Technical-White-Paper/" rel="tag">Download PyramidMap Technical White Paper</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-<!-- ��utteranc���ۣ�����github issue������ϵͳ -->
-
-<!-- utteranc���ۡ� -->
-
-  
-    <article id="post-PyramidMap-GeoTools-Toolset" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    
-<a href="/2021/11/11/PyramidMap-GeoTools-Toolset/" class="article-date">
-  <time class="dt-published" datetime="2021-11-11T02:25:03.000Z" itemprop="datePublished">2021-11-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/07%EF%BC%9ADownload-PyramidMap-products-and-documents/">07：Download PyramidMap products and documents</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/11/11/PyramidMap-GeoTools-Toolset/">PyramidMap GeoTools Visualized Toolset</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-      	
-      		<h1 id="1-PyramidMap-GeoTools-Visualized-Toolset"><a href="#1-PyramidMap-GeoTools-Visualized-Toolset" class="headerlink" title="1: PyramidMap GeoTools Visualized Toolset"></a>1: PyramidMap GeoTools Visualized Toolset</h1><p><img src="/2021/11/11/PyramidMap-GeoTools-Toolset/geotoolsground_en.jpg"></p>
-<h2 id="1-1-Function-overview"><a href="#1-1-Function-overview" class="headerlink" title="1.1: Function overview"></a>1.1: Function overview</h2><p>The PyramidMap GeoTools Visualized Toolset is developed based on geotools technology and adopts client / server mode. It can complete independent mapping functions. At the same time, it can be used as the client of GeoServer and various geographic databases such as Oracle, postgre and mysql. It can complete database management, map server space and data source management, layer import and export, multi-type map service publishing and layer service management The whole process management of publishing and web applications. The PyramidMap GeoTools visualization toolset is only supported running in a Windows environment currently , with a minimum resolution requirement of 1920 * 1200.</p>
-<h2 id="1-2-Function-list"><a href="#1-2-Function-list" class="headerlink" title="1.2: Function list"></a>1.2: Function list</h2><p>The functions list shown as in the table 2-1</p>
-<table>
-<thead>
-<tr>
-<th align="center">Functions<div style="width:90px"></div></th>
-<th align="center">Sub Items<div style="width:150px"></div></th>
-<th align="left">Introduction<div style="width:630px"></div></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Map view</td>
-<td align="center">Map main view</td>
-<td align="left">Map preview and editing operations, support Shp file type, Geodatabase geographic database type, WMS, WFS, WCS, WMTS and other standardized map services from GeoServer, as well as various online map resources that follow standardized specifications, complete the complete process of map preview, editing, submission, and storage, and realize the symbolic management and rendering of maps.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Layers displaying node control</td>
-<td align="left">The layers in the main view of the map will be classified and managed as nodes. It supports the display and right-click menu control on layer nodes through Checkbox, and the corresponding operations are implemented according to the layer type.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">GeoDatabase layers node control</td>
-<td align="left">Database connection pool node. Double click the database node to dynamically load its internal layer. The layer node can be dragged to the main view or displayed by double clicking the mouse. Different levels of nodes have corresponding shortcut menus. The database node menu completes database connection testing, editing, layer list management, and deletion; The layer node menu supports layer export, conversion and deletion.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">GeoServer layers node control</td>
-<td align="left">GeoServer connection pool node. Double click the server node to dynamically load the server’s internal workspace and layer nodes; Layer nodes can be dragged to the main view or displayed by double clicking. The nodes at different levels have corresponding shortcut menus. The GeoServer level node menu completes the map server connection test, editing the connection, obtaining the server synchronization data (the GeoServer server workspace, data storage and its database connection configuration), workspace management (the workspace parameters are localized and modified and synchronized to the server), refreshing nodes, and deleting; The workspace node menu completes the data storage management and layer import. In particular, in the data storage list, you can edit and modify the database connection and maintain the layer list for each item in the list, including the details of the layer and the maintenance of addition and deletion.</td>
-</tr>
-<tr>
-<td align="center">Map query</td>
-<td align="center"></td>
-<td align="left">It supports SQL queries on layer data tables in the main map view and each independent map view, and the query results are highlighted on the map. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
-</tr>
-<tr>
-<td align="center">Features Selection</td>
-<td align="center"></td>
-<td align="left">In the main map view and each independent map view, you can select map features, highlight and open the data table, edit, modify, save and submit attribute data. Support Shp vector file, Geodatabase layer, GeoServer layer and other data types.</td>
-</tr>
-<tr>
-<td align="center">Map editing</td>
-<td align="center">Cartography</td>
-<td align="left">In the main map view and each independent map view, according to the geometric type of the current layer, the mouse can be used to dot, draw lines, and save images. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Features assignment</td>
-<td align="left">In the main map view and each independent map view, you can modify and edit attribute data in the map feature form, and submit it for saving. Support Shp vector file, Geodatabase layer, WFS map service in GeoServer and other data types.</td>
-</tr>
-<tr>
-<td align="center">Create Shp</td>
-<td align="center">Create original Shp</td>
-<td align="left">Realize the full process processing of the design, editing, drawing, data saving, importing into the database, and publishing to GeoServer of the original Shp format vector layer.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Transfer external data to Shp</td>
-<td align="left">Realize the conversion of structured data such as Csv, Kml and GeoJson to Shp vector layer.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Geodatabase export Shp</td>
-<td align="left">Support, but not limited to, the export of geographic database features such as Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, and SQLServer to Shp.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">GeoServer export Shp</td>
-<td align="left">Support the export of vector layers in GeoServer as Shp.</td>
-</tr>
-<tr>
-<td align="center">Layer resource management</td>
-<td align="center">Vector layers resource management</td>
-<td align="left">The client vector layer is brought into the program resource management system by selecting files to achieve a unified resource management pool for the client vector layer.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Vector Data Processing</td>
-<td align="left">Support data conversion between Shp and Csv, Kml,  Geojson and coordinate system conversion.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Create vector tiles</td>
-<td align="left">Support multiple standard tile methods for vector maps, such as TMS tile, Google XYZ tile, MVT (Mapbox Vector Tile), MBTiles (Mapbox tiles), etc.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Raster layers resource management</td>
-<td align="left">The client grid image layer is included in the program resource management system by selecting files, so as to achieve a unified resource management pool for client grid images.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Raster Data Processing</td>
-<td align="left">Support compression, slicing, merging, NoData  processing, and coordinate system conversion for raster layers.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Create raster tiles</td>
-<td align="left">Support multiple standard tile methods for raster maps, such as TMS tile, Google XYZ tile, MBTiles (Mapbox tiles), etc.</td>
-</tr>
-<tr>
-<td align="center">Import layers into Geodatabase</td>
-<td align="center"></td>
-<td align="left">Import the Shp layer in the client’s vector layer resource management pool to Oracle, PostGIS, MySQL, SQLServer and other geographic databases.</td>
-</tr>
-<tr>
-<td align="center">Layers published to GeoServer</td>
-<td align="center">Publish Shp vector file</td>
-<td align="left">Publish the Shp layer in the client’s vector layer resource management pool to GeoServer, store it in the data cache directory specified by GeoServer in the form of a file, and output such standardized map services as wms/wfs/kml , and provide visual map services for WebGIS.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Publish raster file</td>
-<td align="left">Publish the image layers in the grid layer resource management pool of the client to GeoServer, store them in the data cache directory specified by GeoServer as files, output the standardized map services such as wms/wcs/wmts, and provide visual map services for WebGIS.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Publish Geodatabase vector layer</td>
-<td align="left">Import the shp files in the shp resource pool into the geodatabase, each shp will be converted into a feature data table, and then all the feature tables will be data source for the GeoServer which integrates the built-in JDBC engine driver, such then realize the access and processing of the map data in geodatabase, and output the standardized map services such as wms/wfs/kml, and provide visual map services for WebGIS.</td>
-</tr>
-<tr>
-<td align="center">Symbol system management</td>
-<td align="center">Create sld symbol file</td>
-<td align="left">Create sld layer style definition files of different feature types of point、multiPoint、lineString、multiLineString、polygon、multiPolygom to define the rendering mode of the layer.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Manage sld symbol files</td>
-<td align="left">The client sld symbols are incorporated into the program resource management system by selecting files to achieve a unified resource management pool for the client sld symbols.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Get server sld symbols</td>
-<td align="left">Obtain the sld symbol files on the GeoServer, synchronize them to the local client, and incorporate them into the program resource management system to achieve a unified resource management pool for the client sld symbols.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Edit sld symbol file</td>
-<td align="left">Edit the sld symbol file.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Synchronize the sld files to the server</td>
-<td align="left">Submit the sld files in the client sld resource pool to GeoServer.</td>
-</tr>
-<tr>
-<td align="center">Geodatabase connection pool</td>
-<td align="center">New Geodatabase connection</td>
-<td align="left">PyramidMap supports direct connection access to DBMS databases with spatial spatial data storage capabilities to realize the storage and conversion of map data. It supports (but is not limited to) Oracle, PostGIS (PostgreSQL+GIS function extension), MySQL, SQLServer and other databases. After the connection parameters are configured and tested, the above database resource connection pool is created and maintained.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Maintain Geodatabase connection pool</td>
-<td align="left">PyramidMap manages the resource allocation of the geodatabase in the way of connection pool, which is selected when the Shp layer is imported into the database and published. In the resource list, you can select operations such as modification, connection test, and layer import/export.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Geodatabase layers management</td>
-<td align="left">Import the Shp files that have been included in the PyramidMap resource pool into the geodatabase; Export the feature layers in the geodatabase to Shp or Kml, GeoJson and other format files in the specified path.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Geodatabase layers preview</td>
-<td align="left">Select the feature layer under the geodatabase in the database connection pool,for data query and layer preview.</td>
-</tr>
-<tr>
-<td align="center">GeoServer connection pool</td>
-<td align="center">New GeoServer connection</td>
-<td align="left">PyramidMap supports direct connection access with GeoServer map server, realizes multi type layer publishing function, and provides layer service interface for WebGIS. After the connection parameters are configured and tested successfully, create and maintain the GeoServer resource connection pool.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Manage GeoServer connections</td>
-<td align="left">PyramidMap manages the resource configuration of the GeoServer in the way of connection pool. You can select modification, connection test, layer import and export and other related operations in the resource list.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Manage workspace and data storage</td>
-<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in managing the workspace and data storage in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Manage Server Layers</td>
-<td align="left">PyramidMap can be used as a visual client of GeoServer to assist users in uploading and publishing client layers, exporting and converting server layers in a graphical interface. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">GeoServer layers preview</td>
-<td align="left">PyramidMap can be used as the visualization client of GeoServer. It can display the layers in GeoServer in the map view of the main interface, and export and convert the layers accordingly, thus simplifying the difficulty of secondary development and application.</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Management GeoServer sld symbols</td>
-<td align="left">Sld (Styled layer description), the layer rendering style description file, and the map is drawn according to the description of sld, to realize the symbolization, color matching, transparency, text annotation and other rendering display of different types of elements of points, lines, and surfaces. PyramidMap can be used as the visualization client of GeoServer. It can help users to realize the localization creation and maintenance of sld files, keep synchronization with the server, and preset the server layer and the client layer during the release process. Usually, these operations require professional GIS personnel on the web console of GeoServer. The operations are complex and require high professional skills for operators. PyramidMap helps users realize this process through visual interface guidance, making this process very simple.</td>
-</tr>
-</tbody></table>
-<center>Table 2-1: The functions list of the visualized toolset</center>
-
-<h2 id="1-3-Download-list"><a href="#1-3-Download-list" class="headerlink" title="1.3: Download list"></a>1.3: Download list</h2><p>Download the beta program:</p>
-<p><a target="_blank" rel="noopener" href="https://ln5.sync.com/dl/175cb4740/957t6yww-j3vq89dg-s3yyt2e5-6t9ebkgs">PyramidMap GeoTools Visualized Toolset</a></p>
-<p>Download the technical white paper document：</p>
-<p><a href="/download/PyramidMap_GeoTools_Visualized_Toolset_Technical_White_Paper.pdf">PyramidMap_GeoTools_Visualized_Toolset_White Paper</a></p>
-<h2 id="1-4-Contact-us"><a href="#1-4-Contact-us" class="headerlink" title="1.4: Contact us"></a>1.4: Contact us</h2><p>PyramidMap focuses on GIS application services and is committed to building a complete ecosystem of efficient GIS data processing, enterprise level geographic data storage, distributed map services, web and mobile map applications. It can help you achieve map data processing more easily and quickly, until the terminal displays the entire process of the application as a streamlined service. Welcome visiting to: <a target="_blank" rel="noopener" href="http://www.pyramidmap.com/">http://www.pyramidmap.com</a> obtaining beta software and technical information. For more technical support, please contact PyramidMap studio.</p>
-<p>Email：<a href="mailto:&#x73;&#101;&#114;&#118;&#105;&#x63;&#x65;&#64;&#x70;&#121;&#114;&#97;&#109;&#105;&#100;&#109;&#x61;&#112;&#x2e;&#x63;&#x6f;&#109;">&#x73;&#101;&#114;&#118;&#105;&#x63;&#x65;&#64;&#x70;&#121;&#114;&#97;&#109;&#105;&#100;&#109;&#x61;&#112;&#x2e;&#x63;&#x6f;&#109;</a></p>
-<p>Teleph：(086)0535-82957588</p>
-<p>Mobile：(086)18660789051</p>
-<p>WeChat：A18660789051</p>
-<p>QQ：29862351</p>
-
-      	
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2021/11/11/PyramidMap-GeoTools-Toolset/" data-id="clmkeqqva0003novv8xiu20tx" data-title="PyramidMap GeoTools Visualized Toolset" class="article-share-link">Share</a>
-      
-      
-        <a href="/2021/11/11/PyramidMap-GeoTools-Toolset/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2021/11/11/PyramidMap-GeoTools-Toolset/" itemprop="commentCount"></span>
           Comments
         </a>
       
@@ -1513,7 +1759,7 @@ The PyramidMap Python Visualized Toolset  can help you quickly achieve map data 
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li></ul>
     </div>
   </div>
 
@@ -1526,11 +1772,15 @@ The PyramidMap Python Visualized Toolset  can help you quickly achieve map data 
       <ul>
         
           <li>
-            <a href="/2023/06/04/PyramidMap-Python-Toolset/">PyramidMap Python Visualized Map Toolset</a>
+            <a href="/2023/09/17/PyramidMap-GeoTools-Toolset/">PyramidMap GeoTools Visualized Toolset</a>
           </li>
         
           <li>
-            <a href="/2021/11/11/PyramidMap-GeoTools-Toolset/">PyramidMap GeoTools Visualized Toolset</a>
+            <a href="/2023/09/16/experimentData/">PyramidMap GeoTools 示例及实验数据</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/PyramidMap-Python-Toolset/">PyramidMap Python Visualized Map Toolset</a>
           </li>
         
       </ul>
