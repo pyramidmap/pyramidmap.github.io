@@ -6,14 +6,17 @@
   
   <title>4-Technical-Hotspot-Links | The pyramidMap studio，structure the map pyramid.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
+  <meta name="description" content="4: Related technical component linksThe list of technical components related to PyramidMap is shown in Table 4-1:    Component Illustrate Web site    GeoServer GeoServer is an open-source map server b">
+<meta property="og:type" content="article">
 <meta property="og:title" content="4-Technical-Hotspot-Links">
 <meta property="og:url" content="https://pyramidmap.github.io/2023/10/11/4-Technical-Hotspot-Links/index.html">
 <meta property="og:site_name" content="The pyramidMap studio，structure the map pyramid.....">
+<meta property="og:description" content="4: Related technical component linksThe list of technical components related to PyramidMap is shown in Table 4-1:    Component Illustrate Web site    GeoServer GeoServer is an open-source map server b">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-11T13:59:26.000Z">
-<meta property="article:modified_time" content="2023-10-11T14:32:00.237Z">
+<meta property="article:modified_time" content="2023-11-08T15:23:43.611Z">
 <meta property="article:author" content="PyramidMap">
+<meta property="article:tag" content="PyramidMap GeoTools related technical component links">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="The pyramidMap studio，structure the map pyramid....." type="application/atom+xml">
@@ -93,6 +96,10 @@
   <time class="dt-published" datetime="2023-10-11T13:59:26.000Z" itemprop="datePublished">2023-10-11</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/01%EF%BC%9APyramidMap-GeoTools-Visualized-Toolset/">01：PyramidMap GeoTools Visualized Toolset</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -111,12 +118,74 @@
       
       
       	
-      		
+      		<h1 id="4-Related-technical-component-links"><a href="#4-Related-technical-component-links" class="headerlink" title="4: Related technical component links"></a>4: Related technical component links</h1><p>The list of technical components related to PyramidMap is shown in Table 4-1:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Component<div style="width:160px"></div></th>
+<th align="left">Illustrate<div style="width:510px"></div></th>
+<th align="left">Web site<div style="width:200px"></div></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">GeoServer</td>
+<td align="left">GeoServer is an open-source map server based on the standard OGC protocol, with functions equivalent to ESRI’s ArcGIS Server. It can implement standard protocol map services such as Web Feature Services (WFS), Web Map Services (WMS), and Web Coverage Services (WCS). Other formats and publishing options can be provided as extension modules, including Web Processing Services (WPS) and Web Map Tile Services (WMTS). PyramidMap can serve as a visualization map processing client for GeoServer, completing the processing of the server’s internal workspace and data storage, achieving the visualization process of vector and grid map publishing, greatly simplifying complex map processing work.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://geoserver.org/">GeoServer</a></td>
+</tr>
+<tr>
+<td align="left">Mapbox</td>
+<td align="left">Mapbox is currently a highly dynamic and innovative map engine manufacturer, and its vector map slicing technology has become a de facto standard in the industry. PyramidMap integrates technical support for MVT (Mapbox vector tiles) and MBTiles (Mapbox tiles) internally.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.mapbox.com/">Mapbox</a></td>
+</tr>
+<tr>
+<td align="left">Oracle</td>
+<td align="left">PyramidMap supports storage access to Oracle geodatabases, including importing and exporting vector layers, as well as serving as a GeoServer data source for layer publishing services.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.oracle.com/database/technologies/">Oracle Database</a>;<a target="_blank" rel="noopener" href="https://www.oracle.com/database/spatial/">Oracle Spatial</a></td>
+</tr>
+<tr>
+<td align="left">PostgreSQL</td>
+<td align="left">PyramidMap supports storage and access to PostGIS geodatabases, including importing and exporting vector layers, as well as serving as a GeoServer data source for layer publishing services.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.postgresql.org/">PostgreSQL</a></td>
+</tr>
+<tr>
+<td align="left">MySQL</td>
+<td align="left">PyramidMap supports storage access to MySQL geodatabases, including importing and exporting vector layers, as well as serving as a GeoServer data source for layer publishing services.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.mysql.com/">MySQL</a></td>
+</tr>
+<tr>
+<td align="left">OpenLayers</td>
+<td align="left">OpenLayers is an open source, OGC standardized mapping service based, web-based interactive map JavaScript engine library. The map and tile data constructed by PyramidMap can be easily applied to the OpenLayers development environment.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://openlayers.org/">OpenLayers</a></td>
+</tr>
+<tr>
+<td align="left">LeafLet</td>
+<td align="left">Leaflet is an open source, OGC standardized map service based, web-based interactive map JavaScript engine library. The map and tile data constructed by PyramidMap can be easily applied to the LeafLet development environment.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://leafletjs.com/">Leaflet - a JavaScript library for interactive maps (leafletjs.com)</a></td>
+</tr>
+<tr>
+<td align="left">Cesium</td>
+<td align="left">Cesium is an open source, OGC standardized map service based, web interactive map JavaScript library, and is currently the mainstream 3D map engine. The 2D map and tile data constructed by PyramidMap can be easily applied to the Cesium development environment.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.cesium.com/">Cesium: The Platform for 3D Geospatial</a></td>
+</tr>
+<tr>
+<td align="left">ArcGIS</td>
+<td align="left">ArcGIS is an established commercial version of geographic information technology manufacturer, and its data format is also the current de facto data standard, such as shp, gdb, mdb. PyramidMap’s vector map data constructed based on shp format is suitable for the vast majority of map platforms.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.esri.com/">ArcGIS</a></td>
+</tr>
+<tr>
+<td align="left">epsg.io</td>
+<td align="left">Standardized coordinate system definition and conversion platform, covering all standardized coordinate system definitions and data conversion references. The coordinate system and projection transformation of PyramidMap are based on the standardized definition of EPSG.</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://epsg.io/">EPSG.io: Coordinate Systems Worldwide</a></td>
+</tr>
+</tbody></table>
+<center>Table 4-1: List of technical components related to PyramidMap</center>
+
+
       	
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://pyramidmap.github.io/2023/10/11/4-Technical-Hotspot-Links/" data-id="clno2eq40000ijcutadjvg0ic" data-title="4-Technical-Hotspot-Links" class="article-share-link">Share</a>
+      <a data-url="https://pyramidmap.github.io/2023/10/11/4-Technical-Hotspot-Links/" data-id="clopww8j0000ap0utg7o2an5g" data-title="4-Technical-Hotspot-Links" class="article-share-link">Share</a>
       
       
         <a href="/2023/10/11/4-Technical-Hotspot-Links/#comments" class="article-comment-link">
@@ -125,6 +194,8 @@
         </a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyramidMap-GeoTools-related-technical-component-links/" rel="tag">PyramidMap GeoTools related technical component links</a></li></ul>
+
     </footer>
   </div>
   
@@ -164,7 +235,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01%EF%BC%9APyramidMap-GeoTools-Visualized-Toolset/">01：PyramidMap GeoTools Visualized Toolset</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01%EF%BC%9APyramidMap-GeoTools-Visualization-Toolset/">01：PyramidMap GeoTools Visualization Toolset</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/01%EF%BC%9APyramidMap-GeoTools-Visualized-Toolset/">01：PyramidMap GeoTools Visualized Toolset</a></li></ul>
     </div>
   </div>
 
@@ -174,7 +245,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-Contact-Us/" rel="tag">PyramidMap Contact Us</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-Visualized-Toolset-Beta-Download/" rel="tag">PyramidMap GeoTools Visualized Toolset Beta Download</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-Visualized-Toolset-introduction/" rel="tag">PyramidMap GeoTools Visualized Toolset introduction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-Technical-White-Paper/" rel="tag">PyramidMap Technical White Paper</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-Contact-Us/" rel="tag">PyramidMap Contact Us</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-Visualization-Toolset-release-update-list/" rel="tag">PyramidMap GeoTools Visualization Toolset release update list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-Visualized-Toolset-Beta-Download/" rel="tag">PyramidMap GeoTools Visualized Toolset Beta Download</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-Visualized-Toolset-introduction/" rel="tag">PyramidMap GeoTools Visualized Toolset introduction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-related-technical-component-links/" rel="tag">PyramidMap GeoTools related technical component links</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-GeoTools-tutorial-data-and-examples/" rel="tag">PyramidMap GeoTools tutorial data and examples</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyramidMap-Technical-White-Paper/" rel="tag">PyramidMap Technical White Paper</a></li></ul>
     </div>
   </div>
 
@@ -184,7 +255,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/PyramidMap-Contact-Us/" style="font-size: 10px;">PyramidMap Contact Us</a> <a href="/tags/PyramidMap-GeoTools-Visualized-Toolset-Beta-Download/" style="font-size: 10px;">PyramidMap GeoTools Visualized Toolset Beta Download</a> <a href="/tags/PyramidMap-GeoTools-Visualized-Toolset-introduction/" style="font-size: 10px;">PyramidMap GeoTools Visualized Toolset introduction</a> <a href="/tags/PyramidMap-Technical-White-Paper/" style="font-size: 10px;">PyramidMap Technical White Paper</a>
+      <a href="/tags/PyramidMap-Contact-Us/" style="font-size: 10px;">PyramidMap Contact Us</a> <a href="/tags/PyramidMap-GeoTools-Visualization-Toolset-release-update-list/" style="font-size: 10px;">PyramidMap GeoTools Visualization Toolset release update list</a> <a href="/tags/PyramidMap-GeoTools-Visualized-Toolset-Beta-Download/" style="font-size: 10px;">PyramidMap GeoTools Visualized Toolset Beta Download</a> <a href="/tags/PyramidMap-GeoTools-Visualized-Toolset-introduction/" style="font-size: 10px;">PyramidMap GeoTools Visualized Toolset introduction</a> <a href="/tags/PyramidMap-GeoTools-related-technical-component-links/" style="font-size: 10px;">PyramidMap GeoTools related technical component links</a> <a href="/tags/PyramidMap-GeoTools-tutorial-data-and-examples/" style="font-size: 10px;">PyramidMap GeoTools tutorial data and examples</a> <a href="/tags/PyramidMap-Technical-White-Paper/" style="font-size: 10px;">PyramidMap Technical White Paper</a>
     </div>
   </div>
 
@@ -210,7 +281,7 @@
           </li>
         
           <li>
-            <a href="/2023/10/11/2-Experimental-data-and-examples/">2-Experimental-data-and-examples</a>
+            <a href="/2023/10/11/2-Tutorial-data-and-examples/">2-Experimental-data-and-examples</a>
           </li>
         
           <li>
