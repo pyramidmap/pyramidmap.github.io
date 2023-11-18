@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+  <style>
+    .map {
+      width: 100%;
+      height: 1100px;
+    }
+    .info {
+        padding: 6px 8px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .info h4 {
+        margin: 0 0 5px;
+        color: #777;
+    }
+  </style>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet-src.js"></script>
+  <script src="./js/Leaflet.MapboxVectorTile.min.js"></script>
+  <title>Leaflet MVT Tiles Example</title>
+</head>
+<body>
+  <div class="map" id="map"></div>
+  <script>
+  	  // 初始化地图并设置中心和缩放级别
+      const map = L.map("map", {
+        maxZoom: 17
+      }).setView([37.625254,-122.365161], 10);
+      // 加载 ArcGIS online 在线底图
+      const base = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}").addTo(map);
+      const info = L.control();
+
+      info.onAdd = function (map) {
+          this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+          this.update();
+          return this._div;
+      };
+
+      // 根据传递的属性值更新控件显示
+      info.update = function (props) {
+          this._div.innerHTML = '<h4>建筑物</h4>' +  (props ?
+              '<b>' + props.NAME + '</b>'
+              : 'Click circles');
+      };
+
+      info.addTo(map);
+      // 加载MVT切片，并根据设定字段的属性值进行渲染
+      const buildings = new L.TileLayer.MVTSource({
+        url: "./data/vectorTiles/mvt3857/Buildings/{z}/{x}/{y}.mvt",
+        maxZoom: 18,
+        //maxNativeZoom: 15,
+        mutexToggle: false,
+        onClick: hoveronFeature,
+        style: function(feature){
+          let color = ((feature.properties.ELEV_METER >= 100) && (feature.properties.ELEV_METER <= 300)) ? "#FFFF00" :
+                      ((feature.properties.ELEV_METER > 300) && (feature.properties.ELEV_METER <= 500)) ? "#FFD700" :
+                      ((feature.properties.ELEV_METER > 500) && (feature.properties.ELEV_METER <= 700)) ? "#FF6A6A" :
+                      ((feature.properties.ELEV_METER > 700) && (feature.properties.ELEV_METER <= 900)) ? "#FF00FF" :
+                      ((feature.properties.ELEV_METER > 900) && (feature.properties.ELEV_METER <= 1100)) ? "#C71585" :
+                      ((feature.properties.ELEV_METER > 1100) && (feature.properties.ELEV_METER <= 1300)) ? "#8A2BE2" :
+                      ((feature.properties.ELEV_METER > 1300) && (feature.properties.ELEV_METER <= 1500)) ? "#7A67EE" : 
+                      ((feature.properties.ELEV_METER > 1500) && (feature.properties.ELEV_METER <= 1700)) ? "#0000FF" : 
+                      ((feature.properties.ELEV_METER > 1700) && (feature.properties.ELEV_METER <= 2000)) ? "#00EE76" : "#6495ED";
+
+          return {color: color, radius: 5, selected: {color: "red", radius: 10}};
+        }
+      });
+
+      buildings.addTo(map);
+
+      function hoveronFeature(e) {
+        if(!e.feature) return;
+        info.update(e.feature.properties);
+      }
+  </script>
+</body>
+</html>

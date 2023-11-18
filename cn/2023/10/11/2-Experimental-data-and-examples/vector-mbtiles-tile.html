@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Vector MBTiles Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    html, body, #map{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+
+<div id="map" ></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/sql.js@0.3.2/js/sql.js"></script>
+<script src="https://unpkg.com/Leaflet.TileLayer.MBTiles@1.0.0/Leaflet.TileLayer.MBTiles.js"></script>
+<script>
+	// 初始化地图并设置中心和缩放级别
+	var map = L.map('map').setView([36.575710059362658,120.02975140154005], 8);
+	// 加载 ArcGIS online 在线底图
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}').addTo(map);
+	// 加载本地 MBTiles 切片。请根据您的文件路径进行修改
+  var mb = L.tileLayer.mbTiles('./data/vectorTiles/mbtiles3857xyz/qingdao.mbtiles').addTo(map);
+
+</script>
+
+</body>
+</html>

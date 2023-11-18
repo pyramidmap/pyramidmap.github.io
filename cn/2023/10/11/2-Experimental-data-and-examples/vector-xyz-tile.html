@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Vector XYZ Tiles Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    html, body, #map{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+
+<div id="map" ></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    // 初始化地图并设置中心和缩放级别
+    var map = L.map('map').setView([37.103710059362658,121.62151401540051], 8);
+    // 加载 ArcGIS 在线底图
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}').addTo(map);
+    // 加载本地 XYZ 切片。请根据您的文件路径进行修改
+    L.tileLayer('./data/vectorTiles/xyz3857/shandong/weihai/{z}/{x}/{y}.png', {
+        tms: false,  // 表示这是一个 Google的 XYZ 切片
+        opacity: 0.7 // 切片的透明度，您可以根据需要进行调整
+    }).addTo(map);
+</script>
+
+</body>
+</html>
